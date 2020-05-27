@@ -1,0 +1,1503 @@
+idno,ppltrst,happy,cgtsday,alcfreq,height,weight,gndr,yrbrn
+921018,6,9,10.0,2-3 times a month,178.0,64.0,Male,1990.0
+921026,8,8,,Several times a week,172.0,64.0,Female,1948.0
+921034,8,8,,Every day,176.0,87.0,Male,1957.0
+921076,8,8,,Several times a week,162.0,70.0,Female,1958.0
+921084,5,8,,Every day,175.0,80.0,Male,1936.0
+921131,8,8,,Several times a week,160.0,70.0,Female,1940.0
+921165,8,Extremely happy,,Once a week,167.0,78.0,Female,1965.0
+921181,9,9,,Once a week,194.0,102.0,Male,1956.0
+921199,9,8,20.0,2-3 times a month,176.0,62.0,Female,1993.0
+921204,9,8,,Once a week,157.0,48.0,Female,1941.0
+921220,8,8,,Every day,178.0,80.0,Male,1949.0
+921254,7,4,,Once a week,185.0,70.0,Male,1977.0
+921262,8,8,,2-3 times a month,180.0,93.0,Male,1987.0
+921288,8,8,,Several times a week,191.0,95.0,Male,1949.0
+921296,5,9,,Once a week,202.0,108.0,Male,1988.0
+921319,8,Extremely happy,10.0,Once a week,185.0,82.0,Male,1997.0
+921327,9,9,,Once a week,182.0,97.0,Male,1940.0
+921335,8,9,,Several times a week,178.0,84.0,Male,1945.0
+921377,7,9,,2-3 times a month,169.0,68.0,Male,1948.0
+921393,7,8,,Less than once a month,184.0,67.0,Male,1985.0
+921408,7,9,1.0,Several times a week,203.0,104.0,Male,1977.0
+921416,8,Extremely happy,40.0,Several times a week,186.0,83.0,Male,1953.0
+921424,7,9,,Several times a week,193.0,80.0,Male,1993.0
+921432,6,Extremely happy,6.0,Once a week,180.0,90.0,Male,1989.0
+921440,9,9,,Once a week,178.0,76.0,Male,1975.0
+921474,3,6,8.0,Less than once a month,160.0,70.0,Female,1980.0
+921490,4,Extremely happy,,Never,167.0,62.0,Female,1965.0
+921505,8,8,,2-3 times a month,185.0,83.0,Male,1968.0
+921521,6,9,,Several times a week,191.0,75.0,Male,1987.0
+921539,7,9,5.0,Less than once a month,170.0,78.0,Female,1982.0
+921547,5,8,,Once a month,164.0,68.0,Female,1999.0
+921563,4,8,8.0,Several times a week,180.0,70.0,Male,1954.0
+921571,8,9,5.0,Less than once a month,163.0,92.0,Female,1978.0
+921589,8,9,,Never,142.0,50.0,Female,1931.0
+921610,6,9,,Less than once a month,170.0,60.0,Female,1978.0
+921628,7,8,,2-3 times a month,162.0,78.0,Female,1941.0
+921636,9,8,,2-3 times a month,185.0,68.0,Male,1996.0
+921652,7,7,,Once a week,172.0,65.0,Female,1987.0
+921660,8,6,,2-3 times a month,173.0,76.0,Male,1941.0
+921678,4,Extremely happy,10.0,Every day,178.0,65.0,Male,1946.0
+921733,5,3,,Several times a week,182.0,95.0,Male,1960.0
+921814,9,Extremely happy,,Never,196.0,90.0,Male,1972.0
+921856,7,8,,2-3 times a month,158.0,79.0,Female,1969.0
+921864,8,7,20.0,Several times a week,169.0,66.0,Male,1994.0
+921872,4,5,15.0,Never,165.0,69.0,Female,1983.0
+921880,7,9,,Once a week,180.0,80.0,Female,1963.0
+921898,8,Extremely happy,,2-3 times a month,177.0,66.0,Female,1966.0
+921903,8,Extremely happy,3.0,2-3 times a month,170.0,76.0,Male,1967.0
+921911,5,1,20.0,Every day,175.0,98.0,Male,1969.0
+921937,4,4,10.0,Several times a week,180.0,64.0,Male,1994.0
+921945,6,7,,Once a week,183.0,106.0,Male,1976.0
+921953,8,9,,Every day,172.0,82.0,Female,1935.0
+921987,7,7,,Once a week,179.0,74.0,Male,1964.0
+922006,7,Extremely happy,20.0,Less than once a month,167.0,106.0,Female,1964.0
+922014,5,9,,2-3 times a month,161.0,50.0,Female,1991.0
+922048,9,3,0.0,Every day,165.0,70.0,Male,1929.0
+922056,6,8,,Every day,153.0,58.0,Female,1973.0
+922072,7,9,,Once a month,162.0,69.0,Female,1988.0
+922080,5,6,20.0,Several times a week,184.0,87.0,Male,1975.0
+922098,4,9,3.0,Less than once a month,186.0,69.0,Male,1947.0
+922103,9,8,20.0,Every day,189.0,76.0,Male,1949.0
+922111,8,9,,Every day,169.0,60.0,Female,1944.0
+922129,4,8,,Several times a week,185.0,70.0,Male,1998.0
+922200,8,8,,Once a month,188.0,105.0,Male,1975.0
+922226,5,8,,Several times a week,173.0,80.0,Male,1941.0
+922250,8,8,,Several times a week,178.0,72.0,Female,1937.0
+922268,9,Extremely happy,8.0,Several times a week,170.0,85.0,Female,1971.0
+922276,9,Extremely happy,,Several times a week,171.0,50.0,Male,1952.0
+922284,7,8,6.0,Every day,176.0,77.0,Male,1947.0
+922292,8,Extremely happy,,Once a week,169.0,65.0,Female,1968.0
+922315,7,7,,Several times a week,183.0,88.0,Male,1942.0
+922323,6,8,,Once a week,155.0,47.0,Female,1940.0
+922381,5,9,,Less than once a month,177.0,75.0,Male,1969.0
+922399,8,9,,Less than once a month,176.0,73.0,Male,1959.0
+922404,8,Extremely happy,,Once a week,177.0,63.0,Male,1999.0
+922412,8,9,,2-3 times a month,172.0,67.0,Female,1962.0
+922420,7,Extremely happy,,Once a month,164.0,74.0,Female,1976.0
+922454,8,8,,Less than once a month,170.0,68.0,Female,1991.0
+922462,Most people can be trusted,Extremely happy,,Once a week,160.0,60.0,Female,1968.0
+922470,9,8,,Once a week,153.0,62.0,Female,1936.0
+922501,9,8,,Several times a week,165.0,64.0,Female,1970.0
+922519,8,8,,Several times a week,178.0,78.0,Male,1953.0
+922535,8,9,,2-3 times a month,176.0,82.0,Male,1964.0
+922543,2,Extremely happy,,Never,155.0,64.0,Female,1970.0
+922569,3,3,,Once a month,165.0,58.0,Female,1980.0
+922577,6,9,,2-3 times a month,168.0,79.0,Male,1943.0
+922593,Most people can be trusted,8,15.0,Every day,163.0,50.0,Female,1968.0
+922608,5,9,,Every day,182.0,80.0,Male,1982.0
+922616,Most people can be trusted,9,,2-3 times a month,180.0,92.0,Male,1953.0
+922624,5,8,,Every day,163.0,54.0,Female,1954.0
+922640,8,9,,Once a week,172.0,68.0,Female,1946.0
+922658,5,Extremely happy,,2-3 times a month,183.0,91.0,Male,1985.0
+922690,4,9,5.0,Less than once a month,170.0,47.0,Female,1993.0
+922713,7,8,,Several times a week,166.0,68.0,Female,1947.0
+922721,7,9,,2-3 times a month,182.0,87.0,Male,1965.0
+922739,8,9,15.0,Several times a week,192.0,88.0,Male,1968.0
+922763,5,7,,Once a week,187.0,110.0,Male,1967.0
+922771,8,8,,Never,165.0,63.0,Female,1990.0
+922789,7,8,,Once a month,178.0,102.0,Male,1949.0
+922802,9,9,,Less than once a month,164.0,64.0,Female,1990.0
+922852,2,8,,2-3 times a month,188.0,92.0,Male,1986.0
+922860,8,8,,2-3 times a month,159.0,64.0,Female,1993.0
+922886,6,5,,Never,160.0,74.0,Female,1932.0
+922894,8,Extremely happy,,Several times a week,168.0,60.0,Female,1964.0
+922925,9,8,15.0,Once a week,186.0,66.0,Male,1986.0
+922933,9,9,,Less than once a month,160.0,98.0,Female,1965.0
+922941,7,2,,Less than once a month,185.0,99.0,Male,1991.0
+922959,8,9,1.0,Once a month,185.0,84.0,Male,1998.0
+922967,8,7,,Once a week,185.0,125.0,Male,1977.0
+922975,8,8,,Every day,178.0,63.0,Male,1967.0
+922983,6,7,15.0,Once a week,160.0,54.0,Female,1947.0
+922991,8,9,,2-3 times a month,166.0,60.0,Female,1934.0
+923052,8,Extremely happy,,2-3 times a month,157.0,62.0,Female,1931.0
+923060,8,9,,Several times a week,174.0,76.0,Male,1940.0
+923094,5,8,,2-3 times a month,165.0,58.0,Female,1986.0
+923109,8,9,,Less than once a month,158.0,101.0,Female,1946.0
+923125,5,8,0.0,2-3 times a month,178.0,91.0,Male,1987.0
+923133,9,8,3.0,Once a week,172.0,65.0,Female,1958.0
+923141,7,9,,Several times a week,186.0,75.0,Female,1970.0
+923159,8,2,15.0,Several times a week,164.0,51.4,Female,1946.0
+923167,3,5,20.0,Less than once a month,184.0,120.0,Male,1971.0
+923183,5,9,10.0,Once a month,170.0,58.0,Female,1966.0
+923191,8,Extremely happy,,2-3 times a month,170.0,60.0,Female,1953.0
+923214,9,9,,Once a month,180.0,63.0,Male,1998.0
+923256,7,9,,2-3 times a month,176.0,80.0,Female,1958.0
+923264,6,Extremely happy,,Several times a week,173.0,89.0,Male,1943.0
+923272,8,8,20.0,Once a week,190.0,81.0,Male,1992.0
+923280,9,9,20.0,Once a week,182.0,105.0,Male,1983.0
+923329,8,8,,Less than once a month,162.0,74.0,Female,1969.0
+923353,7,Extremely happy,,Several times a week,178.0,100.9,Male,1963.0
+923361,7,9,,Never,176.0,95.0,Male,1984.0
+923379,8,8,,2-3 times a month,166.0,60.0,Female,1967.0
+923395,8,8,,Several times a week,176.0,70.0,Female,1979.0
+923400,8,Extremely happy,,Several times a week,180.0,70.0,Male,1946.0
+923418,7,7,,Less than once a month,168.0,52.0,Female,1963.0
+923426,8,8,20.0,Once a week,184.0,84.0,Male,1991.0
+923434,5,9,11.0,Less than once a month,164.0,60.0,Female,1968.0
+923476,7,Extremely happy,,Once a month,168.0,58.0,Female,1995.0
+923492,5,9,,Once a week,166.0,60.0,Female,1953.0
+923523,5,9,,Every day,172.0,59.0,Female,1945.0
+923531,9,Extremely happy,,Several times a week,167.0,67.0,Female,1956.0
+923557,9,9,,Once a week,182.0,76.0,Male,1984.0
+923573,7,9,,2-3 times a month,155.0,61.0,Female,1987.0
+923604,5,8,5.0,Less than once a month,189.0,78.0,Male,1989.0
+923612,9,7,2.0,Once a month,170.0,62.0,Male,1981.0
+923620,8,Extremely happy,,Several times a week,180.0,93.0,Male,1984.0
+923646,You can't be too careful,Extremely happy,8.0,Less than once a month,,,Female,1948.0
+923662,6,8,,2-3 times a month,163.0,62.0,Female,1976.0
+923670,6,9,,Once a month,176.0,72.0,Male,1979.0
+923688,5,7,10.0,2-3 times a month,164.0,63.0,Female,1990.0
+923701,5,9,,Once a week,173.0,59.0,Female,1980.0
+923719,7,9,,Once a week,178.0,85.0,Male,1975.0
+923727,7,9,3.0,2-3 times a month,160.0,54.0,Female,1940.0
+923743,9,8,2.0,Once a week,183.0,80.0,Male,1988.0
+923769,5,8,,Several times a week,170.0,66.0,Male,1951.0
+923777,6,9,,2-3 times a month,160.0,55.0,Female,1975.0
+923785,9,8,,2-3 times a month,155.0,60.0,Female,1960.0
+923793,8,Extremely happy,,Once a week,179.0,80.0,Male,1950.0
+923808,9,5,20.0,Every day,172.0,76.0,Male,1955.0
+923816,7,9,,2-3 times a month,165.0,70.0,Female,1999.0
+923824,9,8,,Once a week,170.0,65.0,Female,1964.0
+923832,8,8,10.0,Several times a week,173.0,60.0,Male,1994.0
+923858,9,9,,2-3 times a month,180.0,70.0,Male,1977.0
+923866,7,9,,Once a week,192.0,93.0,Male,1992.0
+923882,8,9,4.0,Every day,179.0,87.0,Male,1935.0
+923890,9,Extremely happy,,Once a week,173.0,60.0,Female,1996.0
+923905,6,8,12.0,Once a week,196.0,135.0,Male,1995.0
+923913,7,9,,Every day,170.0,70.0,Male,1943.0
+923939,9,Extremely happy,,Several times a week,177.0,107.0,Male,1951.0
+923971,9,7,,Never,166.0,82.0,Female,1929.0
+923989,9,7,,2-3 times a month,180.0,70.0,Female,1959.0
+923997,8,8,,Several times a week,190.0,110.0,Male,1954.0
+924024,7,8,,Less than once a month,169.0,66.0,Female,1986.0
+924032,7,Extremely happy,,Every day,174.0,72.0,Male,1926.0
+924040,8,9,,Every day,172.0,92.0,Male,1942.0
+924058,9,,10.0,Once a month,164.0,68.0,Female,1949.0
+924066,5,6,,Every day,175.0,68.0,Male,1927.0
+924074,8,9,,Several times a week,189.0,66.0,Male,1970.0
+924090,9,5,,Every day,178.0,66.0,Male,1957.0
+924105,8,8,15.0,Less than once a month,160.0,63.0,Female,1962.0
+924113,8,8,,Several times a week,197.0,82.0,Male,1997.0
+924121,5,7,10.0,Never,188.0,85.0,Male,1990.0
+924139,8,8,,Once a month,174.0,79.0,Male,1951.0
+924155,5,8,,Every day,180.0,70.0,Male,1935.0
+924163,5,5,,Once a week,169.0,63.0,Male,1971.0
+924171,3,7,10.0,Once a week,161.0,65.0,Female,1995.0
+924202,9,,,Several times a week,170.0,74.0,Female,1970.0
+924236,8,9,,Several times a week,178.0,93.0,Male,1952.0
+924244,7,8,,Several times a week,178.0,90.0,Male,1983.0
+924252,Most people can be trusted,9,,Once a month,169.0,56.0,Female,1995.0
+924278,Most people can be trusted,Extremely happy,20.0,Several times a week,167.0,54.0,Female,1934.0
+924325,8,9,,Once a month,175.0,78.0,Male,1971.0
+924359,8,Extremely happy,,Once a week,165.0,72.0,Male,1937.0
+924367,5,8,,Once a week,178.0,85.0,Male,1943.0
+924375,7,Extremely happy,,Once a month,178.0,76.0,Female,1976.0
+924383,3,8,,Never,175.0,94.0,Male,1946.0
+924406,8,8,,Never,168.0,65.0,Female,1934.0
+924430,7,8,,Once a week,178.0,69.0,Male,1957.0
+924464,7,9,,Once a month,174.0,74.0,Female,1991.0
+924472,8,8,,Less than once a month,168.0,72.0,Female,1989.0
+924480,8,Extremely happy,,Less than once a month,166.0,65.0,Female,1957.0
+924498,5,7,10.0,Several times a week,175.0,66.0,Male,1966.0
+924503,7,8,,Every day,181.0,81.5,Male,1932.0
+924511,8,9,20.0,Less than once a month,157.0,59.0,Male,1957.0
+924529,8,9,,Several times a week,163.0,75.0,Female,1957.0
+924545,5,Extremely happy,4.0,Never,172.0,75.0,Male,1979.0
+924561,8,Extremely happy,,Less than once a month,172.0,57.0,Female,1980.0
+924579,5,9,,Several times a week,165.0,66.0,Female,1945.0
+924595,8,9,,Several times a week,165.0,80.0,Female,1955.0
+924600,9,6,,Several times a week,188.0,91.0,Male,1955.0
+924618,7,9,,Once a week,180.0,81.0,Male,1977.0
+924626,8,8,25.0,Once a month,168.0,85.0,Male,1942.0
+924676,3,8,,Once a week,180.0,83.0,Male,1955.0
+924692,7,5,,Once a week,163.0,58.0,Female,1980.0
+924715,9,9,3.0,Once a week,167.0,95.0,Female,1985.0
+924731,5,8,,Never,178.0,86.0,Male,1951.0
+924781,9,Extremely happy,,Several times a week,178.0,75.0,Male,1973.0
+924812,You can't be too careful,9,,Once a week,173.0,65.0,Female,1984.0
+924846,8,9,,Less than once a month,168.0,68.0,Female,1972.0
+924854,7,7,,Never,173.0,87.0,Male,1966.0
+924862,7,8,,Once a month,178.0,82.0,Male,1980.0
+924901,Most people can be trusted,Extremely happy,,Several times a week,164.0,70.0,Female,1957.0
+924943,7,9,,2-3 times a month,185.0,82.0,Male,1998.0
+924951,7,8,,Once a week,162.0,59.0,Female,1980.0
+924969,8,5,20.0,Every day,176.0,76.0,Male,1957.0
+924985,8,9,,Once a week,188.0,85.0,Male,1946.0
+925038,8,7,,Several times a week,168.0,63.0,Female,1968.0
+925046,7,9,10.0,Several times a week,169.0,74.0,Female,1960.0
+925054,8,7,4.0,Once a month,170.0,66.0,Female,1975.0
+925062,6,9,,Once a month,174.0,108.0,Male,1977.0
+925088,4,Extremely happy,,Once a week,178.0,86.0,Female,1944.0
+925096,6,9,,Less than once a month,179.0,78.6,Male,1996.0
+925101,6,5,9.0,Once a week,176.0,83.0,Male,1990.0
+925119,8,8,,Several times a week,168.0,57.0,Female,1971.0
+925127,5,9,,Never,163.0,62.0,Female,1989.0
+925143,4,8,,2-3 times a month,168.0,66.0,Female,1956.0
+925169,7,7,,2-3 times a month,174.0,64.0,Male,1933.0
+925177,5,Extremely happy,13.0,Every day,164.0,74.0,Female,1957.0
+925185,9,9,,Once a month,167.0,54.0,Female,1974.0
+925193,6,8,1.0,Once a week,189.0,75.0,Male,1996.0
+925216,6,9,,Several times a week,168.0,102.0,Female,1958.0
+925224,5,2,30.0,Less than once a month,173.0,58.0,Female,1967.0
+925232,5,9,,Once a month,168.0,50.0,Male,1998.0
+925240,8,9,,2-3 times a month,184.0,110.0,Male,1939.0
+925258,7,7,,Once a week,179.0,99.0,Male,1967.0
+925274,4,6,,2-3 times a month,174.0,89.0,Male,1955.0
+925282,6,7,,Several times a week,163.0,59.0,Female,1938.0
+925290,7,9,,Several times a week,177.0,90.0,Male,1951.0
+925305,9,9,,Several times a week,180.0,86.0,Male,1947.0
+925313,8,9,,Once a week,187.0,135.0,Male,1955.0
+925355,3,8,,Less than once a month,175.0,82.0,Male,1962.0
+925371,5,9,,,162.0,70.0,Female,1938.0
+925397,8,9,,Several times a week,188.0,99.0,Male,1964.0
+925402,Most people can be trusted,8,,2-3 times a month,166.0,56.0,Female,1976.0
+925410,4,8,,Several times a week,156.0,60.0,Female,1969.0
+925509,8,8,,Every day,170.0,65.0,Male,1968.0
+925525,8,Extremely happy,,Every day,156.0,50.0,Female,1939.0
+925533,5,Extremely happy,,Several times a week,190.0,95.0,Male,1984.0
+925541,8,8,,Less than once a month,180.0,114.0,Male,1980.0
+925559,7,Extremely happy,,Once a week,186.0,105.0,Male,1996.0
+925567,6,Extremely happy,,2-3 times a month,152.0,76.0,Female,1937.0
+925575,9,9,,Several times a week,158.0,57.0,Female,1939.0
+925583,4,9,,Less than once a month,169.0,65.0,Female,1994.0
+925591,7,9,,2-3 times a month,164.0,53.0,Female,1958.0
+925606,8,9,14.0,Once a week,176.0,104.0,Male,1955.0
+925614,5,9,,Never,168.0,102.0,Female,1971.0
+925622,8,8,,Every day,157.0,70.0,Female,1946.0
+925656,6,9,,Several times a week,168.0,67.0,Male,1966.0
+925680,8,Extremely happy,,Several times a week,164.0,69.0,Female,1944.0
+925703,8,5,,2-3 times a month,165.0,60.0,Female,1975.0
+925745,7,8,20.0,Once a month,168.0,65.0,Female,1957.0
+925753,7,7,0.0,Less than once a month,168.0,67.0,Female,1988.0
+925761,8,9,,Less than once a month,188.0,77.0,Male,1987.0
+925787,7,9,20.0,Less than once a month,175.0,80.0,Female,1949.0
+925795,8,9,2.0,Once a week,178.0,85.0,Female,1964.0
+925826,7,9,,2-3 times a month,171.0,64.0,Female,1989.0
+925876,8,6,10.0,Several times a week,189.0,80.0,Male,1970.0
+925884,5,9,,Never,173.0,81.0,Male,1990.0
+925923,6,8,,Several times a week,177.0,79.0,Female,1964.0
+925999,3,7,,Less than once a month,180.0,67.0,Male,1961.0
+926026,9,9,,Once a week,167.0,63.0,Female,1976.0
+926034,7,Extremely happy,20.0,Once a week,173.0,72.0,Male,1956.0
+926050,7,9,10.0,2-3 times a month,166.0,58.0,Female,1974.0
+926092,7,9,15.0,2-3 times a month,173.0,115.0,Female,1975.0
+926107,5,8,,Less than once a month,187.0,84.0,Male,1999.0
+926115,9,9,,2-3 times a month,170.0,58.0,Female,1961.0
+926131,8,9,,Less than once a month,176.0,79.0,Female,1982.0
+926149,Most people can be trusted,5,,Several times a week,198.0,105.0,Male,1956.0
+926181,5,8,,Every day,183.0,66.0,Male,1962.0
+926199,5,7,,Once a month,175.0,66.1,Female,1979.0
+926238,4,9,10.0,2-3 times a month,169.0,56.0,Female,1969.0
+926246,5,5,,Never,150.0,53.0,Female,1969.0
+926288,Most people can be trusted,9,,2-3 times a month,160.0,59.0,Female,1951.0
+926319,7,8,13.0,Never,172.0,62.0,Male,1957.0
+926343,2,Extremely happy,,Several times a week,189.0,80.0,Male,1987.0
+926351,8,9,,Once a week,170.0,60.0,Female,1973.0
+926377,5,8,20.0,Once a week,176.0,82.0,Male,1951.0
+926385,8,8,,Once a week,176.0,73.0,Male,1943.0
+926408,7,8,,Once a week,172.0,76.0,Male,1945.0
+926458,8,7,15.0,Once a week,172.0,77.0,Male,1986.0
+926513,7,9,,Once a week,159.0,72.0,Female,1948.0
+926539,7,8,0.0,Once a week,165.0,59.0,Female,1994.0
+926555,6,8,,Less than once a month,183.0,75.0,Male,1995.0
+926563,7,8,,Never,195.0,66.0,Male,1997.0
+926589,9,Extremely happy,,Several times a week,172.0,68.0,Male,1965.0
+926597,6,7,,Less than once a month,173.0,68.0,Female,1978.0
+926652,3,7,,2-3 times a month,172.0,62.0,Female,1990.0
+926660,3,5,,Once a week,186.0,66.0,Male,1965.0
+926678,9,9,,Less than once a month,180.0,85.0,Male,1941.0
+926694,8,Extremely happy,,Every day,177.0,78.0,Male,1939.0
+926709,3,9,,2-3 times a month,179.0,,Female,1981.0
+926725,5,Extremely happy,,Once a week,168.0,70.0,Male,1971.0
+926733,7,8,,Less than once a month,163.0,85.0,Female,1968.0
+926759,4,7,,Never,168.0,66.0,Female,1953.0
+926767,8,8,,2-3 times a month,173.0,65.0,Female,1953.0
+926775,8,8,20.0,Several times a week,189.0,75.0,Male,1989.0
+926806,6,Extremely happy,,Several times a week,172.0,64.0,Female,1979.0
+926814,4,1,,Once a week,162.0,80.0,Female,1977.0
+926822,8,Extremely happy,,Several times a week,175.0,69.0,Male,1937.0
+926848,8,9,15.0,Once a month,178.0,76.0,Male,1996.0
+926872,8,Extremely happy,,Once a week,155.0,58.0,Female,1973.0
+926880,7,8,,Once a week,161.0,62.0,Female,1969.0
+926898,5,6,,Once a week,182.0,112.0,Male,1968.0
+926903,9,9,,Every day,162.0,62.0,Female,1940.0
+926911,8,8,,2-3 times a month,184.0,79.0,Male,1960.0
+926929,5,2,15.0,Every day,169.0,57.0,Female,1957.0
+926937,7,Extremely happy,,Every day,168.0,74.0,Female,1942.0
+926945,7,9,,Once a week,176.0,56.0,Female,1971.0
+926953,Most people can be trusted,8,,Once a month,184.0,73.0,Male,1940.0
+926961,7,7,,Once a week,172.0,51.0,Female,1998.0
+926979,7,9,,Once a week,183.0,84.0,Male,1992.0
+926987,8,9,,Several times a week,162.0,64.0,Female,1950.0
+926995,8,7,10.0,Once a week,178.0,95.0,Male,1986.0
+927006,7,6,,Less than once a month,167.0,72.0,Female,1967.0
+927048,7,Extremely happy,,Less than once a month,160.0,75.0,Female,1985.0
+927072,8,7,,Several times a week,192.0,83.0,Male,1964.0
+927098,9,8,,Several times a week,165.0,55.0,Female,1954.0
+927111,4,4,,Less than once a month,159.0,93.0,Female,1966.0
+927137,Most people can be trusted,Extremely happy,18.0,2-3 times a month,175.0,90.0,Male,1955.0
+927179,5,5,,2-3 times a month,169.0,43.0,Female,1954.0
+927187,3,9,,Every day,162.0,65.0,Male,1927.0
+927226,8,Extremely happy,,Less than once a month,182.0,87.0,Male,1974.0
+927250,8,9,,Several times a week,169.0,65.0,Female,1977.0
+927276,8,Extremely happy,,Several times a week,184.0,90.0,Male,1953.0
+927284,Most people can be trusted,8,,Less than once a month,155.0,60.0,Female,1922.0
+927307,7,8,7.0,Once a week,161.0,63.0,Female,1995.0
+927323,8,Extremely happy,,Once a week,172.0,87.0,Female,1967.0
+927331,5,Extremely happy,,Never,181.0,,Female,1981.0
+927349,5,8,10.0,Once a week,188.0,79.0,Male,1974.0
+927373,8,9,,Less than once a month,172.0,72.0,Male,1987.0
+927381,7,8,,Every day,173.0,82.0,Male,1995.0
+927399,2,7,25.0,Once a week,180.0,83.0,Male,1981.0
+927462,Most people can be trusted,Extremely happy,10.0,Less than once a month,172.0,68.0,Male,1959.0
+927488,4,9,15.0,Less than once a month,168.0,74.0,Male,1981.0
+927585,7,9,,Once a month,175.0,84.0,Female,1986.0
+927593,4,Extremely happy,,Once a week,170.0,84.0,Male,1967.0
+927608,5,8,,2-3 times a month,165.0,66.0,Female,1979.0
+927616,Most people can be trusted,9,,2-3 times a month,188.0,101.0,Male,1941.0
+927624,8,8,,Once a week,160.0,69.0,Female,1961.0
+927632,5,9,,Never,158.0,64.0,Female,1976.0
+927640,8,8,,Once a week,180.0,87.0,Female,1988.0
+927739,7,Extremely happy,,Several times a week,180.0,89.0,Male,1976.0
+927763,5,7,,Less than once a month,185.0,97.0,Male,1938.0
+927771,8,Extremely happy,,Once a month,181.0,63.0,Female,1984.0
+927828,8,9,,2-3 times a month,164.0,63.0,Female,1972.0
+927836,8,9,,Several times a week,172.0,63.0,Male,1967.0
+927860,Most people can be trusted,9,,Several times a week,169.0,62.0,Female,1955.0
+927894,8,8,12.0,2-3 times a month,193.0,83.0,Male,1967.0
+927933,6,8,,Once a week,159.0,51.0,Female,1990.0
+927959,8,9,,Every day,157.0,61.0,Female,1964.0
+927967,8,8,0.0,Several times a week,175.0,82.0,Male,1967.0
+927983,3,8,20.0,Once a month,164.0,54.0,Female,1989.0
+928002,8,8,,Several times a week,146.0,48.0,Female,1935.0
+928028,8,6,10.0,Several times a week,181.0,75.0,Male,1986.0
+928044,7,2,,Every day,170.0,59.0,Male,1937.0
+928060,8,8,12.0,Never,168.0,95.0,Male,1985.0
+928086,8,Extremely happy,,Several times a week,176.0,65.0,Female,1949.0
+928094,4,8,,Never,162.0,52.0,Female,1998.0
+928109,8,7,,Once a week,168.0,67.0,Female,1964.0
+928125,3,8,,2-3 times a month,183.0,87.0,Male,1968.0
+928133,7,6,,Less than once a month,183.0,82.0,Male,1993.0
+928167,8,7,,2-3 times a month,183.0,120.0,Male,1956.0
+928175,5,Extremely happy,,Several times a week,162.0,52.0,Female,1955.0
+928248,8,9,,2-3 times a month,168.0,69.0,Female,1983.0
+928256,6,8,,Once a week,173.0,75.0,Male,1974.0
+928280,You can't be too careful,9,20.0,Never,148.0,65.0,Female,1953.0
+928298,5,Extremely happy,,Less than once a month,163.0,,Female,1952.0
+928303,5,9,,Several times a week,178.0,73.0,Male,1969.0
+928311,9,6,,Less than once a month,194.0,94.0,Male,1973.0
+928345,6,7,7.0,Several times a week,177.0,84.0,Male,1967.0
+928361,9,8,,Once a week,166.0,59.0,Female,1955.0
+928379,8,8,,Once a month,171.0,58.0,Female,1998.0
+928400,8,8,,Once a week,167.0,61.0,Female,1969.0
+928418,7,6,,Several times a week,187.0,80.0,Male,1997.0
+928434,8,6,,2-3 times a month,164.0,64.0,Female,1960.0
+928476,6,9,,2-3 times a month,180.0,79.0,Male,1964.0
+928492,5,6,20.0,Once a week,162.0,80.0,Female,1968.0
+928515,7,8,,Several times a week,178.0,89.0,Male,1939.0
+928565,4,Extremely happy,,2-3 times a month,178.0,88.0,Male,1982.0
+928573,8,8,,Never,168.0,68.0,Female,1936.0
+928604,8,Extremely happy,2.0,Once a month,151.0,,Female,1940.0
+928646,7,6,,Once a month,161.0,70.0,Female,1959.0
+928662,8,Extremely happy,,Once a week,176.0,68.0,Female,1973.0
+928670,7,Extremely happy,,Several times a week,183.0,81.0,Male,1964.0
+928701,9,8,,Once a week,183.0,82.0,Male,1989.0
+928727,6,Extremely happy,,2-3 times a month,187.0,68.0,Male,1998.0
+928735,8,Extremely happy,,Once a week,165.0,76.0,Female,1943.0
+928769,6,8,,Never,155.0,70.0,Female,1981.0
+928777,8,8,20.0,2-3 times a month,189.0,71.0,Male,1972.0
+928785,8,9,20.0,Once a week,183.0,125.0,Male,1967.0
+928808,8,7,,Once a week,182.0,81.0,Male,1988.0
+928816,7,9,,2-3 times a month,196.0,105.0,Male,1973.0
+928824,7,Extremely happy,,2-3 times a month,163.0,56.0,Female,1981.0
+928832,6,6,,2-3 times a month,174.0,85.0,Male,1963.0
+928840,3,5,,Less than once a month,187.0,98.0,Male,1998.0
+928858,7,9,,2-3 times a month,185.0,80.0,Male,1998.0
+928874,7,7,,Less than once a month,187.0,64.0,Male,1999.0
+928905,6,8,20.0,Once a week,173.0,68.0,Male,1952.0
+928913,8,Extremely happy,,Every day,163.0,71.0,Female,1936.0
+928947,5,Extremely happy,20.0,Every day,167.0,75.0,Male,1950.0
+928955,9,Extremely happy,,Once a month,176.0,66.0,Male,1944.0
+928971,8,Extremely happy,,Once a week,168.0,54.0,Female,1946.0
+928997,5,8,25.0,Several times a week,175.0,67.0,Female,1988.0
+929032,7,8,,Once a week,164.0,63.0,Female,1951.0
+929040,4,9,15.0,Once a week,182.0,76.0,Male,1993.0
+929082,8,Extremely happy,,Several times a week,187.0,120.0,Male,1963.0
+929090,8,9,,Once a month,184.0,89.0,Male,1965.0
+929105,5,7,,2-3 times a month,158.0,68.0,Female,1981.0
+929121,6,Extremely happy,,Every day,164.0,73.0,Male,1941.0
+929139,7,9,,Once a month,186.0,107.0,Male,1955.0
+929147,7,9,,Less than once a month,173.0,83.0,Male,1938.0
+929163,5,7,10.0,Once a week,167.0,56.0,Female,1941.0
+929171,You can't be too careful,Extremely happy,,2-3 times a month,173.0,88.0,Male,1937.0
+929189,8,Extremely happy,,Less than once a month,178.0,86.0,Male,1963.0
+929197,9,Extremely happy,10.0,Several times a week,182.0,90.0,Male,1962.0
+929202,Most people can be trusted,Extremely happy,,Once a week,167.0,52.0,Female,1994.0
+929210,7,Extremely happy,,Several times a week,180.0,110.0,Male,1949.0
+929228,9,9,,Several times a week,182.0,102.0,Male,1938.0
+929294,7,8,,Never,178.0,67.0,Female,1970.0
+929309,9,9,,Every day,167.0,76.0,Female,1950.0
+929325,8,Extremely happy,,Less than once a month,162.0,76.0,Female,1970.0
+929359,3,8,,Several times a week,182.0,88.0,Male,1945.0
+929367,9,8,,Several times a week,170.0,74.0,Female,1962.0
+929391,8,9,,Several times a week,163.0,97.0,Female,1951.0
+929406,7,Extremely happy,,Once a week,168.0,75.0,Male,1945.0
+929414,7,8,20.0,Several times a week,171.0,60.0,Female,1997.0
+929448,Most people can be trusted,1,,Less than once a month,172.0,,Male,1926.0
+929456,8,8,,Less than once a month,170.0,70.0,Female,1998.0
+929464,7,7,,2-3 times a month,165.0,86.0,Female,1982.0
+929472,5,8,20.0,Never,163.0,53.0,Female,1958.0
+929480,7,Extremely happy,,2-3 times a month,169.0,66.0,Female,1958.0
+929529,9,8,15.0,Several times a week,164.0,77.0,Female,1969.0
+929537,6,9,0.0,Several times a week,174.0,64.0,Male,1942.0
+929545,8,7,,Once a week,188.0,66.0,Male,1985.0
+929561,8,9,,2-3 times a month,187.0,82.0,Male,1997.0
+929587,8,7,,Once a week,163.0,78.0,Female,1958.0
+929600,8,9,20.0,Every day,174.0,82.0,Male,1943.0
+929626,7,7,,Once a month,193.0,72.0,Male,1987.0
+929642,8,8,,2-3 times a month,184.0,71.0,Female,1998.0
+929668,5,7,,2-3 times a month,178.0,,Female,1970.0
+929676,9,8,,Every day,180.0,72.0,Male,1939.0
+929684,8,8,17.0,Every day,185.0,72.0,Male,1931.0
+929692,5,7,15.0,2-3 times a month,193.0,83.0,Male,1986.0
+929707,5,8,,Less than once a month,180.0,96.0,Male,1947.0
+929749,9,8,,2-3 times a month,170.0,85.0,Male,1969.0
+929757,4,8,20.0,Less than once a month,168.0,80.0,Male,1969.0
+929781,6,8,,Less than once a month,162.0,87.0,Female,1938.0
+929799,7,8,,Every day,197.0,110.0,Male,1953.0
+929854,7,8,10.0,Once a week,176.0,71.0,Male,1992.0
+929862,9,9,,Several times a week,175.0,82.0,Male,1952.0
+929870,9,Extremely happy,,Less than once a month,163.0,69.0,Female,1947.0
+929919,6,Extremely happy,,Several times a week,173.0,66.0,Female,1940.0
+929951,8,9,,Once a week,177.0,66.0,Female,1976.0
+929977,4,8,15.0,2-3 times a month,175.0,75.0,Male,1985.0
+929985,7,8,0.0,Several times a week,172.0,76.0,Female,1969.0
+929993,8,Extremely happy,,Once a month,184.0,73.0,Male,1997.0
+930023,5,5,,Every day,185.0,67.0,Male,1946.0
+930049,7,9,,Once a month,175.0,64.0,Female,1997.0
+930057,8,Extremely happy,,Several times a week,173.0,58.0,Female,1968.0
+930104,5,9,20.0,Several times a week,181.0,85.0,Male,1946.0
+930112,8,9,,Once a week,194.0,71.0,Male,1963.0
+930154,4,7,6.0,Once a month,182.0,81.0,Male,1988.0
+930170,7,Extremely happy,9.0,Less than once a month,195.0,120.0,Male,1982.0
+930196,7,7,,2-3 times a month,175.0,56.0,Male,1941.0
+930219,8,Extremely happy,,Once a week,179.0,83.0,Male,1962.0
+930227,7,8,0.0,2-3 times a month,170.0,73.0,Female,1973.0
+930285,4,6,,Several times a week,177.0,76.0,Male,1977.0
+930293,You can't be too careful,4,10.0,Every day,160.0,42.0,Female,1945.0
+930316,4,1,10.0,Every day,174.0,75.0,Male,1947.0
+930324,5,7,,Every day,168.0,85.0,Male,1941.0
+930332,8,9,,Once a week,178.0,89.0,Male,1985.0
+930374,9,9,,Several times a week,158.0,61.0,Female,1964.0
+930382,4,6,,Never,175.0,90.0,Female,1983.0
+930413,5,6,,Several times a week,164.0,53.0,Female,1973.0
+930439,7,8,1.0,Once a week,182.0,75.0,Male,1980.0
+930497,7,8,,2-3 times a month,175.0,76.0,Female,1987.0
+930510,8,8,,Every day,190.0,103.0,Male,1960.0
+930528,5,8,,Several times a week,178.0,72.0,Male,1978.0
+930578,7,9,,Once a month,166.0,71.0,Female,1952.0
+930594,7,Extremely happy,,2-3 times a month,176.0,114.0,Female,1965.0
+930625,7,8,,Once a week,161.0,68.0,Female,1986.0
+930633,3,8,,Less than once a month,160.0,60.0,Female,1979.0
+930659,8,7,4.0,Less than once a month,176.0,80.0,Female,1969.0
+930667,5,Extremely happy,,Once a week,170.0,70.0,Male,1932.0
+930714,8,9,,Less than once a month,169.0,66.0,Female,1977.0
+930730,Most people can be trusted,9,,Several times a week,160.0,84.0,Female,1974.0
+930772,6,7,3.0,2-3 times a month,168.0,40.0,Female,1957.0
+930780,7,9,,Once a week,204.0,112.0,Male,1983.0
+930811,8,Extremely happy,,Several times a week,175.0,95.0,Male,1937.0
+930829,7,9,,Once a week,185.0,116.0,Male,1958.0
+930845,7,9,,Once a month,174.0,96.0,Male,1976.0
+930853,5,8,,2-3 times a month,168.0,69.0,Female,1947.0
+930879,7,9,,Several times a week,182.0,82.0,Male,1965.0
+930887,8,8,,2-3 times a month,192.0,84.0,Male,1979.0
+930926,8,Extremely happy,,Several times a week,174.0,83.0,Male,1948.0
+930942,8,Extremely happy,,Several times a week,163.0,55.0,Female,1950.0
+930968,8,8,,Once a week,168.0,60.0,Female,1964.0
+930976,5,Extremely happy,,Less than once a month,163.0,56.0,Female,1995.0
+930984,6,Extremely happy,,Once a week,163.0,69.0,Female,1973.0
+930992,9,9,,Several times a week,177.0,84.0,Male,1975.0
+931003,8,7,,Once a week,168.0,74.0,Male,1980.0
+931011,6,6,,Never,184.0,78.0,Male,1978.0
+931029,5,7,15.0,Less than once a month,190.0,84.0,Male,1959.0
+931037,9,5,10.0,2-3 times a month,180.0,86.0,Male,1961.0
+931087,9,9,,Once a week,165.0,71.0,Female,1989.0
+931095,2,6,,2-3 times a month,167.0,86.0,Female,1949.0
+931118,8,7,4.0,Several times a week,177.0,63.0,Female,1967.0
+931126,8,Extremely happy,,Less than once a month,162.0,81.0,Female,1961.0
+931134,7,6,,Never,159.0,75.0,Female,1936.0
+931142,8,9,,Once a month,168.0,65.0,Female,1939.0
+931150,8,9,,Once a week,187.0,86.0,Male,1985.0
+931192,9,Extremely happy,,Several times a week,162.0,64.0,Female,1953.0
+931207,6,7,,Once a month,180.0,79.0,Male,1989.0
+931249,3,8,,Several times a week,176.0,66.0,Male,1975.0
+931281,5,7,,2-3 times a month,186.0,83.0,Male,1988.0
+931299,7,6,15.0,Once a month,183.0,88.0,Male,1991.0
+931304,8,9,,2-3 times a month,163.0,54.0,Female,1970.0
+931320,7,8,20.0,Once a week,185.0,81.0,Male,1974.0
+931338,8,8,,Several times a week,175.0,53.0,Female,1965.0
+931354,6,8,0.0,Once a week,165.0,54.0,Male,1998.0
+931370,7,7,,Several times a week,162.0,84.0,Female,1939.0
+931396,5,8,,Several times a week,167.0,50.0,Female,1930.0
+931419,7,Extremely happy,4.0,Every day,175.0,72.0,Male,1951.0
+931435,8,9,,Once a week,181.0,70.0,Male,1976.0
+931443,5,Extremely happy,,Several times a week,185.0,66.0,Male,1990.0
+931469,Most people can be trusted,9,,Less than once a month,168.0,75.0,Female,1953.0
+931493,5,6,20.0,Less than once a month,167.0,98.0,Male,1946.0
+931540,8,9,,2-3 times a month,164.0,56.0,Female,1971.0
+931566,Most people can be trusted,9,9.0,Every day,160.0,47.0,Female,1946.0
+931574,7,Extremely happy,,Once a week,166.0,67.0,Male,1938.0
+931605,1,,,,,,Male,1936.0
+931621,8,Extremely happy,,2-3 times a month,162.0,86.0,Female,1938.0
+931639,Most people can be trusted,8,,Once a week,178.0,67.0,Female,1966.0
+931647,7,8,10.0,2-3 times a month,170.0,70.0,Female,1987.0
+931663,8,8,,Less than once a month,184.0,80.0,Male,1965.0
+931689,9,9,15.0,Once a month,186.0,85.0,Male,1972.0
+931697,8,9,,2-3 times a month,150.0,52.0,Female,1946.0
+931728,5,3,1.0,Never,179.0,56.0,Male,1983.0
+931736,9,Extremely happy,,Once a week,175.0,80.0,Female,1965.0
+931744,7,7,10.0,Every day,172.0,57.0,Female,1953.0
+931794,5,Extremely happy,,,,,Male,1990.0
+931817,5,Extremely happy,,Several times a week,167.0,65.0,Female,1945.0
+931825,7,9,,Once a month,173.0,74.0,Male,1994.0
+931833,8,9,,Once a week,184.0,70.0,Female,1993.0
+931841,7,7,10.0,Several times a week,187.0,85.0,Male,1992.0
+931867,5,9,5.0,Once a month,168.0,58.0,Female,1994.0
+931906,5,Extremely happy,0.0,Never,179.0,62.0,Male,1938.0
+931930,5,Extremely happy,,Several times a week,162.0,65.0,Female,1949.0
+931948,7,8,,Several times a week,176.0,72.0,Male,1949.0
+931964,8,Extremely happy,,Less than once a month,165.0,60.0,Female,1984.0
+932025,1,8,,Several times a week,170.0,80.0,Female,1944.0
+932033,5,9,,2-3 times a month,157.0,78.0,Female,1968.0
+932041,7,9,,2-3 times a month,179.0,84.0,Male,1954.0
+932059,4,5,7.0,2-3 times a month,160.0,61.0,Female,1983.0
+932067,5,6,,Never,188.0,137.0,Male,1966.0
+932083,7,Extremely happy,,Every day,160.0,44.0,Female,1934.0
+932091,6,9,,Several times a week,178.0,82.0,Male,1985.0
+932106,8,9,,Less than once a month,170.0,,Female,1975.0
+932130,2,9,,Several times a week,178.0,77.0,Male,1971.0
+932148,8,9,,Several times a week,167.0,51.0,Female,1944.0
+932156,3,2,,Never,173.0,74.0,Female,1969.0
+932180,8,7,,Once a month,187.0,70.0,Male,1989.0
+932229,8,Extremely happy,20.0,Less than once a month,187.0,75.0,Male,1993.0
+932237,8,8,,Several times a week,176.0,82.0,Male,1946.0
+932245,9,8,,Every day,174.0,76.0,Male,1956.0
+932253,8,7,,Several times a week,170.0,57.0,Female,1971.0
+932261,7,Extremely happy,,2-3 times a month,180.0,85.0,Male,1996.0
+932287,9,9,,Less than once a month,167.0,48.0,Female,1993.0
+932318,You can't be too careful,9,,2-3 times a month,180.0,77.0,Male,1965.0
+932368,9,9,,Several times a week,160.0,75.0,Female,1972.0
+932407,3,9,,2-3 times a month,184.0,66.0,Male,1998.0
+932481,5,8,12.0,Several times a week,180.0,75.0,Male,1985.0
+932499,5,Extremely happy,,2-3 times a month,166.0,108.0,Female,1953.0
+932504,8,8,0.0,2-3 times a month,172.0,67.0,Male,1976.0
+932512,8,7,,2-3 times a month,172.0,75.0,Female,1958.0
+932520,5,8,,Every day,160.0,72.0,Female,1957.0
+932538,7,9,,Once a week,175.0,69.0,Female,1949.0
+932546,7,8,10.0,Several times a week,186.0,66.0,Male,1955.0
+932562,8,Extremely happy,,Several times a week,167.0,78.0,Female,1955.0
+932570,8,Extremely happy,,Several times a week,160.0,56.0,Female,1949.0
+932588,4,9,,Once a month,179.0,78.0,Male,1989.0
+932596,9,Extremely happy,,Every day,158.0,48.0,Female,1960.0
+932601,7,8,20.0,Once a week,183.0,86.0,Male,1948.0
+932643,8,Extremely happy,20.0,Less than once a month,177.0,80.0,Male,1991.0
+932651,1,8,,2-3 times a month,187.0,79.0,Male,1997.0
+932669,8,9,,Several times a week,182.0,85.0,Female,1986.0
+932677,Most people can be trusted,9,,Never,185.0,80.0,Male,1953.0
+932685,3,3,,,165.0,55.0,Female,1925.0
+932708,9,9,,Several times a week,178.0,92.0,Male,1951.0
+932716,3,8,,Several times a week,166.0,71.0,Female,1940.0
+932724,5,9,,Once a week,167.0,66.0,Female,1951.0
+932732,7,8,,2-3 times a month,174.0,88.0,Female,1968.0
+932758,9,8,,Once a week,165.0,51.0,Female,1926.0
+932766,8,3,2.0,Once a month,188.0,70.0,Male,1987.0
+932774,8,7,,Several times a week,155.0,77.0,Female,1960.0
+932855,3,9,,Less than once a month,160.0,50.0,Female,1999.0
+932871,2,5,2.0,Several times a week,175.0,68.0,Male,1942.0
+932889,9,8,,2-3 times a month,175.0,,Female,1968.0
+932897,You can't be too careful,7,10.0,Several times a week,187.0,110.0,Male,1993.0
+932902,8,9,,Once a week,173.0,63.0,Male,1931.0
+932910,8,8,,Several times a week,180.0,66.0,Female,1956.0
+932928,6,8,,Every day,185.0,94.0,Male,1950.0
+932978,5,7,,Less than once a month,163.0,62.0,Female,1971.0
+933005,7,Extremely happy,,Once a week,167.0,75.0,Female,1956.0
+933013,8,8,,Less than once a month,191.0,97.0,Male,1972.0
+933021,9,8,,Once a week,160.0,57.0,Female,1948.0
+933039,8,8,,Once a month,172.0,72.0,Male,1965.0
+933071,8,Extremely happy,,Once a month,200.0,120.0,Male,1980.0
+933097,8,8,,Once a week,172.0,77.0,Male,1972.0
+933110,3,9,20.0,2-3 times a month,193.0,94.0,Male,1988.0
+933128,8,8,20.0,Once a week,174.0,71.0,Male,1949.0
+933144,8,9,,2-3 times a month,190.0,72.0,Male,1993.0
+933160,8,8,,Every day,184.0,86.0,Male,1960.0
+933178,9,7,20.0,Several times a week,187.0,93.0,Male,1951.0
+933186,5,8,,Never,162.0,58.0,Female,1968.0
+933209,9,Extremely happy,,Every day,182.0,75.0,Male,1992.0
+933233,8,9,,Once a week,182.0,70.0,Male,1994.0
+933259,9,8,,Once a week,172.0,75.0,Male,1955.0
+933275,8,8,,2-3 times a month,171.0,72.0,Female,1938.0
+933291,Most people can be trusted,Extremely happy,,Never,161.0,53.0,Male,1953.0
+933322,8,7,,Less than once a month,180.0,74.0,Male,1965.0
+933348,7,9,,Once a week,173.0,80.0,Male,1995.0
+933372,7,9,,Once a week,178.0,88.0,Male,1971.0
+933398,7,8,15.0,Never,169.0,70.0,Male,1985.0
+933403,8,Extremely happy,10.0,2-3 times a month,158.0,52.0,Female,1967.0
+933429,8,9,,2-3 times a month,166.0,65.0,Female,1953.0
+933445,8,7,,Once a week,183.0,85.0,Male,1989.0
+933461,8,8,,Never,161.0,58.0,Female,1944.0
+933487,5,8,,Several times a week,167.0,80.0,Female,1929.0
+933518,5,7,20.0,Once a month,169.0,80.0,Female,1985.0
+933542,You can't be too careful,,,,,,Female,1978.0
+933607,3,9,,Never,174.0,72.0,Female,1958.0
+933623,4,Extremely happy,,2-3 times a month,183.0,77.0,Female,1958.0
+933649,8,8,5.0,Once a week,164.0,57.0,Female,1945.0
+933657,8,6,,Several times a week,173.0,108.0,Female,1969.0
+933673,1,Extremely happy,12.0,Once a week,162.0,48.0,Female,1922.0
+933704,9,9,,Several times a week,167.0,62.0,Female,1959.0
+933712,9,8,,Several times a week,187.0,86.0,Male,1965.0
+933738,8,9,,Several times a week,165.0,66.0,Female,1963.0
+933835,7,9,30.0,Once a week,176.0,85.0,Male,1973.0
+933869,7,8,10.0,Once a month,176.0,65.0,Male,1990.0
+933893,9,8,,Once a week,182.0,70.0,Male,1990.0
+933908,3,8,,Several times a week,184.0,108.0,Male,1961.0
+933916,8,8,20.0,Every day,165.0,57.0,Male,1965.0
+933924,Most people can be trusted,9,10.0,Less than once a month,174.0,80.0,Female,1974.0
+933940,8,9,,2-3 times a month,185.0,75.0,Male,1945.0
+933974,4,8,,Less than once a month,168.0,81.0,Female,1998.0
+933990,9,9,,Less than once a month,155.0,77.5,Female,1942.0
+934001,8,Extremely happy,,2-3 times a month,184.0,82.0,Male,1979.0
+934035,8,9,,Every day,180.0,89.0,Male,1941.0
+934069,8,8,,Several times a week,157.0,92.0,Female,1987.0
+934077,3,8,,Less than once a month,173.0,72.0,Female,1962.0
+934093,4,8,10.0,Never,162.0,60.0,Female,1996.0
+934108,6,6,,Once a week,180.0,81.0,Male,1971.0
+934124,8,9,,Once a month,160.0,70.0,Female,1947.0
+934158,6,8,12.0,2-3 times a month,187.0,86.0,Male,1966.0
+934190,7,8,,Less than once a month,169.0,75.0,Female,1990.0
+934247,9,Extremely happy,20.0,Never,162.0,90.0,Female,1954.0
+934255,8,7,,Once a week,170.0,80.0,Male,1931.0
+934263,8,9,,Every day,181.0,96.0,Male,1967.0
+934289,9,Extremely happy,,Every day,178.0,61.0,Female,1948.0
+934302,8,7,,Less than once a month,180.0,85.0,Female,1977.0
+934344,You can't be too careful,Extremely happy,20.0,Every day,180.0,80.0,Male,1960.0
+934352,9,9,,2-3 times a month,182.0,70.0,Male,1985.0
+934360,2,5,,Less than once a month,160.0,75.0,Female,1930.0
+934386,6,9,7.0,Every day,165.0,59.0,Female,1964.0
+934433,8,8,4.0,Several times a week,170.0,76.0,Male,1953.0
+934467,8,8,,2-3 times a month,179.0,72.0,Female,1973.0
+934475,8,8,,Several times a week,178.0,84.0,Male,1985.0
+934483,8,7,,Once a month,160.0,57.0,Female,1940.0
+934491,9,8,,Several times a week,160.0,60.0,Female,1967.0
+934522,8,9,,Every day,182.0,98.0,Male,1944.0
+934548,9,9,,2-3 times a month,168.0,88.2,Female,1971.0
+934556,6,8,1.0,Once a month,167.0,63.0,Male,1990.0
+934564,5,8,10.0,Never,164.0,52.0,Male,1962.0
+934611,8,Extremely happy,4.0,Several times a week,166.0,88.0,Male,1970.0
+934629,4,Extremely happy,,2-3 times a month,178.0,94.0,Male,1968.0
+934637,8,Extremely happy,,Every day,182.0,77.0,Male,1944.0
+934645,8,6,8.0,Once a month,169.0,65.0,Female,1948.0
+934653,8,7,,Once a month,163.0,57.0,Female,1977.0
+934661,5,9,,Several times a week,183.0,83.0,Male,1985.0
+934695,7,9,,Once a week,162.0,62.0,Female,1919.0
+934700,5,Extremely happy,,Several times a week,182.0,66.0,Male,1945.0
+934726,4,Extremely happy,,Never,160.0,77.0,Female,1947.0
+934750,5,9,,Less than once a month,170.0,69.0,Male,1942.0
+934784,5,8,5.0,Every day,174.0,90.0,Male,1985.0
+934807,7,6,,Several times a week,188.0,112.0,Male,1975.0
+934831,7,Extremely happy,,Several times a week,177.0,85.0,Male,1951.0
+934865,1,7,,Never,168.0,56.0,Female,1986.0
+934873,8,7,,Never,170.0,75.0,Male,1973.0
+934881,Most people can be trusted,9,,Several times a week,166.0,76.0,Female,1951.0
+934904,9,Extremely happy,,Every day,165.0,77.0,Male,1923.0
+934912,5,8,0.0,2-3 times a month,180.0,88.0,Male,1963.0
+934938,8,9,,Several times a week,166.0,75.0,Female,1964.0
+934954,Most people can be trusted,7,,Several times a week,170.0,68.0,Female,1965.0
+934962,6,7,,2-3 times a month,169.0,58.0,Female,1976.0
+934970,8,9,15.0,Several times a week,176.0,77.0,Female,1954.0
+934988,7,8,5.0,Never,176.0,68.0,Female,1969.0
+934996,8,Extremely happy,,2-3 times a month,153.0,55.0,Male,1993.0
+935007,9,8,15.0,2-3 times a month,180.0,78.0,Male,1953.0
+935057,8,8,20.0,Less than once a month,173.0,73.0,Male,1969.0
+935099,8,8,,Every day,164.0,68.0,Female,1926.0
+935104,5,Extremely happy,,Every day,172.0,84.0,Female,1960.0
+935112,3,6,,Several times a week,178.0,81.0,Male,1958.0
+935138,3,8,,Several times a week,176.0,80.0,Male,1956.0
+935170,3,Extremely happy,30.0,Never,189.0,87.0,Male,1976.0
+935235,5,9,,Less than once a month,164.0,67.0,Female,1981.0
+935251,6,7,,Once a week,190.0,93.0,Male,1991.0
+935269,3,6,8.0,Every day,164.0,52.0,Female,1936.0
+935285,8,Extremely happy,,Every day,180.0,70.0,Male,1923.0
+935316,7,Extremely happy,,Several times a week,172.0,63.0,Male,1978.0
+935332,8,8,,Once a month,175.0,61.0,Female,1992.0
+935340,7,9,,Once a week,193.0,72.0,Male,1997.0
+935382,5,8,15.0,Never,160.0,63.0,Female,1955.0
+935405,9,9,,2-3 times a month,163.0,66.0,Female,1938.0
+935439,8,9,,Once a month,159.0,80.0,Female,1923.0
+935463,4,9,,Less than once a month,165.0,,Female,1985.0
+935489,9,6,,Several times a week,173.0,70.0,Male,1988.0
+935502,9,8,20.0,Several times a week,179.0,82.0,Male,1971.0
+935536,7,9,,Once a month,182.0,92.0,Male,1976.0
+935560,5,8,,Never,173.0,90.0,Female,1981.0
+935586,4,4,10.0,2-3 times a month,175.0,63.0,Male,1961.0
+935594,4,8,,2-3 times a month,187.0,79.0,Male,1997.0
+935609,8,8,,Less than once a month,170.0,66.0,Male,1978.0
+935633,8,9,,Several times a week,163.0,63.0,Female,1962.0
+935641,8,9,,Several times a week,186.0,88.0,Male,1958.0
+935659,Most people can be trusted,9,,Never,165.0,80.0,Female,1979.0
+935667,9,7,20.0,Once a week,184.0,80.0,Male,1966.0
+935706,8,9,,Once a week,170.0,82.5,Male,1965.0
+935714,7,8,,Once a month,180.0,60.0,Male,1997.0
+935764,5,8,,Less than once a month,156.0,54.0,Female,1980.0
+935780,5,9,,Once a week,169.0,70.0,Female,1975.0
+935811,5,9,8.0,2-3 times a month,174.0,69.0,Female,1974.0
+935829,8,9,,2-3 times a month,175.0,60.0,Female,1980.0
+935845,7,Extremely happy,,Less than once a month,167.0,92.0,Female,1980.0
+935853,8,8,,2-3 times a month,173.0,95.0,Male,1945.0
+935879,7,8,,Several times a week,173.0,69.0,Male,1984.0
+935887,7,9,1.0,Less than once a month,173.0,68.0,Female,1969.0
+935895,7,9,,Several times a week,168.0,90.0,Female,1969.0
+935934,7,5,2.0,Several times a week,188.0,74.0,Male,1994.0
+935950,8,8,,Once a week,162.0,74.0,Female,1949.0
+935968,9,Extremely happy,,Several times a week,185.0,90.0,Male,1955.0
+935976,7,8,0.0,Never,165.0,67.0,Female,1926.0
+935984,8,7,20.0,Several times a week,183.0,81.0,Male,1972.0
+936003,3,9,,Once a week,175.0,95.0,Male,1947.0
+936011,7,9,,Several times a week,162.0,69.0,Female,1942.0
+936037,8,3,,Never,187.0,84.0,Male,1968.0
+936053,8,9,3.0,Several times a week,183.0,94.0,Male,1979.0
+936079,5,7,,2-3 times a month,172.0,85.0,Female,1962.0
+936087,8,7,,Several times a week,177.0,61.0,Female,1973.0
+936095,7,8,,2-3 times a month,188.0,66.0,Male,1978.0
+936100,8,Extremely happy,,Less than once a month,160.0,62.0,Female,1983.0
+936118,Most people can be trusted,9,,Several times a week,170.0,82.0,Female,1971.0
+936134,7,9,,Less than once a month,160.0,55.0,Female,1998.0
+936150,8,9,,Several times a week,182.0,73.0,Male,1955.0
+936184,9,9,,Several times a week,183.0,83.0,Male,1968.0
+936207,8,8,,Once a month,168.0,63.0,Female,1984.0
+936249,4,3,,Less than once a month,189.0,107.0,Male,1964.0
+936265,7,8,,Less than once a month,179.0,80.0,Male,1965.0
+936273,7,7,,Several times a week,176.0,70.0,Female,1966.0
+936281,7,7,,Several times a week,,,Male,1992.0
+936299,8,9,8.0,Several times a week,172.0,73.0,Female,1965.0
+936312,3,Extremely happy,,Several times a week,162.0,64.0,Female,1951.0
+936320,6,Extremely happy,20.0,Less than once a month,175.0,74.0,Male,1983.0
+936346,6,9,,Once a month,186.0,80.0,Male,1993.0
+936362,8,9,,Every day,174.0,72.0,Male,1945.0
+936370,8,Extremely happy,,Several times a week,167.0,72.0,Female,1950.0
+936396,8,8,10.0,Once a week,168.0,78.0,Female,1963.0
+936427,8,Extremely happy,,2-3 times a month,164.0,61.0,Female,1948.0
+936435,8,Extremely happy,,Never,163.0,75.0,Female,1945.0
+936443,7,8,7.0,Several times a week,173.0,72.0,Female,1991.0
+936485,7,7,,Once a week,184.0,98.0,Male,1963.0
+936516,8,9,,Several times a week,172.0,66.0,Female,1961.0
+936540,6,Extremely happy,,Several times a week,182.0,88.0,Male,1959.0
+936558,8,3,40.0,Every day,180.0,63.0,Male,1977.0
+936566,9,9,,Once a week,164.0,62.0,Female,1975.0
+936574,9,8,,Once a week,162.0,64.0,Female,1965.0
+936590,7,9,25.0,Every day,179.0,85.0,Male,1954.0
+936621,8,9,15.0,Several times a week,163.0,70.0,Female,1968.0
+936655,5,Extremely happy,,Less than once a month,170.0,68.0,Female,1997.0
+936663,7,7,2.0,Once a week,180.0,92.0,Male,1977.0
+936697,8,8,,Several times a week,172.0,80.0,Male,1950.0
+936702,8,9,,Every day,165.0,53.0,Female,1958.0
+936710,9,Extremely happy,,Once a month,172.0,60.0,Female,1954.0
+936728,8,9,,Once a week,183.0,91.0,Male,1969.0
+936736,8,8,,Every day,172.0,63.0,Female,1941.0
+936744,5,Extremely happy,12.0,Several times a week,163.0,58.0,Male,1988.0
+936752,5,9,20.0,Never,168.0,65.0,Female,1960.0
+936760,8,7,,2-3 times a month,168.0,57.0,Female,1989.0
+936778,7,6,15.0,Several times a week,174.0,82.0,Male,1960.0
+936794,5,8,,2-3 times a month,185.0,83.0,Male,1947.0
+936825,7,Extremely happy,,Once a week,179.0,70.0,Male,1999.0
+936859,5,8,,Every day,183.0,106.0,Male,1946.0
+936883,5,8,,2-3 times a month,163.0,64.0,Female,1945.0
+936906,6,8,10.0,Every day,178.0,77.0,Male,1953.0
+936922,8,9,,Several times a week,166.0,61.0,Female,1949.0
+936948,4,Extremely happy,,Less than once a month,186.0,125.0,Male,1982.0
+936956,7,8,,Once a month,179.0,90.0,Male,1941.0
+936964,8,9,0.0,Several times a week,178.0,88.0,Male,1947.0
+936980,7,8,,Once a month,170.0,80.0,Male,1967.0
+936998,7,7,,Never,176.0,70.0,Male,1976.0
+937009,7,9,,Once a week,173.0,96.0,Male,1964.0
+937017,8,9,,Every day,164.0,78.0,Female,1950.0
+937041,2,9,2.0,Once a week,160.0,71.0,Female,1981.0
+937059,4,8,19.0,Never,184.0,64.0,Male,1990.0
+937083,4,9,,Several times a week,185.0,80.0,Male,1972.0
+937106,7,8,17.0,Less than once a month,168.0,68.0,Male,1994.0
+937114,8,8,,Once a month,172.0,61.0,Female,1981.0
+937148,5,8,,Once a week,169.0,120.0,Female,1959.0
+937172,8,9,2.0,Several times a week,168.0,60.0,Female,1982.0
+937180,8,8,,Several times a week,170.0,82.0,Female,1971.0
+937198,4,Extremely happy,10.0,Less than once a month,164.0,60.0,Female,1993.0
+937245,8,9,,2-3 times a month,165.0,65.0,Female,1963.0
+937253,8,9,,Several times a week,173.0,90.0,Female,1950.0
+937261,You can't be too careful,9,,Less than once a month,180.0,75.0,Female,1981.0
+937318,8,9,,Never,164.0,59.0,Female,1959.0
+937342,5,5,4.0,Several times a week,175.0,83.0,Male,1943.0
+937368,4,Extremely happy,,Every day,162.0,104.0,Male,1948.0
+937376,7,9,,Several times a week,178.0,78.0,Male,1945.0
+937384,8,8,,2-3 times a month,183.0,89.0,Male,1975.0
+937392,7,9,,Several times a week,170.0,80.0,Male,1955.0
+937415,8,9,,Once a week,194.0,79.0,Male,1995.0
+937423,8,8,,Less than once a month,180.0,76.0,Female,1964.0
+937431,7,9,,Once a week,183.0,88.0,Male,1955.0
+937449,8,8,,2-3 times a month,182.0,92.0,Male,1974.0
+937465,4,8,20.0,Every day,168.0,64.0,Male,1968.0
+937499,8,9,,Once a week,162.0,,Female,1968.0
+937504,Most people can be trusted,Extremely happy,,Less than once a month,157.0,,Female,1937.0
+937538,6,6,15.0,Once a week,173.0,59.0,Female,1995.0
+937546,8,8,,Several times a week,170.0,75.0,Male,1947.0
+937554,5,Extremely happy,6.0,Once a week,172.0,68.0,Female,1978.0
+937562,7,7,,Once a week,167.0,82.0,Female,1946.0
+937596,7,7,,Once a month,168.0,58.0,Female,1980.0
+937619,7,8,,Several times a week,158.0,58.0,Female,1956.0
+937627,7,9,,Once a month,180.0,85.0,Male,1969.0
+937643,9,8,,Once a month,164.0,70.0,Female,1960.0
+937677,8,Extremely happy,,Every day,175.0,67.0,Male,1925.0
+937716,8,9,8.0,Once a week,170.0,78.0,Female,1943.0
+937758,7,8,,Several times a week,174.0,73.0,Male,1961.0
+937774,7,9,,Once a week,163.0,58.0,Female,1976.0
+937782,8,9,,Several times a week,186.0,96.0,Male,1959.0
+937805,7,8,15.0,Several times a week,167.0,70.0,Female,1959.0
+937813,5,8,,Several times a week,183.0,92.0,Male,1975.0
+937821,3,5,,2-3 times a month,178.0,110.0,Male,1953.0
+937839,Most people can be trusted,Extremely happy,,Once a week,174.0,94.0,Male,1957.0
+937863,8,8,,Several times a week,187.0,66.0,Male,1967.0
+937910,4,7,20.0,Once a week,180.0,80.0,Male,1963.0
+937928,8,9,,Once a week,158.0,59.0,Female,1953.0
+937952,8,8,,Less than once a month,165.0,111.0,Female,1973.0
+937960,8,9,,Once a month,179.0,82.0,Female,1954.0
+938005,9,9,,Once a week,177.0,73.0,Female,1988.0
+938013,6,8,,Never,168.0,70.0,Female,1968.0
+938039,9,7,1.0,Several times a week,187.0,84.0,Male,1973.0
+938047,8,9,,Never,178.0,66.0,Male,1956.0
+938055,8,Extremely happy,,Less than once a month,172.0,72.0,Female,1979.0
+938063,7,8,,Several times a week,180.0,80.0,Male,1944.0
+938071,7,Extremely happy,,Once a week,173.0,85.0,Female,1962.0
+938102,5,Extremely happy,,Once a week,178.0,93.0,Male,1963.0
+938110,8,9,15.0,Never,167.0,52.0,Male,1946.0
+938128,5,8,,Once a week,172.0,81.0,Male,1946.0
+938136,3,9,,Less than once a month,176.0,80.0,Female,1985.0
+938160,7,8,20.0,Every day,178.0,125.0,Male,1960.0
+938178,5,8,12.0,Less than once a month,161.0,106.0,Female,1991.0
+938194,6,Extremely happy,,2-3 times a month,172.0,60.0,Male,1926.0
+938225,8,Extremely happy,,Once a month,168.0,55.0,Female,1999.0
+938241,6,5,20.0,Once a week,168.0,68.0,Female,1961.0
+938259,9,9,,Several times a week,176.0,61.0,Female,1964.0
+938283,7,8,,Once a month,171.0,62.0,Female,1992.0
+938348,Most people can be trusted,7,,Several times a week,168.0,70.0,Female,1973.0
+938356,6,Extremely happy,,Less than once a month,192.0,90.0,Male,1975.0
+938364,7,Extremely happy,,2-3 times a month,185.0,90.0,Male,1985.0
+938372,8,8,8.0,Once a week,170.0,55.0,Female,1953.0
+938380,6,8,,Less than once a month,176.0,55.0,Female,1998.0
+938398,7,9,,Several times a week,190.0,94.0,Male,1968.0
+938411,4,Extremely happy,3.0,Once a month,163.0,65.0,Female,1943.0
+938437,6,8,,Once a month,168.0,50.0,Male,1998.0
+938453,8,Extremely happy,,Once a week,180.0,97.0,Male,1943.0
+938461,8,8,,Less than once a month,189.0,80.0,Male,1973.0
+938479,8,3,,Several times a week,188.0,90.0,Male,1965.0
+938487,5,8,,2-3 times a month,170.0,68.0,Male,1933.0
+938495,8,8,,Several times a week,178.0,99.0,Male,1945.0
+938534,6,Extremely happy,,Less than once a month,190.0,67.0,Male,1998.0
+938542,9,9,,Once a month,173.0,83.0,Male,1976.0
+938550,8,9,,Once a week,178.0,85.0,Female,1979.0
+938607,6,9,,Once a week,190.0,85.0,Male,1990.0
+938615,8,3,,Less than once a month,160.0,63.0,Female,1991.0
+938623,9,9,,Once a week,176.0,70.0,Male,1991.0
+938631,7,8,,2-3 times a month,167.0,62.0,Female,1959.0
+938657,7,9,,Less than once a month,162.0,65.0,Female,1983.0
+938665,4,8,,2-3 times a month,173.0,65.0,Female,1996.0
+938681,8,7,,Once a month,162.0,51.0,Female,1991.0
+938699,8,Extremely happy,,Several times a week,176.0,64.0,Male,1933.0
+938704,Most people can be trusted,8,,Once a month,164.0,92.0,Female,1965.0
+938720,8,9,,Every day,165.0,70.0,Female,1965.0
+938788,4,8,,Several times a week,172.0,82.0,Male,1970.0
+938843,8,7,,Once a month,170.0,64.0,Female,1978.0
+938851,5,8,10.0,2-3 times a month,168.0,52.0,Female,1992.0
+938885,8,7,20.0,Several times a week,172.0,72.0,Male,1953.0
+938908,7,8,,2-3 times a month,180.0,56.0,Male,1999.0
+938916,7,8,,Several times a week,183.0,104.0,Male,1956.0
+938932,7,7,,Once a week,172.0,64.0,Female,1980.0
+938940,7,8,,2-3 times a month,184.0,68.0,Female,1997.0
+938958,9,9,,Once a week,182.0,71.0,Male,1987.0
+938966,8,Extremely happy,,Every day,169.0,70.0,Male,1943.0
+938974,7,7,,Less than once a month,165.0,68.0,Female,1975.0
+939001,8,8,,Once a week,184.0,80.0,Male,1974.0
+939019,5,8,3.0,Once a week,182.0,90.0,Male,1980.0
+939051,8,9,,Once a month,163.0,62.0,Female,1966.0
+939093,5,8,15.0,Once a month,165.0,89.0,Female,1934.0
+939116,7,7,12.0,Once a month,169.0,113.0,Female,1981.0
+939124,3,Extremely happy,,Less than once a month,172.0,51.0,Female,1943.0
+939132,9,9,,Several times a week,170.0,64.0,Female,1960.0
+939140,8,7,,2-3 times a month,186.0,110.0,Male,1989.0
+939174,8,8,,Never,180.0,78.0,Male,1978.0
+939182,8,9,,Less than once a month,191.0,89.0,Male,1965.0
+939190,8,7,,Once a week,168.0,56.0,Female,1934.0
+939239,8,8,10.0,Less than once a month,167.0,61.0,Female,1963.0
+939271,7,7,,Less than once a month,163.0,75.0,Female,1946.0
+939297,7,Extremely happy,,Several times a week,164.0,65.0,Female,1939.0
+939302,8,9,,Every day,160.0,51.0,Female,1914.0
+939344,8,8,,Several times a week,176.0,73.0,Male,1944.0
+939360,2,6,,Once a week,172.0,59.0,Female,1991.0
+939386,9,Extremely happy,,2-3 times a month,184.0,62.0,Male,1992.0
+939433,9,Extremely happy,,Several times a week,187.0,85.0,Male,1948.0
+939441,9,9,20.0,Several times a week,180.0,108.0,Male,1991.0
+939459,8,6,,2-3 times a month,181.0,111.0,Male,1966.0
+939467,5,2,,Less than once a month,184.0,88.0,Male,1945.0
+939483,7,9,,Less than once a month,156.0,63.0,Female,1979.0
+939491,6,8,,Several times a week,181.0,73.0,Male,1998.0
+939506,7,8,20.0,Never,180.0,110.0,Male,1986.0
+939530,7,8,,Several times a week,149.0,56.0,Female,1983.0
+939556,6,8,,Once a week,188.0,126.0,Male,1985.0
+939603,8,9,,2-3 times a month,172.0,,Female,1963.0
+939611,9,Extremely happy,,Several times a week,170.0,71.0,Male,1945.0
+939629,7,7,,Less than once a month,166.0,67.0,Female,1954.0
+939637,9,7,,Once a month,169.0,70.0,Female,1996.0
+939653,8,8,,Several times a week,169.0,60.0,Female,1982.0
+939661,8,8,4.0,Several times a week,168.0,57.0,Female,1962.0
+939700,9,9,,Once a week,179.0,78.0,Male,1973.0
+939718,6,Extremely happy,,Once a month,158.0,67.0,Female,1936.0
+939742,6,7,,Every day,176.0,71.0,Male,1947.0
+939784,9,9,,Once a week,167.0,,Female,1956.0
+939792,You can't be too careful,9,10.0,2-3 times a month,155.0,38.0,Female,1955.0
+939807,7,8,,Once a month,163.0,62.0,Female,1954.0
+939865,7,6,,2-3 times a month,179.0,53.0,Male,1997.0
+939873,5,7,18.0,Less than once a month,172.0,95.0,Male,1989.0
+939881,8,Extremely happy,,2-3 times a month,176.0,69.0,Female,1970.0
+939899,7,9,,Once a week,163.0,60.0,Female,1999.0
+939904,Most people can be trusted,Extremely happy,,Every day,165.0,58.0,Female,1928.0
+939920,Most people can be trusted,9,,2-3 times a month,168.0,60.0,Female,1988.0
+939938,8,9,,Less than once a month,169.0,62.0,Female,1978.0
+939946,6,7,,Once a week,190.0,78.0,Male,1996.0
+939970,7,9,,Several times a week,204.0,113.0,Male,1961.0
+940026,8,7,,Never,165.0,55.0,Female,1999.0
+940034,4,9,,Several times a week,185.0,104.0,Male,1942.0
+940042,8,8,,Several times a week,185.0,108.0,Male,1954.0
+940050,7,Extremely happy,,Less than once a month,170.0,52.0,Female,1999.0
+940076,7,9,,2-3 times a month,170.0,60.0,Female,1998.0
+940084,9,Extremely happy,,Never,171.0,72.0,Female,1980.0
+940107,7,8,4.0,2-3 times a month,180.0,74.0,Male,1995.0
+940149,5,5,,Every day,173.0,73.0,Male,1956.0
+940165,7,8,,Once a week,164.0,68.0,Female,1938.0
+940173,8,Extremely happy,,Once a month,168.0,90.0,Male,1932.0
+940199,8,8,,Once a week,169.0,65.0,Female,1962.0
+940246,7,9,,2-3 times a month,176.0,95.0,Female,1960.0
+940254,6,8,,Once a week,176.0,75.0,Male,1987.0
+940288,8,8,,Once a week,168.0,62.0,Female,1954.0
+940296,7,8,,Once a week,175.0,68.0,Male,1980.0
+940301,7,8,,Once a week,180.0,79.0,Male,1957.0
+940319,5,9,,Once a week,165.0,70.0,Female,1976.0
+940335,2,3,,2-3 times a month,153.0,42.0,Female,1999.0
+940343,8,8,,Several times a week,180.0,87.0,Male,1967.0
+940351,5,4,5.0,Never,163.0,,Female,1979.0
+940369,8,8,,Several times a week,190.0,77.0,Male,1949.0
+940377,8,Extremely happy,,Once a month,181.0,78.0,Male,1984.0
+940385,4,9,,Once a month,176.0,69.0,Female,1993.0
+940416,7,9,6.0,2-3 times a month,195.0,93.0,Male,1994.0
+940424,9,9,,Once a week,170.0,102.0,Female,1936.0
+940440,7,Extremely happy,1.0,2-3 times a month,194.0,112.0,Male,1996.0
+940458,3,7,,Once a week,150.0,70.0,Female,1936.0
+940466,6,8,,Once a week,185.0,78.0,Male,1987.0
+940490,8,9,,2-3 times a month,185.0,90.0,Male,1992.0
+940505,8,9,,Once a week,156.0,58.0,Female,1932.0
+940539,7,9,,Every day,177.0,80.0,Male,1933.0
+940547,9,Extremely happy,0.0,Several times a week,174.0,84.0,Male,1943.0
+940571,8,9,,Never,177.0,67.0,Male,1955.0
+940628,3,6,20.0,Once a week,174.0,98.0,Male,1977.0
+940644,7,8,,Never,164.0,60.0,Female,1964.0
+940652,5,9,10.0,Less than once a month,163.0,68.0,Female,1954.0
+940660,5,9,,2-3 times a month,167.0,85.0,Female,1951.0
+940678,6,8,,Less than once a month,151.0,53.0,Female,1950.0
+940686,6,8,,2-3 times a month,170.0,65.0,Female,1987.0
+940694,8,8,,Several times a week,183.0,95.0,Male,1977.0
+940717,Most people can be trusted,8,,Several times a week,165.0,67.0,Female,1972.0
+940725,8,Extremely happy,,Several times a week,158.0,70.0,Female,1954.0
+940733,8,8,,Once a month,185.0,89.0,Male,1976.0
+940759,5,6,,2-3 times a month,165.0,51.0,Female,1998.0
+940775,7,8,,Every day,168.0,54.0,Female,1947.0
+940783,8,7,,Several times a week,196.0,135.0,Male,1954.0
+940806,7,6,,Less than once a month,170.0,73.0,Female,1973.0
+940822,8,7,,Every day,174.0,73.0,Male,1944.0
+940830,7,9,,Several times a week,170.0,66.0,Female,1947.0
+940848,7,9,,Several times a week,168.0,72.0,Female,1947.0
+940856,Most people can be trusted,Extremely happy,,Once a month,167.0,69.0,Female,1961.0
+940864,4,9,,Once a month,164.0,65.0,Female,1971.0
+940880,8,6,12.0,Once a week,185.0,92.0,Male,1957.0
+940898,5,Extremely happy,,Every day,169.0,83.0,Male,1927.0
+940903,9,Extremely happy,,Once a month,192.0,105.0,Male,1979.0
+940945,6,8,,Once a month,179.0,90.0,Male,1969.0
+940979,8,9,0.0,Several times a week,188.0,123.0,Male,1965.0
+940987,Most people can be trusted,8,,Once a week,172.0,65.0,Female,1955.0
+941014,5,8,,2-3 times a month,182.0,83.0,Male,1961.0
+941030,8,8,,Once a week,185.0,84.0,Male,1974.0
+941103,2,1,10.0,Never,164.0,58.0,Female,1930.0
+941129,3,6,12.0,Several times a week,177.0,72.0,Male,1993.0
+941153,4,6,,Once a week,197.0,62.0,Male,1951.0
+941179,3,3,12.0,Never,165.0,89.0,Female,1952.0
+941195,8,9,,2-3 times a month,161.0,65.0,Male,1992.0
+941200,8,9,,2-3 times a month,185.0,95.0,Male,1985.0
+941226,8,8,,Several times a week,182.0,88.0,Male,1957.0
+941242,8,8,,Several times a week,182.0,89.0,Male,1948.0
+941268,6,9,,Once a week,160.0,72.0,Female,1970.0
+941284,7,4,,Several times a week,175.0,65.0,Female,1952.0
+941307,8,8,,Once a week,184.0,87.0,Male,1992.0
+941323,7,8,,Several times a week,169.0,67.0,Male,1945.0
+941331,9,2,,2-3 times a month,172.0,68.0,Female,1984.0
+941365,7,9,,Never,157.0,121.0,Female,1960.0
+941373,5,Extremely happy,8.0,2-3 times a month,190.0,70.0,Male,1992.0
+941412,5,7,,Less than once a month,176.0,66.0,Female,1990.0
+941420,8,Extremely happy,20.0,Once a week,159.0,53.0,Female,1945.0
+941438,6,7,,Several times a week,177.0,70.0,Male,1958.0
+941470,8,9,1.0,Once a week,165.0,62.0,Female,1955.0
+941501,6,Extremely happy,10.0,Several times a week,176.0,64.0,Male,1937.0
+941519,7,5,,Less than once a month,170.0,115.0,Female,1957.0
+941535,3,9,,Once a week,169.0,52.0,Female,1988.0
+941543,8,9,,Once a week,178.0,75.0,Male,1975.0
+941551,4,3,,Less than once a month,172.0,110.0,Male,1956.0
+941569,9,Extremely happy,,Less than once a month,168.0,60.0,Female,1986.0
+941577,7,8,,2-3 times a month,167.0,83.0,Female,1965.0
+941585,4,9,,Less than once a month,170.0,65.0,Female,1992.0
+941608,7,8,,Once a month,168.0,85.0,Female,1963.0
+941640,8,9,,Once a week,187.0,84.0,Male,1958.0
+941674,7,Extremely happy,,Once a month,178.0,74.0,Male,1937.0
+941721,9,Extremely happy,,Once a week,156.0,58.0,Female,1926.0
+941739,9,9,,Several times a week,184.0,62.0,Female,1984.0
+941747,4,5,20.0,Less than once a month,160.0,60.0,Female,1955.0
+941755,7,9,,Several times a week,167.0,75.0,Male,1954.0
+941763,6,9,,Less than once a month,189.0,86.0,Male,1998.0
+941771,8,7,,Several times a week,162.0,65.0,Female,1956.0
+941797,7,5,,Never,185.0,96.0,Male,1956.0
+941802,7,Extremely happy,,Several times a week,156.0,59.0,Female,1942.0
+941828,7,8,,Every day,175.0,90.0,Male,1945.0
+941844,9,6,,Never,182.0,61.0,Male,1926.0
+941860,7,Extremely happy,,Less than once a month,164.0,57.0,Female,1979.0
+941878,8,8,,Several times a week,183.0,84.0,Male,1985.0
+941886,9,7,,2-3 times a month,168.0,,Female,1968.0
+941894,7,9,,2-3 times a month,183.0,90.0,Male,1977.0
+941909,8,9,,Once a week,171.0,77.0,Female,1950.0
+941917,7,9,,2-3 times a month,178.0,73.0,Female,1961.0
+941959,Most people can be trusted,6,,Every day,184.0,84.0,Male,1979.0
+941975,8,7,,Once a week,178.0,69.0,Female,1961.0
+941983,7,Extremely happy,,Less than once a month,180.0,125.0,Male,1951.0
+941991,9,9,,Less than once a month,165.0,83.0,Female,1970.0
+942010,5,9,,Once a week,180.0,,Female,1952.0
+942036,7,9,,Several times a week,167.0,82.0,Female,1967.0
+942044,7,8,0.0,Several times a week,186.0,71.0,Male,1997.0
+942078,7,8,1.0,Several times a week,182.0,90.0,Male,1975.0
+942086,,9,15.0,Several times a week,176.0,70.0,Female,1962.0
+942094,8,8,,Less than once a month,173.0,83.0,Male,1929.0
+942117,7,7,,Several times a week,175.0,70.0,Female,1975.0
+942141,7,8,15.0,Several times a week,169.0,,Female,1963.0
+942175,2,Extremely unhappy,30.0,Less than once a month,162.0,55.0,Female,1992.0
+942183,5,6,,Once a week,167.0,90.0,Female,1969.0
+942230,5,Extremely happy,,Every day,184.0,87.0,Male,1947.0
+942248,8,8,5.0,Once a month,179.0,66.0,Male,1969.0
+942256,3,8,4.0,Never,163.0,62.0,Female,1946.0
+942264,9,Extremely happy,,2-3 times a month,162.0,68.0,Female,1988.0
+942280,Most people can be trusted,9,,Never,189.0,85.0,Male,1950.0
+942298,Most people can be trusted,Extremely happy,,Several times a week,192.0,91.0,Male,1980.0
+942337,8,7,8.0,Several times a week,178.0,82.0,Female,1959.0
+942361,8,8,,Less than once a month,180.0,115.0,Female,1974.0
+942395,,Extremely happy,,Never,161.0,,Female,1945.0
+942442,9,9,,Several times a week,176.0,71.0,Male,1961.0
+942468,8,8,,Once a week,186.0,83.0,Male,1961.0
+942476,4,7,,Once a week,158.0,60.0,Female,1981.0
+942484,5,9,20.0,Less than once a month,168.0,68.0,Male,1968.0
+942492,3,Extremely happy,,2-3 times a month,164.0,73.0,Female,1970.0
+942515,8,6,12.0,Once a week,180.0,84.0,Male,1958.0
+942531,9,8,,Once a week,178.0,120.0,Male,1959.0
+942557,9,8,6.0,Once a week,178.0,80.0,Female,1958.0
+942565,9,9,,Once a month,173.0,115.0,Female,1984.0
+942599,7,7,,2-3 times a month,174.0,62.0,Female,1957.0
+942604,7,9,,2-3 times a month,175.0,81.0,Male,1969.0
+942620,3,5,40.0,Less than once a month,176.0,58.0,Female,1967.0
+942638,7,5,,Once a week,169.0,57.0,Male,1978.0
+942662,8,7,15.0,2-3 times a month,173.0,73.0,Female,1963.0
+942701,6,5,,2-3 times a month,174.0,106.0,Female,1974.0
+942719,9,9,,Once a week,179.0,68.0,Female,1981.0
+942727,5,5,,Once a week,190.0,124.0,Male,1969.0
+942743,3,8,,2-3 times a month,179.0,98.0,Male,1958.0
+942785,8,9,,Every day,184.0,75.0,Male,1951.0
+942793,7,9,10.0,Once a week,183.0,83.0,Male,1983.0
+942808,5,8,,Once a week,168.0,77.5,Female,1956.0
+942816,4,4,,2-3 times a month,195.0,117.0,Male,1974.0
+942824,8,5,,Every day,182.0,75.0,Male,1925.0
+942840,8,8,13.0,2-3 times a month,170.0,80.0,Female,1965.0
+942866,Most people can be trusted,Extremely happy,,Once a month,180.0,57.0,Female,1967.0
+942874,5,7,,Less than once a month,155.0,45.3,Female,1931.0
+942890,8,Extremely happy,,2-3 times a month,192.0,74.0,Male,1995.0
+942913,7,9,,Once a week,165.0,65.0,Male,1979.0
+942939,8,Extremely happy,,2-3 times a month,185.0,117.0,Male,1962.0
+942947,9,8,,Several times a week,187.0,91.0,Male,1947.0
+942955,8,9,,2-3 times a month,190.0,86.0,Male,1990.0
+942963,1,Extremely happy,,2-3 times a month,179.0,88.0,Male,1952.0
+943008,7,9,,2-3 times a month,164.0,69.0,Female,1940.0
+943016,8,8,10.0,Several times a week,176.0,78.0,Male,1961.0
+943040,8,Extremely happy,,Several times a week,184.0,85.0,Male,1977.0
+943058,9,8,,Several times a week,172.0,85.0,Male,1964.0
+943066,9,9,,Less than once a month,179.0,70.0,Male,1975.0
+943082,9,8,20.0,Every day,183.0,90.0,Male,1965.0
+943090,9,9,8.0,Several times a week,159.0,59.0,Female,1964.0
+943105,8,8,,Once a week,187.0,87.0,Male,1957.0
+943121,8,7,,2-3 times a month,163.0,78.0,Female,1946.0
+943147,8,9,,Less than once a month,189.0,62.0,Male,1996.0
+943155,9,9,,Several times a week,164.0,82.0,Female,1950.0
+943171,8,8,,2-3 times a month,172.0,70.0,Male,1985.0
+943210,6,8,,Several times a week,173.0,90.0,Male,1974.0
+943236,1,Extremely happy,,Once a month,160.0,57.0,Female,1946.0
+943260,5,8,,Never,186.0,112.0,Male,1945.0
+943278,8,8,4.0,Once a month,171.0,58.0,Female,1974.0
+943286,4,7,,Less than once a month,159.0,63.0,Female,1987.0
+943294,5,8,,Several times a week,180.0,82.0,Male,1958.0
+943309,8,9,,Every day,183.0,92.0,Male,1942.0
+943317,9,9,,Once a month,178.0,72.0,Male,1989.0
+943325,4,8,,2-3 times a month,172.0,64.0,Female,1978.0
+943333,8,9,,Less than once a month,164.0,70.0,Female,1987.0
+943341,4,7,7.0,Less than once a month,187.0,84.0,Male,1988.0
+943367,9,9,,2-3 times a month,183.0,75.0,Male,1993.0
+943430,Most people can be trusted,5,,2-3 times a month,168.0,65.0,Female,1973.0
+943448,7,9,,Once a week,187.0,79.0,Male,1994.0
+943464,3,8,,Several times a week,181.0,77.0,Male,1943.0
+943480,5,5,,Several times a week,174.0,94.0,Male,1930.0
+943498,8,8,,2-3 times a month,180.0,95.0,Male,1970.0
+943511,You can't be too careful,3,15.0,Never,183.0,68.0,Male,1992.0
+943529,9,8,,2-3 times a month,180.0,106.0,Male,1926.0
+943545,4,5,,Several times a week,173.0,90.0,Male,1953.0
+943553,8,8,,Once a week,182.0,86.0,Male,1971.0
+943595,5,7,,Several times a week,162.0,54.0,Female,1984.0
+943618,7,9,,Every day,184.0,72.0,Male,1959.0
+943626,5,7,,Once a week,179.0,65.0,Male,1988.0
+943634,7,9,,Several times a week,194.0,88.0,Male,1977.0
+943642,5,7,,Once a week,162.0,70.0,Female,1957.0
+943668,9,9,,Once a week,184.0,92.0,Male,1946.0
+943684,6,9,,Every day,172.0,68.0,Male,1929.0
+943715,5,8,,Once a month,168.0,65.0,Female,1946.0
+943749,5,9,,Never,148.0,54.0,Female,1964.0
+943757,7,8,,Less than once a month,174.0,103.0,Female,1971.0
+943765,7,Extremely happy,,Several times a week,185.0,76.0,Male,1986.0
+943773,8,2,,Several times a week,163.0,69.0,Female,1946.0
+943846,2,,,Several times a week,178.0,76.0,Male,1945.0
+943896,8,9,,Every day,171.0,76.0,Male,1941.0
+943927,9,Extremely happy,,Several times a week,176.0,65.0,Female,1950.0
+943951,8,8,,2-3 times a month,173.0,63.0,Female,1970.0
+943969,8,8,,Every day,169.0,80.0,Male,1940.0
+943985,8,7,,Once a week,173.0,70.0,Male,1975.0
+943993,7,8,,Every day,175.0,66.0,Male,1928.0
+944004,9,9,5.0,Once a week,183.0,105.0,Male,1960.0
+944012,8,9,,Never,160.0,64.0,Female,1974.0
+944020,7,Extremely happy,,2-3 times a month,170.0,99.0,Female,1984.0
+944046,9,7,,Several times a week,193.0,90.0,Male,1963.0
+944062,7,8,18.0,Several times a week,172.0,90.0,Male,1962.0
+944070,6,8,10.0,Several times a week,168.0,110.0,Female,1993.0
+944088,7,9,14.0,Several times a week,178.0,72.0,Male,1976.0
+944101,4,Extremely happy,,2-3 times a month,166.0,72.0,Female,1965.0
+944119,3,5,20.0,2-3 times a month,156.0,50.0,Female,1990.0
+944127,8,8,,Several times a week,164.0,50.0,Female,1952.0
+944135,6,7,,Never,158.0,66.0,Female,1952.0
+944193,7,9,0.0,Once a week,182.0,92.0,Female,1979.0
+944208,7,7,,Several times a week,180.0,80.0,Male,1984.0
+944216,5,Extremely happy,,Once a week,188.0,115.0,Male,1942.0
+944258,9,9,2.0,Every day,170.0,73.0,Male,1940.0
+944266,7,8,,2-3 times a month,170.0,85.0,Female,1976.0
+944313,2,9,,Never,152.0,48.0,Female,1929.0
+944347,8,7,,Less than once a month,166.0,90.0,Female,1965.0
+944355,7,8,,Never,167.0,79.0,Female,1951.0
+944363,8,8,12.0,Once a month,172.0,66.0,Female,1968.0
+944371,3,6,,2-3 times a month,188.0,105.0,Male,1982.0
+944397,4,8,,Never,174.0,,Female,1981.0
+944428,7,8,,Several times a week,178.0,75.0,Male,1964.0
+944436,9,Extremely happy,,Several times a week,180.0,69.0,Male,1947.0
+944444,Most people can be trusted,Extremely happy,,Less than once a month,176.0,91.0,Male,1983.0
+944478,8,8,16.0,Once a week,182.0,93.0,Male,1948.0
+944517,7,9,,Never,180.0,88.0,Male,1978.0
+944525,3,Extremely happy,,Once a month,182.0,66.0,Male,1944.0
+944541,6,9,,Less than once a month,183.0,88.0,Male,1969.0
+944567,7,8,,Several times a week,181.0,68.0,Male,1938.0
+944575,7,Extremely happy,20.0,Once a week,181.0,93.0,Male,1966.0
+944591,8,8,,2-3 times a month,168.0,70.0,Female,1956.0
+944606,6,Extremely happy,,Every day,179.0,80.0,Male,1947.0
+944622,8,8,,Once a week,170.0,89.0,Female,1968.0
+944630,8,8,,Never,181.0,78.0,Male,1944.0
+944648,9,8,,Once a month,174.0,71.0,Male,1933.0
+944664,7,7,6.0,Every day,177.0,82.0,Female,1947.0
+944672,8,9,,Once a week,190.0,85.0,Male,1976.0
+944698,You can't be too careful,Extremely happy,,2-3 times a month,175.0,80.0,Male,1999.0
+944711,8,8,,Once a week,188.0,88.0,Male,1977.0
+944729,6,Extremely happy,,Once a month,163.0,60.0,Female,1980.0
+944753,4,8,,Several times a week,175.0,77.0,Male,1966.0
+944779,5,8,,Several times a week,187.0,103.0,Male,1945.0
+944787,8,7,,Every day,182.0,80.0,Male,1979.0
+944818,8,6,20.0,2-3 times a month,175.0,85.0,Male,1968.0
+944826,3,Extremely happy,10.0,Several times a week,173.0,80.0,Female,1971.0
+944876,7,8,10.0,Several times a week,175.0,74.0,Female,1950.0
+944923,9,Extremely happy,,Less than once a month,170.0,69.0,Female,1992.0
+944931,7,8,4.0,2-3 times a month,171.0,74.0,Male,1990.0
+944949,8,9,,Once a week,186.0,80.0,Male,1976.0
+944999,7,7,,Every day,160.0,56.0,Female,1954.0
+945018,8,8,,Several times a week,186.0,104.0,Male,1957.0
+945026,6,8,,Less than once a month,167.0,61.0,Female,1955.0
+945034,9,8,,Less than once a month,173.0,60.0,Female,1942.0
+945042,6,8,,Once a week,180.0,82.0,Male,1962.0
+945068,5,4,102.0,Several times a week,187.0,80.0,Male,1962.0
+945076,7,8,20.0,Never,164.0,75.0,Female,1949.0
+945084,8,9,,Less than once a month,180.0,80.0,Male,1943.0
+945092,8,8,,2-3 times a month,190.0,87.0,Male,1996.0
+945107,7,Extremely happy,,2-3 times a month,172.0,114.0,Female,1954.0
+945149,8,9,,Once a month,168.0,68.0,Female,1983.0
+945212,5,5,,Never,166.0,92.0,Female,1947.0
+945220,8,9,,Once a week,170.0,75.0,Female,1952.0
+945262,7,Extremely happy,20.0,Every day,162.0,68.0,Female,1952.0
+945296,7,9,,Less than once a month,176.0,92.0,Male,1966.0
+945301,7,8,,Once a week,178.0,66.0,Male,1972.0
+945319,8,7,5.0,Several times a week,160.0,49.0,Female,1991.0
+945369,8,8,,Less than once a month,168.0,75.0,Female,1991.0
+945466,Most people can be trusted,9,,Several times a week,188.0,80.0,Male,1945.0
+945521,9,Extremely happy,,Several times a week,180.0,73.0,Male,1949.0
+945555,9,8,,Less than once a month,169.0,68.0,Female,1996.0
+945563,Most people can be trusted,9,,Every day,162.0,72.0,Female,1950.0
+945571,8,8,,Less than once a month,181.0,117.0,Male,1981.0
+945652,4,8,10.0,Once a week,191.0,80.0,Male,1998.0
+945660,6,9,,Several times a week,177.0,89.0,Male,1949.0
+945686,8,8,,2-3 times a month,162.0,60.5,Female,1934.0
+945733,9,8,,Several times a week,173.0,80.0,Female,1951.0
+945759,7,9,,2-3 times a month,181.0,82.0,Male,1987.0
+945767,Most people can be trusted,9,6.0,Every day,168.0,54.0,Female,1954.0
+945791,3,Extremely happy,,Once a week,172.0,80.0,Male,1935.0
+945806,Most people can be trusted,9,,Several times a week,181.0,79.0,Male,1964.0
+945814,8,8,,2-3 times a month,163.0,57.0,Female,1985.0
+945822,8,8,,Never,170.0,70.0,Male,1939.0
+945830,3,Extremely happy,,Once a month,174.0,79.0,Female,1941.0
+945856,9,Extremely happy,,Once a week,170.0,66.0,Male,1988.0
+945872,7,9,,Once a month,163.0,64.0,Female,1976.0
+945903,2,2,,Less than once a month,158.0,65.0,Female,1967.0
+945937,8,8,,Several times a week,184.0,93.0,Male,1959.0
+945953,7,9,,Once a month,185.0,64.0,Male,1999.0
+945961,5,7,30.0,Several times a week,186.0,83.0,Male,1990.0
+946014,5,7,,2-3 times a month,182.0,70.0,Male,1997.0
+946030,7,8,,Several times a week,182.0,76.0,Male,1983.0
+946064,5,Extremely happy,,Every day,180.0,86.0,Male,1936.0
+946072,8,9,,Several times a week,183.0,110.0,Male,1985.0
+946098,8,8,5.0,Once a week,169.0,66.0,Female,1969.0
+946129,7,8,,Once a month,160.0,75.0,Female,1981.0
+946153,6,7,,Never,159.0,50.0,Female,1933.0
+946161,7,5,,Once a month,174.0,65.0,Male,1993.0
+946195,7,Extremely happy,,2-3 times a month,191.0,95.0,Male,1991.0
+946218,8,8,20.0,Several times a week,185.0,83.0,Male,1972.0
+946250,6,8,7.0,2-3 times a month,187.0,66.0,Male,1997.0
+946268,5,9,10.0,2-3 times a month,180.0,74.0,Male,1966.0
+946276,7,Extremely happy,,2-3 times a month,196.0,96.0,Male,1964.0
+946292,8,9,,Once a month,163.0,66.0,Female,1998.0
+946331,9,8,,2-3 times a month,172.0,68.0,Male,1945.0
+946349,4,7,,Several times a week,170.0,74.0,Female,1977.0
+946373,7,9,,2-3 times a month,159.0,60.0,Female,1971.0
+946381,6,7,,2-3 times a month,167.0,57.0,Female,1998.0
+946404,8,8,,2-3 times a month,190.0,110.0,Male,1959.0
+946412,4,7,,Once a week,189.0,67.0,Male,1985.0
+946446,8,9,,Several times a week,182.0,95.0,Male,1965.0
+946488,8,Extremely happy,,Several times a week,164.0,80.0,Female,1947.0
+946496,1,5,,2-3 times a month,180.0,87.0,Male,1981.0
+946519,5,Extremely happy,,Less than once a month,173.0,70.0,Female,1998.0
+946527,8,,,Every day,177.0,66.0,Female,1932.0
+946535,8,8,,2-3 times a month,164.0,63.0,Female,1971.0
+946569,Most people can be trusted,9,,Several times a week,180.0,69.0,Female,1963.0
+946585,8,Extremely happy,,Several times a week,168.0,58.0,Female,1963.0
+946616,8,8,,Less than once a month,167.0,114.0,Female,1964.0
+946624,8,8,,Several times a week,178.0,76.0,Male,1970.0
+946658,7,6,,Several times a week,182.0,76.0,Male,1990.0
+946666,7,9,6.0,Less than once a month,160.0,65.0,Female,1982.0
+946682,8,8,,Once a month,188.0,95.0,Male,1974.0
+946690,5,8,20.0,Several times a week,179.0,82.0,Male,1963.0
+946721,7,9,,Once a week,165.0,61.0,Female,1985.0
+946747,3,8,,Several times a week,168.0,76.0,Male,1938.0
+946755,Most people can be trusted,9,,Once a week,180.0,115.0,Male,1977.0
+946797,9,8,,Several times a week,186.0,75.0,Male,1991.0
+946810,5,8,,Once a week,180.0,78.0,Male,1989.0
+946828,5,9,,Once a week,165.0,68.0,Male,1933.0
+946836,8,8,,Several times a week,171.0,95.0,Female,1952.0
+946852,8,Extremely happy,,Several times a week,175.0,85.0,Female,1967.0
+946886,4,6,,Once a month,188.0,95.0,Male,1993.0
+946917,8,9,,2-3 times a month,185.0,97.0,Male,1983.0
+946925,8,8,,Once a week,165.0,73.0,Female,1955.0
+946933,6,7,20.0,Several times a week,170.0,85.0,Female,1956.0
+946959,9,9,,Less than once a month,185.0,97.0,Male,1973.0
+946967,You can't be too careful,8,,Every day,160.0,45.0,Female,1941.0
+946975,8,9,,Once a week,178.0,76.0,Male,1963.0
+947010,8,7,,Several times a week,174.0,80.0,Male,1955.0
+947028,7,8,,Once a week,175.0,103.0,Male,1985.0
+947060,5,9,20.0,Several times a week,190.0,96.0,Male,1984.0
+947078,7,9,,Several times a week,166.0,58.0,Female,1964.0
+947086,8,7,,Once a week,186.0,84.0,Male,1964.0
+947117,7,9,,2-3 times a month,170.0,71.0,Female,1963.0
+947141,8,9,,Once a month,165.0,74.0,Female,1973.0
+947159,6,7,,Less than once a month,171.0,67.0,Male,1994.0
+947167,8,Extremely happy,,Never,173.0,78.0,Female,1957.0
+947214,Most people can be trusted,9,,Less than once a month,178.0,57.0,Female,1986.0
+947230,7,8,,2-3 times a month,162.0,59.0,Female,1968.0
+947248,Most people can be trusted,Extremely happy,,2-3 times a month,169.0,61.0,Female,1977.0
+947256,9,6,,Several times a week,170.0,73.0,Female,1948.0
+947272,5,4,,Several times a week,182.0,54.0,Male,1990.0
+947280,3,6,,2-3 times a month,183.0,82.0,Male,1981.0
+947303,7,9,,Less than once a month,173.0,59.0,Female,1999.0
+947329,8,7,,Once a week,177.0,65.0,Male,1952.0
+947337,Most people can be trusted,8,,2-3 times a month,160.0,59.0,Female,1945.0
+947345,8,9,10.0,Once a week,174.0,104.0,Male,1984.0
+947379,8,9,,Once a week,176.0,70.0,Male,1979.0
+947395,5,8,,Once a week,183.0,87.0,Male,1949.0
+947400,7,9,,2-3 times a month,174.0,65.0,Male,1997.0
+947450,9,8,,2-3 times a month,160.0,57.0,Female,1981.0
+947476,Most people can be trusted,9,,Less than once a month,184.0,87.0,Female,1939.0
+947484,3,Extremely happy,,Once a month,160.0,78.0,Female,1964.0
+947492,8,9,,Once a week,165.0,61.0,Female,1954.0
+947507,3,Extremely happy,,Every day,172.0,80.0,Male,1935.0
+947515,Most people can be trusted,9,5.0,Several times a week,172.0,62.0,Female,1958.0
+947523,Most people can be trusted,Extremely happy,,Once a week,170.0,72.0,Male,1927.0
+947557,8,8,,Less than once a month,159.0,108.0,Female,1980.0
+947565,9,8,,Several times a week,175.0,75.0,Male,1955.0
+947612,7,8,3.0,Once a week,165.0,58.0,Female,1940.0
+947638,Most people can be trusted,9,,Several times a week,168.0,63.0,Female,1936.0
+947646,Most people can be trusted,9,,Less than once a month,173.0,69.0,Female,1973.0
+947662,9,8,,2-3 times a month,182.0,65.0,Male,1968.0
+947719,8,7,,Once a week,180.0,101.0,Male,1951.0
+947735,7,8,,2-3 times a month,175.0,77.0,Male,1972.0
+947751,6,8,,Every day,176.0,66.0,Male,1954.0
+947769,8,9,,Several times a week,176.0,110.0,Female,1959.0
+947793,5,7,,Once a month,179.0,58.0,Male,1999.0
+947808,9,7,20.0,Once a week,169.0,57.0,Female,1957.0
+947816,5,7,,Once a week,175.0,71.0,Female,1948.0
+947840,9,9,,Once a week,185.0,86.0,Male,1995.0
+947858,8,9,,Several times a week,181.0,71.0,Male,1992.0
+947874,9,9,,Once a week,184.0,89.0,Male,1985.0
+947882,7,7,,2-3 times a month,164.0,68.0,Female,1973.0
+947890,7,Extremely happy,,Once a month,167.0,56.0,Female,1996.0
+947905,4,9,,Several times a week,177.0,95.0,Male,1976.0
+947921,7,8,,Less than once a month,169.0,63.0,Female,1980.0
+947947,7,8,,Once a week,161.0,69.0,Female,1943.0
+947971,Most people can be trusted,7,3.0,Once a week,165.0,80.0,Male,1932.0
+947989,7,8,15.0,Once a week,193.0,90.3,Male,1959.0
+947997,9,Extremely happy,4.0,2-3 times a month,168.0,56.0,Female,1997.0
+948016,7,7,8.0,Less than once a month,165.0,53.0,Female,1965.0
+948074,5,8,,Once a week,165.0,68.0,Female,1995.0
+948082,5,8,3.0,Once a week,180.0,89.0,Male,1947.0
+948113,Most people can be trusted,Extremely happy,3.0,Once a week,167.0,79.0,Female,1983.0
+948121,8,9,,Several times a week,178.0,93.0,Male,1941.0
+948189,7,Extremely happy,5.0,2-3 times a month,176.0,88.0,Male,1990.0
+948197,9,8,,Several times a week,182.0,86.0,Male,1961.0
+948202,9,Extremely happy,,Once a week,168.0,62.0,Female,1955.0
+948244,7,5,,Once a week,167.0,59.0,Female,1998.0
+948286,7,9,,2-3 times a month,157.0,55.0,Female,1993.0
+948294,Most people can be trusted,Extremely happy,,Less than once a month,182.0,117.0,Female,1968.0
+948333,8,9,,Less than once a month,162.0,73.0,Male,1934.0
+948341,7,8,,Never,177.0,68.0,Male,1963.0
+948359,8,Extremely happy,,Once a week,177.0,75.0,Male,1928.0
+948375,6,9,,Once a week,169.0,91.0,Male,1951.0
+948383,8,Extremely happy,,Once a week,173.0,72.0,Female,1958.0
+948391,7,7,,Less than once a month,176.0,63.0,Female,1995.0
+948406,7,8,,2-3 times a month,176.0,58.0,Male,1949.0
+948414,7,8,,Less than once a month,168.0,,Female,1974.0
+948422,3,7,,Less than once a month,166.0,65.0,Female,1991.0
+948448,8,7,,Several times a week,185.0,95.0,Male,1957.0
+948456,8,9,,Less than once a month,170.0,80.0,Female,1975.0
+948472,8,8,,Once a month,171.0,56.0,Female,1977.0
+948480,8,Extremely happy,,2-3 times a month,168.0,80.0,Male,1966.0
+948529,8,9,,2-3 times a month,181.0,78.0,Female,1972.0
+948545,7,7,,2-3 times a month,168.0,64.0,Female,1953.0
+948595,8,Extremely happy,,Several times a week,178.0,92.0,Male,1947.0
+948600,3,7,,2-3 times a month,185.0,90.0,Male,1965.0
+948618,4,8,,Never,166.0,73.0,Female,1997.0
+948650,8,Extremely happy,,Every day,182.0,83.3,Male,1949.0
+948676,7,8,,Once a month,174.0,82.0,Female,1965.0
+948715,9,6,,Once a week,198.0,84.0,Male,1993.0
+948731,8,8,,2-3 times a month,175.0,60.0,Female,1974.0
+948757,7,8,,Once a week,188.0,80.0,Male,1965.0
+948765,5,8,,Less than once a month,153.0,57.0,Female,1950.0
+948781,8,2,,Never,150.0,57.0,Female,1959.0
+948838,8,7,,Several times a week,185.0,83.0,Male,1972.0
+948846,5,7,,2-3 times a month,159.0,60.0,Female,1997.0
+948854,2,6,15.0,2-3 times a month,175.0,64.0,Male,1964.0
+948896,9,8,,Several times a week,168.0,70.0,Female,1959.0
+948901,7,Extremely happy,40.0,Every day,180.0,83.0,Male,1970.0
+948919,8,9,,Never,160.0,72.0,Female,1965.0
+948927,8,8,,Once a week,180.0,74.0,Male,1960.0
+948943,4,8,,Several times a week,172.0,71.0,Female,1938.0
+948993,8,7,,Once a week,164.0,58.0,Female,1956.0
+949004,6,9,10.0,Several times a week,180.0,65.0,Male,1963.0
+949012,8,Extremely happy,,Several times a week,186.0,93.0,Male,1939.0
+949020,8,6,,Once a week,178.0,66.0,Male,1962.0
+949046,7,8,,2-3 times a month,183.0,75.0,Male,1981.0
+949054,9,Extremely happy,,2-3 times a month,166.0,71.0,Female,1939.0
+949070,5,9,,2-3 times a month,167.0,95.0,Female,1983.0
+949096,4,5,,Less than once a month,186.0,73.0,Male,1979.0
+949119,9,9,,Once a week,165.0,65.0,Female,1954.0
+949135,8,5,,Several times a week,167.0,55.0,Female,1978.0
+949143,8,8,,2-3 times a month,172.0,62.0,Female,1972.0
+949185,7,9,,Every day,183.0,93.0,Male,1946.0
+949193,8,9,,Several times a week,186.0,82.0,Male,1993.0
+949208,7,9,,Less than once a month,178.0,73.0,Male,1994.0
+949216,7,8,,Once a month,180.0,69.0,Male,1994.0
+949224,7,Extremely happy,,2-3 times a month,161.0,86.0,Female,1941.0
+949258,8,9,8.0,Every day,172.0,76.0,Male,1943.0
+949274,8,7,,Several times a week,168.0,72.0,Female,1974.0
+949305,9,Extremely happy,,Less than once a month,160.0,80.0,Female,1939.0
+949313,Most people can be trusted,Extremely happy,,Several times a week,178.0,74.0,Male,1988.0
+949321,8,Extremely happy,1.0,2-3 times a month,176.0,77.0,Female,1972.0
+949339,7,Extremely happy,,Every day,181.0,77.0,Male,1930.0
+949363,8,9,5.0,Once a week,165.0,63.0,Female,1952.0
+949389,8,Extremely happy,,2-3 times a month,164.0,60.0,Female,1927.0
+949397,7,8,,2-3 times a month,176.0,67.0,Male,1942.0
+949436,8,9,10.0,2-3 times a month,160.0,83.0,Female,1967.0
+949444,9,8,,Once a month,165.0,58.0,Female,1965.0
+949486,8,8,,Once a week,164.0,75.0,Female,1962.0
+949494,7,7,,Never,161.0,82.0,Female,1994.0
+949509,9,9,,Several times a week,192.0,76.0,Male,1989.0
+949517,7,8,,Less than once a month,165.0,90.0,Female,1947.0
+949541,8,8,,Less than once a month,172.0,110.0,Female,1958.0
+949583,7,4,,Once a week,165.0,,Female,1958.0
+949591,9,9,,Once a week,180.0,94.0,Male,1971.0
+949606,4,Extremely happy,,Less than once a month,170.0,130.0,Female,1993.0
+949614,8,8,,Several times a week,186.0,90.0,Male,1934.0
+949622,8,9,,2-3 times a month,167.0,95.0,Female,1955.0
+949630,7,8,10.0,Several times a week,168.0,55.0,Female,1995.0
+949648,6,9,,Several times a week,195.0,110.0,Male,1980.0
+949680,8,9,,Every day,174.0,81.0,Male,1936.0
+949703,7,9,,Once a week,186.0,89.0,Male,1969.0
+949711,5,8,,Once a month,165.0,88.0,Male,1927.0
+949745,6,8,,Several times a week,190.0,83.0,Male,1957.0
+949779,7,Extremely happy,,Several times a week,178.0,84.2,Male,1933.0
+949787,9,8,20.0,Once a week,176.0,58.0,Female,1967.0
+949800,8,9,5.0,Once a week,173.0,78.0,Female,1958.0
+949826,Most people can be trusted,9,,2-3 times a month,184.0,82.0,Male,1962.0
+949868,8,9,15.0,2-3 times a month,174.0,,Female,1971.0
+949876,7,Extremely happy,,2-3 times a month,194.0,,Male,1995.0
+949892,6,3,20.0,Every day,174.0,92.0,Male,1964.0
+949907,7,8,,Several times a week,180.0,80.0,Male,1942.0
+949915,9,9,,Several times a week,176.0,86.0,Male,1944.0
+949923,4,7,,2-3 times a month,172.0,67.0,Female,1975.0
+949931,7,Extremely happy,,Once a week,160.0,72.0,Female,1924.0
+949981,7,Extremely happy,,Several times a week,170.0,80.0,Male,1946.0
+949999,8,4,,Several times a week,200.0,88.0,Male,1994.0
+950037,5,9,,Once a week,172.0,110.0,Male,1944.0
+950053,7,Extremely happy,,Several times a week,175.0,70.0,Female,1959.0
+950061,7,Extremely happy,1.0,Once a week,183.0,70.0,Male,1995.0
+950079,6,9,,Never,172.0,76.0,Male,1973.0
+950095,8,9,,Every day,180.0,85.0,Male,1947.0
+950118,8,8,,Several times a week,165.0,,Female,1965.0
+950134,9,9,,Less than once a month,170.0,52.0,Female,1960.0
+950150,6,8,,Several times a week,186.0,80.0,Male,1956.0
+950184,8,8,20.0,2-3 times a month,167.0,109.0,Female,1960.0
+950192,9,8,,Several times a week,185.0,92.0,Male,1990.0
+950249,8,7,7.0,Several times a week,190.0,89.0,Male,1956.0
+950273,2,7,,Less than once a month,174.0,60.0,Female,1980.0
+950304,Most people can be trusted,Extremely happy,,Several times a week,172.0,50.0,Female,1940.0
+950320,7,Extremely happy,,Once a week,185.0,96.0,Male,1960.0
+950346,7,9,,Several times a week,156.0,60.0,Female,1955.0
+950354,8,9,,Every day,170.0,66.0,Male,1945.0
+950362,4,9,,Once a month,176.0,68.0,Male,1979.0
+950427,5,7,23.0,Every day,192.0,117.0,Male,1964.0
+950443,5,9,,Once a week,195.0,87.0,Male,1995.0
+950469,7,8,,Several times a week,164.0,84.0,Female,1945.0
+950477,8,8,,2-3 times a month,180.0,90.0,Male,1942.0
+950493,5,9,,Once a week,183.0,86.0,Male,1955.0
+950508,7,8,,Once a week,173.0,75.0,Male,1966.0
+950516,3,Extremely happy,,2-3 times a month,168.0,75.0,Female,1942.0
