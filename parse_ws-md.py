@@ -10,7 +10,7 @@ from os import listdir
 from os.path import isfile, join
 
 # Setting paths
-notebooks_path = "./notebooks/"
+notebooks_path = "./notebooks/markdown/"
 content_path = "./content/"
 filename_in = [f for f in listdir(notebooks_path) if isfile(join(notebooks_path, f))][0]
 
