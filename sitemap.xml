@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/hvad/at/</loc>
+  </url>
+  
+  <url>
+    <loc>/hvad/</loc>
+  </url>
+  
+  <url>
+    <loc>/hvad/interager/</loc>
+  </url>
+  
+  <url>
     <loc>/</loc>
     <priority>0</priority>
   </url>
