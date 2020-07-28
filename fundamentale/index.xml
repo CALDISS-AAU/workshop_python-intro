@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Introduction to Python for Social Science</title>
-    <link>/</link>
-    <description>Recent content on Introduction to Python for Social Science</description>
+    <title>Fundamentale koncepter i Python on Introduction to Python for Social Science</title>
+    <link>/fundamentale/</link>
+    <description>Recent content in Fundamentale koncepter i Python on Introduction to Python for Social Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/fundamentale/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>At arbejde med et programmeringssprog</title>
-      <link>/hvad/at/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hvad/at/</guid>
-      <description>Python er et programmeringssprog. At arbejde med Python kræver derfor, at man &amp;ldquo;taler&amp;rdquo; det rette sprog, når man gerne vil have Python til at gøre noget.
-I bruger uden tvivl forskellige programmer, apps og softwareløsninger i jeres hverdag til forskellige ting. Disse er alle opbygget af kode skrevet i et programmeringssprog, men de leveres altid med en eller anden form for &amp;ldquo;brugerflade&amp;rdquo;; altså en måde vi kan bruge programmet ved at trykke på knapper og lignende, uden at skulle kende til den måde, som programmet er programmeret på.</description>
-    </item>
     
     <item>
       <title>Python sproget</title>
@@ -29,16 +19,6 @@ I bruger uden tvivl forskellige programmer, apps og softwareløsninger i jeres h
       <description>Som nævnt arbejder man med Python ved at skrive kommandoer i . Kommandoer bliver &amp;ldquo;evalueret&amp;rdquo; af fortolkeren. Hvis koden forstås, bliver den kørt, og der gives et output, en ændring eller andet, afhængig af, hvad vi beder om.
 Hvis man fx skriver en kommando besteånde af matematiske operationer i Python, vil man få resultatet tilbage som output:
 2 + 5 7 7 * 6 42 923 / 45 20.</description>
-    </item>
-    
-    <item>
-      <title>Interager med Python</title>
-      <link>/hvad/interager/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hvad/interager/</guid>
-      <description>For at bruge Python skal vi &amp;ldquo;tale&amp;rdquo; Python. Man arbejde med Python ved at skrive kommandoer i Python-sproget. Hvis Python forstår din kommando udføres den. Hvis ikke, får du en eller anden form for fejl. Man kan se Python som et meget bogstaveligt og pernitten sprog: Kommandoer skal skrives på helt bestemte måder for at Python kan forstå, hvad du beder om.
-Barberes Python ned til sine grundsten består det ikke af mere end en &amp;ldquo;interpreter&amp;rdquo; (fortolker).</description>
     </item>
     
     <item>
