@@ -12,19 +12,19 @@
     <title>Variable :: Introduction to Python for Social Science</title>
 
     
-    <link href="../../css/nucleus.css?1595930187" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1595930187" rel="stylesheet">
-    <link href="../../css/hybrid.css?1595930187" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1595930187" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1595930187" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1595930187" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1595930187" rel="stylesheet">
-    <link href="../../css/theme.css?1595930187" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1595930187" rel="stylesheet">
+    <link href="../../css/nucleus.css?1595930779" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1595930779" rel="stylesheet">
+    <link href="../../css/hybrid.css?1595930779" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1595930779" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1595930779" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1595930779" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1595930779" rel="stylesheet">
+    <link href="../../css/theme.css?1595930779" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1595930779" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1595930187"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1595930779"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -50,14 +50,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1595930187"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1595930187"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1595930779"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1595930779"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1595930187"></script>
+<script type="text/javascript" src="../../js/search.js?1595930779"></script>
 
     
   </div>
@@ -316,8 +316,8 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#med-tal">med tal</a></li>
-    <li><a href="#med-tekst">med tekst</a></li>
+    <li><a href="#variable-med-tal">Variable med tal</a></li>
+    <li><a href="#variable-med-tekst">Variable med tekst</a></li>
     <li><a href="#ændring-af-variable">Ændring af variable</a></li>
     <li><a href="#videnscheck">VIDENSCHECK</a></li>
     <li><a href="#at-arbejde-med-variable">At arbejde med variable</a></li>
@@ -358,7 +358,7 @@
 <li>En hjemmesideadresse</li>
 <li>Et billede</li>
 </ul>
-<h2 id="med-tal">med tal</h2>
+<h2 id="variable-med-tal">Variable med tal</h2>
 <p>En variabel defineres med <code>=</code>. På venstre side gives variablen et navn, og på højre skrives det, som variablen skal indeholde:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#ae81ff">42</span>
 b <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>
@@ -392,7 +392,7 @@ NameError                                 Traceback (most recent call last)
 
 NameError: name 'D' is not defined
 </code></pre>
-<h2 id="med-tekst">med tekst</h2>
+<h2 id="variable-med-tekst">Variable med tekst</h2>
 <p>En variabel kan også indeholde tekst. Tekst markeres med enten <code>'</code> eller <code>&quot;</code>:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">e <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello there!&#34;</span>
 <span style="color:#66d9ef">print</span>(e)
@@ -406,7 +406,7 @@ NameError: name 'D' is not defined
 SyntaxError: invalid syntax
 </code></pre>
 <h2 id="ændring-af-variable">Ændring af variable</h2>
-<p>Som hovedregel ændres en variabel ikke blot ved at bruge det. n skal defineres om, hvis vi gerne vil ændre indholdet af variablen:</p>
+<p>Som hovedregel ændres en variabel ikke blot ved at bruge det. Variablen skal defineres om, hvis vi gerne vil ændre indholdet af variablen:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#ae81ff">42</span>
 <span style="color:#66d9ef">print</span>(a <span style="color:#f92672">+</span> <span style="color:#ae81ff">7</span>) <span style="color:#75715e"># returnerer a + 7</span>
 <span style="color:#66d9ef">print</span>(a)     <span style="color:#75715e"># a er ikke ændret. Stadig 42</span>
@@ -450,7 +450,7 @@ g <span style="color:#f92672">=</span> g <span style="color:#f92672">-</span> f
 the_number_ten <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span> <span style="color:#75715e"># sigende, men ret langt, hvis man skal bruge variablen igen og igen</span>
 </code></pre></div>
 <div class="notices tip" ><h3 id="tips-til-variabelnavne">Tips til variabelnavne</h3>
-<p>kan blive navngivet næsten alt, men der er visse restriktioner:</p>
+<p>Variable kan blive navngivet næsten alt, men der er visse restriktioner:</p>
 <ul>
 <li>Variabelnavne kan ikke indeholde mellemrum.</li>
 <li>De fleste specielle karakterer kan ikke bruges, som fx: <code>/</code>, <code>?</code>, <code>*</code>, <code>?</code>, <code>.</code> osv. Disse betyder noget i Python og vil blive forsøgt fortolket.</li>
@@ -661,19 +661,19 @@ a <span style="color:#f92672">//</span> b     <span style="color:#75715e"># &#34
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1595930187"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1595930187"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1595930187"></script>
-    <script src="../../js/jquery.sticky.js?1595930187"></script>
-    <script src="../../js/featherlight.min.js?1595930187"></script>
-    <script src="../../js/highlight.pack.js?1595930187"></script>
+    <script src="../../js/clipboard.min.js?1595930779"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1595930779"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1595930779"></script>
+    <script src="../../js/jquery.sticky.js?1595930779"></script>
+    <script src="../../js/featherlight.min.js?1595930779"></script>
+    <script src="../../js/highlight.pack.js?1595930779"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1595930187"></script>
-    <script src="../../js/learn.js?1595930187"></script>
-    <script src="../../js/hugo-learn.js?1595930187"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1595930779"></script>
+    <script src="../../js/learn.js?1595930779"></script>
+    <script src="../../js/hugo-learn.js?1595930779"></script>
 
-    <link href="../../mermaid/mermaid.css?1595930187" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1595930187"></script>
+    <link href="../../mermaid/mermaid.css?1595930779" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1595930779"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/fundamentale/python/</guid>
-      <description>Som nævnt arbejder man med Python ved at skrive kommandoer i . Kommandoer bliver &amp;ldquo;evalueret&amp;rdquo; af fortolkeren. Hvis koden forstås, bliver den kørt, og der gives et output, en ændring eller andet, afhængig af, hvad vi beder om.
+      <description>Som nævnt arbejder man med Python ved at skrive kommandoer i Python sproget. Kommandoer bliver &amp;ldquo;evalueret&amp;rdquo; af fortolkeren. Hvis koden forstås, bliver den kørt, og der gives et output, en ændring eller andet, afhængig af, hvad vi beder om.
 Hvis man fx skriver en kommando besteånde af matematiske operationer i Python, vil man få resultatet tilbage som output:
 2 + 5 7 7 * 6 42 923 / 45 20.</description>
     </item>
@@ -30,7 +30,7 @@ Hvis man fx skriver en kommando besteånde af matematiske operationer i Python, 
       <description>Python er et objekt-orienteret programmeringssprog. Dette indebærer, at man kontinuerligt arbejder med forskellige objekter, som indeholder en eller anden for for information.
 I Python kaldes objekter &amp;ldquo;variable&amp;rdquo;. Dette er ikke at forveksle med en variabel, som forstået i statistik som en egenskab ved en observation, da en variabel i Python blot er en beholder for en eller anden form for information.
 Alle disse kan være variable i Python:
- Et tal Et ord En tekst Et datasæt En mappesti En hjemmesideadresse Et billede  med tal En variabel defineres med =.</description>
+ Et tal Et ord En tekst Et datasæt En mappesti En hjemmesideadresse Et billede  Variable med tal En variabel defineres med =.</description>
     </item>
     
     <item>
