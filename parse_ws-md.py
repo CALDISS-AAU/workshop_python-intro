@@ -46,7 +46,7 @@ def get_chapter_text(chapter):
     chapter_title = get_chapter_titles(chapter)[0]
     chapter_text = re.findall(chapter_text_regex, chapter)[0]
     
-    chapter_text = chapter_text.replace(chapter_title, "")
+    chapter_text = chapter_text.replace(chapter_title, "", 1)
 
     while re.match("\W", chapter_text[0]):
         chapter_text = re.sub("^\W", "", chapter_text)
@@ -73,7 +73,7 @@ def get_section_text(section):
     section_title = get_section_title(section)
     section_text = re.findall(section_text_regex, section)[0]
     
-    section_text = section_text.replace(section_title, "")
+    section_text = section_text.replace(section_title, "", 1)
     
     while re.match("\W", section_text[0]):
         section_text = re.sub("^\W", "", section_text)
@@ -81,7 +81,7 @@ def get_section_text(section):
     return(section_text)
 
 def create_section_filename(title):
-    first_word = re.findall(r'^.*?(?=\s)', title)[0].lower()
+    first_word = re.findall(r'^.*?(?=\s|$)', title)[0].lower()
     filename = first_word + '.md'
     
     return(filename)
