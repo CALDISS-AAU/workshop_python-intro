@@ -9,7 +9,7 @@
 
     <link rel="icon" href="../../images/favicon.png" type="image/png">
 
-    <title>Python sproget :: Introduction to Python for Social Science</title>
+    <title>Metoder :: Introduction to Python for Social Science</title>
 
     
     <link href="../../css/nucleus.css?1596020740" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/fundamentale/python/">
+  <body class="" data-url="/fundamentale/metoder/">
     <nav id="sidebar" class="">
 
 
@@ -178,7 +178,7 @@
  
   
     
-      <li data-nav-id="/fundamentale/python/" title="Python sproget" class="dd-item active">
+      <li data-nav-id="/fundamentale/python/" title="Python sproget" class="dd-item ">
         <a href="../../fundamentale/python/">
         Python sproget
         
@@ -262,7 +262,7 @@
  
   
     
-      <li data-nav-id="/fundamentale/metoder/" title="Metoder" class="dd-item ">
+      <li data-nav-id="/fundamentale/metoder/" title="Metoder" class="dd-item active">
         <a href="../../fundamentale/metoder/">
         Metoder
         
@@ -419,7 +419,7 @@
             
           
           
-            <a href='../../'></a> > <a href='../../fundamentale/'>Fundamentale koncepter i Python</a> > Python sproget
+            <a href='../../'></a> > <a href='../../fundamentale/'>Fundamentale koncepter i Python</a> > Metoder
           
         
           
@@ -432,7 +432,11 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#videnscheck">VIDENSCHECK</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -448,49 +452,77 @@
           
             <h1>
               
-              Python sproget
+              Metoder
             </h1>
           
 
         
 
 
-<p>Som nævnt arbejder man med Python ved at skrive kommandoer i Python sproget. Kommandoer bliver &ldquo;evalueret&rdquo; af fortolkeren. Hvis koden forstås, bliver den kørt, og der gives et output, en ændring eller andet, afhængig af, hvad vi beder om.</p>
-<p>Hvis man fx skriver en kommando besteånde af matematiske operationer i Python, vil man få resultatet tilbage som output:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">5</span>
-</code></pre></div><pre><code>7
+<p>Udover funktioner i Python findes der også &ldquo;metoder&rdquo;. Lig funktioner tager metoder også en form for input og returnerer et output.</p>
+<p>I modsætning til funktioner er metoder bundet op på bestemte variabeltyper. Det vil sige at variablen skal være en bestemt type for, at metoden kan bruges. Metoder kaldes med <code>variabel.method(option1 = something)</code>. Tekstværdier (strings) har fx en række metoder tilknyttet til at ændre teksten:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">word <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello&#34;</span>
+
+<span style="color:#66d9ef">print</span>(word<span style="color:#f92672">.</span>upper())  <span style="color:#75715e"># Konverterer til store bogstaver</span>
+<span style="color:#66d9ef">print</span>(word<span style="color:#f92672">.</span>lower())  <span style="color:#75715e"># Konverterer til små bogstaver</span>
+</code></pre></div><pre><code>HELLO
+hello
 </code></pre>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">7</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">6</span>
-</code></pre></div><pre><code>42
+<p>Bemærk at metoder som hovedregel ikke ændrer på variablen. Variablen skal derfor defineres om eller på ny, hvis output af brug af en metode skal lagres:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(word)         <span style="color:#75715e"># Stadig som det oprindeligt blev lavet</span>
+
+word <span style="color:#f92672">=</span> word<span style="color:#f92672">.</span>upper() 
+<span style="color:#66d9ef">print</span>(word)         <span style="color:#75715e"># Er nu overskrevet til at være med store bogstaver</span>
+</code></pre></div><pre><code>Hello
+HELLO
 </code></pre>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">923</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">45</span>
-</code></pre></div><pre><code>20.511111111111113
+<p>Forsøger man at bruge metoder på variabel af en forkert type, gives der fejl:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">number <span style="color:#f92672">=</span> <span style="color:#ae81ff">627</span>
+
+number<span style="color:#f92672">.</span>upper()
+</code></pre></div><pre><code>---------------------------------------------------------------------------
+
+AttributeError                            Traceback (most recent call last)
+
+&lt;ipython-input-38-d30eebf09ae0&gt; in &lt;module&gt;
+      1 number = 627
+      2 
+----&gt; 3 number.upper()
+
+
+AttributeError: 'int' object has no attribute 'upper'
 </code></pre>
-<p>Her køres Python kode i Jupyter Notebook. Som vist i sidste sektion, kan man køre Python kode direkte fra en terminal, hvor man sender en kommando afsted ved at trykke &ldquo;Enter&rdquo;. Med Jupyter Notebook (eller anden IDE) har vi mulighed for at skrive flere kommandoer efter hinanden adskilt af linjeskift. Når koden køres, evalueres linjerne enkeltvis i rækkefølge.</p>
-<p>Bemærk, at når flere linjer køres, vises kun output fra den sidste linje kørt:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">90</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">65</span>
-<span style="color:#ae81ff">0.7</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">23</span>
-<span style="color:#ae81ff">45</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">12</span>
-</code></pre></div><pre><code>57
-</code></pre>
-<p>Hvis output for alle linjer skal vises, kan man bede om det eksplicit med funktionen <code>print()</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">90</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">65</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">0.7</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">23</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">45</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">12</span>)
-</code></pre></div><pre><code>25
-16.099999999999998
-57
-</code></pre>
-<p>At arbejde med Python er at arbejde med funktioner. En funktion tager et eller flere input (kaldet &ldquo;argumenter) og gør et eller andet ved dem. Funktionen <code>print()</code> tager enten et stykke tekst eller tal som input, og viser det som et stykke tekst:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Hello there!&#34;</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">921</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">20</span>)
-</code></pre></div><pre><code>Hello there!
-901
+<p>Metoder tager ofte yderligere argumenter og indstillinger. I nedenstående bruges metoden <code>.replace()</code> til at erstatte et hvis ord i tekstvariablen med et andet.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">words <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello there!&#34;</span>
+
+words<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#34;there&#34;</span>, <span style="color:#e6db74">&#34;world&#34;</span>)
+</code></pre></div><pre><code>'Hello world!'
 </code></pre>
 
-<div class="notices note" ><p>Bemærk at mellemrum ikke er nødvendige for at koden virker. Faktisk ignorerer Python mellemrum, når de er en del af en kommando. Dog kan brug af mellemrum være med til at gøre kode mere overskuelig og læsbart.</p>
+<div class="notices note" ><p>Bemærk i hjælpefilen for <code>.replace()</code> at de to argumenter, som der tages kaldes <code>old</code> og <code>new</code> og står i den rækkefølge. Det er derfor også den rækkefølge, som de skal skrives ind, når man bruger metoden.</p>
 </div>
 
+<hr>
+<h2 id="videnscheck">VIDENSCHECK</h2>
+<p>I ovenstående er metoden <code>.replace()</code> brugt til at erstatte ordet &ldquo;there&rdquo; med &ldquo;world&rdquo; i variablen <code>words</code>.</p>
+<p><em>Hvad indeholder <code>words</code> efter <code>.replace()</code> er brugt?</em></p>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	Løsning
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <p><code>words</code> indeholder stadig <code>&quot;Hello there!&quot;</code>, da variablen ikke er defineret om.</p>
+
+    </div>
+</div>
+<hr>
 
 
 <footer class="footline">
@@ -593,23 +625,6 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                         
                         
                     
@@ -676,6 +691,26 @@
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -732,10 +767,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="../../fundamentale/" title="Fundamentale koncepter i Python"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../../fundamentale/funktioner/" title="Funktioner"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../fundamentale/variable/" title="Variable" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../fundamentale/pakker/" title="Pakker" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

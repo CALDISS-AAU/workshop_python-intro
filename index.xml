@@ -21,6 +21,19 @@ I bruger uden tvivl forskellige programmer, apps og softwareløsninger i jeres h
     </item>
     
     <item>
+      <title>Lister, dictionaries og tuples</title>
+      <link>/arbejd/lister/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/arbejd/lister/</guid>
+      <description>Lister
+Den mest basale datastruktur er en liste. En liste defineres med []:
+my_list = [2, 7, 9, 10] I ovenstående defineres listen my_list til at indeholde værdierne 2, 7, 9 og 10. En liste kan fremkaldes ligesom hvilken som helst anden variabel:
+print(my_list) [2, 7, 9, 10] En liste er blot en beholder af forskellige variable. Lister kan derfor indeholde variable af forskellig type:
+my_list2 = [2, &amp;#34;hello&amp;#34;, 10, True] print(my_list2) [2, &#39;hello&#39;, 10, True] Lister kan også indeholde andre lister:</description>
+    </item>
+    
+    <item>
       <title>Python sproget</title>
       <link>/fundamentale/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -62,6 +75,40 @@ Alle disse kan være variable i Python:
       <description>En variabel er ikke bare en variabel i Python. Fordi en variabel kan være så mange ting, så er Python nødt til at adskille variable fra hinanden. Dette gøres ved at variable lagres som en bestemt type.
 Typen af variabel fortæller Python, hvad det er for en slags information, som variablen indeholder, og sætter betingelserne for, hvad der kan lade sig gøre med variablen.
 Som man arbejder med Python, vil man støde på mange forskellige typer.</description>
+    </item>
+    
+    <item>
+      <title>Funktioner</title>
+      <link>/fundamentale/funktioner/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/fundamentale/funktioner/</guid>
+      <description>En central del af det at arbejde med et programmeringssprog er at bruge funktioner. Funktioner tager et eller flere input (kaldet &amp;ldquo;argumenter&amp;rdquo;), foretager et eller andet med disse og returnerer (for det meste) et output.
+Funktioner i Python har følgende format:
+ function(argument1, argument2, ...)  Funktioner bruges ved at skrive funktionens navn og skrive de argumenterne i parentes. En funktion kan have et utal af argumenter, men oftest skal de som minimum have et eller flere variable som input.</description>
+    </item>
+    
+    <item>
+      <title>Metoder</title>
+      <link>/fundamentale/metoder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/fundamentale/metoder/</guid>
+      <description>Udover funktioner i Python findes der også &amp;ldquo;metoder&amp;rdquo;. Lig funktioner tager metoder også en form for input og returnerer et output.
+I modsætning til funktioner er metoder bundet op på bestemte variabeltyper. Det vil sige at variablen skal være en bestemt type for, at metoden kan bruges. Metoder kaldes med variabel.method(option1 = something). Tekstværdier (strings) har fx en række metoder tilknyttet til at ændre teksten:
+word = &amp;#34;Hello&amp;#34; print(word.upper()) # Konverterer til store bogstaver print(word.</description>
+    </item>
+    
+    <item>
+      <title>Pakker</title>
+      <link>/fundamentale/pakker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/fundamentale/pakker/</guid>
+      <description>Pakker i Python er samlinger af funktioner, metoder, værdier osv. Selvom man kan meget i Python, så når man ikke særlig langt uden at importere pakker.
+Funktioner, metoder, værdier osv. fra pakker kan nemt indlæses ved at importere dem. Så snart pakken er importeret, er pakkens indhold tilgængeligt.
+Fx kender Python ikke værdien pi med det samme:
+ Check: Forstår python et stykke kode? (brug af funktion før og efter import) Øvelse: Importer pakke og brug funktion derfra Check: Hvilken type er variablen efter funktion er blevet brugt til at ændre den?</description>
     </item>
     
   </channel>

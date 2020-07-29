@@ -9,7 +9,7 @@
 
     <link rel="icon" href="../../images/favicon.png" type="image/png">
 
-    <title>Python sproget :: Introduction to Python for Social Science</title>
+    <title>Pakker :: Introduction to Python for Social Science</title>
 
     
     <link href="../../css/nucleus.css?1596020740" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/fundamentale/python/">
+  <body class="" data-url="/fundamentale/pakker/">
     <nav id="sidebar" class="">
 
 
@@ -178,7 +178,7 @@
  
   
     
-      <li data-nav-id="/fundamentale/python/" title="Python sproget" class="dd-item active">
+      <li data-nav-id="/fundamentale/python/" title="Python sproget" class="dd-item ">
         <a href="../../fundamentale/python/">
         Python sproget
         
@@ -283,7 +283,7 @@
  
   
     
-      <li data-nav-id="/fundamentale/pakker/" title="Pakker" class="dd-item ">
+      <li data-nav-id="/fundamentale/pakker/" title="Pakker" class="dd-item active">
         <a href="../../fundamentale/pakker/">
         Pakker
         
@@ -419,7 +419,7 @@
             
           
           
-            <a href='../../'></a> > <a href='../../fundamentale/'>Fundamentale koncepter i Python</a> > Python sproget
+            <a href='../../'></a> > <a href='../../fundamentale/'>Fundamentale koncepter i Python</a> > Pakker
           
         
           
@@ -448,49 +448,58 @@
           
             <h1>
               
-              Python sproget
+              Pakker
             </h1>
           
 
         
 
 
-<p>Som nævnt arbejder man med Python ved at skrive kommandoer i Python sproget. Kommandoer bliver &ldquo;evalueret&rdquo; af fortolkeren. Hvis koden forstås, bliver den kørt, og der gives et output, en ændring eller andet, afhængig af, hvad vi beder om.</p>
-<p>Hvis man fx skriver en kommando besteånde af matematiske operationer i Python, vil man få resultatet tilbage som output:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">5</span>
-</code></pre></div><pre><code>7
+<p>Pakker i Python er samlinger af funktioner, metoder, værdier osv. Selvom man kan meget i Python, så når man ikke særlig langt uden at importere pakker.</p>
+<p>Funktioner, metoder, værdier osv. fra pakker kan nemt indlæses ved at importere dem. Så snart pakken er importeret, er pakkens indhold tilgængeligt.</p>
+<p>Fx kender Python ikke værdien pi med det samme:</p>
+<ul>
+<li>Check: Forstår python et stykke kode? (brug af funktion før og efter import)</li>
+<li>Øvelse: Importer pakke og brug funktion derfra</li>
+<li>Check: Hvilken type er variablen efter funktion er blevet brugt til at ændre den?</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(pi)
+</code></pre></div><pre><code>---------------------------------------------------------------------------
+
+NameError                                 Traceback (most recent call last)
+
+&lt;ipython-input-48-9e2d2bd32686&gt; in &lt;module&gt;
+----&gt; 1 print(pi)
+
+
+NameError: name 'pi' is not defined
 </code></pre>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">7</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">6</span>
-</code></pre></div><pre><code>42
+<p>Værdien pi er en del af <code>math</code> pakken, så ved at importere pakken, kan man arbejde med værdien:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> math
+
+<span style="color:#66d9ef">print</span>(math<span style="color:#f92672">.</span>pi)
+</code></pre></div><pre><code>3.141592653589793
 </code></pre>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">923</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">45</span>
-</code></pre></div><pre><code>20.511111111111113
+<p>Bemærk at man kalder noget frem, som er en del af en pakke, ved at skrive pakkens navn, punktum og det, som man skal bruge fra pakken.</p>
+<p>Det er også muligt kun at importere enkelte dele af en pakke. I sådanne tilfælde er det ikke nødvendigt at skrive pakkens navn først:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> math <span style="color:#f92672">import</span> pi
+
+<span style="color:#66d9ef">print</span>(pi)
+</code></pre></div><pre><code>3.141592653589793
 </code></pre>
-<p>Her køres Python kode i Jupyter Notebook. Som vist i sidste sektion, kan man køre Python kode direkte fra en terminal, hvor man sender en kommando afsted ved at trykke &ldquo;Enter&rdquo;. Med Jupyter Notebook (eller anden IDE) har vi mulighed for at skrive flere kommandoer efter hinanden adskilt af linjeskift. Når koden køres, evalueres linjerne enkeltvis i rækkefølge.</p>
-<p>Bemærk, at når flere linjer køres, vises kun output fra den sidste linje kørt:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">90</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">65</span>
-<span style="color:#ae81ff">0.7</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">23</span>
-<span style="color:#ae81ff">45</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">12</span>
-</code></pre></div><pre><code>57
-</code></pre>
-<p>Hvis output for alle linjer skal vises, kan man bede om det eksplicit med funktionen <code>print()</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">90</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">65</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">0.7</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">23</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">45</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">12</span>)
-</code></pre></div><pre><code>25
-16.099999999999998
-57
-</code></pre>
-<p>At arbejde med Python er at arbejde med funktioner. En funktion tager et eller flere input (kaldet &ldquo;argumenter) og gør et eller andet ved dem. Funktionen <code>print()</code> tager enten et stykke tekst eller tal som input, og viser det som et stykke tekst:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Hello there!&#34;</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">921</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">20</span>)
-</code></pre></div><pre><code>Hello there!
-901
+<p>Pakker kan have lange navne, så det er muligt at forkorte navnet, når de importeres:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> math <span style="color:#f92672">as</span> m
+
+<span style="color:#66d9ef">print</span>(m<span style="color:#f92672">.</span>pi)
+</code></pre></div><pre><code>3.141592653589793
 </code></pre>
 
-<div class="notices note" ><p>Bemærk at mellemrum ikke er nødvendige for at koden virker. Faktisk ignorerer Python mellemrum, når de er en del af en kommando. Dog kan brug af mellemrum være med til at gøre kode mere overskuelig og læsbart.</p>
+<div class="notices warning" ><p>Vær varsom med blot at importere dele af pakker ind enkeltvis. En af grundene til, at man kalder dele af pakker ved at skrive pakken først er for at holde styr på, hvor funktionen, metoden eller værdien kommer fra. Man kan nemt miste overblikket eller, endnu værre, kalde den forkerte funktion, hvis man ikke har styr på, hvordan man har importeret.</p>
+<p>Derudover bør man også altid overveje læsbarheden af ens kode, hvis andre skal kunne inspicere det, eller der skal samarbejdes om det. Derfor bør man også overveje, hvordan man forkorter pakkenavne ved import, da det også kan gøre koden svære at gennemskue. Mange pakker har dog gængse standardforkortelser, som man hurtigt lærer.</p>
 </div>
 
+<p>Python kommer med et standardbibliotek af pakker. Selvom funktionerne altså er installeret sammen med Python i pakker, så skal de stadig importeres, før de kan bruges. Python er opbygget sådan både for at gøre det hurtigere at arbejde med (jo mindre der skal indlæses ved opstart, jo hurtigere kan man komme i gang), og for at gøre det nemmere at håndtere funktioner, metoder og værdier fra forskellige pakker.</p>
+<p>Der et utal af pakker, som Python kan udvides med. I materiale fra CALDISS anvendes primært pakker inden for dataanalyse, web scraping, tekstanalyse og maskinlæring. Hvis du har installeret Python med Anaconda, så er mange af disse pakker allerede installert og klar til import.</p>
 
 
 <footer class="footline">
@@ -593,23 +602,6 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                         
                         
                     
@@ -688,6 +680,23 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -695,6 +704,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -732,10 +744,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="../../fundamentale/" title="Fundamentale koncepter i Python"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../../fundamentale/metoder/" title="Metoder"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../fundamentale/variable/" title="Variable" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../arbejd/" title="Arbejd med flere værdier" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
