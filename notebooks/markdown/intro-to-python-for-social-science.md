@@ -311,6 +311,7 @@ print(a)     # a er nu ændret
 Brug `#` til at skrive kommentarer i din kode. Tekst der følger et `#` ignoreres af Python. Når man for alvor begynder at arbejde med kode, kan man nemt glemme, hvorfor man skrev bestemte kodestykker, eller hvad kodestykkerne gør. Kommentarer til ens kode hjælper både dig selv og evt. andre, som skal kigge på eller arbejde med din kode.
 {{% /notice%}}
 
+---
 ## VIDENSCHECK
 
 Tag et kig på nedenstående kode:
@@ -328,6 +329,8 @@ g = g - f
 {{%expand "Løsning" %}}
 `g` indeholder tallet `10`. `g` bliver kun ændret ved den sidste linje (`g = g - f`), og `f` indeholder tallet `80`, da `g` på tidspunktet `f` defineres indeholder tallet `90`.
 {{% /expand%}}
+
+---
 
 ## At arbejde med variable
 
@@ -369,6 +372,7 @@ a // b     # "floor division" - returner antal hele gange, at tal til venstre ka
 
 {{% /notice%}} 
 
+---
 ## ØVELSE: Definer variable
 
 Lav variablene `my_number1`, `my_number2` og `my_word`. 
@@ -384,6 +388,8 @@ Når de er defineret, prøv da nogen af de forskellige matematiske operationer p
 - `my_word` * `my_number2`
 
 Læg mærke til hvilke operationer, der kan lade sig gøre og hvilke resultater, de producerer (nogle af disse operationer vil give fejl).
+
+---
 
 # {#Afsnit}Typer
 
@@ -443,6 +449,7 @@ print(type(b))   # b er et float point
 
 At Python gerne vil adskille mellem typer har noget at gøre med, hvordan en type information kræver mere at lagre end en anden. Dette kan have betydning, når man arbejder med enorme datamængder, hvilket sjældent er tilfældet i socialvidenskabelig analysearbejder.
 
+---
 ## VIDENSCHECK
 
 I ovenstående bliver variablen `a` brugt til at definere variabel `b`. 
@@ -452,6 +459,8 @@ I ovenstående bliver variablen `a` brugt til at definere variabel `b`.
 {{%expand "Løsning" %}}
 `a` er stadig en *integer*. `a` ikke ændres i koden, men bliver blot brugt til at lave variabel `b`.
 {{% /expand%}}
+
+---
 
 ## Tekst typer
 
@@ -550,6 +559,7 @@ a = int(a)      # forsøger at konvertere a til integer - ikke muligt
     ValueError: invalid literal for int() with base 10: 'Hello'
 
 
+---
 ## ØVELSE: Typer
 
 Lav variablene variablene `my_number3` og `my_number4`.
@@ -594,5 +604,785 @@ my_number3 / my_number4
 
 
 {{% /expand%}}
+
+---
+
+# {#Afsnit}Funktioner
+
+En central del af det at arbejde med et programmeringssprog er at bruge funktioner. Funktioner tager et eller flere input (kaldet "argumenter"), foretager et eller andet med disse og returnerer (for det meste) et output.
+
+Funktioner i Python har følgende format:
+
+- `function(argument1, argument2, ...)`
+
+Funktioner bruges ved at skrive funktionens navn og skrive de argumenterne i parentes. En funktion kan have et utal af argumenter, men oftest skal de som minimum have et eller flere variable som input.
+
+Udover argumenter tager funktioner også ofte en del "keyword arguments" som input. Disse kan betragte som en form for indstillinger, som man slår til og fra i funktionen. "keyword arguments" indgår i funktionen med navnet på indstillingen, et `=` og hvad indstillingen skal sættes til, lig nedenstående:
+
+- `function(argument1, argument2, keywordargument1 = "something")`
+
+Ligesom med argumenter, kan en funktion have rigtig mange "keyword arguments"/indstillinger. Det er dog sjældent, at man behøver forholde sig til alle indstillingerne, da de fleste funktioner har en eller anden form for standardindstilling.
+
+## Sådan bruges funktioner
+
+Tidligere i dette materiale har funktionerne `print()` og `type()` været brugt. Ved `print()` har denne kun været brugt med et enkelt argument; altså det, som skal vises, men faktisk accepterer print flere argumenter:
+
+
+```python
+a = "Hello"
+b = "there"
+print(a, b)
+```
+
+    Hello there
+
+
+Derudover har `print()` også en række "keyword arguments"/indstillinger, som det ses af dokumentationen herunder:
+
+```
+Docstring:
+print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
+
+Prints the values to a stream, or to sys.stdout by default.
+Optional keyword arguments:
+file:  a file-like object (stream); defaults to the current sys.stdout.
+sep:   string inserted between values, default a space.
+end:   string appended after the last value, default a newline.
+flush: whether to forcibly flush the stream.
+Type:      builtin_function_or_method
+```
+
+Her ses det, at `print()` har adskilige indstillinger. `sep` bestemmer fx, hvad der skal adskille de forskellige værdier, som tages ind. Bemærk, at alle indstillinger er sat til en eller anden indstillling som standard. `sep=' '` betyder, at de forskellige værdier adskilles med et mellemrum som standard. Hvis denne ændres til noget andet, vil outputtet se anderledes ud:
+
+
+```python
+print(a, b)              # printer a og b med standardindstilling (adskiller med mellemrum)
+print(a, b, sep = ", ")  # sep ændres til komma
+```
+
+    Hello there
+    Hello, there
+
+
+En funktion kan have rigtig mange indstillinger, og i praksis forholder man sig kun til få af disse, da man oftest kan lade standardinstillingerne være, som de er. 
+
+{{% notice info %}}
+Man kan altid få hjælpefilen/dokumentationen frem til en funktion ved at skrive `?[function]` (fx `?print` for dokumentationen for `print()`. Mange IDE'er understøtter også, at man trykker `Shift + Tab` inde i parentesen af en funktion for at få vist en bid af hjælpefilen.
+{{% /notice%}}
+
+{{% notice note %}}
+Det, som der står i de forskellige "keyword arguments" i dokumentationen for en funktion, er funktionens standardindstillinger. 
+{{% /notice%}}
+
+---
+## VIDENSCHECK
+
+Hvordan får man `print()` til at adskille input værdierne med en `-`?
+
+{{%expand "Løsning" %}}
+Indstillingen `sep` sættes til `sep = '-'.
+
+
+```python
+print(a, b, sep = '-')
+```
+
+    Hello-there
+
+
+{{%/expand%}}
+
+---
+
+## Hvor kommer funktioner fra?
+
+Python har en række funktioner indbygget, men faktisk kommer størstedelen af funktionerne i Python fra alle mulige andre, som har udviklede funktioner til forskellige formål, som andre derefter kan gøre brug af. Andre funktioner hentes ind i form af "pakker", som gennemgås senere i dette materiale.
+
+Man kan fristes til at lære Python ved at forsøge at lære så mange funktioner som muligt. Dette er en håbløs og nærmest umulig opgave givet omfanget af, hvad der findes af funktioner, der kan hentes til Python. I praksis opbygger man sig arbejdsgange eller workflows, hvori man har tendens til at bruge de samme funktioner igen og igen. Derfor er en god tilgang til Python at spørge: *"Kan jeg bruge Python til X?"* eller *"Hvordan løser jeg problem Y i Python?"*, og så forsøge at finde de rette funktioner til det, frem for at spørge: *"Hvad kan jeg bruge Python til?"*, da man med dette spørgsmål ikke får nogen retning på det, man gerne vil lære om Python.
+
+At Python kan så mange ting i dag skyldes netop, at folk rundt omkring i verden har stået over for forskellige udfordringer, som de har løst ved at udvikle funktioner til Python, som de derefter stiller til rådighed. 
+
+Python fortæller med det samme, hvis funktionen, som man forsøger at bruge, ikke kendes af Python:
+
+
+```python
+add10(5)
+```
+
+
+    ---------------------------------------------------------------------------
+    
+    NameError                                 Traceback (most recent call last)
+    
+    <ipython-input-13-7452fc393844> in <module>
+    ----> 1 add10(5)
+
+
+    NameError: name 'add10' is not defined
+
+
+Man kan dog til enhver tid definere sine egne funktioner:
+
+
+```python
+def add10(x):
+    result = x + 10
+    return result
+
+print(add10(5))
+```
+
+    15
+
+
+Funktioner defineres med `def` efterfulgt af navnet på den funktion, man gerne vil lave. I parenteserne skrives de input, som funktionen skal have. I ovenstående dannes funktionen `add10`, der tager et enkelt input og lægger ti til. `x` i ovenstående er blot en pladsholder, da `x` erstattes med hvadend, der sættes i funktionen, når den bruges.
+
+Efter `:` skrives det, som skal ske i funktionen. Alle variable, som defineres inde i funktionen, eksisterer *kun* i selve funktionen. Sagt på en anden måde, så kan variable, der defineres i funktionen, ikke kaldes frem. I funktionen `add10()` defineres `result` undervejs, men den eksisterer ikke uden for funktionen:
+
+
+```python
+print(result)
+```
+
+
+    ---------------------------------------------------------------------------
+    
+    NameError                                 Traceback (most recent call last)
+    
+    <ipython-input-30-6459d04d738f> in <module>
+    ----> 1 print(result)
+
+
+    NameError: name 'result' is not defined
+
+
+`result` er en variabel, der dannes inde i funktionen til at lave den nødvendige beregning. 
+
+Hvis man vil lagre outputtet af en funktion til en variabel, kan man blot tilskrive variablen funktionen med det input, som funktionen skal have, for at få det ønskede output:
+
+
+```python
+a = add10(5)
+
+print(a)
+```
+
+    15
+
+
+En funktion skal gerne slutte med en `return` linje. Denne bestemmer, hvad funktionen skal sende tilbage. Udelades denne, returnerer funktionen `None`; altså intet:
+
+
+```python
+def add10(x):
+    result = x + 10
+    
+print(add10(10))
+```
+
+    None
+
+
+En funktion afslutter altid, når den når til en `return` linje. Det vil sige, at ting i funktionen, som skrives ind efter `return`, ignoreres:
+
+
+```python
+def add10(x):
+    print("Adding 10...")          # Denne linje printes, da den ligger før return-linjen
+    result = x + 10
+    return result
+    print("And then more stuff!")  # Denne linje printes ikke, da den ligger efter return-linjen
+    
+print(add10(10))
+```
+
+    Adding 10...
+    20
+
+
+---
+##  VIDENSCHECK
+
+*Hvad returnerer nedenstående funktion, hvis `x = 122`?*
+
+
+```python
+def tenth(x):
+    result = x / 10
+    return result
+    result = x * 10
+    return result
+```
+
+{{%expand "Løsning" %}}
+Funktionen returnerer `12.2`, hvis input er `122`, da input divideres med 10 og returneres. Alt efter den første return-linje ignoreres.
+{{%/expand%}}
+
+---
+
+---
+## ØVELSE
+
+*Lav en funktion, der udregner arealet af en trekant (A), ved at tage højde (h) og grundlinje (g) som input.*
+
+$A = \frac{1}{2} * h * g$
+
+{{%expand "Løsning" %}} 
+
+
+```python
+def triarea(h, g):
+    area = 0.5 * h * g
+    return area
+
+print(triarea(5, 9))
+```
+
+    22.5
+
+
+{{%/expand%}}
+
+---
+
+# {#Afsnit}Metoder
+
+Udover funktioner i Python findes der også "metoder". Lig funktioner tager metoder også en form for input og returnerer et output. 
+
+I modsætning til funktioner er metoder bundet op på bestemte variabeltyper. Det vil sige at variablen skal være en bestemt type for, at metoden kan bruges. Metoder kaldes med `variabel.method(option1 = something)`. Tekstværdier (strings) har fx en række metoder tilknyttet til at ændre teksten:
+
+
+```python
+word = "Hello"
+
+print(word.upper())  # Konverterer til store bogstaver
+print(word.lower())  # Konverterer til små bogstaver
+```
+
+    HELLO
+    hello
+
+
+Bemærk at metoder som hovedregel ikke ændrer på variablen. Variablen skal derfor defineres om eller på ny, hvis output af brug af en metode skal lagres:
+
+
+```python
+print(word)         # Stadig som det oprindeligt blev lavet
+
+word = word.upper() 
+print(word)         # Er nu overskrevet til at være med store bogstaver
+```
+
+    Hello
+    HELLO
+
+
+Forsøger man at bruge metoder på variabel af en forkert type, gives der fejl:
+
+
+```python
+number = 627
+
+number.upper()
+```
+
+
+    ---------------------------------------------------------------------------
+    
+    AttributeError                            Traceback (most recent call last)
+    
+    <ipython-input-38-d30eebf09ae0> in <module>
+          1 number = 627
+          2 
+    ----> 3 number.upper()
+
+
+    AttributeError: 'int' object has no attribute 'upper'
+
+
+Metoder tager ofte yderligere argumenter og indstillinger. I nedenstående bruges metoden `.replace()` til at erstatte et hvis ord i tekstvariablen med et andet.
+
+
+```python
+words = "Hello there!"
+
+words.replace("there", "world")
+```
+
+
+
+
+    'Hello world!'
+
+
+
+{{% notice note %}} Bemærk i hjælpefilen for `.replace()` at de to argumenter, som der tages kaldes `old` og `new` og står i den rækkefølge. Det er derfor også den rækkefølge, som de skal skrives ind, når man bruger metoden.
+{{% /notice%}}
+
+---
+## VIDENSCHECK
+
+I ovenstående er metoden `.replace()` brugt til at erstatte ordet "there" med "world" i variablen `words`.
+
+*Hvad indeholder `words` efter `.replace()` er brugt?*
+
+{{%expand "Løsning" %}} 
+`words` indeholder stadig `"Hello there!"`, da variablen ikke er defineret om.
+{{%/expand%}}
+
+---
+
+# {#Afsnit}Pakker
+
+Pakker i Python er samlinger af funktioner, metoder, værdier osv. Selvom man kan meget i Python, så når man ikke særlig langt uden at importere pakker.
+
+Funktioner, metoder, værdier osv. fra pakker kan nemt indlæses ved at importere dem. Så snart pakken er importeret, er pakkens indhold tilgængeligt.
+
+Fx kender Python ikke værdien pi med det samme:
+
+- Check: Forstår python et stykke kode? (brug af funktion før og efter import)
+- Øvelse: Importer pakke og brug funktion derfra
+- Check: Hvilken type er variablen efter funktion er blevet brugt til at ændre den?
+
+
+```python
+print(pi)
+```
+
+
+    ---------------------------------------------------------------------------
+    
+    NameError                                 Traceback (most recent call last)
+    
+    <ipython-input-48-9e2d2bd32686> in <module>
+    ----> 1 print(pi)
+
+
+    NameError: name 'pi' is not defined
+
+
+Værdien pi er en del af `math` pakken, så ved at importere pakken, kan man arbejde med værdien:
+
+
+```python
+import math
+
+print(math.pi)
+```
+
+    3.141592653589793
+
+
+Bemærk at man kalder noget frem, som er en del af en pakke, ved at skrive pakkens navn, punktum og det, som man skal bruge fra pakken.
+
+Det er også muligt kun at importere enkelte dele af en pakke. I sådanne tilfælde er det ikke nødvendigt at skrive pakkens navn først:
+
+
+```python
+from math import pi
+
+print(pi)
+```
+
+    3.141592653589793
+
+
+Pakker kan have lange navne, så det er muligt at forkorte navnet, når de importeres:
+
+
+```python
+import math as m
+
+print(m.pi)
+```
+
+    3.141592653589793
+
+
+{{% notice warning %}} Vær varsom med blot at importere dele af pakker ind enkeltvis. En af grundene til, at man kalder dele af pakker ved at skrive pakken først er for at holde styr på, hvor funktionen, metoden eller værdien kommer fra. Man kan nemt miste overblikket eller, endnu værre, kalde den forkerte funktion, hvis man ikke har styr på, hvordan man har importeret.
+
+Derudover bør man også altid overveje læsbarheden af ens kode, hvis andre skal kunne inspicere det, eller der skal samarbejdes om det. Derfor bør man også overveje, hvordan man forkorter pakkenavne ved import, da det også kan gøre koden svære at gennemskue. Mange pakker har dog gængse standardforkortelser, som man hurtigt lærer.
+{{% /notice%}}
+
+Python kommer med et standardbibliotek af pakker. Selvom funktionerne altså er installeret sammen med Python i pakker, så skal de stadig importeres, før de kan bruges. Python er opbygget sådan både for at gøre det hurtigere at arbejde med (jo mindre der skal indlæses ved opstart, jo hurtigere kan man komme i gang), og for at gøre det nemmere at håndtere funktioner, metoder og værdier fra forskellige pakker. 
+
+Der et utal af pakker, som Python kan udvides med. I materiale fra CALDISS anvendes primært pakker inden for dataanalyse, web scraping, tekstanalyse og maskinlæring. Hvis du har installeret Python med Anaconda, så er mange af disse pakker allerede installert og klar til import.
+
+# {#Afsnit} Logiske værdier (boolean)
+
+En stor del af programmeringsarbejde involverer at arbejde med logiske værdier; også kaldt booleanske værdier.
+
+Booleanske værdier kan *kun* antage værdien sandt eller falsk. Python har en række operatorer, som altid returnerer en booleansk værdi:
+
+
+```python
+a = 10
+b = 12
+
+a == b
+```
+
+
+
+
+    False
+
+
+
+I ovenstående bruges `==` til at spørge: "Er a lig med b?" (`=` bruges selvfølgelig ikke, da denne bruges til at lave variable).
+
+En booleansk værdi kan tilskrives en variabel ligesom alle mulige andre værdier. Sådanne variable bliver typen boolean, som altså kun kan være sand (`True`) eller falsk (`False`).
+
+
+```python
+check = a == b
+
+print(check, type(check))
+```
+
+    False <class 'bool'>
+
+
+Her er en række operatorer, som altid returnerer en booleansk værdi:
+
+
+```python
+a == b  # Lig med
+a != b  # Ikke lig med
+a > b   # Større end
+a >= b  # Større end eller lig med
+a < b   # Mindre end
+a <= b  # Mindre end eller lig med
+```
+
+Mange funktioner og metoder returnerer også booleanske værdier. Fx returnerer metoden `.startswith()` en booleansk værdi afhængig af, om en tekststreng starter med et hvis stykke tekst eller ej:
+
+
+```python
+words = "Hello there!"
+
+print(words.startswith("Hello"))
+```
+
+    True
+
+
+Booleanske værdier har mange formål:
+
+- Check af resultat: Værdier checkes op imod et sæt af gyldige værdier
+- Filtrering: Værdier udvælges efter bestemte betingelser
+- Betinget udførelse: Dele af kode udføres kun, hvis en bestemt betingelse er mødt
+- Fejlhåndtering: Visse fejl kan forventes ved at sætte betingelser op, for derefter at håndtere dem
+
+---
+## VIDENSCHECK
+
+Tag et kig på nedenstående kode:
+
+
+```python
+a = 7
+b = 17
+c = a < b
+```
+
+*Hvilken variabel indeholder en booleansk værdi?*
+
+{{%expand "Løsning" %}} `c` indeholder den booleanske værdi (`True`), da det er resultatet af testen af, hvorvidt `a` er mindre end `b`.
+{{%/expand%}} 
+
+---
+
+# {#Kapitel}Arbejd med flere værdier
+
+Indtil videre har materialet fokuseret på at arbejde med enkelte værdier i Python. I denne sektion gennemgås de forskellige indbyggede datastrukturer til at håndtere flere værdier.
+
+Derudover introduceres såkaldte kontrolstrukturer, der er måder at udføre funktioner (på en eller flere værdier) baseret på givne betingelser.
+
+# {#Afsnit}Lister, dictionaries og tuples
+
+## Lister
+
+Den mest basale datastruktur er en liste. En liste defineres med `[]`:
+
+
+```python
+my_list = [2, 7, 9, 10]
+```
+
+I ovenstående defineres listen `my_list` til at indeholde værdierne 2, 7, 9 og 10. En liste kan fremkaldes ligesom hvilken som helst anden variabel:
+
+
+```python
+print(my_list)
+```
+
+    [2, 7, 9, 10]
+
+
+En liste er blot en beholder af forskellige variable. Lister kan derfor indeholde variable af forskellig type:
+
+
+```python
+my_list2 = [2, "hello", 10, True]
+
+print(my_list2)
+```
+
+    [2, 'hello', 10, True]
+
+
+Lister kan også indeholde andre lister:
+
+
+```python
+my_list3 = [9, 17, [2, 91], 16]
+
+print(my_list3)
+```
+
+    [9, 17, [2, 91], 16]
+
+
+**Index**
+
+Hvert element i en liste tildeles et *index*. Et bestemt element kan altid kaldes frem ved at refere til elementets index med `[]`:
+
+
+```python
+my_list = [2, 7, 9, 10]
+print(my_list[0])
+```
+
+    2
+
+
+Index i Python starter altid med 0. Derfor gives i ovenstående det første element af listen `my_list3` ved at refere til index 0.
+
+Et element i en liste kan overskrives ved at refere til dets index:
+
+
+```python
+print(my_list)
+
+my_list[2] = 28
+print(my_list)
+```
+
+    [2, 7, 9, 10]
+    [2, 7, 28, 10]
+
+
+**Slicing**
+
+Elementer i et hvis interval kan kaldes frem ved brug af `:` (også omtalt "slicing"). Slicing tager elementer fra det første index givet (inklusiv) til det sidste index givet (eksklusiv).
+
+
+```python
+print(my_list[1:3])
+```
+
+    [7, 9]
+
+
+Ovenstående tager fra index 1 og op til index 3 eklskusivt index 3; altså index 1 (listens andet element: 7) og index 2 (listens tredje element: 9).
+
+Listens længde (antallet af elementer) returneres med funktionen `len()`:
+
+
+```python
+len(my_list)
+```
+
+
+
+
+    4
+
+
+
+---
+## VIDENSCHECK
+
+Tag et kig på nedenstående liste:
+
+
+```python
+a_list = [45, 67, 3, 36, 87]
+```
+
+*Hvilket element (tal i listen) har index 3?*
+
+{{%expand "Løsning" %}} Index 3 af `a_list` (`a_list[3]`) indeholder tallet 36; altså det fjerde element, da index tælles fra 0.  
+
+
+```python
+print(a_list[3])
+```
+
+    36
+
+
+{{%/expand%}}
+
+---
+
+## Tuples
+
+Tuples fungerer på mange måder ligesom lister med den undtagelse, at værdier i en tuple ikke kan ændres.
+
+Tuples laves med `()`:
+
+
+```python
+my_tuple = ("Katarn", "Kenobi", "Windu")
+
+print(my_tuple)
+```
+
+    ('Katarn', 'Kenobi', 'Windu')
+
+
+Elementer i en tuple har indexes ligesom ved lister:
+
+
+```python
+my_tuple[0]
+```
+
+
+
+
+    'Katarn'
+
+
+
+Forsøger man at ændre et element af en tuple, får man dog fejl:
+
+
+```python
+my_tuple[0] = "Palpatine"
+```
+
+
+    ---------------------------------------------------------------------------
+    
+    TypeError                                 Traceback (most recent call last)
+    
+    <ipython-input-100-b2ea6727d80b> in <module>
+    ----> 1 my_tuple[0] = "Palpatine"
+
+
+    TypeError: 'tuple' object does not support item assignment
+
+
+---
+## VIDENSCHECK
+
+Tag et kig på de to nedenstående datastrukturer (`a` og `b`):
+
+
+```python
+a = [2, 90, 10, 17]
+b = (56, 78, 3, -9)
+```
+
+*Kan tredje element af `b` (index 2: `3`) ændres til `49` ved at skrive `b[2] = 49`?* 
+
+{{%expand "Løsning" %}} Nej. `b` er en tuple, og værdierne kan derfor ikke ændres. Værdierne i `a` kan dog ændres, da det er en liste. {{%/expand%}}
+
+---
+
+## Dictionaries
+
+En anden måde at lagre flere værdier i Python er med *dictionaries*. Dictionaries består af en række sæt af nøgler og værdier. 
+
+Dictionaries defineres med `{}`:
+
+- Nøgler og værdier
+- Check: Hvad er en dictionary?
+- Check: Kan de indeholde forskellige typer?
+- Check: Har dictionary et index?
+- Øvelse: Definer dictionary
+
+
+```python
+my_dict = {"jedi": "Katarn", "sith": "Desann"}
+```
+
+Hvert nøgle- og værdisæt defineres med en nøgle i form af en string efterfulgt af værdien efter `:`. Værdien kan være tal, tekst, liste, en anden dictionary osv.
+
+De forskellige nøgle- og værdisæt adskilles med `,`.
+
+Dictionaries har ikke et index, da Python ikke betragter dem som værende i en bestemt rækkefølge. Værdierne kaldes derfor frem ved at referere til deres nøgle:
+
+
+```python
+print(my_dict["jedi"])
+```
+
+    Katarn
+
+
+Nøgler *skal* være unikke. Det er ikke muligt at lave en dictionary med to identiske nøgler. Hvis man forsøger at gøre det, vil den senest skrevne værdi til nøglen blive lagret:
+
+
+```python
+my_dict = {"jedi": "Katarn", "sith": "Desann", "jedi": "Kenobi"}
+
+print(my_dict)
+```
+
+    {'jedi': 'Kenobi', 'sith': 'Desann'}
+
+
+Ligeledes kan værdier til en bestemt nøgle overskrives:
+
+
+```python
+my_dict["jedi"] = "Katarn"
+
+print(my_dict)
+```
+
+    {'jedi': 'Katarn', 'sith': 'Desann'}
+
+
+Elementer kan tilføjes til en dictionary ved blot at tilknytte det til en nøgle, som endnu ikke er brugt i dictionarien:
+
+
+```python
+my_dict["dealer"] = "Watto"
+
+print(my_dict)
+```
+
+    {'jedi': 'Katarn', 'sith': 'Desann', 'dealer': 'Watto'}
+
+
+---
+## VIDENSCHECK
+
+*Kan en dictionary indeholde forskellige typer af værdier?*
+
+{{%expand "Løsning" %}} Ja. Værdier i en dictionary kan være af alle mulige typer, men nøglen skal altid være en string. {{%/expand%}}
+
+---
+
+---
+## VIDENSCHECK
+
+Tag et kig på nedenstående dictionary:
+
+
+```python
+famous_animals = {"Pluto": "dog", "Oggy": "cat", "Pinky": "mouse", "Pumba": "warthog"}
+```
+
+*Hvordan fremkaldes den 3. værdi ("mouse")?*
+
+{{%expand "Løsning" %}} Den 3. værdi fremkaldes ved at refere til den rigtige nøgle: `famous_animals["Pinky"]`. Python betragter ikke værdien som den 3. værdi, da værdien knyttes op på nøglen og ikke på rækkefølgen, som den står i dictionary. {{%/expand%}}
+
+---
 
 # {#END}

@@ -58,6 +58,7 @@ print(type(b))   # b er et float point
 
 At Python gerne vil adskille mellem typer har noget at gøre med, hvordan en type information kræver mere at lagre end en anden. Dette kan have betydning, når man arbejder med enorme datamængder, hvilket sjældent er tilfældet i socialvidenskabelig analysearbejder.
 
+---
 ## VIDENSCHECK
 
 I ovenstående bliver variablen `a` brugt til at definere variabel `b`. 
@@ -67,6 +68,8 @@ I ovenstående bliver variablen `a` brugt til at definere variabel `b`.
 {{%expand "Løsning" %}}
 `a` er stadig en *integer*. `a` ikke ændres i koden, men bliver blot brugt til at lave variabel `b`.
 {{% /expand%}}
+
+---
 
 ## Tekst typer
 
@@ -165,6 +168,7 @@ a = int(a)      # forsøger at konvertere a til integer - ikke muligt
     ValueError: invalid literal for int() with base 10: 'Hello'
 
 
+---
 ## ØVELSE: Typer
 
 Lav variablene variablene `my_number3` og `my_number4`.
@@ -209,3 +213,5 @@ my_number3 / my_number4
 
 
 {{% /expand%}}
+
+---

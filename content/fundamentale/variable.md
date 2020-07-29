@@ -123,6 +123,7 @@ print(a)     # a er nu ændret
 Brug `#` til at skrive kommentarer i din kode. Tekst der følger et `#` ignoreres af Python. Når man for alvor begynder at arbejde med kode, kan man nemt glemme, hvorfor man skrev bestemte kodestykker, eller hvad kodestykkerne gør. Kommentarer til ens kode hjælper både dig selv og evt. andre, som skal kigge på eller arbejde med din kode.
 {{% /notice%}}
 
+---
 ## VIDENSCHECK
 
 Tag et kig på nedenstående kode:
@@ -141,6 +142,8 @@ g = g - f
 `g` indeholder tallet `10`. `g` bliver kun ændret ved den sidste linje (`g = g - f`), og `f` indeholder tallet `80`, da `g` på tidspunktet `f` defineres indeholder tallet `90`.
 {{% /expand%}}
 
+---
+
 ## At arbejde med variable
 
 At arbejde med Python er at arbejde med variable. Man definerer hele tiden nye variable, som bruges senere hen. Selvom man kun er interesseret i ét endeligt produkt eller output, så bruges variable til at holde styr på information og mellemresultater undervejs.
@@ -158,10 +161,10 @@ the_number_ten = 10 # sigende, men ret langt, hvis man skal bruge variablen igen
 **Tips til variabelnavne**
 
 Variable kan blive navngivet næsten alt, men der er visse restriktioner:
-* Variabelnavne kan ikke indeholde mellemrum.
-* De fleste specielle karakterer kan ikke bruges, som fx: `/`, `?`, `*`, `?`, `.` osv. Disse betyder noget i Python og vil blive forsøgt fortolket.
+- Variabelnavne kan ikke indeholde mellemrum.
+- De fleste specielle karakterer kan ikke bruges, som fx: `/`, `?`, `*`, `?`, `.` osv. Disse betyder noget i Python og vil blive forsøgt fortolket.
 
-Derudover er det en god ide at undgå at bruge allerede eksisterende !! navne i Python, da man ellers overskriver en allerede eksisterende funktion. Dette kan man nemt komme til i starten, når man ikke har stort kendskab til Pythons funktioner.
+Derudover er det en god ide at undgå at bruge allerede eksisterende navne i Python, da man ellers overskriver en allerede eksisterende funktion. Dette kan man nemt komme til i starten, når man ikke har stort kendskab til Pythons funktioner.
 
 {{% /notice%}}
 
@@ -181,6 +184,7 @@ a // b     # "floor division" - returner antal hele gange, at tal til venstre ka
 
 {{% /notice%}} 
 
+---
 ## ØVELSE: Definer variable
 
 Lav variablene `my_number1`, `my_number2` og `my_word`. 
@@ -196,3 +200,5 @@ Når de er defineret, prøv da nogen af de forskellige matematiske operationer p
 - `my_word` * `my_number2`
 
 Læg mærke til hvilke operationer, der kan lade sig gøre og hvilke resultater, de producerer (nogle af disse operationer vil give fejl).
+
+---
