@@ -192,7 +192,6 @@ print(add10(10))
     Adding 10...
     20
 
-
 ---
 ##  VIDENSCHECK
 

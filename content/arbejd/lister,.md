@@ -45,6 +45,43 @@ print(my_list3)
     [9, 17, [2, 91], 16]
 
 
+**Variable i lister**
+
+En liste kan bestå af en række variable:
+
+
+```python
+a = 4
+b = 9
+c = 11
+
+my_list4 = [a, b, c]
+
+print(my_list4)
+```
+
+    [4, 9, 11]
+
+
+Bemærk dog, at når en liste dannes med variable, så er det variablens værdi(er), der lagres i listen og ikke selve variablen. 
+
+Det kan ses, hvis man ændrer en af variablerne i listen. Herunder ændres variabel `a` fra `4` til `21`. Selvom variablen ændres, så er indholdet af listen (`my_list4`) ikke ændret. 
+
+
+```python
+print(my_list4)   # listen består af værdierne 4, 9 og 11 tilsvarende variable a, b og c
+
+a = 21            # værdien af variabel af ændres
+
+print(my_list4)   # listens indhold er uændret (stadig 4, 9 og 11)
+```
+
+    [4, 9, 11]
+    [4, 9, 11]
+
+
+Når listen genereres, lagres den værdi, som `a` har på det tidspunkt, listen generes. Værdiens tilknytning til variabel `a` lagres altså ikke i listen.
+
 **Index**
 
 Hvert element i en liste tildeles et *index*. Et bestemt element kan altid kaldes frem ved at refere til elementets index med `[]`:
@@ -176,7 +213,6 @@ my_tuple[0] = "Palpatine"
 
     TypeError: 'tuple' object does not support item assignment
 
-
 ---
 ## VIDENSCHECK
 
@@ -259,7 +295,6 @@ print(my_dict)
 ```
 
     {'jedi': 'Katarn', 'sith': 'Desann', 'dealer': 'Watto'}
-
 
 ---
 ## VIDENSCHECK

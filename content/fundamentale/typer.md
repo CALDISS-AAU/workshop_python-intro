@@ -167,7 +167,6 @@ a = int(a)      # forsøger at konvertere a til integer - ikke muligt
 
     ValueError: invalid literal for int() with base 10: 'Hello'
 
-
 ---
 ## ØVELSE: Typer
 
