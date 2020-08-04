@@ -9,7 +9,7 @@
 
     <link rel="icon" href="../../images/favicon.png" type="image/png">
 
-    <title>Interager med Python :: Introduction to Python for Social Science</title>
+    <title>If-betingelser :: Introduction to Python for Social Science</title>
 
     
     <link href="../../css/nucleus.css?1596549962" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/hvad/interager/">
+  <body class="" data-url="/arbejd/if-betingelser/">
     <nav id="sidebar" class="">
 
 
@@ -76,7 +76,7 @@
   
     
     <li data-nav-id="/hvad/" title="Hvad er Python?" class="dd-item 
-        parent
+        
         
         
         ">
@@ -123,7 +123,7 @@
  
   
     
-      <li data-nav-id="/hvad/interager/" title="Interager med Python" class="dd-item active">
+      <li data-nav-id="/hvad/interager/" title="Interager med Python" class="dd-item ">
         <a href="../../hvad/interager/">
         Interager med Python
         
@@ -312,7 +312,7 @@
   
     
     <li data-nav-id="/arbejd/" title="Arbejd med flere værdier" class="dd-item 
-        
+        parent
         
         
         ">
@@ -380,7 +380,7 @@
  
   
     
-      <li data-nav-id="/arbejd/if-betingelser/" title="If-betingelser" class="dd-item ">
+      <li data-nav-id="/arbejd/if-betingelser/" title="If-betingelser" class="dd-item active">
         <a href="../../arbejd/if-betingelser/">
         If-betingelser
         
@@ -537,7 +537,7 @@
             
           
           
-            <a href='../../'></a> > <a href='../../hvad/'>Hvad er Python?</a> > Interager med Python
+            <a href='../../'></a> > <a href='../../arbejd/'>Arbejd med flere værdier</a> > If-betingelser
           
         
           
@@ -554,12 +554,10 @@
 <ul>
 <li>
 <ul>
-<li><a href="#python-uden-dikkedarer">Python uden dikkedarer</a></li>
-<li><a href="#brug-af-python-ide-er-integrated-development-environment">Brug af Python IDE&rsquo;er (&ldquo;Integrated Development Environment&rdquo;)</a>
-<ul>
-<li><a href="#spyder">Spyder</a></li>
-<li><a href="#jupyter-notebook">Jupyter Notebook</a></li>
-</ul></li>
+<li><a href="#øvelse">ØVELSE</a></li>
+<li><a href="#if-betingelser-og-for-loops">If-betingelser og for loops</a></li>
+<li><a href="#if-betingelser-og-funktioner">If-betingelser og funktioner</a></li>
+<li><a href="#øvelse-1">ØVELSE</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -578,7 +576,7 @@
           
             <h1>
               
-              Interager med Python
+              If-betingelser
             </h1>
           
 
@@ -587,49 +585,195 @@
 
 
 
-<p>For at bruge Python skal vi &ldquo;tale&rdquo; Python. Man arbejde med Python ved at skrive kommandoer i Python-sproget. Hvis Python forstår din kommando udføres den. Hvis ikke, får du en eller anden form for fejl. Man kan se Python som et meget bogstaveligt og pernitten sprog: Kommandoer skal skrives på helt bestemte måder for at Python kan forstå, hvad du beder om.</p>
+<p>Når man arbejder med Python, kan det ofte være brugbart at sætte if-betingelser i sin kode. If-betingelser er kodestumper, hvor visse kommandoer kun udføres, hvis en betingelse er opfyldt:</p>
 
-<p>Barberes Python ned til sine grundsten består det ikke af mere end en &ldquo;interpreter&rdquo; (fortolker). Alle programmeringssprog er bygget op om en fortolker, der &ldquo;evaluerer&rdquo; kommandoer. Inden for programmering vil evaluering sige, at sproget forsøger at forstå, hvad der står i en kommando.</p>
+<pre><code class="language-python">x = 12
 
-<h2 id="python-uden-dikkedarer">Python uden dikkedarer</h2>
+if x &gt; 10:
+    print(&quot;Tallet er større end 10!&quot;)
+else:
+    print(&quot;Tallet er ikke større end 10!&quot;)
+</code></pre>
 
-<p>Den &ldquo;rene&rdquo; installation af Python tilføjer fortolkeren til styresystemet, så man kan arbejde med Python gennem en terminal:
-<img src="../../python_terminal.png" alt="python_terminal.png" /></p>
+<pre><code>Tallet er større end 10!
+</code></pre>
 
-<p>I terminalen kan vi skrive en kommando og trykke &ldquo;Enter&rdquo; for at få fortolkeren til at evaluere. I nedenstående skrives kommandoen <code>2+42</code> hvilket Python evaluerer og giver outputtet <code>42</code>:
-<img src="../../python_interpret1.png" alt="python_interpret1.png" /></p>
+<p>Ovenstående kode består af to blokke: en if-blok og en else-blok.</p>
 
-<p>Python forstår matematiske operationer og vil returnere resultatet af en udregning, når man skriver den ind.</p>
+<p>I koden evalueres først if-betingelse: <code>x &gt; 10</code>. Hvis denne evalueres til <code>True</code>, udføres kommandoen efter <code>:</code>. I ovenstående er <code>x = 12</code>, hvorfor kommandoen udføres. Her er kommandoen blot at printe teksten <code>Tallet er større end 10!</code>.</p>
 
-<p>I nedenstående forsøges at bede om en opskrift på pandekager. Det går knap så godt:
-<img src="../../python_interpret2.png" alt="python_interpret1.png" /></p>
+<p>Herunder ses hvad der sker med samme kode, hvis x er mindre end 10:</p>
 
-<p>Når Python ikke kan forstå kommandoen, returneres en fejl. Der findes et væld af fejltyper. I ovenstående gives en <code>SyntaxError</code>, fordi kommandoen er skrevet helt forkert (dette er dog ikke det eneste problem med denne kommando, men det er den første fejl, som fortolkeren støder på).</p>
+<pre><code class="language-python">x = 8
 
-<h2 id="brug-af-python-ide-er-integrated-development-environment">Brug af Python IDE&rsquo;er (&ldquo;Integrated Development Environment&rdquo;)</h2>
+if x &gt; 10:
+    print(&quot;Tallet er større end 10!&quot;)
+else:
+    print(&quot;Tallet er ikke større end 10!&quot;)
+</code></pre>
 
-<p>Selvom man kan arbejde med Python direkte i terminalen frarådes det meget kraftigt, da det er meget vanskeligt at gemme sit arbejde undervejs og svært at bevare overblik over sin kode og arbejde. Derfor arbejder man for det meste gennem et IDE (Integrated Development Environment). Et IDE er et program, som man kan arbejde med Python igennem, som ofte har forskellige funktioner og egenskaber til at hjælpe en bevare overblikket.</p>
+<pre><code>Tallet er ikke større end 10!
+</code></pre>
 
-<p>Her nævnes blot et mindre udvalg af IDE&rsquo;er.</p>
+<p>I ovenstående er <code>x = 8</code>. Derfor evaluerer betingelsen denne gang til <code>False</code>, og kommandoen lige efter if-betingelsen udføres ikke. I stedet springes videre til else-blokken, hvor kommandoen er at printe teksten <code>Tallet er ikke større end 10!</code>.</p>
 
-<h3 id="spyder">Spyder</h3>
+<p>Else-blokken udløses i alle tilfælde, hvor if-betingelsen ikke er opfyldt. En else-blok er ikke nødvendig. Udelades den, sker der blot ingenting, hvis if-betingelsen ikke er opfyldt:</p>
 
-<p>Spyder er bygget op omkring en &ldquo;script-editor&rdquo;. Et script er et dokument bestående af en række af Python kommandoer, som man kan sende til fortolkeren på én gang. I et script kan fx samles al det databehandlings- og analysearbejde, som man skal lave. Ved at køre scriptet udføres så al arbejdet.
-Script-editoren er indbygget med farvekoder, så man nemt kan adskille dele af koden samt automatiske forslag til kommandoer (Spyder 4 og frem).</p>
+<pre><code class="language-python">x = 8
 
-<p>Derudover giver Spyder en objekt-/variabeloversigt, så man kan se, hvad man har defineret og arbejder med; fx datasæt, resultater, osv.</p>
+if x &gt; 10:
+    print(&quot;Tallet er større end 10!&quot;)
+</code></pre>
 
-<p>Spyder er godt til de fleste ting og særligt, hvis man skal arbejde med længere scripts.</p>
+<p><strong>Flere if-betingelser</strong></p>
 
-<p>Spyder installeres sammen med Anaconda: <a href="https://www.anaconda.com/products/individual#Downloads">https://www.anaconda.com/products/individual#Downloads</a></p>
+<p>Det er muligt at udvide med flere betingelser med <code>elif</code> (&ldquo;else if&rdquo;). <code>elif</code> fungerer ved, at hvis if-betingelsen ikke er opfyldt, så evalueres den første <code>elif</code>. Sådan kører Python videre indtil, at der findes en betingelse, der evaluerer til sand, eller der nås en else-blok.</p>
 
-<h3 id="jupyter-notebook">Jupyter Notebook</h3>
+<pre><code class="language-python">x = 7
 
-<p>Jupyter Notebook er opbygget omkring en såkaldt &ldquo;notebook&rdquo;. En notebook i Jupyter Notebook kombinerer Python kode med almindelig tekst (Markdown). Jupyter Notebook egner sig særdeles godt, hvis man skal dokumentere sit kodearbejde undervejs, da man har mulighed for at skrive almindelig tekst, sætte billeder ind, lave tabeller osv. omkring sin kode.</p>
+if x &gt; 10:
+    print(&quot;Tallet er større end 10!&quot;)
+elif x &gt; 5:
+    print(&quot;Tallet er større end 5!&quot;)
+else:
+    print(&quot;Tallet er ikke større end 5!&quot;)
+</code></pre>
 
-<p>Dette materiale er udarbejdet i Jupyter Notebook.</p>
+<pre><code>Tallet er større end 5!
+</code></pre>
 
-<p>Jupyter Notebook installeres sammen med Anaconda: <a href="https://www.anaconda.com/products/individual#Downloads">https://www.anaconda.com/products/individual#Downloads</a></p>
+<hr />
+
+<h2 id="øvelse">ØVELSE</h2>
+
+<p>Tag et kig på nedenstående kode:</p>
+
+<pre><code class="language-python">master = &quot;Obi-Wan Kenobi&quot;
+
+if master == &quot;Luke Skywalker&quot;:
+    apprentice = &quot;Ben Solo&quot;
+elif master == &quot;Qui-Gon Jinn&quot;:
+    apprentice = &quot;Obi-Wan Kenobi&quot;
+elif master == &quot;Obi-Wan Kenobi&quot;:
+    apprentice = &quot;Anakin Skywalker&quot;
+elif master == &quot;Yoda&quot;:
+    apprentice = &quot;Mace Windu&quot;
+else:
+    apprentice = &quot;Ingen&quot;
+</code></pre>
+
+<p><em>Hvad indeholder variablen <code>apprentice</code>, når koden er kørt? (se om du kan løse det uden at køre koden)</em></p>
+
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	Løsning
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        Variablen indeholder &ldquo;Anakin Skywalker&rdquo;, da det er sætningen <code>master = &quot;Obi-Wan Kenobi&quot;</code>, som er sand.
+    </div>
+</div>
+
+<hr />
+
+<h2 id="if-betingelser-og-for-loops">If-betingelser og for loops</h2>
+
+<p>If-betingelser er yderst nyttige kombination med andre kontrolstrukturer. Fx kan man i kombinationen med for loops og if-betingelser skrive kode, hvor en vis kommando kun udføres på visse værdier i en liste:</p>
+
+<pre><code class="language-python">values = range(1, 10)
+
+for value in values:
+    if value % 3 == 0:
+        print(str(value) + &quot; kan divideres med 3!&quot;)
+    else:
+        print(str(value) + &quot; kan ikke divideres med 3!&quot;)
+</code></pre>
+
+<pre><code>1 kan ikke divideres med 3!
+2 kan ikke divideres med 3!
+3 kan divideres med 3!
+4 kan ikke divideres med 3!
+5 kan ikke divideres med 3!
+6 kan divideres med 3!
+7 kan ikke divideres med 3!
+8 kan ikke divideres med 3!
+9 kan divideres med 3!
+</code></pre>
+
+<p>I ovenstående ses et for loop, der kører over værdierne 1 til 9 (<code>range(1, 10)</code>). Hver værdi tjekkes om det kan divideres med 3 (<code>value % 3 == 0</code>). Hvis det kan printes teksten, at det kan divideres med 3. Hvis ikke, printes teksten, at det ikke kan divideres med 3.</p>
+
+
+<div class="notices note" >Husk at <code>%</code> bruges til at returnere den rest, der er tilbage efter heltalsdivision. <code>7 % 3</code> giver fx 1, da 7 kan divideres med 3 to hele gange, hvorefter der er 1 tilbage.</div>
+
+
+<h2 id="if-betingelser-og-funktioner">If-betingelser og funktioner</h2>
+
+<p>Funktioner kan skrives med if-betingelser. På den måde kan man skrive funktioner sådan, at det, der returneres, varierer afhængigt af, hvad det er for et input:</p>
+
+<pre><code class="language-python">jedis = [&quot;Kenobi&quot;, &quot;Yoda&quot;, &quot;Windu&quot;, &quot;Ki-Adi-Mundi&quot;, &quot;Koon&quot;, &quot;Skywalker&quot;, &quot;Katarn&quot;]
+siths = [&quot;Sidious&quot;, &quot;Desann&quot;, &quot;Tyrannus&quot;, &quot;Revan&quot;, &quot;Maul&quot;, &quot;Vader&quot;, &quot;Plagueis&quot;]
+
+def jedi_checker(name):
+    if name in jedis:
+        return &quot;jedi&quot;
+    elif name in siths:
+        return &quot;sith&quot;
+    else:
+        return &quot;neither jedi nor sith&quot;
+    
+print(jedi_checker(&quot;Windu&quot;))
+print(jedi_checker(&quot;Revan&quot;))
+</code></pre>
+
+<pre><code>jedi
+sith
+</code></pre>
+
+
+<div class="notices note" >Bemærk at ovenstående funktion er meget begrænset, da den kun baserer sig på en begrænset mængde navne og kun accepterer, at navnet er stavet på en helt bestemt måde.</div>
+
+
+<hr />
+
+<h2 id="øvelse-1">ØVELSE</h2>
+
+<p><em>Skriv et stykke kode, der går igennem hvert ord i listen <code>words</code> og printer ordet i blokbogstaver, hvis ordet er mere end 6 bogstaver langt. Ellers skal der ikke ske noget.</em></p>
+
+<pre><code class="language-python">words = [&quot;potato&quot;, &quot;cat&quot;, &quot;scrumptious&quot;, &quot;monitor&quot;, &quot;carpenter&quot;]
+</code></pre>
+
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	Løsning
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <pre><code class="language-python">for word in words:
+    if len(word) &gt; 6:
+        print(word.upper())
+</code></pre>
+
+<pre><code>SCRUMPTIOUS
+MONITOR
+CARPENTER
+</code></pre>
+
+    </div>
+</div>
+
+<hr />
 
 
 <footer class="footline">
@@ -667,20 +811,6 @@ Script-editoren er indbygget med farvekoder, så man nemt kan adskille dele af k
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
                         
                         
                     
@@ -691,109 +821,6 @@ Script-editoren er indbygget med farvekoder, så man nemt kan adskille dele af k
                     
                     
 
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -891,6 +918,19 @@ Script-editoren er indbygget med farvekoder, så man nemt kan adskille dele af k
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -898,6 +938,113 @@ Script-editoren er indbygget med farvekoder, så man nemt kan adskille dele af k
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -951,10 +1098,10 @@ Script-editoren er indbygget med farvekoder, så man nemt kan adskille dele af k
 	 
 	 
 		
-			<a class="nav nav-prev" href="../../hvad/at/" title="At arbejde med et programmeringssprog"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../../arbejd/loops/" title="Loops"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../fundamentale/" title="Fundamentale koncepter i Python" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../supplerende/" title="Supplerende materiale" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

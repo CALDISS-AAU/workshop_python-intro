@@ -9,7 +9,7 @@
 
     <link rel="icon" href="../../images/favicon.png" type="image/png">
 
-    <title>Funktioner :: Introduction to Python for Social Science</title>
+    <title>Loops :: Introduction to Python for Social Science</title>
 
     
     <link href="../../css/nucleus.css?1596549962" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/fundamentale/funktioner/">
+  <body class="" data-url="/arbejd/loops/">
     <nav id="sidebar" class="">
 
 
@@ -152,7 +152,7 @@
   
     
     <li data-nav-id="/fundamentale/" title="Fundamentale koncepter i Python" class="dd-item 
-        parent
+        
         
         
         ">
@@ -241,7 +241,7 @@
  
   
     
-      <li data-nav-id="/fundamentale/funktioner/" title="Funktioner" class="dd-item active">
+      <li data-nav-id="/fundamentale/funktioner/" title="Funktioner" class="dd-item ">
         <a href="../../fundamentale/funktioner/">
         Funktioner
         
@@ -312,7 +312,7 @@
   
     
     <li data-nav-id="/arbejd/" title="Arbejd med flere værdier" class="dd-item 
-        
+        parent
         
         
         ">
@@ -359,7 +359,7 @@
  
   
     
-      <li data-nav-id="/arbejd/loops/" title="Loops" class="dd-item ">
+      <li data-nav-id="/arbejd/loops/" title="Loops" class="dd-item active">
         <a href="../../arbejd/loops/">
         Loops
         
@@ -537,7 +537,7 @@
             
           
           
-            <a href='../../'></a> > <a href='../../fundamentale/'>Fundamentale koncepter i Python</a> > Funktioner
+            <a href='../../'></a> > <a href='../../arbejd/'>Arbejd med flere værdier</a> > Loops
           
         
           
@@ -554,11 +554,11 @@
 <ul>
 <li>
 <ul>
-<li><a href="#sådan-bruges-funktioner">Sådan bruges funktioner</a></li>
+<li><a href="#for-loops">For loops</a></li>
 <li><a href="#videnscheck">VIDENSCHECK</a></li>
-<li><a href="#hvor-kommer-funktioner-fra">Hvor kommer funktioner fra?</a></li>
-<li><a href="#videnscheck-1">VIDENSCHECK</a></li>
 <li><a href="#øvelse">ØVELSE</a></li>
+<li><a href="#while-loops">While loops</a></li>
+<li><a href="#øvelse-1">ØVELSE</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -577,7 +577,7 @@
           
             <h1>
               
-              Funktioner
+              Loops
             </h1>
           
 
@@ -586,77 +586,115 @@
 
 
 
-<p>En central del af det at arbejde med et programmeringssprog er at bruge funktioner. Funktioner tager et eller flere input (kaldet &ldquo;argumenter&rdquo;), foretager et eller andet med disse og returnerer (for det meste) et output.</p>
-
-<p>Funktioner i Python har følgende format:</p>
+<p>I arbejdet med dataanalyse udfører man ofte de samme kommandoer, kontroller, kørsler osv. igen og igen:</p>
 
 <ul>
-<li><code>function(argument1, argument2, ...)</code></li>
+<li>En række oplysninger kan kontrolleres, om de er korrekte. Har de den rigtige type? Er værdierne gyldige? (fx at aldersværdier ikke har skøre værdier som 987 år).</li>
+<li>Den samme beregning skal foretages for en række oplysninger - fx udregning gennemsnit for indkomst, alder, år i arbejde osv.</li>
+<li>De samme oplysninger skal hentes fra en række forskellige hjemmesider.</li>
 </ul>
 
-<p>Funktioner bruges ved at skrive funktionens navn og skrive de argumenterne i parentes. En funktion kan have et utal af argumenter, men oftest skal de som minimum have et eller flere variable som input.</p>
+<p>I Python (og mange andre programmeringssprog) kan man anvende &ldquo;loops&rdquo; til at gentage kommandoer. De mest gængse loop typer er &ldquo;for loops&rdquo; og &ldquo;while loops&rdquo;. &ldquo;for loops&rdquo; gentager en eller flere kommandoer over en række værdier. &ldquo;while loops&rdquo; gentager en kommando, så længe en hvis betingelse er opfyldt.</p>
 
-<p>Udover argumenter tager funktioner også ofte en del &ldquo;keyword arguments&rdquo; som input. Disse kan betragte som en form for indstillinger, som man slår til og fra i funktionen. &ldquo;keyword arguments&rdquo; indgår i funktionen med navnet på indstillingen, et <code>=</code> og hvad indstillingen skal sættes til, lig nedenstående:</p>
+<p>Loops kaldes også for kontrolstrukturer i programmeringssprog, da de er med til at sætte rammer og betingelser for, hvad visse kommandoer skal køre på.</p>
 
-<ul>
-<li><code>function(argument1, argument2, keywordargument1 = &quot;something&quot;)</code></li>
-</ul>
+<h2 id="for-loops">For loops</h2>
 
-<p>Ligesom med argumenter, kan en funktion have rigtig mange &ldquo;keyword arguments&rdquo;/indstillinger. Det er dog sjældent, at man behøver forholde sig til alle indstillingerne, da de fleste funktioner har en eller anden form for standardindstilling.</p>
+<p>I nedenstående dannes tre variable. Det antages, at der er tale om tre forskellige aldersværdier. De tre værdier lagres i listen <code>ages</code>.</p>
 
-<h2 id="sådan-bruges-funktioner">Sådan bruges funktioner</h2>
+<pre><code class="language-python">age1 = 29
+age2 = &quot;41&quot;
+age3 = 87
 
-<p>Tidligere i dette materiale har funktionerne <code>print()</code> og <code>type()</code> været brugt. Ved <code>print()</code> har denne kun været brugt med et enkelt argument; altså det, som skal vises, men faktisk accepterer print flere argumenter:</p>
-
-<pre><code class="language-python">a = &quot;Hello&quot;
-b = &quot;there&quot;
-print(a, b)
+ages = [age1, age2, age3]
 </code></pre>
 
-<pre><code>Hello there
+<p>Som tidligere gennemgået i materialet, adskiller Python mellem forskellige variabeltyper. For at Python kan arbejde med tal, skal Python fortælles, at variablen er et tal, hvis ikke Python har gættet det i forvejen. En typisk del af forarbejdet til dataanalyse er, at validere oplysninger på en eller anden måde for at sikre, at data er i gyldige formater og typer.</p>
+
+<p>Hver variabel skal altså kontrolleres for, at det er en numerisk type, hvilket kan gøres med <code>type()</code>:</p>
+
+<pre><code class="language-python">print(type(age1))
 </code></pre>
 
-<p>Derudover har <code>print()</code> også en række &ldquo;keyword arguments&rdquo;/indstillinger, som det ses af dokumentationen herunder:</p>
-
-<pre><code>Docstring:
-print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
-
-Prints the values to a stream, or to sys.stdout by default.
-Optional keyword arguments:
-file:  a file-like object (stream); defaults to the current sys.stdout.
-sep:   string inserted between values, default a space.
-end:   string appended after the last value, default a newline.
-flush: whether to forcibly flush the stream.
-Type:      builtin_function_or_method
+<pre><code>&lt;class 'int'&gt;
 </code></pre>
 
-<p>Her ses det, at <code>print()</code> har adskilige indstillinger. <code>sep</code> bestemmer fx, hvad der skal adskille de forskellige værdier, som tages ind. Bemærk, at alle indstillinger er sat til en eller anden indstillling som standard. <code>sep=' '</code> betyder, at de forskellige værdier adskilles med et mellemrum som standard. Hvis denne ændres til noget andet, vil outputtet se anderledes ud:</p>
+<p>Skal det gøres for alle variable, skal kommandoen gentages for hver variabel:</p>
 
-<pre><code class="language-python">print(a, b)              # printer a og b med standardindstilling (adskiller med mellemrum)
-print(a, b, sep = &quot;, &quot;)  # sep ændres til komma
+<pre><code class="language-python">print(type(age1))
+print(type(age2))
+print(type(age3))
 </code></pre>
 
-<pre><code>Hello there
-Hello, there
+<pre><code>&lt;class 'int'&gt;
+&lt;class 'str'&gt;
+&lt;class 'int'&gt;
 </code></pre>
 
-<p>En funktion kan have rigtig mange indstillinger, og i praksis forholder man sig kun til få af disse, da man oftest kan lade standardinstillingerne være, som de er.</p>
+<p>Af ovenstående erfares, at <code>age2</code> er en string, og derfor skal konverteres, før der kan arbejdes videre med den.</p>
 
+<p>At skulle gentage kommandoer ved at skrive dem ud hver gang, bliver dog hurtigt en tidsslugende og meget kedsommelig affære. Alternativt kan et loop bruges til at gøre det samme.</p>
 
-<div class="notices info" ><p>Man kan altid få hjælpefilen/dokumentationen frem til en funktion ved at skrive <code>?[function]</code> (fx <code>?print</code> for dokumentationen for <code>print()</code>. Mange IDE&rsquo;er understøtter også, at man trykker <code>Shift + Tab</code> inde i parentesen af en funktion for at få vist en bid af hjælpefilen.</p>
-</div>
+<p>Ovenstående kan gøres med et loop på følgende måde (husk at listen <code>ages</code> består af værdierne fra variablerne <code>age1</code>, <code>age2</code> og <code>age3</code>):</p>
 
+<pre><code class="language-python">for age in ages:
+    print(type(age))
+</code></pre>
 
+<pre><code>&lt;class 'int'&gt;
+&lt;class 'str'&gt;
+&lt;class 'int'&gt;
+</code></pre>
 
-<div class="notices note" ><p>Det, som der står i de forskellige &ldquo;keyword arguments&rdquo; i dokumentationen for en funktion, er funktionens standardindstillinger.</p>
-</div>
+<p><strong>Opbygning af et for loop</strong></p>
 
+<p>Et for loop består overordnet af to dele:
+- En række værdier, som loopet skal køre over
+- En eller flere kommandoer, som skal gentages for hver værdi</p>
+
+<p>I ovenstående kommando bruges listen <code>ages</code> som den række værdier, som loopet skal køre over. <code>age</code> er en pladsholder for de enkelte værdier, som er i <code>ages</code>. Hver gang loopet gentages, ændrer <code>age</code> sig til den næste værdi i <code>ages</code>.</p>
+
+<p>Pladsholderen <code>age</code> bruges i kommandoerne, som skal gentages for hvert loop. Kommandoerne skrives på linjen efter <code>:</code>. Her er det vigtigt, at kommandoerne i loopet er rykket ind (enten med tab eller fire mellemrum, men de fleste IDE&rsquo;er laver dette mellemrum automatisk).</p>
+
+<p>Der kunne have været brugt hvilket som helst navn som pladsholder i stedet for <code>age</code>, så længe at pladsholder-navnet ændres i kommandoerne også.</p>
+
+<p>Herunder ses et andet for loop, der går igennem hver værdi i <code>values</code> og printer værdien ganget med to:</p>
+
+<pre><code class="language-python">values = [9, 10, 4, 91, 27]
+
+for value in values:
+    print(value * 2)
+</code></pre>
+
+<pre><code>18
+20
+8
+182
+54
+</code></pre>
+
+<p>Når for loopet sættes i gang, ser Python på værdierne i <code>values</code> og tager den første værdi (<code>9</code>). <code>value</code> er altså lig med <code>9</code> i den første kørsel af loopet. Derefter udføres kommandoen, som i dette tilfælde er at printe værdien ganget med to: <code>print(value * 2)</code>. <code>value = 9</code> i den første kørsel af loopet, så derfor udføres: <code>print(9 * 2)</code>, som giver <code>18</code>.</p>
+
+<p>Når enden af kommandoerne i loopet nås, går Python tilbage til værdierne i <code>values</code> og tager den næste værdi (<code>10</code>), så <code>value</code> er lig med <code>10</code> i den næste kørsel: <code>print(10 * 2)</code>, som giver <code>20</code>. Sådan fortsætter Python, indtil der ikke er flere værdier i listen (eller at der stødes på en eller anden fejl).</p>
+
+<p>Bemærk, at en liste ikke behøver at være defineret som variabel, inden den bruges i et loop:</p>
+
+<pre><code class="language-python">for value in [9, 10, 4, 91, 27]:
+    print(value * 2)
+</code></pre>
+
+<pre><code>18
+20
+8
+182
+54
+</code></pre>
 
 <hr />
 
 <h2 id="videnscheck">VIDENSCHECK</h2>
 
-<p>Hvordan får man <code>print()</code> til at adskille input værdierne med en <code>-</code>?</p>
+<p><em>Hvornår giver det mening at bruge et for loop?</em></p>
 
 
 <div class="expand">
@@ -670,138 +708,7 @@ Hello, there
     	</span>
     </div>
     <div class="expand-content" style="display: none;">
-        <p>Indstillingen <code>sep</code> sættes til `sep = &lsquo;-&rsquo;.</p>
-
-<pre><code class="language-python">print(a, b, sep = '-')
-</code></pre>
-
-<pre><code>Hello-there
-</code></pre>
-
-    </div>
-</div>
-
-<hr />
-
-<h2 id="hvor-kommer-funktioner-fra">Hvor kommer funktioner fra?</h2>
-
-<p>Python har en række funktioner indbygget, men faktisk kommer størstedelen af funktionerne i Python fra alle mulige andre, som har udviklede funktioner til forskellige formål, som andre derefter kan gøre brug af. Andre funktioner hentes ind i form af &ldquo;pakker&rdquo;, som gennemgås senere i dette materiale.</p>
-
-<p>Man kan fristes til at lære Python ved at forsøge at lære så mange funktioner som muligt. Dette er en håbløs og nærmest umulig opgave givet omfanget af, hvad der findes af funktioner, der kan hentes til Python. I praksis opbygger man sig arbejdsgange eller workflows, hvori man har tendens til at bruge de samme funktioner igen og igen. Derfor er en god tilgang til Python at spørge: <em>&ldquo;Kan jeg bruge Python til X?&rdquo;</em> eller <em>&ldquo;Hvordan løser jeg problem Y i Python?&rdquo;</em>, og så forsøge at finde de rette funktioner til det, frem for at spørge: <em>&ldquo;Hvad kan jeg bruge Python til?&rdquo;</em>, da man med dette spørgsmål ikke får nogen retning på det, man gerne vil lære om Python.</p>
-
-<p>At Python kan så mange ting i dag skyldes netop, at folk rundt omkring i verden har stået over for forskellige udfordringer, som de har løst ved at udvikle funktioner til Python, som de derefter stiller til rådighed.</p>
-
-<p>Python fortæller med det samme, hvis funktionen, som man forsøger at bruge, ikke kendes af Python:</p>
-
-<pre><code class="language-python">add10(5)
-</code></pre>
-
-<pre><code>---------------------------------------------------------------------------
-
-NameError                                 Traceback (most recent call last)
-
-&lt;ipython-input-13-7452fc393844&gt; in &lt;module&gt;
-----&gt; 1 add10(5)
-
-
-NameError: name 'add10' is not defined
-</code></pre>
-
-<p>Man kan dog til enhver tid definere sine egne funktioner:</p>
-
-<pre><code class="language-python">def add10(x):
-    result = x + 10
-    return result
-
-print(add10(5))
-</code></pre>
-
-<pre><code>15
-</code></pre>
-
-<p>Funktioner defineres med <code>def</code> efterfulgt af navnet på den funktion, man gerne vil lave. I parenteserne skrives de input, som funktionen skal have. I ovenstående dannes funktionen <code>add10</code>, der tager et enkelt input og lægger ti til. <code>x</code> i ovenstående er blot en pladsholder, da <code>x</code> erstattes med hvadend, der sættes i funktionen, når den bruges.</p>
-
-<p>Efter <code>:</code> skrives det, som skal ske i funktionen. Alle variable, som defineres inde i funktionen, eksisterer <em>kun</em> i selve funktionen. Sagt på en anden måde, så kan variable, der defineres i funktionen, ikke kaldes frem. I funktionen <code>add10()</code> defineres <code>result</code> undervejs, men den eksisterer ikke uden for funktionen:</p>
-
-<pre><code class="language-python">print(result)
-</code></pre>
-
-<pre><code>---------------------------------------------------------------------------
-
-NameError                                 Traceback (most recent call last)
-
-&lt;ipython-input-30-6459d04d738f&gt; in &lt;module&gt;
-----&gt; 1 print(result)
-
-
-NameError: name 'result' is not defined
-</code></pre>
-
-<p><code>result</code> er en variabel, der dannes inde i funktionen til at lave den nødvendige beregning.</p>
-
-<p>Hvis man vil lagre outputtet af en funktion til en variabel, kan man blot tilskrive variablen funktionen med det input, som funktionen skal have, for at få det ønskede output:</p>
-
-<pre><code class="language-python">a = add10(5)
-
-print(a)
-</code></pre>
-
-<pre><code>15
-</code></pre>
-
-<p>En funktion skal gerne slutte med en <code>return</code> linje. Denne bestemmer, hvad funktionen skal sende tilbage. Udelades denne, returnerer funktionen <code>None</code>; altså intet:</p>
-
-<pre><code class="language-python">def add10(x):
-    result = x + 10
-    
-print(add10(10))
-</code></pre>
-
-<pre><code>None
-</code></pre>
-
-<p>En funktion afslutter altid, når den når til en <code>return</code> linje. Det vil sige, at ting i funktionen, som skrives ind efter <code>return</code>, ignoreres:</p>
-
-<pre><code class="language-python">def add10(x):
-    print(&quot;Adding 10...&quot;)          # Denne linje printes, da den ligger før return-linjen
-    result = x + 10
-    return result
-    print(&quot;And then more stuff!&quot;)  # Denne linje printes ikke, da den ligger efter return-linjen
-    
-print(add10(10))
-</code></pre>
-
-<pre><code>Adding 10...
-20
-</code></pre>
-
-<hr />
-
-<h2 id="videnscheck-1">VIDENSCHECK</h2>
-
-<p><em>Hvad returnerer nedenstående funktion, hvis <code>x = 122</code>?</em></p>
-
-<pre><code class="language-python">def tenth(x):
-    result = x / 10
-    return result
-    result = x * 10
-    return result
-</code></pre>
-
-
-<div class="expand">
-    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
-        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
-        <span>
-        
-    	
-    	Løsning
-    	
-    	</span>
-    </div>
-    <div class="expand-content" style="display: none;">
-        <p>Funktionen returnerer <code>12.2</code>, hvis input er <code>122</code>, da input divideres med 10 og returneres. Alt efter den første return-linje ignoreres.</p>
-
+        Når de samme kommandoer skal gentages for en række værdier.
     </div>
 </div>
 
@@ -811,9 +718,14 @@ print(add10(10))
 
 <h2 id="øvelse">ØVELSE</h2>
 
-<p><em>Lav en funktion, der udregner arealet af en trekant (A), ved at tage højde (h) og grundlinje (g) som input.</em></p>
+<p>Tidligere i dette materiale er metoder blevet gennemgået. Blandt andet kan man bruge <code>.upper()</code> på en tekstværdi, for at få værdien tilbage i blokbogstaver.</p>
 
-<p>$A = \frac{1}{2} * h * g$</p>
+<p>Tag et kig på denne liste af ord:</p>
+
+<pre><code class="language-python">words = [&quot;potato&quot;, &quot;cat&quot;, &quot;scrumptious&quot;, &quot;monitor&quot;, &quot;carpenter&quot;]
+</code></pre>
+
+<p><em>Skriv et for loop, der printer hver ord i <code>words</code> i blokbogstaver.</em></p>
 
 
 <div class="expand">
@@ -827,16 +739,167 @@ print(add10(10))
     	</span>
     </div>
     <div class="expand-content" style="display: none;">
-        <pre><code class="language-python">def triarea(h, g):
-    area = 0.5 * h * g
-    return area
-
-print(triarea(5, 9))
+        <pre><code class="language-python">for word in words:
+    print(word.upper())
 </code></pre>
 
-<pre><code>22.5
+<pre><code>POTATO
+CAT
+SCRUMPTIOUS
+MONITOR
+CARPENTER
 </code></pre>
 
+    </div>
+</div>
+
+<hr />
+
+<p><strong>Loop over talrækker</strong></p>
+
+<p>Et for loop kan køres på et interval med kommandoen <code>range()</code>:</p>
+
+<pre><code class="language-python">for x in range(10, 20):
+    print(x+5)
+</code></pre>
+
+<pre><code>15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+</code></pre>
+
+<p><code>range()</code> danner en talrække fra det første tal angivet til tallet <em>før</em> det sidste tal angivet ([10:20[).</p>
+
+<p>Angives et enkelt tal som argument, antages det, at intervallet skal dannes fra <code>0</code> og frem til tallet før tallet angivet:</p>
+
+<pre><code class="language-python">for x in range(5):
+    print(x)
+</code></pre>
+
+<pre><code>0
+1
+2
+3
+4
+</code></pre>
+
+<p>Som standard dannes intervallet med skridt på <code>1</code>; altså hver enkelt heltal mellem det første tal og tallet før det sidste tal. Dette kan ændres ved at tilføje et tredje argument for, hvor store &ldquo;skridt&rdquo;, der skal være i intervallet:</p>
+
+<pre><code class="language-python">for x in range(5, 10, 2):
+    print(x)
+</code></pre>
+
+<pre><code>5
+7
+9
+</code></pre>
+
+<h2 id="while-loops">While loops</h2>
+
+<p>While loops er en anden type loops i Python. Hvor for loops gentager en eller flere kommandoer for hver værdi i en række af værdier, så gentager while loops en eller flere kommandoer, så længe en hvis betingelse er opfyldt.</p>
+
+<p>Herunder ses et eksempel på et simpel while loop:</p>
+
+<pre><code class="language-python">x = 1
+
+while x &lt; 5:
+    print(&quot;loopet kører videre&quot;)
+    x = x + 1
+</code></pre>
+
+<pre><code>loopet kører videre
+loopet kører videre
+loopet kører videre
+loopet kører videre
+</code></pre>
+
+<p>Et while loop består overordnet af to dele:
+- En betingelse som skal være opfyldt for, at loopet gentages
+- En eller flere kommandoer, som skal gentages for hvert loop</p>
+
+<p>I ovenstående defineres først <code>x</code> til at være <code>1</code>. Derefter igangsættes et while loop, som skal køre, så længe at <code>x &lt; 5</code>. Kommandoerne, som skal køre i loopet, skrives på linjen efter <code>:</code>. Her er det igen vigtigt, at kommandoerne i loopet er rykket ind (enten med tab eller fire mellemrum, men de fleste IDE&rsquo;er laver dette mellemrum automatisk).</p>
+
+<p>Derefter overskrives <code>x</code> til at være <code>x + 1</code>; altså at værdien af <code>x</code> øges med <code>1</code>. Bemærk at hvis denne linje undlades, så bliver loopet ved med at gentage sig, da <code>x</code> ikke ændres og derfor bliver ved med at være <code>1</code>; altså mindre end <code>5</code>, som er betingelsen for, at loopet kører.</p>
+
+
+<div class="notices warning" ><p>Man skal være forsigtig, når man skriver while loops, da man meget nemt kan komme til at skabe uendeligt loops!</p>
+
+<p>Uendelige loops sker, hvis ikke den betingelse, som while loopet baseres på, ændres. Uendelige loops skal afbrydes manuelt, men i tilfælde, hvor det, der sker i loopet, er krævende, kan Python ende med at gå helt i stå af at arbejde med loopet, da Python (og computeren) til sidst ikke kan følge med.</p>
+</div>
+
+
+<p>Herunder ses et andet while loop, der bliver ved, så længe antallet af karakterer i variablen <code>fruit</code> ikke overstiger 22:</p>
+
+<pre><code class="language-python">fruit = &quot;banana&quot;
+
+while len(fruit) &lt;= 22:
+    print(&quot;the word is &quot; + fruit)
+    fruit = fruit + &quot;na&quot;
+</code></pre>
+
+<pre><code>the word is banana
+the word is bananana
+the word is banananana
+the word is bananananana
+the word is banananananana
+the word is bananananananana
+the word is banananananananana
+the word is bananananananananana
+the word is banananananananananana
+</code></pre>
+
+
+<div class="notices info" >Funktionen <code>len()</code> har tidligere været brugt til at give antallet af elementer i en liste. Bruges <code>len()</code> på en tekstværdi (en string), returneres antallet af karakterer i tekstværdien.</div>
+
+
+<p>Når Python læser linjen med while loopet, starter Python med at evaluere betingelsen: <code>len(fruit) &lt;= 22</code>. Hvis denne er <code>True</code>, udføres kommandoerne. <code>fruit</code> indeholder til at starte med teksten <code>banana</code> og har en længde på 6 bogstaver; altså mindre end 22, så kommandoerne udføres.</p>
+
+<p>Første kommando at printe teksten <code>&quot;the word is &quot; + fruit</code> (husk at tekststykker kan sættes sammen med <code>+</code>). Da <code>fruit</code> i den første kørsel indeholder <code>banana</code> bliver teksten <code>the word is banana</code>.</p>
+
+<p>Dernæst ændres <code>fruit</code> til at få tilføjet teksten <code>na</code>, så <code>fruit</code> nu indeholder <code>bananana</code>.</p>
+
+<p>Loopet starter herefter forfra, og betingelsen evalueres igen. Nu indeholder <code>fruit</code> teksten <code>bananana</code> med en længde på 8 bogstaver; altså stadig mindre end 22, hvorfor kommandoerne igen udføres. Da <code>fruit</code> nu indeholder <code>bananana</code> printes teksten <code>the word is bananana</code>.</p>
+
+<p><strong>Brug af while loops</strong></p>
+
+<p>Det kan måske virke svært at se, hvad while loops kan bruges til. De bruges meget i programmering i det hele taget, men finder sjældent anvendelse i analysearbejde.</p>
+
+<p>Arbejder man med web scraping (indsamling af data fra nettet), kan while loops være brugbare. En teknik i web scraping er fx at sætte &ldquo;crawlers&rdquo; op. En crawler fungerer kort sagt ved at gå fra hjemmeside til hjemmeside ud fra de links, som der findes på siden. Her kan et while loop bruges til at begrænse, hvor langt crawleren skal gå; fx ved at sætte den til at stoppe efter et hvis antal sider er indsamlet eller sætte den til at stoppe, hvis crawleren bevæger sig ud fra et eller andet hoveddomæne.</p>
+
+<p>Hvis man fx gerne vil indsamle tekster og artikler fra EU&rsquo;s hjemmeside (<a href="https://europa.eu/">https://europa.eu/</a>), kan man bruge et while loop til at fortsætte indsamlinen, så længe siden befinder sig under domænet <a href="https://europa.eu/">https://europa.eu/</a>.</p>
+
+<hr />
+
+<h2 id="øvelse-1">ØVELSE</h2>
+
+<p>Bør nedenstående while loop køres?:</p>
+
+<pre><code class="language-python">y = 10
+
+while y &gt; 5:
+    print(&quot;the value is &quot; + str(y))
+</code></pre>
+
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	Løsning
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        Nej. Det er et uendeligt loop. <code>y</code> ændres ikke og betingelsen for while loopet bliver derfor ved med at være sand.
     </div>
 </div>
 
@@ -929,7 +992,6 @@ print(triarea(5, 9))
             
                 
                     
-                    
                 
                 
 
@@ -943,8 +1005,37 @@ print(triarea(5, 9))
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
+            
+            
+                
                     
                 
                 
@@ -994,42 +1085,6 @@ print(triarea(5, 9))
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                 
                 
 
@@ -1049,6 +1104,7 @@ print(triarea(5, 9))
             
                 
                     
+                    
                 
                 
 
@@ -1061,6 +1117,9 @@ print(triarea(5, 9))
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1078,6 +1137,7 @@ print(triarea(5, 9))
             
                 
                     
+                    
                 
                 
 
@@ -1093,6 +1153,9 @@ print(triarea(5, 9))
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1165,10 +1228,10 @@ print(triarea(5, 9))
 	 
 	 
 		
-			<a class="nav nav-prev" href="../../fundamentale/typer/" title="Typer"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../../arbejd/lister/" title="Lister, dictionaries og tuples"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../fundamentale/metoder/" title="Metoder" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../arbejd/if-betingelser/" title="If-betingelser" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

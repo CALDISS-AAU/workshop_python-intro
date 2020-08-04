@@ -9,7 +9,7 @@
 
     <link rel="icon" href="../../images/favicon.png" type="image/png">
 
-    <title>Interager med Python :: Introduction to Python for Social Science</title>
+    <title>Python serverløsninger :: Introduction to Python for Social Science</title>
 
     
     <link href="../../css/nucleus.css?1596549962" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/hvad/interager/">
+  <body class="" data-url="/supplerende/python/">
     <nav id="sidebar" class="">
 
 
@@ -76,7 +76,7 @@
   
     
     <li data-nav-id="/hvad/" title="Hvad er Python?" class="dd-item 
-        parent
+        
         
         
         ">
@@ -123,7 +123,7 @@
  
   
     
-      <li data-nav-id="/hvad/interager/" title="Interager med Python" class="dd-item active">
+      <li data-nav-id="/hvad/interager/" title="Interager med Python" class="dd-item ">
         <a href="../../hvad/interager/">
         Interager med Python
         
@@ -409,7 +409,7 @@
   
     
     <li data-nav-id="/supplerende/" title="Supplerende materiale" class="dd-item 
-        
+        parent
         
         
         ">
@@ -435,7 +435,7 @@
  
   
     
-      <li data-nav-id="/supplerende/python/" title="Python serverløsninger" class="dd-item ">
+      <li data-nav-id="/supplerende/python/" title="Python serverløsninger" class="dd-item active">
         <a href="../../supplerende/python/">
         Python serverløsninger
         
@@ -537,7 +537,7 @@
             
           
           
-            <a href='../../'></a> > <a href='../../hvad/'>Hvad er Python?</a> > Interager med Python
+            <a href='../../'></a> > <a href='../../supplerende/'>Supplerende materiale</a> > Python serverløsninger
           
         
           
@@ -550,19 +550,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#python-uden-dikkedarer">Python uden dikkedarer</a></li>
-<li><a href="#brug-af-python-ide-er-integrated-development-environment">Brug af Python IDE&rsquo;er (&ldquo;Integrated Development Environment&rdquo;)</a>
-<ul>
-<li><a href="#spyder">Spyder</a></li>
-<li><a href="#jupyter-notebook">Jupyter Notebook</a></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
@@ -578,58 +566,34 @@
           
             <h1>
               
-              Interager med Python
+              Python serverløsninger
             </h1>
           
 
         
 
 
+<p>Der findes adskillige online løsninger til at arbejde med Python. På den måde slipper man for selv at skulle sætte det op, og man vil ofte have mere computerkraft til rådighed, end man har på sin egen computer.</p>
 
+<hr />
 
-<p>For at bruge Python skal vi &ldquo;tale&rdquo; Python. Man arbejde med Python ved at skrive kommandoer i Python-sproget. Hvis Python forstår din kommando udføres den. Hvis ikke, får du en eller anden form for fejl. Man kan se Python som et meget bogstaveligt og pernitten sprog: Kommandoer skal skrives på helt bestemte måder for at Python kan forstå, hvad du beder om.</p>
+<p><strong>CALDISS serverløsning</strong></p>
 
-<p>Barberes Python ned til sine grundsten består det ikke af mere end en &ldquo;interpreter&rdquo; (fortolker). Alle programmeringssprog er bygget op om en fortolker, der &ldquo;evaluerer&rdquo; kommandoer. Inden for programmering vil evaluering sige, at sproget forsøger at forstå, hvad der står i en kommando.</p>
+<p>CALDISS har en server til Jupyter Notebook. På den måde kan man komme i gang med Python uden at skulle installere det på egen computer. Serveren ligger på AAU&rsquo;s netværk og kan tilgås på AAU&rsquo;s netværk eller via VPN.</p>
 
-<h2 id="python-uden-dikkedarer">Python uden dikkedarer</h2>
+<p>Serveren har adressen: <a href="https://samf-jupyter.aau.dk/hub/login">https://samf-jupyter.aau.dk/hub/login</a></p>
 
-<p>Den &ldquo;rene&rdquo; installation af Python tilføjer fortolkeren til styresystemet, så man kan arbejde med Python gennem en terminal:
-<img src="../../python_terminal.png" alt="python_terminal.png" /></p>
+<p>Bliv bruger af serveren ved at udfylde <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=Sbrb9QbOb0msPgzxQ2HZNGg7-JICeN1Kopl4dsYkgftUQTE3UDRMWUtFQzBKT0dLVTNROVdBUk05MCQlQCN0PWcu">denne formular</a>.</p>
 
-<p>I terminalen kan vi skrive en kommando og trykke &ldquo;Enter&rdquo; for at få fortolkeren til at evaluere. I nedenstående skrives kommandoen <code>2+42</code> hvilket Python evaluerer og giver outputtet <code>42</code>:
-<img src="../../python_interpret1.png" alt="python_interpret1.png" /></p>
+<hr />
 
-<p>Python forstår matematiske operationer og vil returnere resultatet af en udregning, når man skriver den ind.</p>
+<p><strong>Google Colab</strong></p>
 
-<p>I nedenstående forsøges at bede om en opskrift på pandekager. Det går knap så godt:
-<img src="../../python_interpret2.png" alt="python_interpret1.png" /></p>
+<p>Google Colab fungerer ligesom en online version af Jupyter Notebook. Her kan man skrive notebooks, som man gør i Jupyter Notebook, men køre dem over Google&rsquo;s servere. Det kræver en Google konto for at bruge.</p>
 
-<p>Når Python ikke kan forstå kommandoen, returneres en fejl. Der findes et væld af fejltyper. I ovenstående gives en <code>SyntaxError</code>, fordi kommandoen er skrevet helt forkert (dette er dog ikke det eneste problem med denne kommando, men det er den første fejl, som fortolkeren støder på).</p>
+<p>Læs mere her: <a href="https://colab.research.google.com/notebooks/intro.ipynb">https://colab.research.google.com/notebooks/intro.ipynb</a> (i øvrigt en fin introduktion til at arbejde med notebooks også).</p>
 
-<h2 id="brug-af-python-ide-er-integrated-development-environment">Brug af Python IDE&rsquo;er (&ldquo;Integrated Development Environment&rdquo;)</h2>
-
-<p>Selvom man kan arbejde med Python direkte i terminalen frarådes det meget kraftigt, da det er meget vanskeligt at gemme sit arbejde undervejs og svært at bevare overblik over sin kode og arbejde. Derfor arbejder man for det meste gennem et IDE (Integrated Development Environment). Et IDE er et program, som man kan arbejde med Python igennem, som ofte har forskellige funktioner og egenskaber til at hjælpe en bevare overblikket.</p>
-
-<p>Her nævnes blot et mindre udvalg af IDE&rsquo;er.</p>
-
-<h3 id="spyder">Spyder</h3>
-
-<p>Spyder er bygget op omkring en &ldquo;script-editor&rdquo;. Et script er et dokument bestående af en række af Python kommandoer, som man kan sende til fortolkeren på én gang. I et script kan fx samles al det databehandlings- og analysearbejde, som man skal lave. Ved at køre scriptet udføres så al arbejdet.
-Script-editoren er indbygget med farvekoder, så man nemt kan adskille dele af koden samt automatiske forslag til kommandoer (Spyder 4 og frem).</p>
-
-<p>Derudover giver Spyder en objekt-/variabeloversigt, så man kan se, hvad man har defineret og arbejder med; fx datasæt, resultater, osv.</p>
-
-<p>Spyder er godt til de fleste ting og særligt, hvis man skal arbejde med længere scripts.</p>
-
-<p>Spyder installeres sammen med Anaconda: <a href="https://www.anaconda.com/products/individual#Downloads">https://www.anaconda.com/products/individual#Downloads</a></p>
-
-<h3 id="jupyter-notebook">Jupyter Notebook</h3>
-
-<p>Jupyter Notebook er opbygget omkring en såkaldt &ldquo;notebook&rdquo;. En notebook i Jupyter Notebook kombinerer Python kode med almindelig tekst (Markdown). Jupyter Notebook egner sig særdeles godt, hvis man skal dokumentere sit kodearbejde undervejs, da man har mulighed for at skrive almindelig tekst, sætte billeder ind, lave tabeller osv. omkring sin kode.</p>
-
-<p>Dette materiale er udarbejdet i Jupyter Notebook.</p>
-
-<p>Jupyter Notebook installeres sammen med Anaconda: <a href="https://www.anaconda.com/products/individual#Downloads">https://www.anaconda.com/products/individual#Downloads</a></p>
+<hr />
 
 
 <footer class="footline">
@@ -667,6 +631,8 @@ Script-editoren er indbygget med farvekoder, så man nemt kan adskille dele af k
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -680,26 +646,6 @@ Script-editoren er indbygget med farvekoder, så man nemt kan adskille dele af k
             
             
                 
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -712,6 +658,22 @@ Script-editoren er indbygget med farvekoder, så man nemt kan adskille dele af k
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -719,9 +681,6 @@ Script-editoren er indbygget med farvekoder, så man nemt kan adskille dele af k
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -899,6 +858,7 @@ Script-editoren er indbygget med farvekoder, så man nemt kan adskille dele af k
             
                 
                     
+                    
                 
                 
 
@@ -911,6 +871,7 @@ Script-editoren er indbygget med farvekoder, så man nemt kan adskille dele af k
             
             
                 
+                    
                     
                 
                 
@@ -927,6 +888,9 @@ Script-editoren er indbygget med farvekoder, så man nemt kan adskille dele af k
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -951,10 +915,10 @@ Script-editoren er indbygget med farvekoder, så man nemt kan adskille dele af k
 	 
 	 
 		
-			<a class="nav nav-prev" href="../../hvad/at/" title="At arbejde med et programmeringssprog"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../../supplerende/" title="Supplerende materiale"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../fundamentale/" title="Fundamentale koncepter i Python" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../supplerende/litteratur/" title="Litteratur og yderligere materiale" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

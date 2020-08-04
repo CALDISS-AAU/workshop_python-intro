@@ -18,9 +18,30 @@
       <guid>/arbejd/lister/</guid>
       <description>Lister
 Den mest basale datastruktur er en liste. En liste defineres med []:
-my_list = [2, 7, 9, 10] I ovenstående defineres listen my_list til at indeholde værdierne 2, 7, 9 og 10. En liste kan fremkaldes ligesom hvilken som helst anden variabel:
-print(my_list) [2, 7, 9, 10] En liste er blot en beholder af forskellige variable. Lister kan derfor indeholde variable af forskellig type:
-my_list2 = [2, &amp;#34;hello&amp;#34;, 10, True] print(my_list2) [2, &#39;hello&#39;, 10, True] Lister kan også indeholde andre lister:</description>
+my_list = [2, 7, 9, 10]  I ovenstående defineres listen my_list til at indeholde værdierne 2, 7, 9 og 10. En liste kan fremkaldes ligesom hvilken som helst anden variabel:
+print(my_list)  [2, 7, 9, 10]  En liste er blot en beholder af forskellige variable. Lister kan derfor indeholde variable af forskellig type:
+my_list2 = [2, &amp;quot;hello&amp;quot;, 10, True] print(my_list2)  [2, &#39;hello&#39;, 10, True]  Lister kan også indeholde andre lister:</description>
+    </item>
+    
+    <item>
+      <title>Loops</title>
+      <link>/arbejd/loops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/arbejd/loops/</guid>
+      <description>I arbejdet med dataanalyse udfører man ofte de samme kommandoer, kontroller, kørsler osv. igen og igen:
+ En række oplysninger kan kontrolleres, om de er korrekte. Har de den rigtige type? Er værdierne gyldige? (fx at aldersværdier ikke har skøre værdier som 987 år). Den samme beregning skal foretages for en række oplysninger - fx udregning gennemsnit for indkomst, alder, år i arbejde osv. De samme oplysninger skal hentes fra en række forskellige hjemmesider.</description>
+    </item>
+    
+    <item>
+      <title>If-betingelser</title>
+      <link>/arbejd/if-betingelser/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/arbejd/if-betingelser/</guid>
+      <description>Når man arbejder med Python, kan det ofte være brugbart at sætte if-betingelser i sin kode. If-betingelser er kodestumper, hvor visse kommandoer kun udføres, hvis en betingelse er opfyldt:
+x = 12 if x &amp;gt; 10: print(&amp;quot;Tallet er større end 10!&amp;quot;) else: print(&amp;quot;Tallet er ikke større end 10!&amp;quot;)  Tallet er større end 10!  Ovenstående kode består af to blokke: en if-blok og en else-blok.
+I koden evalueres først if-betingelse: x &amp;gt; 10.</description>
     </item>
     
   </channel>

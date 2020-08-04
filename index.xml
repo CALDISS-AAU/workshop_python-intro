@@ -28,9 +28,9 @@ I bruger uden tvivl forskellige programmer, apps og softwareløsninger i jeres h
       <guid>/arbejd/lister/</guid>
       <description>Lister
 Den mest basale datastruktur er en liste. En liste defineres med []:
-my_list = [2, 7, 9, 10] I ovenstående defineres listen my_list til at indeholde værdierne 2, 7, 9 og 10. En liste kan fremkaldes ligesom hvilken som helst anden variabel:
-print(my_list) [2, 7, 9, 10] En liste er blot en beholder af forskellige variable. Lister kan derfor indeholde variable af forskellig type:
-my_list2 = [2, &amp;#34;hello&amp;#34;, 10, True] print(my_list2) [2, &#39;hello&#39;, 10, True] Lister kan også indeholde andre lister:</description>
+my_list = [2, 7, 9, 10]  I ovenstående defineres listen my_list til at indeholde værdierne 2, 7, 9 og 10. En liste kan fremkaldes ligesom hvilken som helst anden variabel:
+print(my_list)  [2, 7, 9, 10]  En liste er blot en beholder af forskellige variable. Lister kan derfor indeholde variable af forskellig type:
+my_list2 = [2, &amp;quot;hello&amp;quot;, 10, True] print(my_list2)  [2, &#39;hello&#39;, 10, True]  Lister kan også indeholde andre lister:</description>
     </item>
     
     <item>
@@ -41,7 +41,7 @@ my_list2 = [2, &amp;#34;hello&amp;#34;, 10, True] print(my_list2) [2, &#39;hello
       <guid>/fundamentale/python/</guid>
       <description>Som nævnt arbejder man med Python ved at skrive kommandoer i Python sproget. Kommandoer bliver &amp;ldquo;evalueret&amp;rdquo; af fortolkeren. Hvis koden forstås, bliver den kørt, og der gives et output, en ændring eller andet, afhængig af, hvad vi beder om.
 Hvis man fx skriver en kommando besteånde af matematiske operationer i Python, vil man få resultatet tilbage som output:
-2 + 5 7 7 * 6 42 923 / 45 20.</description>
+2 + 5  7  7 * 6  42  923 / 45  20.</description>
     </item>
     
     <item>
@@ -55,6 +55,27 @@ Barberes Python ned til sine grundsten består det ikke af mere end en &amp;ldqu
     </item>
     
     <item>
+      <title>Loops</title>
+      <link>/arbejd/loops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/arbejd/loops/</guid>
+      <description>I arbejdet med dataanalyse udfører man ofte de samme kommandoer, kontroller, kørsler osv. igen og igen:
+ En række oplysninger kan kontrolleres, om de er korrekte. Har de den rigtige type? Er værdierne gyldige? (fx at aldersværdier ikke har skøre værdier som 987 år). Den samme beregning skal foretages for en række oplysninger - fx udregning gennemsnit for indkomst, alder, år i arbejde osv. De samme oplysninger skal hentes fra en række forskellige hjemmesider.</description>
+    </item>
+    
+    <item>
+      <title>Python serverløsninger</title>
+      <link>/supplerende/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/supplerende/python/</guid>
+      <description>Der findes adskillige online løsninger til at arbejde med Python. På den måde slipper man for selv at skulle sætte det op, og man vil ofte have mere computerkraft til rådighed, end man har på sin egen computer.
+CALDISS serverløsning
+CALDISS har en server til Jupyter Notebook. På den måde kan man komme i gang med Python uden at skulle installere det på egen computer. Serveren ligger på AAU&amp;rsquo;s netværk og kan tilgås på AAU&amp;rsquo;s netværk eller via VPN.</description>
+    </item>
+    
+    <item>
       <title>Variable</title>
       <link>/fundamentale/variable/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -62,8 +83,28 @@ Barberes Python ned til sine grundsten består det ikke af mere end en &amp;ldqu
       <guid>/fundamentale/variable/</guid>
       <description>Python er et objekt-orienteret programmeringssprog. Dette indebærer, at man kontinuerligt arbejder med forskellige objekter, som indeholder en eller anden for for information.
 I Python kaldes objekter &amp;ldquo;variable&amp;rdquo;. Dette er ikke at forveksle med en variabel, som forstået i statistik som en egenskab ved en observation, da en variabel i Python blot er en beholder for en eller anden form for information.
-Alle disse kan være variable i Python:
- Et tal Et ord En tekst Et datasæt En mappesti En hjemmesideadresse Et billede  Variable med tal En variabel defineres med =.</description>
+Alle disse kan være variable i Python: - Et tal - Et ord - En tekst - Et datasæt - En mappesti - En hjemmesideadresse - Et billede</description>
+    </item>
+    
+    <item>
+      <title>If-betingelser</title>
+      <link>/arbejd/if-betingelser/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/arbejd/if-betingelser/</guid>
+      <description>Når man arbejder med Python, kan det ofte være brugbart at sætte if-betingelser i sin kode. If-betingelser er kodestumper, hvor visse kommandoer kun udføres, hvis en betingelse er opfyldt:
+x = 12 if x &amp;gt; 10: print(&amp;quot;Tallet er større end 10!&amp;quot;) else: print(&amp;quot;Tallet er ikke større end 10!&amp;quot;)  Tallet er større end 10!  Ovenstående kode består af to blokke: en if-blok og en else-blok.
+I koden evalueres først if-betingelse: x &amp;gt; 10.</description>
+    </item>
+    
+    <item>
+      <title>Litteratur og yderligere materiale</title>
+      <link>/supplerende/litteratur/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/supplerende/litteratur/</guid>
+      <description> Her ses forslag til steder, hvor du kan lære mere om basalt brug af Python.
+Bøger  Python for Data Analysis, kapitel 2 og 3 [vælg sider] Python Data Science Handbook  Online kurser  &amp;ldquo;Data Analysis and Visualization with Python for Social Scientists alpha&amp;rdquo; af DataCarpentry: https://datacarpentry.org/python-socialsci/ &amp;ldquo;Python Tutorial&amp;rdquo; af Tutorialspoint: https://www.tutorialspoint.com/python/index.htm &amp;ldquo;Introduction to Python&amp;rdquo; af DataCamp: https://www.datacamp.com/courses/intro-to-python-for-data-science (betalingsside, men første del er gratis)  </description>
     </item>
     
     <item>
@@ -96,7 +137,7 @@ Funktioner i Python har følgende format:
       <guid>/fundamentale/metoder/</guid>
       <description>Udover funktioner i Python findes der også &amp;ldquo;metoder&amp;rdquo;. Lig funktioner tager metoder også en form for input og returnerer et output.
 I modsætning til funktioner er metoder bundet op på bestemte variabeltyper. Det vil sige at variablen skal være en bestemt type for, at metoden kan bruges. Metoder kaldes med variabel.method(option1 = something). Tekstværdier (strings) har fx en række metoder tilknyttet til at ændre teksten:
-word = &amp;#34;Hello&amp;#34; print(word.upper()) # Konverterer til store bogstaver print(word.</description>
+word = &amp;quot;Hello&amp;quot; print(word.upper()) # Konverterer til store bogstaver print(word.</description>
     </item>
     
     <item>
