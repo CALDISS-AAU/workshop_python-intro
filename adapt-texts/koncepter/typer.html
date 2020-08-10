@@ -1,0 +1,191 @@
+<p>En variabel er ikke bare en variabel i Python. Fordi en variabel kan være så mange ting, så er Python nødt til at adskille variable fra hinanden. Dette gøres ved at variable lagres som en bestemt <em>type</em>.</p>
+
+<p>Typen af variabel fortæller Python, hvad det er for en slags information, som variablen indeholder, og sætter betingelserne for, hvad der kan lade sig gøre med variablen.</p>
+
+<p>Som man arbejder med Python, vil man støde på mange forskellige typer. I første omgang fokuseres på to af de mere gængse typer:</p>
+
+<ul>
+<li>Numeriske typer (fx integers og floats)</li>
+<li>Tekst typer (fx strings)</li>
+</ul>
+
+<h2 id="numeriske-typer">Numeriske typer</h2>
+
+<p>Python gætter altid typen, når en variabel lagres. Når en variabel består af en talværdi, vil denne fx lagres som en numerisk type. Talværdien kan enten lagres som en <em>integer</em> (heltal) eller et <em>float point</em> (decimaltal).</p>
+
+<p>Python kan fortælle os typen med funktionen <code>type()</code>:</p>
+
+<pre><code class="code-in">a = 42
+print(type(a))
+</code></pre><br />
+<pre><code class="code-out">&lt;class 'int'&gt;
+</code></pre>
+
+<p>Variablen <code>a</code> er typen <code>int</code>, som står for <em>integer</em> - et heltal. Som set i sidste afsnit, kan der foretages forskellige matematiske operationer med heltal.</p>
+
+<p>Tildeles en variabel et tal med decimaler, lagres det som et <em>float point</em>.:</p>
+
+<pre><code class="code-in">b = 42.2
+print(type(b))
+</code></pre><br />
+<pre><code class="code-out">&lt;class 'float'&gt;
+</code></pre>
+
+<p>Bemærk, at når man dividerer, så vil typen altid blive et <em>float point</em> - også selvom resultatet er et heltal:</p>
+
+<pre><code class="code-in">print(a)
+print(type(a))   # a er lige nu integer
+<br />
+b = a / 2        # b defineres som a / 2
+print(b)
+print(type(b))   # b er et float point
+</code></pre><br />
+<pre><code class="code-out">42
+&lt;class 'int'&gt;
+21.0
+&lt;class 'float'&gt;
+</code></pre>
+
+<p>At Python gerne vil adskille mellem typer har noget at gøre med, hvordan en type information kræver mere at lagre end en anden. Dette kan have betydning, når man arbejder med enorme datamængder, hvilket sjældent er tilfældet i socialvidenskabelig analysearbejder.</p>
+
+
+
+<h2 id="videnscheck">VIDENSCHECK</h2>
+
+<p>I ovenstående bliver variablen <code>a</code> brugt til at definere variabel <code>b</code>.</p>
+<p><em>Hvilken type er variabel <code>a</code> efter <code>b</code> er blevet defineret?</em></p>
+
+<p>Rigtigt! Variabel <code>a</code> er stadig en integer, da <code>a</code> ikke ændres i koden, men blot bliver brugt til at lave variabel <code>b</code>.</p>
+
+<p>Forkert! Variabel <code>a</code> er ikke en float efter <code>b</code> defineres, men en integer. Læg mærke til hvordan <code>a</code> oprindeligt er defineret og kig derefter efter, om <code>a</code> på noget tidspunkt defineres om.</p>
+
+<h2 id="tekst-typer">Tekst typer</h2>
+
+<p>Python lagrer variable som en tekst type, hvis det indeholder tekst. Python fortælles, at noget skal behandles som tekst, ved at indkapsle det med <code>'</code> eller <code>&quot;</code>:</p>
+
+<pre><code class="code-in">a = &quot;Hello&quot;
+print(type(a))
+</code></pre><br />
+<pre><code class="code-out">&lt;class 'str'&gt;
+</code></pre>
+
+<p>En variabel med et stykke tekst kaldes en <code>string</code> (forkortet i Python som <code>str</code>).</p>
+
+<p>I modsætning til numeriske typer, giver matematiske operationer ikke meget mening på et stykke tekst. Dog tillader Python at bruge visse matematiske operatorer på tekst:</p>
+
+<pre><code class="code-in">b = &quot; there&quot;
+print(a * 2)   # gentager string
+print(a + b)   # sætter de to strings sammen (kaldes også for &quot;paste&quot;)
+</code></pre><br />
+<pre><code class="code-out">HelloHello
+Hello there
+</code></pre>
+
+
+<p>Bemærk at Python <em>altid</em> vil lagre variablen som string, hvis teksten er indkapslet med <code>'</code> eller <code>&quot;</code>. Dette gælder også, hvis tal lagres på denne måde:</p>
+
+<pre><code class="code-in">a = 42    # integer
+b = '42'  # string
+
+print(a * 2) # 42 * 2 = 84 - kan lade sig gøre, da a er integer.
+print(b * 2) # b er ikke et tal. &quot;Pastes&quot; sammen, da det er en string.
+</code></pre><br />
+<pre><code class="code-out">84
+4242
+</code></pre>
+
+<p>Python gætter altid typen. Derfor gættes typen også, når man indlæser data i Python. Her kan problemet opstå, at Python læser information ind forkert - fx at tal læses ind som tekst.</p>
+
+
+<h2 id="ændring-af-typer-casting">Ændring af typer (casting)</h2>
+
+<p>I visse tilfælde kan variable tvinges til at være en anden type (casting) med bestemte funktioner:</p>
+
+<ul>
+<li>Returnerer tekst type: <code>str(variabel)</code>.</li>
+<li>Returnerer numerisk type: <code>int(variabel</code> (integer) eller <code>float(variabel)</code> (float point).</li>
+</ul>
+
+<p>Python vil altid gætte typen. Hvis Python gætter forkert, kan Python fortælles eksplicit, hvad typen skal være (hvis muligt).</p>
+
+<p>Fx kan det hænde, at tal ved en fejl indlæses som tekst. Disse kan tvinges om ved at <em>caste</em> til en anden type:</p>
+
+<pre><code class="code-in">print(type(b))  # typen for b er her string
+b = int(b)      # b dannes på ny som integer af b
+print(type(b))  # b er nu integer
+</code></pre><br />
+<pre><code class="code-out">&lt;class 'str'&gt;
+&lt;class 'int'&gt;
+</code></pre>
+
+<p>Alle typer kan selvfølgelig ikke castes om. Fx kan man ikke meningsfuldt konvertere tekst i form af ord til tal:</p>
+
+<pre><code class="code-in">a = &quot;Hello&quot;     # a dannes som string
+a = int(a)      # forsøger at konvertere a til integer - ikke muligt
+</code></pre><br />
+<pre><code class="code-out">
+---------------------------------------------------------------------------
+
+ValueError                                Traceback (most recent call last)
+
+&lt;ipython-input-12-cc7b3220923a&gt; in &lt;module&gt;
+      1 a = &quot;Hello&quot;     # a dannes som string
+      2 print(type(a))  # typen er string
+----&gt; 3 a = int(a)      # forsøger at konvertere a til integer - ikke muligt
+
+
+ValueError: invalid literal for int() with base 10: 'Hello'
+</code></pre>
+
+<hr />
+
+<h2 id="øvelse-typer">ØVELSE: Typer</h2>
+
+<p>Dan variablerne <code>my_number3</code> og <code>my_number4</code>.
+<ul>
+<li><code>my_number3</code> skal indeholde <code>21</code></li>
+<li><code>my_number4</code> skal indeholde <code>&quot;12&quot;</code> (med anførselstegn!)</p></li>
+</ul>
+
+<p>Forsøg at divider de to tal med hinanden (<code>my_number3 / my_number4</code>). Det giver fejl, men hvorfor?</p>
+
+<p>Undersøg hvilken type <code>my_number3</code> og <code>my_number4</code> er med <code>type()</code>. Begge skal gerne være numeriske typer, før der kan divideres.</p>
+
+<p>Ændr typen til numerisk for den variabel, som ikke er numerisk.</p>
+
+<p>Forsøg at divider de to tal med hinanden igen. Hvis du har rettet typen korrekt, bør det kunne lade sig gøre og give tallet <code>1.75</code>.</p>
+
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	Løsning
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <p><code>my_number4</code> er lagret som tekst. Denne skal derfor konverteres til et tal, fx ved at definere variablen om som <code>my_number4 = int(my_number4)</code>. Derefter bør det kunne lade sig gøre at dividere de to tal med hinanden (<code>my_number3 / my_number4</code>).</p>
+
+<pre><code class="code-in">my_number3 = 21
+my_number4 = &quot;12&quot;
+
+print(type(my_number3))
+print(type(my_number4))
+</code></pre><br />
+<pre><code class="code-out">&lt;class 'int'&gt;
+&lt;class 'str'&gt;
+</code></pre><br />
+<pre><code class="code-in">
+my_number4 = int(my_number4)
+print(type(my_number4))
+
+my_number3 / my_number4
+</code></pre><br />
+<pre><code class="code-out">
+&lt;class 'int'&gt;
+
+1.75
+</code></pre>

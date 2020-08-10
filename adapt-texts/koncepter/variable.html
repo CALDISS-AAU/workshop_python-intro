@@ -1,0 +1,53 @@
+<p>Python er et objekt-orienteret programmeringssprog. Dette indebærer, at man kontinuerligt arbejder med forskellige objekter, som indeholder en eller anden for for information.</p>
+
+<p>I Python kaldes objekter &ldquo;variable&rdquo;. Dette er ikke at forveksle med en variabel, som forstået i statistik som en egenskab ved en observation, da en variabel i Python blot er en beholder for en eller anden form for information.</p>
+
+<p>Alle disse kan være variable i Python:
+<ul>
+<li>Et tal</li>
+<li>Et ord</li>
+<li>En tekst</li>
+<li>Et datasæt</li>
+<li>En mappesti</li>
+<li>En hjemmesideadresse</li>
+<li>Et billede</li>
+</ul>
+</p>
+
+<h1>Variable med tal</h1>
+
+<p>En variabel defineres med <code>=</code>. På venstre side gives variablen et navn, og på højre skrives det, som variablen skal indeholde:</p>
+
+<pre><code class="code-in">a = 42
+b = 7
+c = 6</code></pre>
+
+<p>Når først en variabel er defineret (altså at koden hvor variablen defineres er kørt), kan variablen kaldes frem og bruges i andre kommandoer:</p>
+
+<pre><code class="code-in">print(a)
+print(a / b)</code></pre>
+<br />
+<pre><code class="code-out">42
+6.0</code></pre>
+
+<p>Defineres en variabel som et matematisk udtryk, er det resultatet af dette, som bliver lagret i variablen:</p>
+
+<pre><code class="code-in">d = 13 + 25
+print(d)</code></pre>
+<br />
+<pre><code class="code-out">38</code></pre>
+
+<p>Bemærk at Python læser kode meget bogstaveligt, og skelner derfor mellem store og små bogstaver. Kaldes en variabel, som ikke findes, returnerer Python en fejl:</p>
+
+<pre><code class="code-in">print(D)</code></pre>
+<br />
+<pre><code class="code-out">---------------------------------------------------------------------------
+
+NameError                                 Traceback (most recent call last)
+
+&lt;ipython-input-30-f03a0baf7732&gt; in &lt;module&gt;
+      1 print(d)
+----&gt; 2 print(D)
+
+
+NameError: name 'D' is not defined</code></pre>

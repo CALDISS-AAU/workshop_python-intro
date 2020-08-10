@@ -1,0 +1,77 @@
+<p>Udover funktioner i Python findes der også &ldquo;metoder&rdquo;. Lig funktioner tager metoder også en form for input og returnerer et output.</p>
+
+<p>I modsætning til funktioner er metoder bundet op på bestemte variabeltyper. Det vil sige at variablen skal være en bestemt type for, at metoden kan bruges. Metoder kaldes med <code>variabel.method(option1 = something)</code>. Tekstværdier (strings) har fx en række metoder tilknyttet til at ændre teksten:</p>
+
+<pre><code class="code-in">word = &quot;Hello&quot;
+
+print(word.upper())  # Konverterer til store bogstaver
+print(word.lower())  # Konverterer til små bogstaver
+</code></pre> <br />
+
+<pre><code class="code-out">HELLO
+hello
+</code></pre>
+
+<p>Bemærk at metoder som hovedregel ikke ændrer på variablen. Variablen skal derfor defineres om eller på ny, hvis output af brug af en metode skal lagres:</p>
+
+<pre><code class="code-in">print(word)         # Stadig som det oprindeligt blev lavet
+
+word = word.upper() 
+print(word)         # Er nu overskrevet til at være med store bogstaver
+</code></pre> <br />
+
+<pre><code class="code-out">Hello
+HELLO
+</code></pre>
+
+<p>Forsøger man at bruge metoder på variabel af en forkert type, gives der fejl:</p>
+
+<pre><code class="code-in">number = 627
+
+number.upper()
+</code></pre> <br />
+
+<pre><code class="code-out">---------------------------------------------------------------------------
+
+AttributeError                            Traceback (most recent call last)
+
+&lt;ipython-input-38-d30eebf09ae0&gt; in &lt;module&gt;
+      1 number = 627
+      2 
+----&gt; 3 number.upper()
+
+
+AttributeError: 'int' object has no attribute 'upper'
+</code></pre>
+
+<p>Metoder tager ofte yderligere argumenter og indstillinger. I nedenstående bruges metoden <code>.replace()</code> til at erstatte et hvis ord i tekstvariablen med et andet.</p>
+
+<pre><code class="code-in">words = &quot;Hello there!&quot;
+
+words.replace(&quot;there&quot;, &quot;world&quot;)
+</code></pre> <br />
+
+<pre><code class="code-out">'Hello world!'
+</code></pre>
+
+
+<p>Bemærk i hjælpefilen for <code>.replace()</code> at de to argumenter, som der tages, kaldes <code>old</code> og <code>new</code> og står i den rækkefølge. Det er derfor også den rækkefølge, som de skal skrives ind, når man bruger metoden.</p>
+
+
+<hr />
+
+<h2 id="videnscheck">VIDENSCHECK</h2>
+
+<p>I ovenstående er metoden <code>.replace()</code> brugt til at erstatte ordet &ldquo;there&rdquo; med &ldquo;world&rdquo; i variablen <code>words</code>.</p>
+
+<p><em>Hvad indeholder <code>words</code> efter <code>.replace()</code> er brugt?</em></p>
+
+
+    	Løsning
+    	
+
+<p><code>words</code> indeholder stadig <code>&quot;Hello there!&quot;</code>, da variablen ikke er defineret om.</p>
+
+
+
+
