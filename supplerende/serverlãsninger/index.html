@@ -9,22 +9,22 @@
 
     <link rel="icon" href="../../images/favicon.png" type="image/png">
 
-    <title>Pakker :: Introduction to Python for Social Science</title>
+    <title>Serverløsninger til Python :: Introduction to Python for Social Science</title>
 
     
-    <link href="../../css/nucleus.css?1598974876" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1598974876" rel="stylesheet">
-    <link href="../../css/hybrid.css?1598974876" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1598974876" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1598974876" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1598974876" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1598974876" rel="stylesheet">
-    <link href="../../css/theme.css?1598974876" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1598974876" rel="stylesheet">
+    <link href="../../css/nucleus.css?1598975741" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1598975741" rel="stylesheet">
+    <link href="../../css/hybrid.css?1598975741" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1598975741" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1598975741" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1598975741" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1598975741" rel="stylesheet">
+    <link href="../../css/theme.css?1598975741" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1598975741" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1598974876"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1598975741"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/fundamentale/pakker/">
+  <body class="" data-url="/supplerende/serverl%C3%A3sninger/">
     <nav id="sidebar" class="">
 
 
@@ -50,14 +50,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1598974876"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1598974876"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1598975741"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1598975741"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1598974876"></script>
+<script type="text/javascript" src="../../js/search.js?1598975741"></script>
 
     
   </div>
@@ -152,7 +152,7 @@
   
     
     <li data-nav-id="/fundamentale/" title="Fundamentale koncepter i Python" class="dd-item 
-        parent
+        
         
         
         ">
@@ -283,7 +283,7 @@
  
   
     
-      <li data-nav-id="/fundamentale/pakker/" title="Pakker" class="dd-item active">
+      <li data-nav-id="/fundamentale/pakker/" title="Pakker" class="dd-item ">
         <a href="../../fundamentale/pakker/">
         Pakker
         
@@ -430,7 +430,7 @@
   
     
     <li data-nav-id="/supplerende/" title="Supplerende materiale" class="dd-item 
-        
+        parent
         
         
         ">
@@ -456,9 +456,30 @@
  
   
     
-      <li data-nav-id="/supplerende/python/" title="Python serverløsninger" class="dd-item ">
+      <li data-nav-id="/supplerende/python/" title="Python IDE&#39;er" class="dd-item ">
         <a href="../../supplerende/python/">
-        Python serverløsninger
+        Python IDE&#39;er
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/supplerende/serverl%C3%A3sninger/" title="Serverløsninger til Python" class="dd-item active">
+        <a href="../../supplerende/serverl%C3%A3sninger/">
+        Serverløsninger til Python
         
         </a>
     </li>
@@ -558,7 +579,7 @@
             
           
           
-            <a href='../../'></a> > <a href='../../fundamentale/'>Fundamentale koncepter i Python</a> > Pakker
+            <a href='../../'></a> > <a href='../../supplerende/'>Supplerende materiale</a> > Serverløsninger til Python
           
         
           
@@ -587,54 +608,24 @@
           
             <h1>
               
-              Pakker
+              Serverløsninger til Python
             </h1>
           
 
         
 
 
-<p>Pakker i Python er samlinger af funktioner, metoder, værdier osv. Selvom man kan meget i Python, så når man ikke særlig langt uden at importere pakker.</p>
-<p>Funktioner, metoder, værdier osv. fra pakker kan nemt indlæses ved at importere dem. Så snart pakken er importeret, er pakkens indhold tilgængeligt.</p>
-<p>Fx kender Python ikke værdien pi med det samme:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(pi)
-</code></pre></div><pre><code>---------------------------------------------------------------------------
-
-NameError                                 Traceback (most recent call last)
-
-&lt;ipython-input-53-9e2d2bd32686&gt; in &lt;module&gt;
-----&gt; 1 print(pi)
-
-
-NameError: name 'pi' is not defined
-</code></pre>
-<p>Værdien pi er en del af <code>math</code> pakken, så ved at importere pakken, kan man arbejde med værdien:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> math
-
-<span style="color:#66d9ef">print</span>(math<span style="color:#f92672">.</span>pi)
-</code></pre></div><pre><code>3.141592653589793
-</code></pre>
-<p>Bemærk at man kalder noget frem, som er en del af en pakke, ved at skrive pakkens navn, punktum og det, som man skal bruge fra pakken.</p>
-<p>Det er også muligt kun at importere enkelte dele af en pakke. I sådanne tilfælde er det ikke nødvendigt at skrive pakkens navn først:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> math <span style="color:#f92672">import</span> pi
-
-<span style="color:#66d9ef">print</span>(pi)
-</code></pre></div><pre><code>3.141592653589793
-</code></pre>
-<p>Pakker kan have lange navne, så det er muligt at forkorte navnet, når de importeres:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> math <span style="color:#f92672">as</span> m
-
-<span style="color:#66d9ef">print</span>(m<span style="color:#f92672">.</span>pi)
-</code></pre></div><pre><code>3.141592653589793
-</code></pre>
-
-<div class="notices warning" ><p>Vær varsom med blot at importere dele af pakker ind enkeltvis. En af grundene til, at man kalder dele af pakker ved at skrive pakken først er for at holde styr på, hvor funktionen, metoden eller værdien kommer fra. Man kan nemt miste overblikket eller, endnu værre, kalde den forkerte funktion, hvis man ikke har styr på, hvordan man har importeret.
-<br />
-<br />Derudover bør man også altid overveje læsbarheden af ens kode, hvis andre skal kunne inspicere det, eller der skal samarbejdes om det. Derfor bør man også overveje, hvordan man forkorter pakkenavne ved import, da det også kan gøre koden svære at gennemskue. Mange pakker har dog gængse standardforkortelser, som man hurtigt lærer.</p>
-</div>
-
-<p>Python kommer med et standardbibliotek af pakker. Selvom funktionerne altså er installeret sammen med Python i pakker, så skal de stadig importeres, før de kan bruges. Python er opbygget sådan både for at gøre det hurtigere at arbejde med (jo mindre der skal indlæses ved opstart, jo hurtigere kan man komme i gang), og for at gøre det nemmere at håndtere funktioner, metoder og værdier fra forskellige pakker.</p>
-<p>Der et utal af pakker, som Python kan udvides med. I materiale fra CALDISS anvendes primært pakker inden for dataanalyse, web scraping, tekstanalyse og maskinlæring. Hvis du har installeret Python med Anaconda, så er mange af disse pakker allerede installeret og klar til import.</p>
+<p>Der findes adskillige online løsninger til at arbejde med Python. På den måde slipper man for selv at skulle sætte det op, og man vil ofte have mere computerkraft til rådighed, end man har på sin egen computer.</p>
+<hr>
+<p><strong>CALDISS serverløsning</strong></p>
+<p>CALDISS har en server til Jupyter Notebook. På den måde kan man komme i gang med Python uden at skulle installere det på egen computer. Serveren ligger på AAU&rsquo;s netværk og kan tilgås på AAU&rsquo;s netværk eller via VPN.</p>
+<p>Serveren har adressen: <a href="https://samf-jupyter.aau.dk/hub/login">https://samf-jupyter.aau.dk/hub/login</a></p>
+<p>Bliv bruger af serveren ved at udfylde <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=Sbrb9QbOb0msPgzxQ2HZNGg7-JICeN1Kopl4dsYkgftUQTE3UDRMWUtFQzBKT0dLVTNROVdBUk05MCQlQCN0PWcu">denne formular</a>.</p>
+<hr>
+<p><strong>Google Colab</strong></p>
+<p>Google Colab fungerer ligesom en online version af Jupyter Notebook. Her kan man skrive notebooks, som man gør i Jupyter Notebook, men køre dem over Google&rsquo;s servere. Det kræver en Google konto for at bruge.</p>
+<p>Læs mere her: <a href="https://colab.research.google.com/notebooks/intro.ipynb">https://colab.research.google.com/notebooks/intro.ipynb</a> (i øvrigt en fin introduktion til at arbejde med notebooks også).</p>
+<hr>
 
 
 <footer class="footline">
@@ -723,7 +714,6 @@ NameError: name 'pi' is not defined
             
                 
                     
-                    
                 
                 
 
@@ -736,9 +726,6 @@ NameError: name 'pi' is not defined
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -798,74 +785,6 @@ NameError: name 'pi' is not defined
                     
             
         
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
                     
                         
             
@@ -951,6 +870,94 @@ NameError: name 'pi' is not defined
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -975,10 +982,10 @@ NameError: name 'pi' is not defined
 	 
 	 
 		
-			<a class="nav nav-prev" href="../../fundamentale/metoder/" title="Metoder"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../../supplerende/python/" title="Python IDE&#39;er"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../fundamentale/logiske/" title="Logiske værdier (booleans)" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../supplerende/litteratur/" title="Litteratur og yderligere materiale" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -988,19 +995,19 @@ NameError: name 'pi' is not defined
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1598974876"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1598974876"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1598974876"></script>
-    <script src="../../js/jquery.sticky.js?1598974876"></script>
-    <script src="../../js/featherlight.min.js?1598974876"></script>
-    <script src="../../js/highlight.pack.js?1598974876"></script>
+    <script src="../../js/clipboard.min.js?1598975741"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1598975741"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1598975741"></script>
+    <script src="../../js/jquery.sticky.js?1598975741"></script>
+    <script src="../../js/featherlight.min.js?1598975741"></script>
+    <script src="../../js/highlight.pack.js?1598975741"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1598974876"></script>
-    <script src="../../js/learn.js?1598974876"></script>
-    <script src="../../js/hugo-learn.js?1598974876"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1598975741"></script>
+    <script src="../../js/learn.js?1598975741"></script>
+    <script src="../../js/hugo-learn.js?1598975741"></script>
 
-    <link href="../../mermaid/mermaid.css?1598974876" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1598974876"></script>
+    <link href="../../mermaid/mermaid.css?1598975741" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1598975741"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

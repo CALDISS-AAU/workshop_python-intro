@@ -52,6 +52,8 @@
 
 <script type="text/javascript" src="../../js/lunr.min.js?1598974876"></script>
 <script type="text/javascript" src="../../js/auto-complete.js?1598974876"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script type="text/javascript">
     
         var baseurl = "";
@@ -621,7 +623,7 @@ b <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;there&#3
 </code></pre></div><pre><code>Hello there
 </code></pre>
 <p>Derudover har <code>print()</code> også en række &ldquo;keyword arguments&rdquo;/indstillinger, som det ses af dokumentationen herunder:</p>
-<pre><code>Docstring:
+<pre>Docstring:
 print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
 
 Prints the values to a stream, or to sys.stdout by default.
@@ -631,7 +633,7 @@ sep:   string inserted between values, default a space.
 end:   string appended after the last value, default a newline.
 flush: whether to forcibly flush the stream.
 Type:      builtin_function_or_method
-</code></pre><p>Her ses det, at <code>print()</code> har adskilige indstillinger. <code>sep</code> bestemmer fx, hvad der skal adskille de forskellige værdier, som tages ind. Bemærk, at alle indstillinger er sat til en eller anden indstillling som standard. <code>sep=' '</code> betyder, at de forskellige værdier adskilles med et mellemrum som standard. Hvis denne ændres til noget andet, vil outputtet se anderledes ud:</p>
+</pre><p>Her ses det, at <code>print()</code> har adskilige indstillinger. <code>sep</code> bestemmer fx, hvad der skal adskille de forskellige værdier, som tages ind. Bemærk, at alle indstillinger er sat til en eller anden indstillling som standard. <code>sep=' '</code> betyder, at de forskellige værdier adskilles med et mellemrum som standard. Hvis denne ændres til noget andet, vil outputtet se anderledes ud:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(a, b)              <span style="color:#75715e"># printer a og b med standardindstilling (adskiller med mellemrum)</span>
 <span style="color:#66d9ef">print</span>(a, b, sep <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;, &#34;</span>)  <span style="color:#75715e"># sep ændres til komma</span>
 </code></pre></div><pre><code>Hello there
@@ -760,7 +762,7 @@ NameError: name 'result' is not defined
 <hr>
 <h2 id="øvelse">ØVELSE</h2>
 <p><em>Lav en funktion, der udregner arealet af en trekant (A), ved at tage højde (h) og grundlinje (g) som input.</em></p>
-<p>[A = {{1 \over 2} * h * g}]</p>
+<p>\[A = {{1 \over 2} * h * g}\]</p>
 
 <div class="expand">
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
