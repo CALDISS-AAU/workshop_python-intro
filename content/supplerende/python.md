@@ -1,26 +1,35 @@
 ---
-title: Python serverløsninger
-weight: 2
+title: Python IDE'er
+weight: 1
 ---
-Der findes adskillige online løsninger til at arbejde med Python. På den måde slipper man for selv at skulle sætte det op, og man vil ofte have mere computerkraft til rådighed, end man har på sin egen computer.
-
----
-
-**CALDISS serverløsning**
-
-CALDISS har en server til Jupyter Notebook. På den måde kan man komme i gang med Python uden at skulle installere det på egen computer. Serveren ligger på AAU's netværk og kan tilgås på AAU's netværk eller via VPN.
-
-Serveren har adressen: https://samf-jupyter.aau.dk/hub/login
-
-Bliv bruger af serveren ved at udfylde [denne formular](https://forms.office.com/Pages/ResponsePage.aspx?id=Sbrb9QbOb0msPgzxQ2HZNGg7-JICeN1Kopl4dsYkgftUQTE3UDRMWUtFQzBKT0dLVTNROVdBUk05MCQlQCN0PWcu).
+Der findes mange måder at arbejde med Python. Her er blot tre forslag til IDE'er ("Integrated development environment").
 
 ---
 
-**Google Colab**
 
-Google Colab fungerer ligesom en online version af Jupyter Notebook. Her kan man skrive notebooks, som man gør i Jupyter Notebook, men køre dem over Google's servere. Det kræver en Google konto for at bruge.
+**Jupyter Notebook**
+Med Jupyter Notebook arbejder man med Python i celler. Det egner sig især til kortere kodestykker, hvor der skal kommenteres undervejs. Det er muligt at kombinere Python kode med normale tekstceller. 
 
-Læs mere her: https://colab.research.google.com/notebooks/intro.ipynb (i øvrigt en fin introduktion til at arbejde med notebooks også).
+Jupyter Notebook tillader både en meget interaktiv måde at arbejde med Python samt nemme løsninger til at lave samlede rapporter og dokumenter, hvor kode, beskrivelse og output kombineres.
+
+Læs mere om Jupyter Notebook her: https://jupyter.org/
+
+Jupyter Notebook kan installeres sammen med Anaconda: https://www.anaconda.com/products/individual#Downloads
 
 ---
 
+**Jupyter Lab**
+Jupyter Lab er en videreudvikling af Jupyter Notebook. Jupyter Lab er en samlet platform, der giver bedre overblik over forskellige filer og dokumenter, som man har liggende i sin arbejdssti. 
+
+Læs mere om Jupyter Lab her: https://jupyter.org/
+
+---
+
+**Spyder**
+Spyder er baseret på en script-editor, hvor ens kode skrives i et langt stykke tekst. Det kan være lidt mere avanceret at arbejde med, men til gengæld har Spyder en del funktionalitet, der hjælper med at holde styr på ens data, variable, funktioner osv.
+
+Læs mere om Spyder her: https://www.spyder-ide.org/
+
+Spyder kan installeres sammen med Anaconda: https://www.anaconda.com/products/individual#Downloads
+
+---

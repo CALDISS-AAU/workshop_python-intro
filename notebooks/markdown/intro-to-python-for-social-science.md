@@ -1958,7 +1958,7 @@ Spyder kan installeres sammen med Anaconda: https://www.anaconda.com/products/in
 
 ---
 
-# {#Afsnit}Python serverløsninger
+# {#Afsnit}Serverløsninger til Python
 
 Der findes adskillige online løsninger til at arbejde med Python. På den måde slipper man for selv at skulle sætte det op, og man vil ofte have mere computerkraft til rådighed, end man har på sin egen computer.
 
