@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.70.0" />
     <meta name="description" content="">
 
 
@@ -12,19 +12,19 @@
     <title>If-betingelser :: Introduction to Python for Social Science</title>
 
     
-    <link href="../../css/nucleus.css?1596549962" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1596549962" rel="stylesheet">
-    <link href="../../css/hybrid.css?1596549962" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1596549962" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1596549962" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1596549962" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1596549962" rel="stylesheet">
-    <link href="../../css/theme.css?1596549962" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1596549962" rel="stylesheet">
+    <link href="../../css/nucleus.css?1598974876" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1598974876" rel="stylesheet">
+    <link href="../../css/hybrid.css?1598974876" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1598974876" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1598974876" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1598974876" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1598974876" rel="stylesheet">
+    <link href="../../css/theme.css?1598974876" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1598974876" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1596549962"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1598974876"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -50,14 +50,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1596549962"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1596549962"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1598974876"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1598974876"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1596549962"></script>
+<script type="text/javascript" src="../../js/search.js?1598974876"></script>
 
     
   </div>
@@ -286,6 +286,27 @@
       <li data-nav-id="/fundamentale/pakker/" title="Pakker" class="dd-item ">
         <a href="../../fundamentale/pakker/">
         Pakker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/fundamentale/logiske/" title="Logiske værdier (booleans)" class="dd-item ">
+        <a href="../../fundamentale/logiske/">
+        Logiske værdier (booleans)
         
         </a>
     </li>
@@ -551,15 +572,12 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#øvelse">ØVELSE</a></li>
-<li><a href="#if-betingelser-og-for-loops">If-betingelser og for loops</a></li>
-<li><a href="#if-betingelser-og-funktioner">If-betingelser og funktioner</a></li>
-<li><a href="#øvelse-1">ØVELSE</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#øvelse">ØVELSE</a></li>
+    <li><a href="#if-betingelser-og-for-loops">If-betingelser og for loops</a></li>
+    <li><a href="#if-betingelser-og-funktioner">If-betingelser og funktioner</a></li>
+    <li><a href="#øvelse-1">ØVELSE</a></li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -583,87 +601,60 @@
         
 
 
-
-
 <p>Når man arbejder med Python, kan det ofte være brugbart at sætte if-betingelser i sin kode. If-betingelser er kodestumper, hvor visse kommandoer kun udføres, hvis en betingelse er opfyldt:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">12</span>
 
-<pre><code class="language-python">x = 12
-
-if x &gt; 10:
-    print(&quot;Tallet er større end 10!&quot;)
-else:
-    print(&quot;Tallet er ikke større end 10!&quot;)
+<span style="color:#66d9ef">if</span> x <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">10</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Tallet er større end 10!&#34;</span>)
+<span style="color:#66d9ef">else</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Tallet er ikke større end 10!&#34;</span>)
+</code></pre></div><pre><code>Tallet er større end 10!
 </code></pre>
-
-<pre><code>Tallet er større end 10!
-</code></pre>
-
 <p>Ovenstående kode består af to blokke: en if-blok og en else-blok.</p>
-
 <p>I koden evalueres først if-betingelse: <code>x &gt; 10</code>. Hvis denne evalueres til <code>True</code>, udføres kommandoen efter <code>:</code>. I ovenstående er <code>x = 12</code>, hvorfor kommandoen udføres. Her er kommandoen blot at printe teksten <code>Tallet er større end 10!</code>.</p>
-
 <p>Herunder ses hvad der sker med samme kode, hvis x er mindre end 10:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span>
 
-<pre><code class="language-python">x = 8
-
-if x &gt; 10:
-    print(&quot;Tallet er større end 10!&quot;)
-else:
-    print(&quot;Tallet er ikke større end 10!&quot;)
+<span style="color:#66d9ef">if</span> x <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">10</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Tallet er større end 10!&#34;</span>)
+<span style="color:#66d9ef">else</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Tallet er ikke større end 10!&#34;</span>)
+</code></pre></div><pre><code>Tallet er ikke større end 10!
 </code></pre>
-
-<pre><code>Tallet er ikke større end 10!
-</code></pre>
-
 <p>I ovenstående er <code>x = 8</code>. Derfor evaluerer betingelsen denne gang til <code>False</code>, og kommandoen lige efter if-betingelsen udføres ikke. I stedet springes videre til else-blokken, hvor kommandoen er at printe teksten <code>Tallet er ikke større end 10!</code>.</p>
-
 <p>Else-blokken udløses i alle tilfælde, hvor if-betingelsen ikke er opfyldt. En else-blok er ikke nødvendig. Udelades den, sker der blot ingenting, hvis if-betingelsen ikke er opfyldt:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span>
 
-<pre><code class="language-python">x = 8
-
-if x &gt; 10:
-    print(&quot;Tallet er større end 10!&quot;)
-</code></pre>
-
-<p><strong>Flere if-betingelser</strong></p>
-
+<span style="color:#66d9ef">if</span> x <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">10</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Tallet er større end 10!&#34;</span>)
+</code></pre></div><p><strong>Flere if-betingelser</strong></p>
 <p>Det er muligt at udvide med flere betingelser med <code>elif</code> (&ldquo;else if&rdquo;). <code>elif</code> fungerer ved, at hvis if-betingelsen ikke er opfyldt, så evalueres den første <code>elif</code>. Sådan kører Python videre indtil, at der findes en betingelse, der evaluerer til sand, eller der nås en else-blok.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>
 
-<pre><code class="language-python">x = 7
-
-if x &gt; 10:
-    print(&quot;Tallet er større end 10!&quot;)
-elif x &gt; 5:
-    print(&quot;Tallet er større end 5!&quot;)
-else:
-    print(&quot;Tallet er ikke større end 5!&quot;)
+<span style="color:#66d9ef">if</span> x <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">10</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Tallet er større end 10!&#34;</span>)
+<span style="color:#66d9ef">elif</span> x <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">5</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Tallet er større end 5!&#34;</span>)
+<span style="color:#66d9ef">else</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Tallet er ikke større end 5!&#34;</span>)
+</code></pre></div><pre><code>Tallet er større end 5!
 </code></pre>
-
-<pre><code>Tallet er større end 5!
-</code></pre>
-
-<hr />
-
+<hr>
 <h2 id="øvelse">ØVELSE</h2>
-
 <p>Tag et kig på nedenstående kode:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">master <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Obi-Wan Kenobi&#34;</span>
 
-<pre><code class="language-python">master = &quot;Obi-Wan Kenobi&quot;
-
-if master == &quot;Luke Skywalker&quot;:
-    apprentice = &quot;Ben Solo&quot;
-elif master == &quot;Qui-Gon Jinn&quot;:
-    apprentice = &quot;Obi-Wan Kenobi&quot;
-elif master == &quot;Obi-Wan Kenobi&quot;:
-    apprentice = &quot;Anakin Skywalker&quot;
-elif master == &quot;Yoda&quot;:
-    apprentice = &quot;Mace Windu&quot;
-else:
-    apprentice = &quot;Ingen&quot;
-</code></pre>
-
-<p><em>Hvad indeholder variablen <code>apprentice</code>, når koden er kørt? (se om du kan løse det uden at køre koden)</em></p>
-
+<span style="color:#66d9ef">if</span> master <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Luke Skywalker&#34;</span>:
+    apprentice <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Ben Solo&#34;</span>
+<span style="color:#66d9ef">elif</span> master <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Qui-Gon Jinn&#34;</span>:
+    apprentice <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Obi-Wan Kenobi&#34;</span>
+<span style="color:#66d9ef">elif</span> master <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Obi-Wan Kenobi&#34;</span>:
+    apprentice <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Anakin Skywalker&#34;</span>
+<span style="color:#66d9ef">elif</span> master <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Yoda&#34;</span>:
+    apprentice <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Mace Windu&#34;</span>
+<span style="color:#66d9ef">else</span>:
+    apprentice <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Ingen&#34;</span>
+</code></pre></div><p><em>Hvad indeholder variablen <code>apprentice</code>, når koden er kørt? (se om du kan løse det uden at køre koden)</em></p>
 
 <div class="expand">
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
@@ -679,23 +670,17 @@ else:
         Variablen indeholder &ldquo;Anakin Skywalker&rdquo;, da det er sætningen <code>master = &quot;Obi-Wan Kenobi&quot;</code>, som er sand.
     </div>
 </div>
-
-<hr />
-
+<hr>
 <h2 id="if-betingelser-og-for-loops">If-betingelser og for loops</h2>
+<p>If-betingelser er yderst nyttige i kombination med andre kontrolstrukturer. Fx kan man i kombinationen med for loops og if-betingelser skrive kode, hvor en vis kommando kun udføres på visse værdier i en liste:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">values <span style="color:#f92672">=</span> range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">10</span>)
 
-<p>If-betingelser er yderst nyttige kombination med andre kontrolstrukturer. Fx kan man i kombinationen med for loops og if-betingelser skrive kode, hvor en vis kommando kun udføres på visse værdier i en liste:</p>
-
-<pre><code class="language-python">values = range(1, 10)
-
-for value in values:
-    if value % 3 == 0:
-        print(str(value) + &quot; kan divideres med 3!&quot;)
-    else:
-        print(str(value) + &quot; kan ikke divideres med 3!&quot;)
-</code></pre>
-
-<pre><code>1 kan ikke divideres med 3!
+<span style="color:#66d9ef">for</span> value <span style="color:#f92672">in</span> values:
+    <span style="color:#66d9ef">if</span> value <span style="color:#f92672">%</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+        <span style="color:#66d9ef">print</span>(str(value) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; kan divideres med 3!&#34;</span>)
+    <span style="color:#66d9ef">else</span>:
+        <span style="color:#66d9ef">print</span>(str(value) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; kan ikke divideres med 3!&#34;</span>)
+</code></pre></div><pre><code>1 kan ikke divideres med 3!
 2 kan ikke divideres med 3!
 3 kan divideres med 3!
 4 kan ikke divideres med 3!
@@ -705,50 +690,36 @@ for value in values:
 8 kan ikke divideres med 3!
 9 kan divideres med 3!
 </code></pre>
-
-<p>I ovenstående ses et for loop, der kører over værdierne 1 til 9 (<code>range(1, 10)</code>). Hver værdi tjekkes om det kan divideres med 3 (<code>value % 3 == 0</code>). Hvis det kan printes teksten, at det kan divideres med 3. Hvis ikke, printes teksten, at det ikke kan divideres med 3.</p>
-
+<p>I ovenstående ses et for loop, der kører over værdierne 1 til 9 (<code>range(1, 10)</code>). Hver værdi tjekkes om det kan divideres med 3 (<code>value % 3 == 0</code>). Hvis den kan det, printes at det kan divideres med 3. Hvis ikke, printes teksten, at det ikke kan divideres med 3.</p>
 
 <div class="notices note" >Husk at <code>%</code> bruges til at returnere den rest, der er tilbage efter heltalsdivision. <code>7 % 3</code> giver fx 1, da 7 kan divideres med 3 to hele gange, hvorefter der er 1 tilbage.</div>
 
-
 <h2 id="if-betingelser-og-funktioner">If-betingelser og funktioner</h2>
-
 <p>Funktioner kan skrives med if-betingelser. På den måde kan man skrive funktioner sådan, at det, der returneres, varierer afhængigt af, hvad det er for et input:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">jedis <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Kenobi&#34;</span>, <span style="color:#e6db74">&#34;Yoda&#34;</span>, <span style="color:#e6db74">&#34;Windu&#34;</span>, <span style="color:#e6db74">&#34;Ki-Adi-Mundi&#34;</span>, <span style="color:#e6db74">&#34;Koon&#34;</span>, <span style="color:#e6db74">&#34;Skywalker&#34;</span>, <span style="color:#e6db74">&#34;Katarn&#34;</span>]
+siths <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Sidious&#34;</span>, <span style="color:#e6db74">&#34;Desann&#34;</span>, <span style="color:#e6db74">&#34;Tyrannus&#34;</span>, <span style="color:#e6db74">&#34;Revan&#34;</span>, <span style="color:#e6db74">&#34;Maul&#34;</span>, <span style="color:#e6db74">&#34;Vader&#34;</span>, <span style="color:#e6db74">&#34;Plagueis&#34;</span>]
 
-<pre><code class="language-python">jedis = [&quot;Kenobi&quot;, &quot;Yoda&quot;, &quot;Windu&quot;, &quot;Ki-Adi-Mundi&quot;, &quot;Koon&quot;, &quot;Skywalker&quot;, &quot;Katarn&quot;]
-siths = [&quot;Sidious&quot;, &quot;Desann&quot;, &quot;Tyrannus&quot;, &quot;Revan&quot;, &quot;Maul&quot;, &quot;Vader&quot;, &quot;Plagueis&quot;]
-
-def jedi_checker(name):
-    if name in jedis:
-        return &quot;jedi&quot;
-    elif name in siths:
-        return &quot;sith&quot;
-    else:
-        return &quot;neither jedi nor sith&quot;
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">jedi_checker</span>(name):
+    <span style="color:#66d9ef">if</span> name <span style="color:#f92672">in</span> jedis:
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;jedi&#34;</span>
+    <span style="color:#66d9ef">elif</span> name <span style="color:#f92672">in</span> siths:
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;sith&#34;</span>
+    <span style="color:#66d9ef">else</span>:
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;neither jedi nor sith&#34;</span>
     
-print(jedi_checker(&quot;Windu&quot;))
-print(jedi_checker(&quot;Revan&quot;))
-</code></pre>
-
-<pre><code>jedi
+<span style="color:#66d9ef">print</span>(jedi_checker(<span style="color:#e6db74">&#34;Windu&#34;</span>))
+<span style="color:#66d9ef">print</span>(jedi_checker(<span style="color:#e6db74">&#34;Revan&#34;</span>))
+</code></pre></div><pre><code>jedi
 sith
 </code></pre>
 
-
 <div class="notices note" >Bemærk at ovenstående funktion er meget begrænset, da den kun baserer sig på en begrænset mængde navne og kun accepterer, at navnet er stavet på en helt bestemt måde.</div>
 
-
-<hr />
-
+<hr>
 <h2 id="øvelse-1">ØVELSE</h2>
-
 <p><em>Skriv et stykke kode, der går igennem hvert ord i listen <code>words</code> og printer ordet i blokbogstaver, hvis ordet er mere end 6 bogstaver langt. Ellers skal der ikke ske noget.</em></p>
-
-<pre><code class="language-python">words = [&quot;potato&quot;, &quot;cat&quot;, &quot;scrumptious&quot;, &quot;monitor&quot;, &quot;carpenter&quot;]
-</code></pre>
-
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">words <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;potato&#34;</span>, <span style="color:#e6db74">&#34;cat&#34;</span>, <span style="color:#e6db74">&#34;scrumptious&#34;</span>, <span style="color:#e6db74">&#34;monitor&#34;</span>, <span style="color:#e6db74">&#34;carpenter&#34;</span>]
+</code></pre></div>
 <div class="expand">
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
         <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
@@ -760,20 +731,17 @@ sith
     	</span>
     </div>
     <div class="expand-content" style="display: none;">
-        <pre><code class="language-python">for word in words:
-    if len(word) &gt; 6:
-        print(word.upper())
-</code></pre>
-
-<pre><code>SCRUMPTIOUS
+        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> word <span style="color:#f92672">in</span> words:
+    <span style="color:#66d9ef">if</span> len(word) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">6</span>:
+        <span style="color:#66d9ef">print</span>(word<span style="color:#f92672">.</span>upper())
+</code></pre></div><pre><code>SCRUMPTIOUS
 MONITOR
 CARPENTER
 </code></pre>
 
     </div>
 </div>
-
-<hr />
+<hr>
 
 
 <footer class="footline">
@@ -869,6 +837,22 @@ CARPENTER
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -1111,19 +1095,19 @@ CARPENTER
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1596549962"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1596549962"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1596549962"></script>
-    <script src="../../js/jquery.sticky.js?1596549962"></script>
-    <script src="../../js/featherlight.min.js?1596549962"></script>
-    <script src="../../js/highlight.pack.js?1596549962"></script>
+    <script src="../../js/clipboard.min.js?1598974876"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1598974876"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1598974876"></script>
+    <script src="../../js/jquery.sticky.js?1598974876"></script>
+    <script src="../../js/featherlight.min.js?1598974876"></script>
+    <script src="../../js/highlight.pack.js?1598974876"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1596549962"></script>
-    <script src="../../js/learn.js?1596549962"></script>
-    <script src="../../js/hugo-learn.js?1596549962"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1598974876"></script>
+    <script src="../../js/learn.js?1598974876"></script>
+    <script src="../../js/hugo-learn.js?1598974876"></script>
 
-    <link href="../../mermaid/mermaid.css?1596549962" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1596549962"></script>
+    <link href="../../mermaid/mermaid.css?1598974876" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1598974876"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

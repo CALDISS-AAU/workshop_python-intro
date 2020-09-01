@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.70.0" />
     <meta name="description" content="">
 
 
@@ -12,19 +12,19 @@
     <title>Metoder :: Introduction to Python for Social Science</title>
 
     
-    <link href="../../css/nucleus.css?1596549962" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1596549962" rel="stylesheet">
-    <link href="../../css/hybrid.css?1596549962" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1596549962" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1596549962" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1596549962" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1596549962" rel="stylesheet">
-    <link href="../../css/theme.css?1596549962" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1596549962" rel="stylesheet">
+    <link href="../../css/nucleus.css?1598974876" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1598974876" rel="stylesheet">
+    <link href="../../css/hybrid.css?1598974876" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1598974876" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1598974876" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1598974876" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1598974876" rel="stylesheet">
+    <link href="../../css/theme.css?1598974876" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1598974876" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1596549962"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1598974876"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -50,14 +50,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1596549962"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1596549962"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1598974876"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1598974876"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1596549962"></script>
+<script type="text/javascript" src="../../js/search.js?1598974876"></script>
 
     
   </div>
@@ -286,6 +286,27 @@
       <li data-nav-id="/fundamentale/pakker/" title="Pakker" class="dd-item ">
         <a href="../../fundamentale/pakker/">
         Pakker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/fundamentale/logiske/" title="Logiske værdier (booleans)" class="dd-item ">
+        <a href="../../fundamentale/logiske/">
+        Logiske værdier (booleans)
         
         </a>
     </li>
@@ -551,12 +572,9 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#videnscheck">VIDENSCHECK</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#videnscheck">VIDENSCHECK</a></li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -580,46 +598,32 @@
         
 
 
-
-
 <p>Udover funktioner i Python findes der også &ldquo;metoder&rdquo;. Lig funktioner tager metoder også en form for input og returnerer et output.</p>
-
 <p>I modsætning til funktioner er metoder bundet op på bestemte variabeltyper. Det vil sige at variablen skal være en bestemt type for, at metoden kan bruges. Metoder kaldes med <code>variabel.method(option1 = something)</code>. Tekstværdier (strings) har fx en række metoder tilknyttet til at ændre teksten:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">word <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello&#34;</span>
 
-<pre><code class="language-python">word = &quot;Hello&quot;
-
-print(word.upper())  # Konverterer til store bogstaver
-print(word.lower())  # Konverterer til små bogstaver
-</code></pre>
-
-<pre><code>HELLO
+<span style="color:#66d9ef">print</span>(word<span style="color:#f92672">.</span>upper())  <span style="color:#75715e"># Konverterer til store bogstaver</span>
+<span style="color:#66d9ef">print</span>(word<span style="color:#f92672">.</span>lower())  <span style="color:#75715e"># Konverterer til små bogstaver</span>
+</code></pre></div><pre><code>HELLO
 hello
 </code></pre>
+<p>Bemærk at metoder som hovedregel ikke ændrer på variablen. Variablen skal derfor defineres om eller på ny, hvis output af en metode skal lagres:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(word)         <span style="color:#75715e"># Stadig som det oprindeligt blev lavet</span>
 
-<p>Bemærk at metoder som hovedregel ikke ændrer på variablen. Variablen skal derfor defineres om eller på ny, hvis output af brug af en metode skal lagres:</p>
-
-<pre><code class="language-python">print(word)         # Stadig som det oprindeligt blev lavet
-
-word = word.upper() 
-print(word)         # Er nu overskrevet til at være med store bogstaver
-</code></pre>
-
-<pre><code>Hello
+word <span style="color:#f92672">=</span> word<span style="color:#f92672">.</span>upper() 
+<span style="color:#66d9ef">print</span>(word)         <span style="color:#75715e"># Er nu overskrevet til at være med store bogstaver</span>
+</code></pre></div><pre><code>Hello
 HELLO
 </code></pre>
-
 <p>Forsøger man at bruge metoder på variabel af en forkert type, gives der fejl:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">number <span style="color:#f92672">=</span> <span style="color:#ae81ff">627</span>
 
-<pre><code class="language-python">number = 627
-
-number.upper()
-</code></pre>
-
-<pre><code>---------------------------------------------------------------------------
+number<span style="color:#f92672">.</span>upper()
+</code></pre></div><pre><code>---------------------------------------------------------------------------
 
 AttributeError                            Traceback (most recent call last)
 
-&lt;ipython-input-38-d30eebf09ae0&gt; in &lt;module&gt;
+&lt;ipython-input-51-d30eebf09ae0&gt; in &lt;module&gt;
       1 number = 627
       2 
 ----&gt; 3 number.upper()
@@ -627,30 +631,20 @@ AttributeError                            Traceback (most recent call last)
 
 AttributeError: 'int' object has no attribute 'upper'
 </code></pre>
-
 <p>Metoder tager ofte yderligere argumenter og indstillinger. I nedenstående bruges metoden <code>.replace()</code> til at erstatte et hvis ord i tekstvariablen med et andet.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">words <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello there!&#34;</span>
 
-<pre><code class="language-python">words = &quot;Hello there!&quot;
-
-words.replace(&quot;there&quot;, &quot;world&quot;)
+words<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#34;there&#34;</span>, <span style="color:#e6db74">&#34;world&#34;</span>)
+</code></pre></div><pre><code>'Hello world!'
 </code></pre>
-
-<pre><code>'Hello world!'
-</code></pre>
-
 
 <div class="notices note" ><p>Bemærk i hjælpefilen for <code>.replace()</code> at de to argumenter, som der tages kaldes <code>old</code> og <code>new</code> og står i den rækkefølge. Det er derfor også den rækkefølge, som de skal skrives ind, når man bruger metoden.</p>
 </div>
 
-
-<hr />
-
+<hr>
 <h2 id="videnscheck">VIDENSCHECK</h2>
-
 <p>I ovenstående er metoden <code>.replace()</code> brugt til at erstatte ordet &ldquo;there&rdquo; med &ldquo;world&rdquo; i variablen <code>words</code>.</p>
-
 <p><em>Hvad indeholder <code>words</code> efter <code>.replace()</code> er brugt?</em></p>
-
 
 <div class="expand">
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
@@ -667,8 +661,7 @@ words.replace(&quot;there&quot;, &quot;world&quot;)
 
     </div>
 </div>
-
-<hr />
+<hr>
 
 
 <footer class="footline">
@@ -869,6 +862,22 @@ words.replace(&quot;there&quot;, &quot;world&quot;)
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1006,19 +1015,19 @@ words.replace(&quot;there&quot;, &quot;world&quot;)
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1596549962"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1596549962"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1596549962"></script>
-    <script src="../../js/jquery.sticky.js?1596549962"></script>
-    <script src="../../js/featherlight.min.js?1596549962"></script>
-    <script src="../../js/highlight.pack.js?1596549962"></script>
+    <script src="../../js/clipboard.min.js?1598974876"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1598974876"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1598974876"></script>
+    <script src="../../js/jquery.sticky.js?1598974876"></script>
+    <script src="../../js/featherlight.min.js?1598974876"></script>
+    <script src="../../js/highlight.pack.js?1598974876"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1596549962"></script>
-    <script src="../../js/learn.js?1596549962"></script>
-    <script src="../../js/hugo-learn.js?1596549962"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1598974876"></script>
+    <script src="../../js/learn.js?1598974876"></script>
+    <script src="../../js/hugo-learn.js?1598974876"></script>
 
-    <link href="../../mermaid/mermaid.css?1596549962" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1596549962"></script>
+    <link href="../../mermaid/mermaid.css?1598974876" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1598974876"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

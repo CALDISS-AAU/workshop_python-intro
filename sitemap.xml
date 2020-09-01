@@ -71,6 +71,10 @@
   </url>
   
   <url>
+    <loc>/fundamentale/logiske/</loc>
+  </url>
+  
+  <url>
     <loc>/</loc>
     <priority>0</priority>
   </url>

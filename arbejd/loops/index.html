@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.70.0" />
     <meta name="description" content="">
 
 
@@ -12,19 +12,19 @@
     <title>Loops :: Introduction to Python for Social Science</title>
 
     
-    <link href="../../css/nucleus.css?1596549962" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1596549962" rel="stylesheet">
-    <link href="../../css/hybrid.css?1596549962" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1596549962" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1596549962" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1596549962" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1596549962" rel="stylesheet">
-    <link href="../../css/theme.css?1596549962" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1596549962" rel="stylesheet">
+    <link href="../../css/nucleus.css?1598974876" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1598974876" rel="stylesheet">
+    <link href="../../css/hybrid.css?1598974876" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1598974876" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1598974876" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1598974876" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1598974876" rel="stylesheet">
+    <link href="../../css/theme.css?1598974876" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1598974876" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1596549962"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1598974876"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -50,14 +50,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1596549962"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1596549962"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1598974876"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1598974876"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1596549962"></script>
+<script type="text/javascript" src="../../js/search.js?1598974876"></script>
 
     
   </div>
@@ -286,6 +286,27 @@
       <li data-nav-id="/fundamentale/pakker/" title="Pakker" class="dd-item ">
         <a href="../../fundamentale/pakker/">
         Pakker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/fundamentale/logiske/" title="Logiske værdier (booleans)" class="dd-item ">
+        <a href="../../fundamentale/logiske/">
+        Logiske værdier (booleans)
         
         </a>
     </li>
@@ -551,16 +572,13 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#for-loops">For loops</a></li>
-<li><a href="#videnscheck">VIDENSCHECK</a></li>
-<li><a href="#øvelse">ØVELSE</a></li>
-<li><a href="#while-loops">While loops</a></li>
-<li><a href="#øvelse-1">ØVELSE</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#for-loops">For loops</a></li>
+    <li><a href="#videnscheck">VIDENSCHECK</a></li>
+    <li><a href="#øvelse">ØVELSE</a></li>
+    <li><a href="#while-loops">While loops</a></li>
+    <li><a href="#øvelse-1">ØVELSE</a></li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -584,118 +602,77 @@
         
 
 
-
-
 <p>I arbejdet med dataanalyse udfører man ofte de samme kommandoer, kontroller, kørsler osv. igen og igen:</p>
-
 <ul>
 <li>En række oplysninger kan kontrolleres, om de er korrekte. Har de den rigtige type? Er værdierne gyldige? (fx at aldersværdier ikke har skøre værdier som 987 år).</li>
-<li>Den samme beregning skal foretages for en række oplysninger - fx udregning gennemsnit for indkomst, alder, år i arbejde osv.</li>
+<li>Den samme beregning skal foretages for en række oplysninger - fx udregning af gennemsnit for indkomst, alder, år i arbejde osv.</li>
 <li>De samme oplysninger skal hentes fra en række forskellige hjemmesider.</li>
 </ul>
-
 <p>I Python (og mange andre programmeringssprog) kan man anvende &ldquo;loops&rdquo; til at gentage kommandoer. De mest gængse loop typer er &ldquo;for loops&rdquo; og &ldquo;while loops&rdquo;. &ldquo;for loops&rdquo; gentager en eller flere kommandoer over en række værdier. &ldquo;while loops&rdquo; gentager en kommando, så længe en hvis betingelse er opfyldt.</p>
-
 <p>Loops kaldes også for kontrolstrukturer i programmeringssprog, da de er med til at sætte rammer og betingelser for, hvad visse kommandoer skal køre på.</p>
-
 <h2 id="for-loops">For loops</h2>
-
 <p>I nedenstående dannes tre variable. Det antages, at der er tale om tre forskellige aldersværdier. De tre værdier lagres i listen <code>ages</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">age1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">29</span>
+age2 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;41&#34;</span>
+age3 <span style="color:#f92672">=</span> <span style="color:#ae81ff">87</span>
 
-<pre><code class="language-python">age1 = 29
-age2 = &quot;41&quot;
-age3 = 87
-
-ages = [age1, age2, age3]
-</code></pre>
-
-<p>Som tidligere gennemgået i materialet, adskiller Python mellem forskellige variabeltyper. For at Python kan arbejde med tal, skal Python fortælles, at variablen er et tal, hvis ikke Python har gættet det i forvejen. En typisk del af forarbejdet til dataanalyse er, at validere oplysninger på en eller anden måde for at sikre, at data er i gyldige formater og typer.</p>
-
+ages <span style="color:#f92672">=</span> [age1, age2, age3]
+</code></pre></div><p>Som tidligere gennemgået i materialet, adskiller Python mellem forskellige variabeltyper. For at Python kan arbejde med tal, skal Python fortælles, at variablen er et tal, hvis ikke Python har gættet det i forvejen. En typisk del af forarbejdet til dataanalyse er, at validere oplysninger på en eller anden måde for at sikre, at data er i gyldige formater og typer.</p>
 <p>Hver variabel skal altså kontrolleres for, at det er en numerisk type, hvilket kan gøres med <code>type()</code>:</p>
-
-<pre><code class="language-python">print(type(age1))
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(type(age1))
+</code></pre></div><pre><code>&lt;class 'int'&gt;
 </code></pre>
-
-<pre><code>&lt;class 'int'&gt;
-</code></pre>
-
 <p>Skal det gøres for alle variable, skal kommandoen gentages for hver variabel:</p>
-
-<pre><code class="language-python">print(type(age1))
-print(type(age2))
-print(type(age3))
-</code></pre>
-
-<pre><code>&lt;class 'int'&gt;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(type(age1))
+<span style="color:#66d9ef">print</span>(type(age2))
+<span style="color:#66d9ef">print</span>(type(age3))
+</code></pre></div><pre><code>&lt;class 'int'&gt;
 &lt;class 'str'&gt;
 &lt;class 'int'&gt;
 </code></pre>
-
 <p>Af ovenstående erfares, at <code>age2</code> er en string, og derfor skal konverteres, før der kan arbejdes videre med den.</p>
-
 <p>At skulle gentage kommandoer ved at skrive dem ud hver gang, bliver dog hurtigt en tidsslugende og meget kedsommelig affære. Alternativt kan et loop bruges til at gøre det samme.</p>
-
 <p>Ovenstående kan gøres med et loop på følgende måde (husk at listen <code>ages</code> består af værdierne fra variablerne <code>age1</code>, <code>age2</code> og <code>age3</code>):</p>
-
-<pre><code class="language-python">for age in ages:
-    print(type(age))
-</code></pre>
-
-<pre><code>&lt;class 'int'&gt;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> age <span style="color:#f92672">in</span> ages:
+    <span style="color:#66d9ef">print</span>(type(age))
+</code></pre></div><pre><code>&lt;class 'int'&gt;
 &lt;class 'str'&gt;
 &lt;class 'int'&gt;
 </code></pre>
-
 <p><strong>Opbygning af et for loop</strong></p>
-
-<p>Et for loop består overordnet af to dele:
-- En række værdier, som loopet skal køre over
-- En eller flere kommandoer, som skal gentages for hver værdi</p>
-
+<p>Et for loop består overordnet af to dele:</p>
+<ul>
+<li>En række værdier, som loopet skal køre over</li>
+<li>En eller flere kommandoer, som skal gentages for hver værdi</li>
+</ul>
 <p>I ovenstående kommando bruges listen <code>ages</code> som den række værdier, som loopet skal køre over. <code>age</code> er en pladsholder for de enkelte værdier, som er i <code>ages</code>. Hver gang loopet gentages, ændrer <code>age</code> sig til den næste værdi i <code>ages</code>.</p>
-
 <p>Pladsholderen <code>age</code> bruges i kommandoerne, som skal gentages for hvert loop. Kommandoerne skrives på linjen efter <code>:</code>. Her er det vigtigt, at kommandoerne i loopet er rykket ind (enten med tab eller fire mellemrum, men de fleste IDE&rsquo;er laver dette mellemrum automatisk).</p>
-
 <p>Der kunne have været brugt hvilket som helst navn som pladsholder i stedet for <code>age</code>, så længe at pladsholder-navnet ændres i kommandoerne også.</p>
-
 <p>Herunder ses et andet for loop, der går igennem hver værdi i <code>values</code> og printer værdien ganget med to:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">values <span style="color:#f92672">=</span> [<span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">91</span>, <span style="color:#ae81ff">27</span>]
 
-<pre><code class="language-python">values = [9, 10, 4, 91, 27]
-
-for value in values:
-    print(value * 2)
-</code></pre>
-
-<pre><code>18
+<span style="color:#66d9ef">for</span> value <span style="color:#f92672">in</span> values:
+    <span style="color:#66d9ef">print</span>(value <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>)
+</code></pre></div><pre><code>18
 20
 8
 182
 54
 </code></pre>
-
 <p>Når for loopet sættes i gang, ser Python på værdierne i <code>values</code> og tager den første værdi (<code>9</code>). <code>value</code> er altså lig med <code>9</code> i den første kørsel af loopet. Derefter udføres kommandoen, som i dette tilfælde er at printe værdien ganget med to: <code>print(value * 2)</code>. <code>value = 9</code> i den første kørsel af loopet, så derfor udføres: <code>print(9 * 2)</code>, som giver <code>18</code>.</p>
-
 <p>Når enden af kommandoerne i loopet nås, går Python tilbage til værdierne i <code>values</code> og tager den næste værdi (<code>10</code>), så <code>value</code> er lig med <code>10</code> i den næste kørsel: <code>print(10 * 2)</code>, som giver <code>20</code>. Sådan fortsætter Python, indtil der ikke er flere værdier i listen (eller at der stødes på en eller anden fejl).</p>
-
 <p>Bemærk, at en liste ikke behøver at være defineret som variabel, inden den bruges i et loop:</p>
-
-<pre><code class="language-python">for value in [9, 10, 4, 91, 27]:
-    print(value * 2)
-</code></pre>
-
-<pre><code>18
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> value <span style="color:#f92672">in</span> [<span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">91</span>, <span style="color:#ae81ff">27</span>]:
+    <span style="color:#66d9ef">print</span>(value <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>)
+</code></pre></div><pre><code>18
 20
 8
 182
 54
 </code></pre>
-
-<hr />
-
+<hr>
 <h2 id="videnscheck">VIDENSCHECK</h2>
-
 <p><em>Hvornår giver det mening at bruge et for loop?</em></p>
-
 
 <div class="expand">
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
@@ -711,22 +688,13 @@ for value in values:
         Når de samme kommandoer skal gentages for en række værdier.
     </div>
 </div>
-
-<hr />
-
-<hr />
-
+<hr>
+<hr>
 <h2 id="øvelse">ØVELSE</h2>
-
 <p>Tidligere i dette materiale er metoder blevet gennemgået. Blandt andet kan man bruge <code>.upper()</code> på en tekstværdi, for at få værdien tilbage i blokbogstaver.</p>
-
 <p>Tag et kig på denne liste af ord:</p>
-
-<pre><code class="language-python">words = [&quot;potato&quot;, &quot;cat&quot;, &quot;scrumptious&quot;, &quot;monitor&quot;, &quot;carpenter&quot;]
-</code></pre>
-
-<p><em>Skriv et for loop, der printer hver ord i <code>words</code> i blokbogstaver.</em></p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">words <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;potato&#34;</span>, <span style="color:#e6db74">&#34;cat&#34;</span>, <span style="color:#e6db74">&#34;scrumptious&#34;</span>, <span style="color:#e6db74">&#34;monitor&#34;</span>, <span style="color:#e6db74">&#34;carpenter&#34;</span>]
+</code></pre></div><p><em>Skriv et for loop, der printer hvert ord i <code>words</code> i blokbogstaver.</em></p>
 
 <div class="expand">
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
@@ -739,11 +707,9 @@ for value in values:
     	</span>
     </div>
     <div class="expand-content" style="display: none;">
-        <pre><code class="language-python">for word in words:
-    print(word.upper())
-</code></pre>
-
-<pre><code>POTATO
+        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> word <span style="color:#f92672">in</span> words:
+    <span style="color:#66d9ef">print</span>(word<span style="color:#f92672">.</span>upper())
+</code></pre></div><pre><code>POTATO
 CAT
 SCRUMPTIOUS
 MONITOR
@@ -752,18 +718,12 @@ CARPENTER
 
     </div>
 </div>
-
-<hr />
-
+<hr>
 <p><strong>Loop over talrækker</strong></p>
-
 <p>Et for loop kan køres på et interval med kommandoen <code>range()</code>:</p>
-
-<pre><code class="language-python">for x in range(10, 20):
-    print(x+5)
-</code></pre>
-
-<pre><code>15
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>):
+    <span style="color:#66d9ef">print</span>(x<span style="color:#f92672">+</span><span style="color:#ae81ff">5</span>)
+</code></pre></div><pre><code>15
 16
 17
 18
@@ -774,77 +734,55 @@ CARPENTER
 23
 24
 </code></pre>
-
 <p><code>range()</code> danner en talrække fra det første tal angivet til tallet <em>før</em> det sidste tal angivet ([10:20[).</p>
-
 <p>Angives et enkelt tal som argument, antages det, at intervallet skal dannes fra <code>0</code> og frem til tallet før tallet angivet:</p>
-
-<pre><code class="language-python">for x in range(5):
-    print(x)
-</code></pre>
-
-<pre><code>0
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">5</span>):
+    <span style="color:#66d9ef">print</span>(x)
+</code></pre></div><pre><code>0
 1
 2
 3
 4
 </code></pre>
-
 <p>Som standard dannes intervallet med skridt på <code>1</code>; altså hver enkelt heltal mellem det første tal og tallet før det sidste tal. Dette kan ændres ved at tilføje et tredje argument for, hvor store &ldquo;skridt&rdquo;, der skal være i intervallet:</p>
-
-<pre><code class="language-python">for x in range(5, 10, 2):
-    print(x)
-</code></pre>
-
-<pre><code>5
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">2</span>):
+    <span style="color:#66d9ef">print</span>(x)
+</code></pre></div><pre><code>5
 7
 9
 </code></pre>
-
 <h2 id="while-loops">While loops</h2>
-
 <p>While loops er en anden type loops i Python. Hvor for loops gentager en eller flere kommandoer for hver værdi i en række af værdier, så gentager while loops en eller flere kommandoer, så længe en hvis betingelse er opfyldt.</p>
-
 <p>Herunder ses et eksempel på et simpel while loop:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
 
-<pre><code class="language-python">x = 1
-
-while x &lt; 5:
-    print(&quot;loopet kører videre&quot;)
-    x = x + 1
-</code></pre>
-
-<pre><code>loopet kører videre
+<span style="color:#66d9ef">while</span> x <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">5</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;loopet kører videre&#34;</span>)
+    x <span style="color:#f92672">=</span> x <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</code></pre></div><pre><code>loopet kører videre
 loopet kører videre
 loopet kører videre
 loopet kører videre
 </code></pre>
-
-<p>Et while loop består overordnet af to dele:
-- En betingelse som skal være opfyldt for, at loopet gentages
-- En eller flere kommandoer, som skal gentages for hvert loop</p>
-
+<p>Et while loop består overordnet af to dele:</p>
+<ul>
+<li>En betingelse som skal være opfyldt for, at loopet gentages</li>
+<li>En eller flere kommandoer, som skal gentages for hvert loop</li>
+</ul>
 <p>I ovenstående defineres først <code>x</code> til at være <code>1</code>. Derefter igangsættes et while loop, som skal køre, så længe at <code>x &lt; 5</code>. Kommandoerne, som skal køre i loopet, skrives på linjen efter <code>:</code>. Her er det igen vigtigt, at kommandoerne i loopet er rykket ind (enten med tab eller fire mellemrum, men de fleste IDE&rsquo;er laver dette mellemrum automatisk).</p>
-
 <p>Derefter overskrives <code>x</code> til at være <code>x + 1</code>; altså at værdien af <code>x</code> øges med <code>1</code>. Bemærk at hvis denne linje undlades, så bliver loopet ved med at gentage sig, da <code>x</code> ikke ændres og derfor bliver ved med at være <code>1</code>; altså mindre end <code>5</code>, som er betingelsen for, at loopet kører.</p>
 
-
 <div class="notices warning" ><p>Man skal være forsigtig, når man skriver while loops, da man meget nemt kan komme til at skabe uendeligt loops!</p>
-
 <p>Uendelige loops sker, hvis ikke den betingelse, som while loopet baseres på, ændres. Uendelige loops skal afbrydes manuelt, men i tilfælde, hvor det, der sker i loopet, er krævende, kan Python ende med at gå helt i stå af at arbejde med loopet, da Python (og computeren) til sidst ikke kan følge med.</p>
 </div>
 
-
 <p>Herunder ses et andet while loop, der bliver ved, så længe antallet af karakterer i variablen <code>fruit</code> ikke overstiger 22:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">fruit <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;banana&#34;</span>
 
-<pre><code class="language-python">fruit = &quot;banana&quot;
-
-while len(fruit) &lt;= 22:
-    print(&quot;the word is &quot; + fruit)
-    fruit = fruit + &quot;na&quot;
-</code></pre>
-
-<pre><code>the word is banana
+<span style="color:#66d9ef">while</span> len(fruit) <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">22</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;the word is &#34;</span> <span style="color:#f92672">+</span> fruit)
+    fruit <span style="color:#f92672">=</span> fruit <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;na&#34;</span>
+</code></pre></div><pre><code>the word is banana
 the word is bananana
 the word is banananana
 the word is bananananana
@@ -855,39 +793,24 @@ the word is bananananananananana
 the word is banananananananananana
 </code></pre>
 
-
 <div class="notices info" >Funktionen <code>len()</code> har tidligere været brugt til at give antallet af elementer i en liste. Bruges <code>len()</code> på en tekstværdi (en string), returneres antallet af karakterer i tekstværdien.</div>
 
-
 <p>Når Python læser linjen med while loopet, starter Python med at evaluere betingelsen: <code>len(fruit) &lt;= 22</code>. Hvis denne er <code>True</code>, udføres kommandoerne. <code>fruit</code> indeholder til at starte med teksten <code>banana</code> og har en længde på 6 bogstaver; altså mindre end 22, så kommandoerne udføres.</p>
-
 <p>Første kommando at printe teksten <code>&quot;the word is &quot; + fruit</code> (husk at tekststykker kan sættes sammen med <code>+</code>). Da <code>fruit</code> i den første kørsel indeholder <code>banana</code> bliver teksten <code>the word is banana</code>.</p>
-
 <p>Dernæst ændres <code>fruit</code> til at få tilføjet teksten <code>na</code>, så <code>fruit</code> nu indeholder <code>bananana</code>.</p>
-
 <p>Loopet starter herefter forfra, og betingelsen evalueres igen. Nu indeholder <code>fruit</code> teksten <code>bananana</code> med en længde på 8 bogstaver; altså stadig mindre end 22, hvorfor kommandoerne igen udføres. Da <code>fruit</code> nu indeholder <code>bananana</code> printes teksten <code>the word is bananana</code>.</p>
-
 <p><strong>Brug af while loops</strong></p>
-
 <p>Det kan måske virke svært at se, hvad while loops kan bruges til. De bruges meget i programmering i det hele taget, men finder sjældent anvendelse i analysearbejde.</p>
-
-<p>Arbejder man med web scraping (indsamling af data fra nettet), kan while loops være brugbare. En teknik i web scraping er fx at sætte &ldquo;crawlers&rdquo; op. En crawler fungerer kort sagt ved at gå fra hjemmeside til hjemmeside ud fra de links, som der findes på siden. Her kan et while loop bruges til at begrænse, hvor langt crawleren skal gå; fx ved at sætte den til at stoppe efter et hvis antal sider er indsamlet eller sætte den til at stoppe, hvis crawleren bevæger sig ud fra et eller andet hoveddomæne.</p>
-
-<p>Hvis man fx gerne vil indsamle tekster og artikler fra EU&rsquo;s hjemmeside (<a href="https://europa.eu/">https://europa.eu/</a>), kan man bruge et while loop til at fortsætte indsamlinen, så længe siden befinder sig under domænet <a href="https://europa.eu/">https://europa.eu/</a>.</p>
-
-<hr />
-
+<p>Arbejder man med web scraping (indsamling af data fra nettet), kan while loops være brugbare. En teknik i web scraping er fx at sætte &ldquo;crawlers&rdquo; op. En crawler fungerer kort sagt ved at gå fra hjemmeside til hjemmeside ud fra de links, som der findes på siden. Her kan et while loop bruges til at begrænse, hvor langt crawleren skal gå; fx ved at sætte den til at stoppe efter et vis antal sider er indsamlet eller sætte den til at stoppe, hvis crawleren bevæger sig ud fra et eller andet hoveddomæne.</p>
+<p>Hvis man fx gerne vil indsamle tekster og artikler fra EU&rsquo;s hjemmeside (<a href="https://europa.eu/),">https://europa.eu/),</a> kan man bruge et while loop til at fortsætte indsamlingen, så længe siden befinder sig under domænet <a href="https://europa.eu/">https://europa.eu/</a>.</p>
+<hr>
 <h2 id="øvelse-1">ØVELSE</h2>
-
 <p>Bør nedenstående while loop køres?:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">y <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
 
-<pre><code class="language-python">y = 10
-
-while y &gt; 5:
-    print(&quot;the value is &quot; + str(y))
-</code></pre>
-
-
+<span style="color:#66d9ef">while</span> y <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">5</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;the value is &#34;</span> <span style="color:#f92672">+</span> str(y))
+</code></pre></div>
 <div class="expand">
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
         <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
@@ -902,8 +825,7 @@ while y &gt; 5:
         Nej. Det er et uendeligt loop. <code>y</code> ændres ikke og betingelsen for while loopet bliver derfor ved med at være sand.
     </div>
 </div>
-
-<hr />
+<hr>
 
 
 <footer class="footline">
@@ -999,6 +921,22 @@ while y &gt; 5:
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -1241,19 +1179,19 @@ while y &gt; 5:
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1596549962"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1596549962"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1596549962"></script>
-    <script src="../../js/jquery.sticky.js?1596549962"></script>
-    <script src="../../js/featherlight.min.js?1596549962"></script>
-    <script src="../../js/highlight.pack.js?1596549962"></script>
+    <script src="../../js/clipboard.min.js?1598974876"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1598974876"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1598974876"></script>
+    <script src="../../js/jquery.sticky.js?1598974876"></script>
+    <script src="../../js/featherlight.min.js?1598974876"></script>
+    <script src="../../js/highlight.pack.js?1598974876"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1596549962"></script>
-    <script src="../../js/learn.js?1596549962"></script>
-    <script src="../../js/hugo-learn.js?1596549962"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1598974876"></script>
+    <script src="../../js/learn.js?1598974876"></script>
+    <script src="../../js/hugo-learn.js?1598974876"></script>
 
-    <link href="../../mermaid/mermaid.css?1596549962" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1596549962"></script>
+    <link href="../../mermaid/mermaid.css?1598974876" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1598974876"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

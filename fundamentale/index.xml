@@ -16,9 +16,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/fundamentale/python/</guid>
-      <description>Som nævnt arbejder man med Python ved at skrive kommandoer i Python sproget. Kommandoer bliver &amp;ldquo;evalueret&amp;rdquo; af fortolkeren. Hvis koden forstås, bliver den kørt, og der gives et output, en ændring eller andet, afhængig af, hvad vi beder om.
+      <description>Som nævnt arbejder man med Python ved at skrive kommandoer i Python sproget. Kommandoer bliver &amp;ldquo;evalueret&amp;rdquo; af fortolkeren. Hvis koden forstås, bliver den kørt, og der gives et output, en ændring eller andet afhængigt af, hvad man beder om.
 Hvis man fx skriver en kommando besteånde af matematiske operationer i Python, vil man få resultatet tilbage som output:
-2 + 5  7  7 * 6  42  923 / 45  20.</description>
+2 + 5 7 7 * 6 42 923 / 45 20.</description>
     </item>
     
     <item>
@@ -29,7 +29,8 @@ Hvis man fx skriver en kommando besteånde af matematiske operationer i Python, 
       <guid>/fundamentale/variable/</guid>
       <description>Python er et objekt-orienteret programmeringssprog. Dette indebærer, at man kontinuerligt arbejder med forskellige objekter, som indeholder en eller anden for for information.
 I Python kaldes objekter &amp;ldquo;variable&amp;rdquo;. Dette er ikke at forveksle med en variabel, som forstået i statistik som en egenskab ved en observation, da en variabel i Python blot er en beholder for en eller anden form for information.
-Alle disse kan være variable i Python: - Et tal - Et ord - En tekst - Et datasæt - En mappesti - En hjemmesideadresse - Et billede</description>
+Alle disse kan være variable i Python:
+ Et tal Et ord En tekst Et datasæt En mappesti En hjemmesideadresse Et billede  Variable med tal En variabel defineres med =.</description>
     </item>
     
     <item>
@@ -51,7 +52,7 @@ Som man arbejder med Python, vil man støde på mange forskellige typer.</descri
       <guid>/fundamentale/funktioner/</guid>
       <description>En central del af det at arbejde med et programmeringssprog er at bruge funktioner. Funktioner tager et eller flere input (kaldet &amp;ldquo;argumenter&amp;rdquo;), foretager et eller andet med disse og returnerer (for det meste) et output.
 Funktioner i Python har følgende format:
- function(argument1, argument2, ...)  Funktioner bruges ved at skrive funktionens navn og skrive de argumenterne i parentes. En funktion kan have et utal af argumenter, men oftest skal de som minimum have et eller flere variable som input.</description>
+ function(argument1, argument2, ...)  Funktioner bruges ved at skrive funktionens navn efterfulgt af argumenterne i parentes. En funktion kan have et utal af argumenter, men oftest skal de som minimum have en eller flere variable som input.</description>
     </item>
     
     <item>
@@ -62,7 +63,7 @@ Funktioner i Python har følgende format:
       <guid>/fundamentale/metoder/</guid>
       <description>Udover funktioner i Python findes der også &amp;ldquo;metoder&amp;rdquo;. Lig funktioner tager metoder også en form for input og returnerer et output.
 I modsætning til funktioner er metoder bundet op på bestemte variabeltyper. Det vil sige at variablen skal være en bestemt type for, at metoden kan bruges. Metoder kaldes med variabel.method(option1 = something). Tekstværdier (strings) har fx en række metoder tilknyttet til at ændre teksten:
-word = &amp;quot;Hello&amp;quot; print(word.upper()) # Konverterer til store bogstaver print(word.</description>
+word = &amp;#34;Hello&amp;#34; print(word.upper()) # Konverterer til store bogstaver print(word.</description>
     </item>
     
     <item>
@@ -74,7 +75,18 @@ word = &amp;quot;Hello&amp;quot; print(word.upper()) # Konverterer til store bog
       <description>Pakker i Python er samlinger af funktioner, metoder, værdier osv. Selvom man kan meget i Python, så når man ikke særlig langt uden at importere pakker.
 Funktioner, metoder, værdier osv. fra pakker kan nemt indlæses ved at importere dem. Så snart pakken er importeret, er pakkens indhold tilgængeligt.
 Fx kender Python ikke værdien pi med det samme:
- Check: Forstår python et stykke kode? (brug af funktion før og efter import) Øvelse: Importer pakke og brug funktion derfra Check: Hvilken type er variablen efter funktion er blevet brugt til at ændre den?</description>
+print(pi) ---------------------------------------------------------------------------NameError Traceback (most recent call last)&amp;lt;ipython-input-53-9e2d2bd32686&amp;gt; in &amp;lt;module&amp;gt;----&amp;gt; 1 print(pi)NameError: name &#39;pi&#39; is not defined Værdien pi er en del af math pakken, så ved at importere pakken, kan man arbejde med værdien:</description>
+    </item>
+    
+    <item>
+      <title>Logiske værdier (booleans)</title>
+      <link>/fundamentale/logiske/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/fundamentale/logiske/</guid>
+      <description>En stor del af programmeringsarbejde involverer at arbejde med logiske værdier; også kaldt booleanske værdier. Disse lagres som typen bool.
+Variable af typen bool kan kun antage værdien sandt (True) eller falsk (False). Python har en række operatorer, som altid returnerer en booleansk værdi:
+a = 10 b = 12 a == b False I ovenstående bruges == til at spørge: &amp;ldquo;Er a lig med b?&amp;rdquo; (= bruges selvfølgelig ikke, da denne bruges til at danne variable).</description>
     </item>
     
   </channel>

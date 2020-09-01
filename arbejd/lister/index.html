@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.70.0" />
     <meta name="description" content="">
 
 
@@ -12,19 +12,19 @@
     <title>Lister, dictionaries og tuples :: Introduction to Python for Social Science</title>
 
     
-    <link href="../../css/nucleus.css?1596549962" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1596549962" rel="stylesheet">
-    <link href="../../css/hybrid.css?1596549962" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1596549962" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1596549962" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1596549962" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1596549962" rel="stylesheet">
-    <link href="../../css/theme.css?1596549962" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1596549962" rel="stylesheet">
+    <link href="../../css/nucleus.css?1598974876" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1598974876" rel="stylesheet">
+    <link href="../../css/hybrid.css?1598974876" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1598974876" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1598974876" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1598974876" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1598974876" rel="stylesheet">
+    <link href="../../css/theme.css?1598974876" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1598974876" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1596549962"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1598974876"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -50,14 +50,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1596549962"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1596549962"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1598974876"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1598974876"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1596549962"></script>
+<script type="text/javascript" src="../../js/search.js?1598974876"></script>
 
     
   </div>
@@ -286,6 +286,27 @@
       <li data-nav-id="/fundamentale/pakker/" title="Pakker" class="dd-item ">
         <a href="../../fundamentale/pakker/">
         Pakker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/fundamentale/logiske/" title="Logiske værdier (booleans)" class="dd-item ">
+        <a href="../../fundamentale/logiske/">
+        Logiske værdier (booleans)
         
         </a>
     </li>
@@ -551,17 +572,14 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#videnscheck">VIDENSCHECK</a></li>
-<li><a href="#tuples">Tuples</a></li>
-<li><a href="#videnscheck-1">VIDENSCHECK</a></li>
-<li><a href="#dictionaries">Dictionaries</a></li>
-<li><a href="#videnscheck-2">VIDENSCHECK</a></li>
-<li><a href="#videnscheck-3">VIDENSCHECK</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#videnscheck">VIDENSCHECK</a></li>
+    <li><a href="#tuples">Tuples</a></li>
+    <li><a href="#videnscheck-1">VIDENSCHECK</a></li>
+    <li><a href="#dictionaries">Dictionaries</a></li>
+    <li><a href="#videnscheck-2">VIDENSCHECK</a></li>
+    <li><a href="#videnscheck-3">VIDENSCHECK</a></li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -585,132 +603,77 @@
         
 
 
-
-
 <p>Lister</p>
-
 <p>Den mest basale datastruktur er en liste. En liste defineres med <code>[]</code>:</p>
-
-<pre><code class="language-python">my_list = [2, 7, 9, 10]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">my_list <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">10</span>]
+</code></pre></div><p>I ovenstående defineres listen <code>my_list</code> til at indeholde værdierne 2, 7, 9 og 10. En liste kan fremkaldes ligesom hvilken som helst anden variabel:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(my_list)
+</code></pre></div><pre><code>[2, 7, 9, 10]
 </code></pre>
+<p>En liste er blot en beholder af forskellige variable. Lister kan derfor indeholde variable af forskellig typer:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">my_list2 <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;hello&#34;</span>, <span style="color:#ae81ff">10</span>, True]
 
-<p>I ovenstående defineres listen <code>my_list</code> til at indeholde værdierne 2, 7, 9 og 10. En liste kan fremkaldes ligesom hvilken som helst anden variabel:</p>
-
-<pre><code class="language-python">print(my_list)
+<span style="color:#66d9ef">print</span>(my_list2)
+</code></pre></div><pre><code>[2, 'hello', 10, True]
 </code></pre>
-
-<pre><code>[2, 7, 9, 10]
-</code></pre>
-
-<p>En liste er blot en beholder af forskellige variable. Lister kan derfor indeholde variable af forskellig type:</p>
-
-<pre><code class="language-python">my_list2 = [2, &quot;hello&quot;, 10, True]
-
-print(my_list2)
-</code></pre>
-
-<pre><code>[2, 'hello', 10, True]
-</code></pre>
-
 <p>Lister kan også indeholde andre lister:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">my_list3 <span style="color:#f92672">=</span> [<span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">17</span>, [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">91</span>], <span style="color:#ae81ff">16</span>]
 
-<pre><code class="language-python">my_list3 = [9, 17, [2, 91], 16]
-
-print(my_list3)
+<span style="color:#66d9ef">print</span>(my_list3)
+</code></pre></div><pre><code>[9, 17, [2, 91], 16]
 </code></pre>
-
-<pre><code>[9, 17, [2, 91], 16]
-</code></pre>
-
 <p><strong>Variable i lister</strong></p>
-
 <p>En liste kan bestå af en række variable:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>
+b <span style="color:#f92672">=</span> <span style="color:#ae81ff">9</span>
+c <span style="color:#f92672">=</span> <span style="color:#ae81ff">11</span>
 
-<pre><code class="language-python">a = 4
-b = 9
-c = 11
+my_list4 <span style="color:#f92672">=</span> [a, b, c]
 
-my_list4 = [a, b, c]
-
-print(my_list4)
+<span style="color:#66d9ef">print</span>(my_list4)
+</code></pre></div><pre><code>[4, 9, 11]
 </code></pre>
-
-<pre><code>[4, 9, 11]
-</code></pre>
-
-<p>Bemærk dog, at når en liste dannes med variable, så er det variablens værdi(er), der lagres i listen og ikke selve variablen.</p>
-
+<p>Bemærk dog, at når en liste dannes med variable, så er det variablenes værdi(er), der lagres i listen og ikke selve variablen.</p>
 <p>Det kan ses, hvis man ændrer en af variablerne i listen. Herunder ændres variabel <code>a</code> fra <code>4</code> til <code>21</code>. Selvom variablen ændres, så er indholdet af listen (<code>my_list4</code>) ikke ændret.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(my_list4)   <span style="color:#75715e"># listen består af værdierne 4, 9 og 11 tilsvarende variable a, b og c</span>
 
-<pre><code class="language-python">print(my_list4)   # listen består af værdierne 4, 9 og 11 tilsvarende variable a, b og c
+a <span style="color:#f92672">=</span> <span style="color:#ae81ff">21</span>            <span style="color:#75715e"># værdien af variabel af ændres</span>
 
-a = 21            # værdien af variabel af ændres
-
-print(my_list4)   # listens indhold er uændret (stadig 4, 9 og 11)
-</code></pre>
-
-<pre><code>[4, 9, 11]
+<span style="color:#66d9ef">print</span>(my_list4)   <span style="color:#75715e"># listens indhold er uændret (stadig 4, 9 og 11)</span>
+</code></pre></div><pre><code>[4, 9, 11]
 [4, 9, 11]
 </code></pre>
-
 <p>Når listen genereres, lagres den værdi, som <code>a</code> har på det tidspunkt, listen generes. Værdiens tilknytning til variabel <code>a</code> lagres altså ikke i listen.</p>
-
 <p><strong>Index</strong></p>
-
 <p>Hvert element i en liste tildeles et <em>index</em>. Et bestemt element kan altid kaldes frem ved at refere til elementets index med <code>[]</code>:</p>
-
-<pre><code class="language-python">my_list = [2, 7, 9, 10]
-print(my_list[0])
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">my_list <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">10</span>]
+<span style="color:#66d9ef">print</span>(my_list[<span style="color:#ae81ff">0</span>])
+</code></pre></div><pre><code>2
 </code></pre>
-
-<pre><code>2
-</code></pre>
-
-<p>Index i Python starter altid med 0. Derfor gives i ovenstående det første element af listen <code>my_list3</code> ved at refere til index 0.</p>
-
+<p>Index i Python starter altid med 0. Derfor gives i ovenstående det første element af listen <code>my_list</code> ved at refere til index 0.</p>
 <p>Et element i en liste kan overskrives ved at refere til dets index:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(my_list)
 
-<pre><code class="language-python">print(my_list)
-
-my_list[2] = 28
-print(my_list)
-</code></pre>
-
-<pre><code>[2, 7, 9, 10]
+my_list[<span style="color:#ae81ff">2</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">28</span>
+<span style="color:#66d9ef">print</span>(my_list)
+</code></pre></div><pre><code>[2, 7, 9, 10]
 [2, 7, 28, 10]
 </code></pre>
-
 <p><strong>Slicing</strong></p>
-
-<p>Elementer i et hvis interval kan kaldes frem ved brug af <code>:</code> (også omtalt &ldquo;slicing&rdquo;). Slicing tager elementer fra det første index givet (inklusiv) til det sidste index givet (eksklusiv).</p>
-
-<pre><code class="language-python">print(my_list[1:3])
+<p>Elementer i et vis interval kan kaldes frem ved brug af <code>:</code> (også omtalt &ldquo;slicing&rdquo;). Slicing tager elementer fra det første index givet (inklusiv) til det sidste index givet (eksklusiv).</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(my_list[<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">3</span>])
+</code></pre></div><pre><code>[7, 28]
 </code></pre>
-
-<pre><code>[7, 9]
-</code></pre>
-
-<p>Ovenstående tager fra index 1 og op til index 3 eklskusivt index 3; altså index 1 (listens andet element: 7) og index 2 (listens tredje element: 9).</p>
-
+<p>Ovenstående tages fra index 1 og op til index 3 eklskusivt index 3; altså index 1 (listens andet element: 7) og index 2 (listens tredje element: 9).</p>
 <p>Listens længde (antallet af elementer) returneres med funktionen <code>len()</code>:</p>
-
-<pre><code class="language-python">len(my_list)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">len(my_list)
+</code></pre></div><pre><code>4
 </code></pre>
-
-<pre><code>4
-</code></pre>
-
-<hr />
-
+<hr>
 <h2 id="videnscheck">VIDENSCHECK</h2>
-
 <p>Tag et kig på nedenstående liste:</p>
-
-<pre><code class="language-python">a_list = [45, 67, 3, 36, 87]
-</code></pre>
-
-<p><em>Hvilket element (tal i listen) har index 3?</em></p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a_list <span style="color:#f92672">=</span> [<span style="color:#ae81ff">45</span>, <span style="color:#ae81ff">67</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">36</span>, <span style="color:#ae81ff">87</span>]
+</code></pre></div><p><em>Hvilket element (tal i listen) har index 3?</em></p>
 
 <div class="expand">
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
@@ -724,68 +687,43 @@ print(my_list)
     </div>
     <div class="expand-content" style="display: none;">
         <p>Index 3 af <code>a_list</code> (<code>a_list[3]</code>) indeholder tallet 36; altså det fjerde element, da index tælles fra 0.</p>
-
-<pre><code class="language-python">print(a_list[3])
-</code></pre>
-
-<pre><code>36
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(a_list[<span style="color:#ae81ff">3</span>])
+</code></pre></div><pre><code>36
 </code></pre>
 
     </div>
 </div>
-
-<hr />
-
+<hr>
 <h2 id="tuples">Tuples</h2>
-
 <p>Tuples fungerer på mange måder ligesom lister med den undtagelse, at værdier i en tuple ikke kan ændres.</p>
-
 <p>Tuples laves med <code>()</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">my_tuple <span style="color:#f92672">=</span> (<span style="color:#e6db74">&#34;Katarn&#34;</span>, <span style="color:#e6db74">&#34;Kenobi&#34;</span>, <span style="color:#e6db74">&#34;Windu&#34;</span>)
 
-<pre><code class="language-python">my_tuple = (&quot;Katarn&quot;, &quot;Kenobi&quot;, &quot;Windu&quot;)
-
-print(my_tuple)
+<span style="color:#66d9ef">print</span>(my_tuple)
+</code></pre></div><pre><code>('Katarn', 'Kenobi', 'Windu')
 </code></pre>
-
-<pre><code>('Katarn', 'Kenobi', 'Windu')
-</code></pre>
-
 <p>Elementer i en tuple har indexes ligesom ved lister:</p>
-
-<pre><code class="language-python">my_tuple[0]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">my_tuple[<span style="color:#ae81ff">0</span>]
+</code></pre></div><pre><code>'Katarn'
 </code></pre>
-
-<pre><code>'Katarn'
-</code></pre>
-
 <p>Forsøger man at ændre et element af en tuple, får man dog fejl:</p>
-
-<pre><code class="language-python">my_tuple[0] = &quot;Palpatine&quot;
-</code></pre>
-
-<pre><code>---------------------------------------------------------------------------
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">my_tuple[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Palpatine&#34;</span>
+</code></pre></div><pre><code>---------------------------------------------------------------------------
 
 TypeError                                 Traceback (most recent call last)
 
-&lt;ipython-input-100-b2ea6727d80b&gt; in &lt;module&gt;
+&lt;ipython-input-76-b2ea6727d80b&gt; in &lt;module&gt;
 ----&gt; 1 my_tuple[0] = &quot;Palpatine&quot;
 
 
 TypeError: 'tuple' object does not support item assignment
 </code></pre>
-
-<hr />
-
+<hr>
 <h2 id="videnscheck-1">VIDENSCHECK</h2>
-
 <p>Tag et kig på de to nedenstående datastrukturer (<code>a</code> og <code>b</code>):</p>
-
-<pre><code class="language-python">a = [2, 90, 10, 17]
-b = (56, 78, 3, -9)
-</code></pre>
-
-<p><em>Kan tredje element af <code>b</code> (index 2: <code>3</code>) ændres til <code>49</code> ved at skrive <code>b[2] = 49</code>?</em></p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">90</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">17</span>]
+b <span style="color:#f92672">=</span> (<span style="color:#ae81ff">56</span>, <span style="color:#ae81ff">78</span>, <span style="color:#ae81ff">3</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">9</span>)
+</code></pre></div><p><em>Kan tredje element af <code>b</code> (index 2: <code>3</code>) ændres til <code>49</code> ved at skrive <code>b[2] = 49</code>?</em></p>
 
 <div class="expand">
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
@@ -801,75 +739,38 @@ b = (56, 78, 3, -9)
         Nej. <code>b</code> er en tuple, og værdierne kan derfor ikke ændres. Værdierne i <code>a</code> kan dog ændres, da det er en liste.
     </div>
 </div>
-
-<hr />
-
+<hr>
 <h2 id="dictionaries">Dictionaries</h2>
-
-<p>En anden måde at lagre flere værdier i Python er med <em>dictionaries</em>. Dictionaries består af en række sæt af nøgler og værdier.</p>
-
+<p>En tredje måde at lagre flere værdier i Python er med <em>dictionaries</em>. Dictionaries består af en række sæt af nøgler og værdier.</p>
 <p>Dictionaries defineres med <code>{}</code>:</p>
-
-<ul>
-<li>Nøgler og værdier</li>
-<li>Check: Hvad er en dictionary?</li>
-<li>Check: Kan de indeholde forskellige typer?</li>
-<li>Check: Har dictionary et index?</li>
-
-<li><p>Øvelse: Definer dictionary</p>
-
-<pre><code class="language-python">my_dict = {&quot;jedi&quot;: &quot;Katarn&quot;, &quot;sith&quot;: &quot;Desann&quot;}
-</code></pre></li>
-</ul>
-
-<p>Hvert nøgle- og værdisæt defineres med en nøgle i form af en string efterfulgt af værdien efter <code>:</code>. Værdien kan være tal, tekst, liste, en anden dictionary osv.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">my_dict <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;jedi&#34;</span>: <span style="color:#e6db74">&#34;Katarn&#34;</span>, <span style="color:#e6db74">&#34;sith&#34;</span>: <span style="color:#e6db74">&#34;Desann&#34;</span>}
+</code></pre></div><p>Hvert nøgle- og værdisæt defineres med en nøgle i form af en string efterfulgt af værdien efter <code>:</code>. Værdien kan være tal, tekst, liste, en anden dictionary osv.</p>
 <p>De forskellige nøgle- og værdisæt adskilles med <code>,</code>.</p>
-
 <p>Dictionaries har ikke et index, da Python ikke betragter dem som værende i en bestemt rækkefølge. Værdierne kaldes derfor frem ved at referere til deres nøgle:</p>
-
-<pre><code class="language-python">print(my_dict[&quot;jedi&quot;])
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(my_dict[<span style="color:#e6db74">&#34;jedi&#34;</span>])
+</code></pre></div><pre><code>Katarn
 </code></pre>
-
-<pre><code>Katarn
-</code></pre>
-
 <p>Nøgler <em>skal</em> være unikke. Det er ikke muligt at lave en dictionary med to identiske nøgler. Hvis man forsøger at gøre det, vil den senest skrevne værdi til nøglen blive lagret:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">my_dict <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;jedi&#34;</span>: <span style="color:#e6db74">&#34;Katarn&#34;</span>, <span style="color:#e6db74">&#34;sith&#34;</span>: <span style="color:#e6db74">&#34;Desann&#34;</span>, <span style="color:#e6db74">&#34;jedi&#34;</span>: <span style="color:#e6db74">&#34;Kenobi&#34;</span>}
 
-<pre><code class="language-python">my_dict = {&quot;jedi&quot;: &quot;Katarn&quot;, &quot;sith&quot;: &quot;Desann&quot;, &quot;jedi&quot;: &quot;Kenobi&quot;}
-
-print(my_dict)
+<span style="color:#66d9ef">print</span>(my_dict)
+</code></pre></div><pre><code>{'jedi': 'Kenobi', 'sith': 'Desann'}
 </code></pre>
-
-<pre><code>{'jedi': 'Kenobi', 'sith': 'Desann'}
-</code></pre>
-
 <p>Ligeledes kan værdier til en bestemt nøgle overskrives:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">my_dict[<span style="color:#e6db74">&#34;jedi&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Katarn&#34;</span>
 
-<pre><code class="language-python">my_dict[&quot;jedi&quot;] = &quot;Katarn&quot;
-
-print(my_dict)
+<span style="color:#66d9ef">print</span>(my_dict)
+</code></pre></div><pre><code>{'jedi': 'Katarn', 'sith': 'Desann'}
 </code></pre>
-
-<pre><code>{'jedi': 'Katarn', 'sith': 'Desann'}
-</code></pre>
-
 <p>Elementer kan tilføjes til en dictionary ved blot at tilknytte det til en nøgle, som endnu ikke er brugt i dictionarien:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">my_dict[<span style="color:#e6db74">&#34;dealer&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Watto&#34;</span>
 
-<pre><code class="language-python">my_dict[&quot;dealer&quot;] = &quot;Watto&quot;
-
-print(my_dict)
+<span style="color:#66d9ef">print</span>(my_dict)
+</code></pre></div><pre><code>{'jedi': 'Katarn', 'sith': 'Desann', 'dealer': 'Watto'}
 </code></pre>
-
-<pre><code>{'jedi': 'Katarn', 'sith': 'Desann', 'dealer': 'Watto'}
-</code></pre>
-
-<hr />
-
+<hr>
 <h2 id="videnscheck-2">VIDENSCHECK</h2>
-
 <p><em>Kan en dictionary indeholde forskellige typer af værdier?</em></p>
-
 
 <div class="expand">
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
@@ -885,20 +786,12 @@ print(my_dict)
         Ja. Værdier i en dictionary kan være af alle mulige typer, men nøglen skal altid være en string.
     </div>
 </div>
-
-<hr />
-
-<hr />
-
+<hr>
+<hr>
 <h2 id="videnscheck-3">VIDENSCHECK</h2>
-
 <p>Tag et kig på nedenstående dictionary:</p>
-
-<pre><code class="language-python">famous_animals = {&quot;Pluto&quot;: &quot;dog&quot;, &quot;Oggy&quot;: &quot;cat&quot;, &quot;Pinky&quot;: &quot;mouse&quot;, &quot;Pumba&quot;: &quot;warthog&quot;}
-</code></pre>
-
-<p><em>Hvordan fremkaldes den 3. værdi (&ldquo;mouse&rdquo;)?</em></p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">famous_animals <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;Pluto&#34;</span>: <span style="color:#e6db74">&#34;dog&#34;</span>, <span style="color:#e6db74">&#34;Oggy&#34;</span>: <span style="color:#e6db74">&#34;cat&#34;</span>, <span style="color:#e6db74">&#34;Pinky&#34;</span>: <span style="color:#e6db74">&#34;mouse&#34;</span>, <span style="color:#e6db74">&#34;Pumba&#34;</span>: <span style="color:#e6db74">&#34;warthog&#34;</span>}
+</code></pre></div><p><em>Hvordan fremkaldes den 3. værdi (&ldquo;mouse&rdquo;)?</em></p>
 
 <div class="expand">
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
@@ -914,8 +807,7 @@ print(my_dict)
         Den 3. værdi fremkaldes ved at refere til den rigtige nøgle: <code>famous_animals[&quot;Pinky&quot;]</code>. Python betragter ikke værdien som den 3. værdi, da værdien knyttes op på nøglen og ikke på rækkefølgen, som den står i dictionary.
     </div>
 </div>
-
-<hr />
+<hr>
 
 
 <footer class="footline">
@@ -1011,6 +903,22 @@ print(my_dict)
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -1250,19 +1158,19 @@ print(my_dict)
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1596549962"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1596549962"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1596549962"></script>
-    <script src="../../js/jquery.sticky.js?1596549962"></script>
-    <script src="../../js/featherlight.min.js?1596549962"></script>
-    <script src="../../js/highlight.pack.js?1596549962"></script>
+    <script src="../../js/clipboard.min.js?1598974876"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1598974876"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1598974876"></script>
+    <script src="../../js/jquery.sticky.js?1598974876"></script>
+    <script src="../../js/featherlight.min.js?1598974876"></script>
+    <script src="../../js/highlight.pack.js?1598974876"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1596549962"></script>
-    <script src="../../js/learn.js?1596549962"></script>
-    <script src="../../js/hugo-learn.js?1596549962"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1598974876"></script>
+    <script src="../../js/learn.js?1598974876"></script>
+    <script src="../../js/hugo-learn.js?1598974876"></script>
 
-    <link href="../../mermaid/mermaid.css?1596549962" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1596549962"></script>
+    <link href="../../mermaid/mermaid.css?1598974876" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1598974876"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

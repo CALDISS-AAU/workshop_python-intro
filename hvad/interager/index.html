@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.70.0" />
     <meta name="description" content="">
 
 
@@ -12,19 +12,19 @@
     <title>Interager med Python :: Introduction to Python for Social Science</title>
 
     
-    <link href="../../css/nucleus.css?1596549962" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1596549962" rel="stylesheet">
-    <link href="../../css/hybrid.css?1596549962" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1596549962" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1596549962" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1596549962" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1596549962" rel="stylesheet">
-    <link href="../../css/theme.css?1596549962" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1596549962" rel="stylesheet">
+    <link href="../../css/nucleus.css?1598974876" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1598974876" rel="stylesheet">
+    <link href="../../css/hybrid.css?1598974876" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1598974876" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1598974876" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1598974876" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1598974876" rel="stylesheet">
+    <link href="../../css/theme.css?1598974876" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1598974876" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1596549962"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1598974876"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -50,14 +50,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1596549962"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1596549962"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1598974876"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1598974876"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1596549962"></script>
+<script type="text/javascript" src="../../js/search.js?1598974876"></script>
 
     
   </div>
@@ -286,6 +286,27 @@
       <li data-nav-id="/fundamentale/pakker/" title="Pakker" class="dd-item ">
         <a href="../../fundamentale/pakker/">
         Pakker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/fundamentale/logiske/" title="Logiske værdier (booleans)" class="dd-item ">
+        <a href="../../fundamentale/logiske/">
+        Logiske værdier (booleans)
         
         </a>
     </li>
@@ -551,17 +572,15 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#python-uden-dikkedarer">Python uden dikkedarer</a></li>
-<li><a href="#brug-af-python-ide-er-integrated-development-environment">Brug af Python IDE&rsquo;er (&ldquo;Integrated Development Environment&rdquo;)</a>
-<ul>
-<li><a href="#spyder">Spyder</a></li>
-<li><a href="#jupyter-notebook">Jupyter Notebook</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#python-uden-dikkedarer">Python uden dikkedarer</a></li>
+    <li><a href="#brug-af-python-ideer-integrated-development-environment">Brug af Python IDE&rsquo;er (&ldquo;Integrated Development Environment&rdquo;)</a>
+      <ul>
+        <li><a href="#spyder">Spyder</a></li>
+        <li><a href="#jupyter-notebook">Jupyter Notebook</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -585,51 +604,30 @@
         
 
 
-
-
 <p>For at bruge Python skal vi &ldquo;tale&rdquo; Python. Man arbejde med Python ved at skrive kommandoer i Python-sproget. Hvis Python forstår din kommando udføres den. Hvis ikke, får du en eller anden form for fejl. Man kan se Python som et meget bogstaveligt og pernitten sprog: Kommandoer skal skrives på helt bestemte måder for at Python kan forstå, hvad du beder om.</p>
-
 <p>Barberes Python ned til sine grundsten består det ikke af mere end en &ldquo;interpreter&rdquo; (fortolker). Alle programmeringssprog er bygget op om en fortolker, der &ldquo;evaluerer&rdquo; kommandoer. Inden for programmering vil evaluering sige, at sproget forsøger at forstå, hvad der står i en kommando.</p>
-
 <h2 id="python-uden-dikkedarer">Python uden dikkedarer</h2>
-
-<p>Den &ldquo;rene&rdquo; installation af Python tilføjer fortolkeren til styresystemet, så man kan arbejde med Python gennem en terminal:
-<img src="../../python_terminal.png" alt="python_terminal.png" /></p>
-
+<p>Den &ldquo;rene&rdquo; installation af Python tilføjer fortolkeren til styresystemet, så man kan arbejde med Python gennem en terminal: 
+<img src="../../python_terminal.png" alt="python_terminal.png"></p>
 <p>I terminalen kan vi skrive en kommando og trykke &ldquo;Enter&rdquo; for at få fortolkeren til at evaluere. I nedenstående skrives kommandoen <code>2+42</code> hvilket Python evaluerer og giver outputtet <code>42</code>:
-<img src="../../python_interpret1.png" alt="python_interpret1.png" /></p>
-
+<img src="../../python_interpret1.png" alt="python_interpret1.png"></p>
 <p>Python forstår matematiske operationer og vil returnere resultatet af en udregning, når man skriver den ind.</p>
-
-<p>I nedenstående forsøges at bede om en opskrift på pandekager. Det går knap så godt:
-<img src="../../python_interpret2.png" alt="python_interpret1.png" /></p>
-
+<p>I nedenstående forsøges at bede om en opskrift på pandekager. Det går knap så godt: 
+<img src="../../python_interpret2.png" alt="python_interpret1.png"></p>
 <p>Når Python ikke kan forstå kommandoen, returneres en fejl. Der findes et væld af fejltyper. I ovenstående gives en <code>SyntaxError</code>, fordi kommandoen er skrevet helt forkert (dette er dog ikke det eneste problem med denne kommando, men det er den første fejl, som fortolkeren støder på).</p>
-
-<h2 id="brug-af-python-ide-er-integrated-development-environment">Brug af Python IDE&rsquo;er (&ldquo;Integrated Development Environment&rdquo;)</h2>
-
+<h2 id="brug-af-python-ideer-integrated-development-environment">Brug af Python IDE&rsquo;er (&ldquo;Integrated Development Environment&rdquo;)</h2>
 <p>Selvom man kan arbejde med Python direkte i terminalen frarådes det meget kraftigt, da det er meget vanskeligt at gemme sit arbejde undervejs og svært at bevare overblik over sin kode og arbejde. Derfor arbejder man for det meste gennem et IDE (Integrated Development Environment). Et IDE er et program, som man kan arbejde med Python igennem, som ofte har forskellige funktioner og egenskaber til at hjælpe en bevare overblikket.</p>
-
 <p>Her nævnes blot et mindre udvalg af IDE&rsquo;er.</p>
-
 <h3 id="spyder">Spyder</h3>
-
 <p>Spyder er bygget op omkring en &ldquo;script-editor&rdquo;. Et script er et dokument bestående af en række af Python kommandoer, som man kan sende til fortolkeren på én gang. I et script kan fx samles al det databehandlings- og analysearbejde, som man skal lave. Ved at køre scriptet udføres så al arbejdet.
-Script-editoren er indbygget med farvekoder, så man nemt kan adskille dele af koden samt automatiske forslag til kommandoer (Spyder 4 og frem).</p>
-
+Script-editoren er indbygget med farvekoder, så man nemt kan adskille dele af koden. Spyder giver også automatisk forslag til kommandoer (Spyder 4 og frem).</p>
 <p>Derudover giver Spyder en objekt-/variabeloversigt, så man kan se, hvad man har defineret og arbejder med; fx datasæt, resultater, osv.</p>
-
 <p>Spyder er godt til de fleste ting og særligt, hvis man skal arbejde med længere scripts.</p>
-
-<p>Spyder installeres sammen med Anaconda: <a href="https://www.anaconda.com/products/individual#Downloads">https://www.anaconda.com/products/individual#Downloads</a></p>
-
+<p>Spyder kan installeres sammen med Anaconda: <a href="https://www.anaconda.com/products/individual#Downloads">https://www.anaconda.com/products/individual#Downloads</a></p>
 <h3 id="jupyter-notebook">Jupyter Notebook</h3>
-
-<p>Jupyter Notebook er opbygget omkring en såkaldt &ldquo;notebook&rdquo;. En notebook i Jupyter Notebook kombinerer Python kode med almindelig tekst (Markdown). Jupyter Notebook egner sig særdeles godt, hvis man skal dokumentere sit kodearbejde undervejs, da man har mulighed for at skrive almindelig tekst, sætte billeder ind, lave tabeller osv. omkring sin kode.</p>
-
+<p>Jupyter Notebook er opbygget omkring en såkaldt &ldquo;notebook&rdquo;. En notebook i Jupyter Notebook kombinerer Python kode med almindelig tekst (skrevet i &ldquo;Markdown&rdquo;). Jupyter Notebook egner sig særdeles godt, hvis man skal dokumentere sit kodearbejde undervejs, da man har mulighed for at skrive almindelig tekst, sætte billeder ind, lave tabeller osv. omkring sin kode.</p>
 <p>Dette materiale er udarbejdet i Jupyter Notebook.</p>
-
-<p>Jupyter Notebook installeres sammen med Anaconda: <a href="https://www.anaconda.com/products/individual#Downloads">https://www.anaconda.com/products/individual#Downloads</a></p>
+<p>Jupyter Notebook kan installeres sammen med Anaconda: <a href="https://www.anaconda.com/products/individual#Downloads">https://www.anaconda.com/products/individual#Downloads</a></p>
 
 
 <footer class="footline">
@@ -730,6 +728,22 @@ Script-editoren er indbygget med farvekoder, så man nemt kan adskille dele af k
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -964,19 +978,19 @@ Script-editoren er indbygget med farvekoder, så man nemt kan adskille dele af k
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1596549962"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1596549962"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1596549962"></script>
-    <script src="../../js/jquery.sticky.js?1596549962"></script>
-    <script src="../../js/featherlight.min.js?1596549962"></script>
-    <script src="../../js/highlight.pack.js?1596549962"></script>
+    <script src="../../js/clipboard.min.js?1598974876"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1598974876"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1598974876"></script>
+    <script src="../../js/jquery.sticky.js?1598974876"></script>
+    <script src="../../js/featherlight.min.js?1598974876"></script>
+    <script src="../../js/highlight.pack.js?1598974876"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1596549962"></script>
-    <script src="../../js/learn.js?1596549962"></script>
-    <script src="../../js/hugo-learn.js?1596549962"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1598974876"></script>
+    <script src="../../js/learn.js?1598974876"></script>
+    <script src="../../js/hugo-learn.js?1598974876"></script>
 
-    <link href="../../mermaid/mermaid.css?1596549962" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1596549962"></script>
+    <link href="../../mermaid/mermaid.css?1598974876" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1598974876"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
