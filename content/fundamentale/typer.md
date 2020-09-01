@@ -15,7 +15,7 @@ Som man arbejder med Python, vil man støde på mange forskellige typer. I førs
 
 Python gætter altid typen, når en variabel lagres. Når en variabel består af en talværdi, vil denne fx lagres som en numerisk type. Talværdien kan enten lagres som en *integer* (heltal) eller et *float point* (decimaltal). 
 
-Python kan fortælle os typen med funktionen `type()`:
+Python kan fortælle typen med funktionen `type()`:
 
 
 ```python
@@ -56,7 +56,7 @@ print(type(b))   # b er et float point
     <class 'float'>
 
 
-At Python gerne vil adskille mellem typer har noget at gøre med, hvordan en type information kræver mere at lagre end en anden. Dette kan have betydning, når man arbejder med enorme datamængder, hvilket sjældent er tilfældet i socialvidenskabelig analysearbejder.
+At Python gerne vil adskille mellem typer har noget at gøre med, hvordan én type information kræver mere computerhukommelse at lagre end en anden. Dette kan have betydning, når man arbejder med enorme datamængder, hvilket sjældent er tilfældet i samfundsvidenskabelige analysearbejder.
 
 ---
 ## VIDENSCHECK
@@ -66,7 +66,7 @@ I ovenstående bliver variablen `a` brugt til at definere variabel `b`.
 *Hvilken type er variablen `a` efter at variabel `b` defineres?*
 
 {{%expand "Løsning" %}}
-`a` er stadig en *integer*. `a` ikke ændres i koden, men bliver blot brugt til at lave variabel `b`.
+`a` er stadig en *integer*. `a` ændres ikke i koden, men bliver blot brugt til at lave variabel `b`.
 {{% /expand%}}
 
 ---
@@ -90,7 +90,7 @@ I modsætning til numeriske typer, giver matematiske operationer ikke meget meni
 
 
 ```python
-b = " there"
+b = " there"   # bemærk mellemrum i string
 print(a * 2)   # gentager string
 print(a + b)   # sætter de to strings sammen (kaldes også for "paste")
 ```
@@ -159,7 +159,7 @@ a = int(a)      # forsøger at konvertere a til integer - ikke muligt
     
     ValueError                                Traceback (most recent call last)
     
-    <ipython-input-12-cc7b3220923a> in <module>
+    <ipython-input-36-cc7b3220923a> in <module>
           1 a = "Hello"     # a dannes som string
           2 print(type(a))  # typen er string
     ----> 3 a = int(a)      # forsøger at konvertere a til integer - ikke muligt
@@ -167,16 +167,18 @@ a = int(a)      # forsøger at konvertere a til integer - ikke muligt
 
     ValueError: invalid literal for int() with base 10: 'Hello'
 
+
 ---
 ## ØVELSE: Typer
 
 Lav variablene variablene `my_number3` og `my_number4`.
-- `my_number3` skal indeholde `21`
-- `my_number4` skal indeholde `"12"` (med anførselstegn!)
+
+* `my_number3` skal indeholde `21`
+* `my_number4` skal indeholde `"12"` (med anførselstegn!)
 
 Forsøg at divider de to tal med hinanden (`my_number3 / my_number4`). Det giver fejl, men hvorfor?
 
-Undersøg hvilken type `my_number3` og `my_number4` er med `type()`. Begge skal gerne være numeriske typer, før der kan divideres.
+Undersøg hvilken type `my_number3` og `my_number4` er med `type()`. Begge skal gerne være numeriske typer, før de kan divideres.
 
 Ændr typen til numerisk for den variabel, som ikke er numerisk. 
 

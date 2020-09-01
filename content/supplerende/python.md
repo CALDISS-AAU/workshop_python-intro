@@ -23,3 +23,4 @@ Google Colab fungerer ligesom en online version af Jupyter Notebook. Her kan man
 Læs mere her: https://colab.research.google.com/notebooks/intro.ipynb (i øvrigt en fin introduktion til at arbejde med notebooks også).
 
 ---
+

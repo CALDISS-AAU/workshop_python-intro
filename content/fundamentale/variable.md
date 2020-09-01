@@ -38,7 +38,7 @@ print(a / b)
     6.0
 
 
-Defineres en variabel som et matematisk udtryk, er det resultatet af dette, som bliver lagret i variablen:
+Defineres en variabel som et matematisk udtryk, er det resultatet af dette udtryk, som bliver lagret i variablen:
 
 
 ```python
@@ -65,7 +65,7 @@ print(D)
     
     NameError                                 Traceback (most recent call last)
     
-    <ipython-input-30-f03a0baf7732> in <module>
+    <ipython-input-21-f03a0baf7732> in <module>
           1 print(d)
     ----> 2 print(D)
 
@@ -94,7 +94,7 @@ e = Hello there
 ```
 
 
-      File "<ipython-input-33-d5c54fdddaa2>", line 1
+      File "<ipython-input-23-d5c54fdddaa2>", line 1
         e = Hello there
                       ^
     SyntaxError: invalid syntax
@@ -103,19 +103,27 @@ e = Hello there
 
 ## Ændring af variable
 
-Som hovedregel ændres en variabel ikke blot ved at bruge det. Variablen skal defineres om, hvis vi gerne vil ændre indholdet af variablen:
+Som hovedregel ændres en variabel ikke blot ved at bruge den. 
 
 
 ```python
 a = 42
 print(a + 7) # returnerer a + 7
 print(a)     # a er ikke ændret. Stadig 42
-a = a + 7    # a overskrives med a +7
-print(a)     # a er nu ændret
 ```
 
     49
     42
+
+
+Variablen skal defineres om, hvis man gerne vil ændre indholdet af variablen:
+
+
+```python
+a = a + 7    # a overskrives med a +7
+print(a)     # a er nu ændret
+```
+
     49
 
 
@@ -148,7 +156,7 @@ g = g - f
 
 At arbejde med Python er at arbejde med variable. Man definerer hele tiden nye variable, som bruges senere hen. Selvom man kun er interesseret i ét endeligt produkt eller output, så bruges variable til at holde styr på information og mellemresultater undervejs.
 
-Derfor er det en god ide at indarbejde en god navngivningsskik. Kunsten er at balancere mellem korte navne og navne, som er sigende for det, som variablen indeholder.
+Det er en god ide at indarbejde en god navngivningsskik. Kunsten er at balancere mellem korte navne og navne, som er sigende for det, som variablen indeholder.
 
 
 ```python
@@ -161,8 +169,9 @@ the_number_ten = 10 # sigende, men ret langt, hvis man skal bruge variablen igen
 **Tips til variabelnavne**
 
 Variable kan blive navngivet næsten alt, men der er visse restriktioner:
-- Variabelnavne kan ikke indeholde mellemrum.
-- De fleste specielle karakterer kan ikke bruges, som fx: `/`, `?`, `*`, `?`, `.` osv. Disse betyder noget i Python og vil blive forsøgt fortolket.
+
+* Variabelnavne kan ikke indeholde mellemrum.
+* De fleste specielle karakterer kan ikke bruges, som fx: `/`, `?`, `*`, `?`, `.` osv. Disse betyder noget i Python og vil blive forsøgt fortolket.
 
 Derudover er det en god ide at undgå at bruge allerede eksisterende navne i Python, da man ellers overskriver en allerede eksisterende funktion. Dette kan man nemt komme til i starten, når man ikke har stort kendskab til Pythons funktioner.
 
@@ -182,22 +191,31 @@ a // b     # "floor division" - returner antal hele gange, at tal til venstre ka
 2 * a % b) # modulus - returnerer rest efter "floor division"
 ```
 
+
+      File "<ipython-input-28-727c4d594de0>", line 7
+        2 * a % b) # modulus - returnerer rest efter "floor division"
+                 ^
+    SyntaxError: invalid syntax
+
+
+
 {{% /notice%}} 
 
 ---
 ## ØVELSE: Definer variable
 
 Lav variablene `my_number1`, `my_number2` og `my_word`. 
-- `my_number1` skal indeholde tallet `42` 
-- `my_number2` skal indeholde tallet `9` 
-- `my_word` skal indeholde ordet `hello` (husk at brug `'` eller `"` til at fortælle Python, at det er tekst).
+
+* `my_number1` skal indeholde tallet `42` 
+* `my_number2` skal indeholde tallet `9` 
+* `my_word` skal indeholde ordet `hello` (husk at brug `'` eller `"` til at fortælle Python, at det er tekst).
 
 Når de er defineret, prøv da nogen af de forskellige matematiske operationer på jeres variable, fx: 
 
-- `my_number1 + 10`
-- `my_number2 / my_number1`
-- `my_word` + `my_number1`
-- `my_word` * `my_number2`
+* `my_number1 + 10`
+* `my_number2 / my_number1`
+* `my_word` + `my_number1`
+* `my_word` * `my_number2`
 
 Læg mærke til hvilke operationer, der kan lade sig gøre og hvilke resultater, de producerer (nogle af disse operationer vil give fejl).
 

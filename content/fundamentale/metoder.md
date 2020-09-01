@@ -18,7 +18,7 @@ print(word.lower())  # Konverterer til små bogstaver
     hello
 
 
-Bemærk at metoder som hovedregel ikke ændrer på variablen. Variablen skal derfor defineres om eller på ny, hvis output af brug af en metode skal lagres:
+Bemærk at metoder som hovedregel ikke ændrer på variablen. Variablen skal derfor defineres om eller på ny, hvis output af en metode skal lagres:
 
 
 ```python
@@ -46,7 +46,7 @@ number.upper()
     
     AttributeError                            Traceback (most recent call last)
     
-    <ipython-input-38-d30eebf09ae0> in <module>
+    <ipython-input-51-d30eebf09ae0> in <module>
           1 number = 627
           2 
     ----> 3 number.upper()

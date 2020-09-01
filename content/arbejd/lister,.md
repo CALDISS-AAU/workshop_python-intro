@@ -21,7 +21,7 @@ print(my_list)
     [2, 7, 9, 10]
 
 
-En liste er blot en beholder af forskellige variable. Lister kan derfor indeholde variable af forskellig type:
+En liste er blot en beholder af forskellige variable. Lister kan derfor indeholde variable af forskellig typer:
 
 
 ```python
@@ -63,7 +63,7 @@ print(my_list4)
     [4, 9, 11]
 
 
-Bemærk dog, at når en liste dannes med variable, så er det variablens værdi(er), der lagres i listen og ikke selve variablen. 
+Bemærk dog, at når en liste dannes med variable, så er det variablenes værdi(er), der lagres i listen og ikke selve variablen. 
 
 Det kan ses, hvis man ændrer en af variablerne i listen. Herunder ændres variabel `a` fra `4` til `21`. Selvom variablen ændres, så er indholdet af listen (`my_list4`) ikke ændret. 
 
@@ -95,7 +95,7 @@ print(my_list[0])
     2
 
 
-Index i Python starter altid med 0. Derfor gives i ovenstående det første element af listen `my_list3` ved at refere til index 0.
+Index i Python starter altid med 0. Derfor gives i ovenstående det første element af listen `my_list` ved at refere til index 0.
 
 Et element i en liste kan overskrives ved at refere til dets index:
 
@@ -113,17 +113,17 @@ print(my_list)
 
 **Slicing**
 
-Elementer i et hvis interval kan kaldes frem ved brug af `:` (også omtalt "slicing"). Slicing tager elementer fra det første index givet (inklusiv) til det sidste index givet (eksklusiv).
+Elementer i et vis interval kan kaldes frem ved brug af `:` (også omtalt "slicing"). Slicing tager elementer fra det første index givet (inklusiv) til det sidste index givet (eksklusiv).
 
 
 ```python
 print(my_list[1:3])
 ```
 
-    [7, 9]
+    [7, 28]
 
 
-Ovenstående tager fra index 1 og op til index 3 eklskusivt index 3; altså index 1 (listens andet element: 7) og index 2 (listens tredje element: 9).
+Ovenstående tages fra index 1 og op til index 3 eklskusivt index 3; altså index 1 (listens andet element: 7) og index 2 (listens tredje element: 9).
 
 Listens længde (antallet af elementer) returneres med funktionen `len()`:
 
@@ -207,11 +207,12 @@ my_tuple[0] = "Palpatine"
     
     TypeError                                 Traceback (most recent call last)
     
-    <ipython-input-100-b2ea6727d80b> in <module>
+    <ipython-input-76-b2ea6727d80b> in <module>
     ----> 1 my_tuple[0] = "Palpatine"
 
 
     TypeError: 'tuple' object does not support item assignment
+
 
 ---
 ## VIDENSCHECK
@@ -232,15 +233,9 @@ b = (56, 78, 3, -9)
 
 ## Dictionaries
 
-En anden måde at lagre flere værdier i Python er med *dictionaries*. Dictionaries består af en række sæt af nøgler og værdier. 
+En tredje måde at lagre flere værdier i Python er med *dictionaries*. Dictionaries består af en række sæt af nøgler og værdier. 
 
 Dictionaries defineres med `{}`:
-
-- Nøgler og værdier
-- Check: Hvad er en dictionary?
-- Check: Kan de indeholde forskellige typer?
-- Check: Har dictionary et index?
-- Øvelse: Definer dictionary
 
 
 ```python
@@ -295,6 +290,7 @@ print(my_dict)
 ```
 
     {'jedi': 'Katarn', 'sith': 'Desann', 'dealer': 'Watto'}
+
 
 ---
 ## VIDENSCHECK

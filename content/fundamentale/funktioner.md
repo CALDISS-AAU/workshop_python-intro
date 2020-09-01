@@ -8,7 +8,7 @@ Funktioner i Python har følgende format:
 
 - `function(argument1, argument2, ...)`
 
-Funktioner bruges ved at skrive funktionens navn og skrive de argumenterne i parentes. En funktion kan have et utal af argumenter, men oftest skal de som minimum have et eller flere variable som input.
+Funktioner bruges ved at skrive funktionens navn efterfulgt af argumenterne i parentes. En funktion kan have et utal af argumenter, men oftest skal de som minimum have en eller flere variable som input.
 
 Udover argumenter tager funktioner også ofte en del "keyword arguments" som input. Disse kan betragte som en form for indstillinger, som man slår til og fra i funktionen. "keyword arguments" indgår i funktionen med navnet på indstillingen, et `=` og hvad indstillingen skal sættes til, lig nedenstående:
 
@@ -18,7 +18,7 @@ Ligesom med argumenter, kan en funktion have rigtig mange "keyword arguments"/in
 
 ## Sådan bruges funktioner
 
-Tidligere i dette materiale har funktionerne `print()` og `type()` været brugt. Ved `print()` har denne kun været brugt med et enkelt argument; altså det, som skal vises, men faktisk accepterer print flere argumenter:
+Tidligere i dette materiale har funktionerne `print()` og `type()` været brugt. Ved `print()` har denne kun været brugt med et enkelt argument; altså den variabel, som skal printes, men faktisk accepterer print flere argumenter:
 
 
 ```python
@@ -60,7 +60,7 @@ print(a, b, sep = ", ")  # sep ændres til komma
 En funktion kan have rigtig mange indstillinger, og i praksis forholder man sig kun til få af disse, da man oftest kan lade standardinstillingerne være, som de er. 
 
 {{% notice info %}}
-Man kan altid få hjælpefilen/dokumentationen frem til en funktion ved at skrive `?[function]` (fx `?print` for dokumentationen for `print()`. Mange IDE'er understøtter også, at man trykker `Shift + Tab` inde i parentesen af en funktion for at få vist en bid af hjælpefilen.
+Man kan altid få hjælpefilen/dokumentationen frem til en funktion ved at skrive `?[function]` (fx `?print` for dokumentationen for `print()`). Mange IDE'er understøtter også, at man trykker `Shift + Tab` inde i parentesen af en funktion for at få vist en bid af hjælpefilen.
 {{% /notice%}}
 
 {{% notice note %}}
@@ -73,7 +73,7 @@ Det, som der står i de forskellige "keyword arguments" i dokumentationen for en
 Hvordan får man `print()` til at adskille input værdierne med en `-`?
 
 {{%expand "Løsning" %}}
-Indstillingen `sep` sættes til `sep = '-'.
+Indstillingen `sep` sættes til `sep = '-'`.
 
 
 ```python
@@ -89,7 +89,7 @@ print(a, b, sep = '-')
 
 ## Hvor kommer funktioner fra?
 
-Python har en række funktioner indbygget, men faktisk kommer størstedelen af funktionerne i Python fra alle mulige andre, som har udviklede funktioner til forskellige formål, som andre derefter kan gøre brug af. Andre funktioner hentes ind i form af "pakker", som gennemgås senere i dette materiale.
+Python har en række funktioner indbygget, men faktisk kommer størstedelen af funktionerne i Python fra alle mulige andre, som har udviklet funktioner til forskellige formål, som andre derefter kan gøre brug af. Andre funktioner hentes ind i form af "pakker", som gennemgås senere i dette materiale.
 
 Man kan fristes til at lære Python ved at forsøge at lære så mange funktioner som muligt. Dette er en håbløs og nærmest umulig opgave givet omfanget af, hvad der findes af funktioner, der kan hentes til Python. I praksis opbygger man sig arbejdsgange eller workflows, hvori man har tendens til at bruge de samme funktioner igen og igen. Derfor er en god tilgang til Python at spørge: *"Kan jeg bruge Python til X?"* eller *"Hvordan løser jeg problem Y i Python?"*, og så forsøge at finde de rette funktioner til det, frem for at spørge: *"Hvad kan jeg bruge Python til?"*, da man med dette spørgsmål ikke får nogen retning på det, man gerne vil lære om Python.
 
@@ -107,7 +107,7 @@ add10(5)
     
     NameError                                 Traceback (most recent call last)
     
-    <ipython-input-13-7452fc393844> in <module>
+    <ipython-input-41-7452fc393844> in <module>
     ----> 1 add10(5)
 
 
@@ -128,7 +128,7 @@ print(add10(5))
     15
 
 
-Funktioner defineres med `def` efterfulgt af navnet på den funktion, man gerne vil lave. I parenteserne skrives de input, som funktionen skal have. I ovenstående dannes funktionen `add10`, der tager et enkelt input og lægger ti til. `x` i ovenstående er blot en pladsholder, da `x` erstattes med hvadend, der sættes i funktionen, når den bruges.
+Funktioner defineres med `def` efterfulgt af navnet på den funktion, man gerne vil lave. I parenteserne skrives de input, som funktionen skal have. I ovenstående dannes funktionen `add10`, der tager et enkelt input og lægger ti til. `x` i ovenstående er blot en "pladsholder", da `x` erstattes med hvadend, der sættes i funktionen, når den bruges.
 
 Efter `:` skrives det, som skal ske i funktionen. Alle variable, som defineres inde i funktionen, eksisterer *kun* i selve funktionen. Sagt på en anden måde, så kan variable, der defineres i funktionen, ikke kaldes frem. I funktionen `add10()` defineres `result` undervejs, men den eksisterer ikke uden for funktionen:
 
@@ -142,7 +142,7 @@ print(result)
     
     NameError                                 Traceback (most recent call last)
     
-    <ipython-input-30-6459d04d738f> in <module>
+    <ipython-input-43-6459d04d738f> in <module>
     ----> 1 print(result)
 
 
@@ -192,6 +192,9 @@ print(add10(10))
     Adding 10...
     20
 
+
+Indrykningen er ikke kun for syns skyld, men er her med til at afgrænse, hvor meget funktionen indeholder. Funktionens indhold (linjer skrevet efter `def`-linjen) skal rykkes ind med et enkelt tab eller fire mellemrum.
+
 ---
 ##  VIDENSCHECK
 
@@ -217,7 +220,7 @@ Funktionen returnerer `12.2`, hvis input er `122`, da input divideres med 10 og 
 
 *Lav en funktion, der udregner arealet af en trekant (A), ved at tage højde (h) og grundlinje (g) som input.*
 
-$A = \frac{1}{2} * h * g$
+\[A = {{1 \over 2} * h * g}\]
 
 {{%expand "Løsning" %}} 
 

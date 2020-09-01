@@ -30,18 +30,18 @@ Her nævnes blot et mindre udvalg af IDE'er.
 ### Spyder
 
 Spyder er bygget op omkring en "script-editor". Et script er et dokument bestående af en række af Python kommandoer, som man kan sende til fortolkeren på én gang. I et script kan fx samles al det databehandlings- og analysearbejde, som man skal lave. Ved at køre scriptet udføres så al arbejdet.
-Script-editoren er indbygget med farvekoder, så man nemt kan adskille dele af koden samt automatiske forslag til kommandoer (Spyder 4 og frem).
+Script-editoren er indbygget med farvekoder, så man nemt kan adskille dele af koden. Spyder giver også automatisk forslag til kommandoer (Spyder 4 og frem).
 
 Derudover giver Spyder en objekt-/variabeloversigt, så man kan se, hvad man har defineret og arbejder med; fx datasæt, resultater, osv.
 
 Spyder er godt til de fleste ting og særligt, hvis man skal arbejde med længere scripts.
 
-Spyder installeres sammen med Anaconda: https://www.anaconda.com/products/individual#Downloads
+Spyder kan installeres sammen med Anaconda: https://www.anaconda.com/products/individual#Downloads
 
 ### Jupyter Notebook
 
-Jupyter Notebook er opbygget omkring en såkaldt "notebook". En notebook i Jupyter Notebook kombinerer Python kode med almindelig tekst (Markdown). Jupyter Notebook egner sig særdeles godt, hvis man skal dokumentere sit kodearbejde undervejs, da man har mulighed for at skrive almindelig tekst, sætte billeder ind, lave tabeller osv. omkring sin kode.
+Jupyter Notebook er opbygget omkring en såkaldt "notebook". En notebook i Jupyter Notebook kombinerer Python kode med almindelig tekst (skrevet i "Markdown"). Jupyter Notebook egner sig særdeles godt, hvis man skal dokumentere sit kodearbejde undervejs, da man har mulighed for at skrive almindelig tekst, sætte billeder ind, lave tabeller osv. omkring sin kode.
 
 Dette materiale er udarbejdet i Jupyter Notebook.
 
-Jupyter Notebook installeres sammen med Anaconda: https://www.anaconda.com/products/individual#Downloads
+Jupyter Notebook kan installeres sammen med Anaconda: https://www.anaconda.com/products/individual#Downloads

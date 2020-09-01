@@ -67,6 +67,7 @@ else:
 
     Tallet er større end 5!
 
+
 ---
 ## ØVELSE
 
@@ -96,7 +97,7 @@ else:
 
 ## If-betingelser og for loops
 
-If-betingelser er yderst nyttige kombination med andre kontrolstrukturer. Fx kan man i kombinationen med for loops og if-betingelser skrive kode, hvor en vis kommando kun udføres på visse værdier i en liste:
+If-betingelser er yderst nyttige i kombination med andre kontrolstrukturer. Fx kan man i kombinationen med for loops og if-betingelser skrive kode, hvor en vis kommando kun udføres på visse værdier i en liste:
 
 
 ```python
@@ -120,7 +121,7 @@ for value in values:
     9 kan divideres med 3!
 
 
-I ovenstående ses et for loop, der kører over værdierne 1 til 9 (`range(1, 10)`). Hver værdi tjekkes om det kan divideres med 3 (`value % 3 == 0`). Hvis det kan printes teksten, at det kan divideres med 3. Hvis ikke, printes teksten, at det ikke kan divideres med 3.
+I ovenstående ses et for loop, der kører over værdierne 1 til 9 (`range(1, 10)`). Hver værdi tjekkes om det kan divideres med 3 (`value % 3 == 0`). Hvis den kan det, printes at det kan divideres med 3. Hvis ikke, printes teksten, at det ikke kan divideres med 3.
 
 {{% notice note %}}Husk at `%` bruges til at returnere den rest, der er tilbage efter heltalsdivision. `7 % 3` giver fx 1, da 7 kan divideres med 3 to hele gange, hvorefter der er 1 tilbage.{{% /notice%}}
 

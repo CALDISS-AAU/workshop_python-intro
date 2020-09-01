@@ -5,7 +5,7 @@ weight: 2
 I arbejdet med dataanalyse udfører man ofte de samme kommandoer, kontroller, kørsler osv. igen og igen:
 
 - En række oplysninger kan kontrolleres, om de er korrekte. Har de den rigtige type? Er værdierne gyldige? (fx at aldersværdier ikke har skøre værdier som 987 år).
-- Den samme beregning skal foretages for en række oplysninger - fx udregning gennemsnit for indkomst, alder, år i arbejde osv.
+- Den samme beregning skal foretages for en række oplysninger - fx udregning af gennemsnit for indkomst, alder, år i arbejde osv.
 - De samme oplysninger skal hentes fra en række forskellige hjemmesider.
 
 I Python (og mange andre programmeringssprog) kan man anvende "loops" til at gentage kommandoer. De mest gængse loop typer er "for loops" og "while loops". "for loops" gentager en eller flere kommandoer over en række værdier. "while loops" gentager en kommando, så længe en hvis betingelse er opfyldt.
@@ -115,6 +115,7 @@ for value in [9, 10, 4, 91, 27]:
     182
     54
 
+
 ---
 ## VIDENSCHECK
 
@@ -136,7 +137,7 @@ Tag et kig på denne liste af ord:
 words = ["potato", "cat", "scrumptious", "monitor", "carpenter"]
 ```
 
-*Skriv et for loop, der printer hver ord i `words` i blokbogstaver.*
+*Skriv et for loop, der printer hvert ord i `words` i blokbogstaver.*
 
 {{%expand "Løsning" %}}
 
@@ -278,9 +279,9 @@ Loopet starter herefter forfra, og betingelsen evalueres igen. Nu indeholder `fr
 
 Det kan måske virke svært at se, hvad while loops kan bruges til. De bruges meget i programmering i det hele taget, men finder sjældent anvendelse i analysearbejde. 
 
-Arbejder man med web scraping (indsamling af data fra nettet), kan while loops være brugbare. En teknik i web scraping er fx at sætte "crawlers" op. En crawler fungerer kort sagt ved at gå fra hjemmeside til hjemmeside ud fra de links, som der findes på siden. Her kan et while loop bruges til at begrænse, hvor langt crawleren skal gå; fx ved at sætte den til at stoppe efter et hvis antal sider er indsamlet eller sætte den til at stoppe, hvis crawleren bevæger sig ud fra et eller andet hoveddomæne. 
+Arbejder man med web scraping (indsamling af data fra nettet), kan while loops være brugbare. En teknik i web scraping er fx at sætte "crawlers" op. En crawler fungerer kort sagt ved at gå fra hjemmeside til hjemmeside ud fra de links, som der findes på siden. Her kan et while loop bruges til at begrænse, hvor langt crawleren skal gå; fx ved at sætte den til at stoppe efter et vis antal sider er indsamlet eller sætte den til at stoppe, hvis crawleren bevæger sig ud fra et eller andet hoveddomæne. 
 
-Hvis man fx gerne vil indsamle tekster og artikler fra EU's hjemmeside (https://europa.eu/), kan man bruge et while loop til at fortsætte indsamlinen, så længe siden befinder sig under domænet https://europa.eu/. 
+Hvis man fx gerne vil indsamle tekster og artikler fra EU's hjemmeside (https://europa.eu/), kan man bruge et while loop til at fortsætte indsamlingen, så længe siden befinder sig under domænet https://europa.eu/. 
 
 ---
 ## ØVELSE

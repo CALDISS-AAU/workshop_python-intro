@@ -8,10 +8,6 @@ Funktioner, metoder, værdier osv. fra pakker kan nemt indlæses ved at importer
 
 Fx kender Python ikke værdien pi med det samme:
 
-- Check: Forstår python et stykke kode? (brug af funktion før og efter import)
-- Øvelse: Importer pakke og brug funktion derfra
-- Check: Hvilken type er variablen efter funktion er blevet brugt til at ændre den?
-
 
 ```python
 print(pi)
@@ -22,7 +18,7 @@ print(pi)
     
     NameError                                 Traceback (most recent call last)
     
-    <ipython-input-48-9e2d2bd32686> in <module>
+    <ipython-input-53-9e2d2bd32686> in <module>
     ----> 1 print(pi)
 
 
@@ -74,4 +70,4 @@ Derudover bør man også altid overveje læsbarheden af ens kode, hvis andre ska
 
 Python kommer med et standardbibliotek af pakker. Selvom funktionerne altså er installeret sammen med Python i pakker, så skal de stadig importeres, før de kan bruges. Python er opbygget sådan både for at gøre det hurtigere at arbejde med (jo mindre der skal indlæses ved opstart, jo hurtigere kan man komme i gang), og for at gøre det nemmere at håndtere funktioner, metoder og værdier fra forskellige pakker. 
 
-Der et utal af pakker, som Python kan udvides med. I materiale fra CALDISS anvendes primært pakker inden for dataanalyse, web scraping, tekstanalyse og maskinlæring. Hvis du har installeret Python med Anaconda, så er mange af disse pakker allerede installert og klar til import.
+Der et utal af pakker, som Python kan udvides med. I materiale fra CALDISS anvendes primært pakker inden for dataanalyse, web scraping, tekstanalyse og maskinlæring. Hvis du har installeret Python med Anaconda, så er mange af disse pakker allerede installeret og klar til import.
