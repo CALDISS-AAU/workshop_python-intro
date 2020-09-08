@@ -6,6 +6,7 @@ Der findes adskillige online løsninger til at arbejde med Python. På den måde
 
 ---
 **Serverløsning til IT-Ledelse, modul 10, 2020**
+
 Hvis du er studerende på valgfaget "datadrevet forretningsudvikling" på IT-Ledelse år 2020, så kan du gøre brug af en JupyterHub instans, som er lavet til kurset. 
 
 Du kan tilgå denne på: http://130.226.98.218/hub/login (kræver at I er på AAU's netværk eller logget på VPN). 
