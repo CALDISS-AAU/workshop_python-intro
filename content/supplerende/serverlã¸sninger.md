@@ -5,6 +5,14 @@ weight: 2
 Der findes adskillige online løsninger til at arbejde med Python. På den måde slipper man for selv at skulle sætte det op, og man vil ofte have mere computerkraft til rådighed, end man har på sin egen computer.
 
 ---
+**Serverløsning til IT-Ledelse, modul 10, 2020**
+Hvis du er studerende på valgfaget "datadrevet forretningsudvikling" på IT-Ledelse år 2020, så kan du gøre brug af en JupyterHub instans, som er lavet til kurset. 
+
+Du kan tilgå denne på: http://130.226.98.218/hub/login (kræver at I er på AAU's netværk eller logget på VPN). 
+
+Dit brugernavn er præfixet i jeres e-mail (den del før @: hvis fx din email er kgk15@student.aau.dk, er dit brugernavn kgk15). I vælger selv adgangskode ved at fylde et password ind. *DETTE BLIVER JERES ADGANGSKODE TIL NÆSTE GANG I LOGGER IND! *
+
+---
 
 **CALDISS serverløsning**
 
