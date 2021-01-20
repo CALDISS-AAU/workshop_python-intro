@@ -5,11 +5,7 @@
     <link>/fundamentale/</link>
     <description>Recent content in Fundamentale koncepter i Python on Introduction to Python for Social Science</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/fundamentale/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/fundamentale/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python sproget</title>
       <link>/fundamentale/python/</link>

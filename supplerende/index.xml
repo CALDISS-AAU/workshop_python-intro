@@ -5,11 +5,7 @@
     <link>/supplerende/</link>
     <description>Recent content in Supplerende materiale on Introduction to Python for Social Science</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/supplerende/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/supplerende/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python IDE&#39;er</title>
       <link>/supplerende/python/</link>

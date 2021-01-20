@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.70.0" />
+    <meta name="generator" content="Hugo 0.76.5" />
     <meta name="description" content="">
 
 
@@ -12,19 +12,19 @@
     <title>Funktioner :: Introduction to Python for Social Science</title>
 
     
-    <link href="../../css/nucleus.css?1598974876" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1598974876" rel="stylesheet">
-    <link href="../../css/hybrid.css?1598974876" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1598974876" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1598974876" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1598974876" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1598974876" rel="stylesheet">
-    <link href="../../css/theme.css?1598974876" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1598974876" rel="stylesheet">
+    <link href="../../css/nucleus.css?1611136422" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1611136422" rel="stylesheet">
+    <link href="../../css/hybrid.css?1611136422" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1611136422" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1611136422" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1611136422" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1611136422" rel="stylesheet">
+    <link href="../../css/theme.css?1611136422" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1611136422" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1598974876"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1611136422"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/fundamentale/funktioner/">
+  <body class="" data-url="../../fundamentale/funktioner/">
     <nav id="sidebar" class="">
 
 
@@ -50,16 +50,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1598974876"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1598974876"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1611136422"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1611136422"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1598974876"></script>
+<script type="text/javascript" src="../../js/search.js?1611136422"></script>
 
     
   </div>
@@ -361,9 +359,30 @@
  
   
     
-      <li data-nav-id="/arbejd/lister/" title="Lister, dictionaries og tuples" class="dd-item ">
+      <li data-nav-id="/arbejd/lister/" title="Lister og tuples" class="dd-item ">
         <a href="../../arbejd/lister/">
-        Lister, dictionaries og tuples
+        Lister og tuples
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/arbejd/dictionaries/" title="Dictionaries" class="dd-item ">
+        <a href="../../arbejd/dictionaries/">
+        Dictionaries
         
         </a>
     </li>
@@ -458,9 +477,30 @@
  
   
     
-      <li data-nav-id="/supplerende/python/" title="Python serverløsninger" class="dd-item ">
+      <li data-nav-id="/supplerende/python/" title="Python IDE&#39;er" class="dd-item ">
         <a href="../../supplerende/python/">
-        Python serverløsninger
+        Python IDE&#39;er
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/supplerende/serverl%C3%A3sninger/" title="Serverløsninger til Python" class="dd-item ">
+        <a href="../../supplerende/serverl%C3%A3sninger/">
+        Serverløsninger til Python
         
         </a>
     </li>
@@ -623,7 +663,7 @@ b <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;there&#3
 </code></pre></div><pre><code>Hello there
 </code></pre>
 <p>Derudover har <code>print()</code> også en række &ldquo;keyword arguments&rdquo;/indstillinger, som det ses af dokumentationen herunder:</p>
-<pre>Docstring:
+<pre><code>Docstring:
 print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
 
 Prints the values to a stream, or to sys.stdout by default.
@@ -633,7 +673,7 @@ sep:   string inserted between values, default a space.
 end:   string appended after the last value, default a newline.
 flush: whether to forcibly flush the stream.
 Type:      builtin_function_or_method
-</pre><p>Her ses det, at <code>print()</code> har adskilige indstillinger. <code>sep</code> bestemmer fx, hvad der skal adskille de forskellige værdier, som tages ind. Bemærk, at alle indstillinger er sat til en eller anden indstillling som standard. <code>sep=' '</code> betyder, at de forskellige værdier adskilles med et mellemrum som standard. Hvis denne ændres til noget andet, vil outputtet se anderledes ud:</p>
+</code></pre><p>Her ses det, at <code>print()</code> har adskilige indstillinger. <code>sep</code> bestemmer fx, hvad der skal adskille de forskellige værdier, som tages ind. Bemærk, at alle indstillinger er sat til en eller anden indstillling som standard. <code>sep=' '</code> betyder, at de forskellige værdier adskilles med et mellemrum som standard. Hvis denne ændres til noget andet, vil outputtet se anderledes ud:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(a, b)              <span style="color:#75715e"># printer a og b med standardindstilling (adskiller med mellemrum)</span>
 <span style="color:#66d9ef">print</span>(a, b, sep <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;, &#34;</span>)  <span style="color:#75715e"># sep ændres til komma</span>
 </code></pre></div><pre><code>Hello there
@@ -762,7 +802,7 @@ NameError: name 'result' is not defined
 <hr>
 <h2 id="øvelse">ØVELSE</h2>
 <p><em>Lav en funktion, der udregner arealet af en trekant (A), ved at tage højde (h) og grundlinje (g) som input.</em></p>
-<p>\[A = {{1 \over 2} * h * g}\]</p>
+<p>[A = {{1 \over 2} * h * g}]</p>
 
 <div class="expand">
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
@@ -1066,6 +1106,22 @@ NameError: name 'result' is not defined
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1081,6 +1137,22 @@ NameError: name 'result' is not defined
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -1139,19 +1211,19 @@ NameError: name 'result' is not defined
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1598974876"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1598974876"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1598974876"></script>
-    <script src="../../js/jquery.sticky.js?1598974876"></script>
-    <script src="../../js/featherlight.min.js?1598974876"></script>
-    <script src="../../js/highlight.pack.js?1598974876"></script>
+    <script src="../../js/clipboard.min.js?1611136422"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1611136422"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1611136422"></script>
+    <script src="../../js/jquery.sticky.js?1611136422"></script>
+    <script src="../../js/featherlight.min.js?1611136422"></script>
+    <script src="../../js/highlight.pack.js?1611136422"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1598974876"></script>
-    <script src="../../js/learn.js?1598974876"></script>
-    <script src="../../js/hugo-learn.js?1598974876"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1611136422"></script>
+    <script src="../../js/learn.js?1611136422"></script>
+    <script src="../../js/hugo-learn.js?1611136422"></script>
 
-    <link href="../../mermaid/mermaid.css?1598974876" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1598974876"></script>
+    <link href="../../mermaid/mermaid.css?1611136422" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1611136422"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -23,15 +23,15 @@
   </url>
   
   <url>
+    <loc>/arbejd/dictionaries/</loc>
+  </url>
+  
+  <url>
     <loc>/fundamentale/</loc>
   </url>
   
   <url>
     <loc>/hvad/interager/</loc>
-  </url>
-  
-  <url>
-    <loc>/arbejd/loops/</loc>
   </url>
   
   <url>
@@ -47,11 +47,11 @@
   </url>
   
   <url>
-    <loc>/arbejd/if-betingelser/</loc>
+    <loc>/supplerende/litteratur/</loc>
   </url>
   
   <url>
-    <loc>/supplerende/litteratur/</loc>
+    <loc>/arbejd/loops/</loc>
   </url>
   
   <url>
@@ -60,6 +60,10 @@
   
   <url>
     <loc>/fundamentale/funktioner/</loc>
+  </url>
+  
+  <url>
+    <loc>/arbejd/if-betingelser/</loc>
   </url>
   
   <url>

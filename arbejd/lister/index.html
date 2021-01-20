@@ -3,28 +3,28 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.70.0" />
+    <meta name="generator" content="Hugo 0.76.5" />
     <meta name="description" content="">
 
 
     <link rel="icon" href="../../images/favicon.png" type="image/png">
 
-    <title>Lister, dictionaries og tuples :: Introduction to Python for Social Science</title>
+    <title>Lister og tuples :: Introduction to Python for Social Science</title>
 
     
-    <link href="../../css/nucleus.css?1598974876" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1598974876" rel="stylesheet">
-    <link href="../../css/hybrid.css?1598974876" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1598974876" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1598974876" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1598974876" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1598974876" rel="stylesheet">
-    <link href="../../css/theme.css?1598974876" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1598974876" rel="stylesheet">
+    <link href="../../css/nucleus.css?1611136422" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1611136422" rel="stylesheet">
+    <link href="../../css/hybrid.css?1611136422" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1611136422" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1611136422" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1611136422" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1611136422" rel="stylesheet">
+    <link href="../../css/theme.css?1611136422" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1611136422" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1598974876"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1611136422"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/arbejd/lister/">
+  <body class="" data-url="../../arbejd/lister/">
     <nav id="sidebar" class="">
 
 
@@ -50,14 +50,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1598974876"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1598974876"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1611136422"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1611136422"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1598974876"></script>
+<script type="text/javascript" src="../../js/search.js?1611136422"></script>
 
     
   </div>
@@ -359,9 +359,30 @@
  
   
     
-      <li data-nav-id="/arbejd/lister/" title="Lister, dictionaries og tuples" class="dd-item active">
+      <li data-nav-id="/arbejd/lister/" title="Lister og tuples" class="dd-item active">
         <a href="../../arbejd/lister/">
-        Lister, dictionaries og tuples
+        Lister og tuples
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/arbejd/dictionaries/" title="Dictionaries" class="dd-item ">
+        <a href="../../arbejd/dictionaries/">
+        Dictionaries
         
         </a>
     </li>
@@ -456,9 +477,30 @@
  
   
     
-      <li data-nav-id="/supplerende/python/" title="Python serverløsninger" class="dd-item ">
+      <li data-nav-id="/supplerende/python/" title="Python IDE&#39;er" class="dd-item ">
         <a href="../../supplerende/python/">
-        Python serverløsninger
+        Python IDE&#39;er
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/supplerende/serverl%C3%A3sninger/" title="Serverløsninger til Python" class="dd-item ">
+        <a href="../../supplerende/serverl%C3%A3sninger/">
+        Serverløsninger til Python
         
         </a>
     </li>
@@ -558,7 +600,7 @@
             
           
           
-            <a href='../../'></a> > <a href='../../arbejd/'>Arbejd med flere værdier</a> > Lister, dictionaries og tuples
+            <a href='../../'></a> > <a href='../../arbejd/'>Arbejd med flere værdier</a> > Lister og tuples
           
         
           
@@ -573,12 +615,10 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#lister">Lister</a></li>
     <li><a href="#videnscheck">VIDENSCHECK</a></li>
     <li><a href="#tuples">Tuples</a></li>
     <li><a href="#videnscheck-1">VIDENSCHECK</a></li>
-    <li><a href="#dictionaries">Dictionaries</a></li>
-    <li><a href="#videnscheck-2">VIDENSCHECK</a></li>
-    <li><a href="#videnscheck-3">VIDENSCHECK</a></li>
   </ul>
 </nav>
     </div>
@@ -596,14 +636,14 @@
           
             <h1>
               
-              Lister, dictionaries og tuples
+              Lister og tuples
             </h1>
           
 
         
 
 
-<p>Lister</p>
+<h2 id="lister">Lister</h2>
 <p>Den mest basale datastruktur er en liste. En liste defineres med <code>[]</code>:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">my_list <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">10</span>]
 </code></pre></div><p>I ovenstående defineres listen <code>my_list</code> til at indeholde værdierne 2, 7, 9 og 10. En liste kan fremkaldes ligesom hvilken som helst anden variabel:</p>
@@ -737,74 +777,6 @@ b <span style="color:#f92672">=</span> (<span style="color:#ae81ff">56</span>, <
     </div>
     <div class="expand-content" style="display: none;">
         Nej. <code>b</code> er en tuple, og værdierne kan derfor ikke ændres. Værdierne i <code>a</code> kan dog ændres, da det er en liste.
-    </div>
-</div>
-<hr>
-<h2 id="dictionaries">Dictionaries</h2>
-<p>En tredje måde at lagre flere værdier i Python er med <em>dictionaries</em>. Dictionaries består af en række sæt af nøgler og værdier.</p>
-<p>Dictionaries defineres med <code>{}</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">my_dict <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;jedi&#34;</span>: <span style="color:#e6db74">&#34;Katarn&#34;</span>, <span style="color:#e6db74">&#34;sith&#34;</span>: <span style="color:#e6db74">&#34;Desann&#34;</span>}
-</code></pre></div><p>Hvert nøgle- og værdisæt defineres med en nøgle i form af en string efterfulgt af værdien efter <code>:</code>. Værdien kan være tal, tekst, liste, en anden dictionary osv.</p>
-<p>De forskellige nøgle- og værdisæt adskilles med <code>,</code>.</p>
-<p>Dictionaries har ikke et index, da Python ikke betragter dem som værende i en bestemt rækkefølge. Værdierne kaldes derfor frem ved at referere til deres nøgle:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(my_dict[<span style="color:#e6db74">&#34;jedi&#34;</span>])
-</code></pre></div><pre><code>Katarn
-</code></pre>
-<p>Nøgler <em>skal</em> være unikke. Det er ikke muligt at lave en dictionary med to identiske nøgler. Hvis man forsøger at gøre det, vil den senest skrevne værdi til nøglen blive lagret:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">my_dict <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;jedi&#34;</span>: <span style="color:#e6db74">&#34;Katarn&#34;</span>, <span style="color:#e6db74">&#34;sith&#34;</span>: <span style="color:#e6db74">&#34;Desann&#34;</span>, <span style="color:#e6db74">&#34;jedi&#34;</span>: <span style="color:#e6db74">&#34;Kenobi&#34;</span>}
-
-<span style="color:#66d9ef">print</span>(my_dict)
-</code></pre></div><pre><code>{'jedi': 'Kenobi', 'sith': 'Desann'}
-</code></pre>
-<p>Ligeledes kan værdier til en bestemt nøgle overskrives:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">my_dict[<span style="color:#e6db74">&#34;jedi&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Katarn&#34;</span>
-
-<span style="color:#66d9ef">print</span>(my_dict)
-</code></pre></div><pre><code>{'jedi': 'Katarn', 'sith': 'Desann'}
-</code></pre>
-<p>Elementer kan tilføjes til en dictionary ved blot at tilknytte det til en nøgle, som endnu ikke er brugt i dictionarien:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">my_dict[<span style="color:#e6db74">&#34;dealer&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Watto&#34;</span>
-
-<span style="color:#66d9ef">print</span>(my_dict)
-</code></pre></div><pre><code>{'jedi': 'Katarn', 'sith': 'Desann', 'dealer': 'Watto'}
-</code></pre>
-<hr>
-<h2 id="videnscheck-2">VIDENSCHECK</h2>
-<p><em>Kan en dictionary indeholde forskellige typer af værdier?</em></p>
-
-<div class="expand">
-    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
-        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
-        <span>
-        
-    	
-    	Løsning
-    	
-    	</span>
-    </div>
-    <div class="expand-content" style="display: none;">
-        Ja. Værdier i en dictionary kan være af alle mulige typer, men nøglen skal altid være en string.
-    </div>
-</div>
-<hr>
-<hr>
-<h2 id="videnscheck-3">VIDENSCHECK</h2>
-<p>Tag et kig på nedenstående dictionary:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">famous_animals <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;Pluto&#34;</span>: <span style="color:#e6db74">&#34;dog&#34;</span>, <span style="color:#e6db74">&#34;Oggy&#34;</span>: <span style="color:#e6db74">&#34;cat&#34;</span>, <span style="color:#e6db74">&#34;Pinky&#34;</span>: <span style="color:#e6db74">&#34;mouse&#34;</span>, <span style="color:#e6db74">&#34;Pumba&#34;</span>: <span style="color:#e6db74">&#34;warthog&#34;</span>}
-</code></pre></div><p><em>Hvordan fremkaldes den 3. værdi (&ldquo;mouse&rdquo;)?</em></p>
-
-<div class="expand">
-    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
-        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
-        <span>
-        
-    	
-    	Løsning
-    	
-    	</span>
-    </div>
-    <div class="expand-content" style="display: none;">
-        Den 3. værdi fremkaldes ved at refere til den rigtige nøgle: <code>famous_animals[&quot;Pinky&quot;]</code>. Python betragter ikke værdien som den 3. værdi, da værdien knyttes op på nøglen og ikke på rækkefølgen, som den står i dictionary.
     </div>
 </div>
 <hr>
@@ -1085,6 +1057,22 @@ b <span style="color:#f92672">=</span> (<span style="color:#ae81ff">56</span>, <
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1100,6 +1088,22 @@ b <span style="color:#f92672">=</span> (<span style="color:#ae81ff">56</span>, <
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -1148,7 +1152,7 @@ b <span style="color:#f92672">=</span> (<span style="color:#ae81ff">56</span>, <
 			<a class="nav nav-prev" href="../../arbejd/" title="Arbejd med flere værdier"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../arbejd/loops/" title="Loops" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../arbejd/dictionaries/" title="Dictionaries" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1158,19 +1162,19 @@ b <span style="color:#f92672">=</span> (<span style="color:#ae81ff">56</span>, <
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1598974876"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1598974876"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1598974876"></script>
-    <script src="../../js/jquery.sticky.js?1598974876"></script>
-    <script src="../../js/featherlight.min.js?1598974876"></script>
-    <script src="../../js/highlight.pack.js?1598974876"></script>
+    <script src="../../js/clipboard.min.js?1611136422"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1611136422"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1611136422"></script>
+    <script src="../../js/jquery.sticky.js?1611136422"></script>
+    <script src="../../js/featherlight.min.js?1611136422"></script>
+    <script src="../../js/highlight.pack.js?1611136422"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1598974876"></script>
-    <script src="../../js/learn.js?1598974876"></script>
-    <script src="../../js/hugo-learn.js?1598974876"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1611136422"></script>
+    <script src="../../js/learn.js?1611136422"></script>
+    <script src="../../js/hugo-learn.js?1611136422"></script>
 
-    <link href="../../mermaid/mermaid.css?1598974876" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1598974876"></script>
+    <link href="../../mermaid/mermaid.css?1611136422" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1611136422"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

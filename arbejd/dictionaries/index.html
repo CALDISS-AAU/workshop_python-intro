@@ -9,7 +9,7 @@
 
     <link rel="icon" href="../../images/favicon.png" type="image/png">
 
-    <title>Litteratur og yderligere materiale :: Introduction to Python for Social Science</title>
+    <title>Dictionaries :: Introduction to Python for Social Science</title>
 
     
     <link href="../../css/nucleus.css?1611136422" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="../../supplerende/litteratur/">
+  <body class="" data-url="../../arbejd/dictionaries/">
     <nav id="sidebar" class="">
 
 
@@ -333,7 +333,7 @@
   
     
     <li data-nav-id="/arbejd/" title="Arbejd med flere værdier" class="dd-item 
-        
+        parent
         
         
         ">
@@ -380,7 +380,7 @@
  
   
     
-      <li data-nav-id="/arbejd/dictionaries/" title="Dictionaries" class="dd-item ">
+      <li data-nav-id="/arbejd/dictionaries/" title="Dictionaries" class="dd-item active">
         <a href="../../arbejd/dictionaries/">
         Dictionaries
         
@@ -451,7 +451,7 @@
   
     
     <li data-nav-id="/supplerende/" title="Supplerende materiale" class="dd-item 
-        parent
+        
         
         
         ">
@@ -519,7 +519,7 @@
  
   
     
-      <li data-nav-id="/supplerende/litteratur/" title="Litteratur og yderligere materiale" class="dd-item active">
+      <li data-nav-id="/supplerende/litteratur/" title="Litteratur og yderligere materiale" class="dd-item ">
         <a href="../../supplerende/litteratur/">
         Litteratur og yderligere materiale
         
@@ -600,7 +600,7 @@
             
           
           
-            <a href='../../'></a> > <a href='../../supplerende/'>Supplerende materiale</a> > Litteratur og yderligere materiale
+            <a href='../../'></a> > <a href='../../arbejd/'>Arbejd med flere værdier</a> > Dictionaries
           
         
           
@@ -615,7 +615,8 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#online-kurser">Online kurser</a></li>
+    <li><a href="#videnscheck">VIDENSCHECK</a></li>
+    <li><a href="#videnscheck-1">VIDENSCHECK</a></li>
   </ul>
 </nav>
     </div>
@@ -633,20 +634,80 @@
           
             <h1>
               
-              Litteratur og yderligere materiale
+              Dictionaries
             </h1>
           
 
         
 
 
-<p>Her ses forslag til steder, hvor du kan lære mere om basalt brug af Python.</p>
-<h2 id="online-kurser">Online kurser</h2>
-<ul>
-<li>&ldquo;Data Analysis and Visualization with Python for Social Scientists <em>alpha</em>&rdquo; af DataCarpentry: <a href="https://datacarpentry.org/python-socialsci/">https://datacarpentry.org/python-socialsci/</a></li>
-<li>&ldquo;Python Tutorial&rdquo; af Tutorialspoint: <a href="https://www.tutorialspoint.com/python/index.htm">https://www.tutorialspoint.com/python/index.htm</a></li>
-<li>&ldquo;Introduction to Python&rdquo; af DataCamp: <a href="https://www.datacamp.com/courses/intro-to-python-for-data-science">https://www.datacamp.com/courses/intro-to-python-for-data-science</a> (betalingsside, men første del er gratis)</li>
-</ul>
+<p>Man kan også lagre flere værdier i Python med <em>dictionaries</em>. Dictionaries består af en række sæt af nøgler og værdier.</p>
+<p>Dictionaries defineres med <code>{}</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">my_dict <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;jedi&#34;</span>: <span style="color:#e6db74">&#34;Katarn&#34;</span>, <span style="color:#e6db74">&#34;sith&#34;</span>: <span style="color:#e6db74">&#34;Desann&#34;</span>}
+</code></pre></div><p>Hvert nøgle- og værdisæt defineres med en nøgle i form af en string efterfulgt af værdien efter <code>:</code>. Værdien kan være tal, tekst, liste, en anden dictionary osv.</p>
+<p>De forskellige nøgle- og værdisæt adskilles med <code>,</code>.</p>
+<p>Dictionaries har ikke et index, da Python ikke betragter dem som værende i en bestemt rækkefølge. Værdierne kaldes derfor frem ved at referere til deres nøgle:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(my_dict[<span style="color:#e6db74">&#34;jedi&#34;</span>])
+</code></pre></div><pre><code>Katarn
+</code></pre>
+<p>Nøgler <em>skal</em> være unikke. Det er ikke muligt at lave en dictionary med to identiske nøgler. Hvis man forsøger at gøre det, vil den senest skrevne værdi til nøglen blive lagret:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">my_dict <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;jedi&#34;</span>: <span style="color:#e6db74">&#34;Katarn&#34;</span>, <span style="color:#e6db74">&#34;sith&#34;</span>: <span style="color:#e6db74">&#34;Desann&#34;</span>, <span style="color:#e6db74">&#34;jedi&#34;</span>: <span style="color:#e6db74">&#34;Kenobi&#34;</span>}
+
+<span style="color:#66d9ef">print</span>(my_dict)
+</code></pre></div><pre><code>{'jedi': 'Kenobi', 'sith': 'Desann'}
+</code></pre>
+<p>Ligeledes kan værdier til en bestemt nøgle overskrives:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">my_dict[<span style="color:#e6db74">&#34;jedi&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Katarn&#34;</span>
+
+<span style="color:#66d9ef">print</span>(my_dict)
+</code></pre></div><pre><code>{'jedi': 'Katarn', 'sith': 'Desann'}
+</code></pre>
+<p>Elementer kan tilføjes til en dictionary ved blot at tilknytte det til en nøgle, som endnu ikke er brugt i dictionarien:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">my_dict[<span style="color:#e6db74">&#34;dealer&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Watto&#34;</span>
+
+<span style="color:#66d9ef">print</span>(my_dict)
+</code></pre></div><pre><code>{'jedi': 'Katarn', 'sith': 'Desann', 'dealer': 'Watto'}
+</code></pre>
+<hr>
+<h2 id="videnscheck">VIDENSCHECK</h2>
+<p><em>Kan en dictionary indeholde forskellige typer af værdier?</em></p>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	Løsning
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        Ja. Værdier i en dictionary kan være af alle mulige typer, men nøglen skal altid være en string.
+    </div>
+</div>
+<hr>
+<hr>
+<h2 id="videnscheck-1">VIDENSCHECK</h2>
+<p>Tag et kig på nedenstående dictionary:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">famous_animals <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;Pluto&#34;</span>: <span style="color:#e6db74">&#34;dog&#34;</span>, <span style="color:#e6db74">&#34;Oggy&#34;</span>: <span style="color:#e6db74">&#34;cat&#34;</span>, <span style="color:#e6db74">&#34;Pinky&#34;</span>: <span style="color:#e6db74">&#34;mouse&#34;</span>, <span style="color:#e6db74">&#34;Pumba&#34;</span>: <span style="color:#e6db74">&#34;warthog&#34;</span>}
+</code></pre></div><p><em>Hvordan fremkaldes den 3. værdi (&ldquo;mouse&rdquo;)?</em></p>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	Løsning
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        Den 3. værdi fremkaldes ved at refere til den rigtige nøgle: <code>famous_animals[&quot;Pinky&quot;]</code>. Python betragter ikke værdien som den 3. værdi, da værdien knyttes op på nøglen og ikke på rækkefølgen, som den står i dictionary.
+    </div>
+</div>
+<hr>
 
 
 <footer class="footline">
@@ -863,6 +924,94 @@
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                 
                 
 
@@ -907,91 +1056,6 @@
             
             
                 
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -1016,10 +1080,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="../../supplerende/serverl%C3%A3sninger/" title="Serverløsninger til Python"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../../arbejd/lister/" title="Lister og tuples"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../supplerende/python/" title="Python IDE&#39;er" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../arbejd/loops/" title="Loops" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.70.0" />
+    <meta name="generator" content="Hugo 0.76.5" />
     <meta name="description" content="">
 
 
@@ -12,19 +12,19 @@
     <title>Logiske værdier (booleans) :: Introduction to Python for Social Science</title>
 
     
-    <link href="../../css/nucleus.css?1598974876" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1598974876" rel="stylesheet">
-    <link href="../../css/hybrid.css?1598974876" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1598974876" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1598974876" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1598974876" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1598974876" rel="stylesheet">
-    <link href="../../css/theme.css?1598974876" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1598974876" rel="stylesheet">
+    <link href="../../css/nucleus.css?1611136422" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1611136422" rel="stylesheet">
+    <link href="../../css/hybrid.css?1611136422" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1611136422" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1611136422" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1611136422" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1611136422" rel="stylesheet">
+    <link href="../../css/theme.css?1611136422" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1611136422" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1598974876"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1611136422"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/fundamentale/logiske/">
+  <body class="" data-url="../../fundamentale/logiske/">
     <nav id="sidebar" class="">
 
 
@@ -50,14 +50,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1598974876"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1598974876"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1611136422"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1611136422"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1598974876"></script>
+<script type="text/javascript" src="../../js/search.js?1611136422"></script>
 
     
   </div>
@@ -359,9 +359,30 @@
  
   
     
-      <li data-nav-id="/arbejd/lister/" title="Lister, dictionaries og tuples" class="dd-item ">
+      <li data-nav-id="/arbejd/lister/" title="Lister og tuples" class="dd-item ">
         <a href="../../arbejd/lister/">
-        Lister, dictionaries og tuples
+        Lister og tuples
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/arbejd/dictionaries/" title="Dictionaries" class="dd-item ">
+        <a href="../../arbejd/dictionaries/">
+        Dictionaries
         
         </a>
     </li>
@@ -456,9 +477,30 @@
  
   
     
-      <li data-nav-id="/supplerende/python/" title="Python serverløsninger" class="dd-item ">
+      <li data-nav-id="/supplerende/python/" title="Python IDE&#39;er" class="dd-item ">
         <a href="../../supplerende/python/">
-        Python serverløsninger
+        Python IDE&#39;er
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/supplerende/serverl%C3%A3sninger/" title="Serverløsninger til Python" class="dd-item ">
+        <a href="../../supplerende/serverl%C3%A3sninger/">
+        Serverløsninger til Python
         
         </a>
     </li>
@@ -621,9 +663,7 @@ a <span style="color:#f92672">&gt;</span> b   <span style="color:#75715e"># Stø
 a <span style="color:#f92672">&gt;=</span> b  <span style="color:#75715e"># Større end eller lig med</span>
 a <span style="color:#f92672">&lt;</span> b   <span style="color:#75715e"># Mindre end</span>
 a <span style="color:#f92672">&lt;=</span> b  <span style="color:#75715e"># Mindre end eller lig med</span>
-</code></pre></div><pre><code>True
-</code></pre>
-<p>Mange funktioner og metoder returnerer også booleanske værdier. Fx returnerer metoden <code>.startswith()</code> en booleansk værdi afhængig af, om en tekststreng starter med et vis stykke tekst eller ej:</p>
+</code></pre></div><p>Mange funktioner og metoder returnerer også booleanske værdier. Fx returnerer metoden <code>.startswith()</code> en booleansk værdi afhængig af, om en tekststreng starter med et vis stykke tekst eller ej:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">words <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello there!&#34;</span>
 
 <span style="color:#66d9ef">print</span>(words<span style="color:#f92672">.</span>startswith(<span style="color:#e6db74">&#34;Hello&#34;</span>))
@@ -940,6 +980,22 @@ c <span style="color:#f92672">=</span> a <span style="color:#f92672">&lt;</span>
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -955,6 +1011,22 @@ c <span style="color:#f92672">=</span> a <span style="color:#f92672">&lt;</span>
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -1013,19 +1085,19 @@ c <span style="color:#f92672">=</span> a <span style="color:#f92672">&lt;</span>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1598974876"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1598974876"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1598974876"></script>
-    <script src="../../js/jquery.sticky.js?1598974876"></script>
-    <script src="../../js/featherlight.min.js?1598974876"></script>
-    <script src="../../js/highlight.pack.js?1598974876"></script>
+    <script src="../../js/clipboard.min.js?1611136422"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1611136422"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1611136422"></script>
+    <script src="../../js/jquery.sticky.js?1611136422"></script>
+    <script src="../../js/featherlight.min.js?1611136422"></script>
+    <script src="../../js/highlight.pack.js?1611136422"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1598974876"></script>
-    <script src="../../js/learn.js?1598974876"></script>
-    <script src="../../js/hugo-learn.js?1598974876"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1611136422"></script>
+    <script src="../../js/learn.js?1611136422"></script>
+    <script src="../../js/hugo-learn.js?1611136422"></script>
 
-    <link href="../../mermaid/mermaid.css?1598974876" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1598974876"></script>
+    <link href="../../mermaid/mermaid.css?1611136422" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1611136422"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

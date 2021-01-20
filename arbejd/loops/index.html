@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.70.0" />
+    <meta name="generator" content="Hugo 0.76.5" />
     <meta name="description" content="">
 
 
@@ -12,19 +12,19 @@
     <title>Loops :: Introduction to Python for Social Science</title>
 
     
-    <link href="../../css/nucleus.css?1598974876" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1598974876" rel="stylesheet">
-    <link href="../../css/hybrid.css?1598974876" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1598974876" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1598974876" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1598974876" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1598974876" rel="stylesheet">
-    <link href="../../css/theme.css?1598974876" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1598974876" rel="stylesheet">
+    <link href="../../css/nucleus.css?1611136422" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1611136422" rel="stylesheet">
+    <link href="../../css/hybrid.css?1611136422" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1611136422" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1611136422" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1611136422" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1611136422" rel="stylesheet">
+    <link href="../../css/theme.css?1611136422" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1611136422" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1598974876"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1611136422"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/arbejd/loops/">
+  <body class="" data-url="../../arbejd/loops/">
     <nav id="sidebar" class="">
 
 
@@ -50,14 +50,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1598974876"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1598974876"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1611136422"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1611136422"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1598974876"></script>
+<script type="text/javascript" src="../../js/search.js?1611136422"></script>
 
     
   </div>
@@ -359,9 +359,30 @@
  
   
     
-      <li data-nav-id="/arbejd/lister/" title="Lister, dictionaries og tuples" class="dd-item ">
+      <li data-nav-id="/arbejd/lister/" title="Lister og tuples" class="dd-item ">
         <a href="../../arbejd/lister/">
-        Lister, dictionaries og tuples
+        Lister og tuples
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/arbejd/dictionaries/" title="Dictionaries" class="dd-item ">
+        <a href="../../arbejd/dictionaries/">
+        Dictionaries
         
         </a>
     </li>
@@ -456,9 +477,30 @@
  
   
     
-      <li data-nav-id="/supplerende/python/" title="Python serverløsninger" class="dd-item ">
+      <li data-nav-id="/supplerende/python/" title="Python IDE&#39;er" class="dd-item ">
         <a href="../../supplerende/python/">
-        Python serverløsninger
+        Python IDE&#39;er
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/supplerende/serverl%C3%A3sninger/" title="Serverløsninger til Python" class="dd-item ">
+        <a href="../../supplerende/serverl%C3%A3sninger/">
+        Serverløsninger til Python
         
         </a>
     </li>
@@ -772,9 +814,8 @@ loopet kører videre
 <p>I ovenstående defineres først <code>x</code> til at være <code>1</code>. Derefter igangsættes et while loop, som skal køre, så længe at <code>x &lt; 5</code>. Kommandoerne, som skal køre i loopet, skrives på linjen efter <code>:</code>. Her er det igen vigtigt, at kommandoerne i loopet er rykket ind (enten med tab eller fire mellemrum, men de fleste IDE&rsquo;er laver dette mellemrum automatisk).</p>
 <p>Derefter overskrives <code>x</code> til at være <code>x + 1</code>; altså at værdien af <code>x</code> øges med <code>1</code>. Bemærk at hvis denne linje undlades, så bliver loopet ved med at gentage sig, da <code>x</code> ikke ændres og derfor bliver ved med at være <code>1</code>; altså mindre end <code>5</code>, som er betingelsen for, at loopet kører.</p>
 
-<div class="notices warning" ><p>Man skal være forsigtig, når man skriver while loops, da man meget nemt kan komme til at skabe uendeligt loops!
-<br />
-<br />Uendelige loops sker, hvis ikke den betingelse, som while loopet baseres på, ændres. Uendelige loops skal afbrydes manuelt, men i tilfælde, hvor det, der sker i loopet, er krævende, kan Python ende med at gå helt i stå af at arbejde med loopet, da Python (og computeren) til sidst ikke kan følge med.</p>
+<div class="notices warning" ><p>Man skal være forsigtig, når man skriver while loops, da man meget nemt kan komme til at skabe uendeligt loops!</p>
+<p>Uendelige loops sker, hvis ikke den betingelse, som while loopet baseres på, ændres. Uendelige loops skal afbrydes manuelt, men i tilfælde, hvor det, der sker i loopet, er krævende, kan Python ende med at gå helt i stå af at arbejde med loopet, da Python (og computeren) til sidst ikke kan følge med.</p>
 </div>
 
 <p>Herunder ses et andet while loop, der bliver ved, så længe antallet af karakterer i variablen <code>fruit</code> ikke overstiger 22:</p>
@@ -1076,6 +1117,22 @@ the word is banananananananananana
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -1122,6 +1179,22 @@ the word is banananananananananana
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -1167,7 +1240,7 @@ the word is banananananananananana
 	 
 	 
 		
-			<a class="nav nav-prev" href="../../arbejd/lister/" title="Lister, dictionaries og tuples"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../../arbejd/dictionaries/" title="Dictionaries"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="../../arbejd/if-betingelser/" title="If-betingelser" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -1180,19 +1253,19 @@ the word is banananananananananana
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1598974876"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1598974876"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1598974876"></script>
-    <script src="../../js/jquery.sticky.js?1598974876"></script>
-    <script src="../../js/featherlight.min.js?1598974876"></script>
-    <script src="../../js/highlight.pack.js?1598974876"></script>
+    <script src="../../js/clipboard.min.js?1611136422"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1611136422"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1611136422"></script>
+    <script src="../../js/jquery.sticky.js?1611136422"></script>
+    <script src="../../js/featherlight.min.js?1611136422"></script>
+    <script src="../../js/highlight.pack.js?1611136422"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1598974876"></script>
-    <script src="../../js/learn.js?1598974876"></script>
-    <script src="../../js/hugo-learn.js?1598974876"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1611136422"></script>
+    <script src="../../js/learn.js?1611136422"></script>
+    <script src="../../js/hugo-learn.js?1611136422"></script>
 
-    <link href="../../mermaid/mermaid.css?1598974876" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1598974876"></script>
+    <link href="../../mermaid/mermaid.css?1611136422" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1611136422"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
