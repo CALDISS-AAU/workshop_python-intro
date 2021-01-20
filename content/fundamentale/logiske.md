@@ -38,7 +38,6 @@ print(check,
 
 Her er en række operatorer, som altid returnerer en booleansk værdi:
 
-
 ```python
 a == b  # Lig med
 a != b  # Ikke lig med
@@ -47,13 +46,6 @@ a >= b  # Større end eller lig med
 a < b   # Mindre end
 a <= b  # Mindre end eller lig med
 ```
-
-
-
-
-    True
-
-
 
 Mange funktioner og metoder returnerer også booleanske værdier. Fx returnerer metoden `.startswith()` en booleansk værdi afhængig af, om en tekststreng starter med et vis stykke tekst eller ej:
 

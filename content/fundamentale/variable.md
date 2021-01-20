@@ -178,8 +178,7 @@ Derudover er det en god ide at undgå at bruge allerede eksisterende navne i Pyt
 {{% /notice%}}
 
 {{% notice info %}}
-Her ses en oversigt over de matematiske operationer, som kan bruges i Python.
-
+Her ses en oversigt over de matematiske operationer, som kan bruges i Python:
 
 ```python
 a + b      # addition
@@ -188,16 +187,8 @@ a - b      # subtraktion
 a / b      # division
 b ** a     # exponentiering
 a // b     # "floor division" - returner antal hele gange, at tal til venstre kan divideres med tal til højre
-2 * a % b) # modulus - returnerer rest efter "floor division"
+a % b      # modulus - returnerer rest efter "floor division"
 ```
-
-
-      File "<ipython-input-28-727c4d594de0>", line 7
-        2 * a % b) # modulus - returnerer rest efter "floor division"
-                 ^
-    SyntaxError: invalid syntax
-
-
 
 {{% /notice%}} 
 

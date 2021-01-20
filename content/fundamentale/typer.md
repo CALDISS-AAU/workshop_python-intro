@@ -24,7 +24,7 @@ print(type(a))
 ```
 
     <class 'int'>
-
+    
 
 Variablen `a` er typen `int`, som står for *integer* - et heltal. Som set i sidste afsnit, kan der foretages forskellige matematiske operationer med heltal.
 
@@ -37,7 +37,7 @@ print(type(b))
 ```
 
     <class 'float'>
-
+    
 
 Bemærk, at når man dividerer, så vil typen altid blive et *float point* - også selvom resultatet er et heltal:
 
@@ -54,7 +54,7 @@ print(type(b))   # b er et float point
     <class 'int'>
     21.0
     <class 'float'>
-
+    
 
 At Python gerne vil adskille mellem typer har noget at gøre med, hvordan én type information kræver mere computerhukommelse at lagre end en anden. Dette kan have betydning, når man arbejder med enorme datamængder, hvilket sjældent er tilfældet i samfundsvidenskabelige analysearbejder.
 
@@ -82,7 +82,7 @@ print(type(a))
 ```
 
     <class 'str'>
-
+    
 
 En variabel med et stykke tekst kaldes en `string` (forkortet i Python som `str`). 
 
@@ -97,7 +97,7 @@ print(a + b)   # sætter de to strings sammen (kaldes også for "paste")
 
     HelloHello
     Hello there
-
+    
 
 {{% notice note %}}
 
@@ -114,7 +114,7 @@ print(b * 2) # b er ikke et tal. "Pastes" sammen, da det er en string.
 
     84
     4242
-
+    
 
 Python gætter altid typen. Derfor gættes typen også, når man indlæser data i Python. Her kan problemet opstå, at Python læser information ind forkert - fx at tal læses ind som tekst.
 
@@ -140,7 +140,7 @@ print(type(b))  # b er nu integer
 
     <class 'str'>
     <class 'int'>
-
+    
 
 Alle typer kan selvfølgelig ikke castes om. Fx kan man ikke meningsfuldt konvertere tekst i form af ord til tal:
 
@@ -152,18 +152,18 @@ a = int(a)      # forsøger at konvertere a til integer - ikke muligt
 ```
 
     <class 'str'>
-
+    
 
 
     ---------------------------------------------------------------------------
-    
+
     ValueError                                Traceback (most recent call last)
-    
+
     <ipython-input-36-cc7b3220923a> in <module>
           1 a = "Hello"     # a dannes som string
           2 print(type(a))  # typen er string
     ----> 3 a = int(a)      # forsøger at konvertere a til integer - ikke muligt
-
+    
 
     ValueError: invalid literal for int() with base 10: 'Hello'
 
@@ -204,7 +204,7 @@ my_number3 / my_number4
     <class 'int'>
     <class 'str'>
     <class 'int'>
-
+    
 
 
 
