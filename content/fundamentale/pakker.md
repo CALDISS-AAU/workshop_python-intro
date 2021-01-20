@@ -2,6 +2,9 @@
 title: Pakker
 weight: 6
 ---
+
+{{< youtube Nvmy6HD8DJ0 >}}
+
 Pakker i Python er samlinger af funktioner, metoder, værdier osv. Selvom man kan meget i Python, så når man ikke særlig langt uden at importere pakker.
 
 Funktioner, metoder, værdier osv. fra pakker kan nemt indlæses ved at importere dem. Så snart pakken er importeret, er pakkens indhold tilgængeligt.
@@ -15,12 +18,12 @@ print(pi)
 
 
     ---------------------------------------------------------------------------
-
+    
     NameError                                 Traceback (most recent call last)
-
+    
     <ipython-input-53-9e2d2bd32686> in <module>
     ----> 1 print(pi)
-    
+
 
     NameError: name 'pi' is not defined
 
@@ -35,7 +38,7 @@ print(math.pi)
 ```
 
     3.141592653589793
-    
+
 
 Bemærk at man kalder noget frem, som er en del af en pakke, ved at skrive pakkens navn, punktum og det, som man skal bruge fra pakken.
 
@@ -49,7 +52,7 @@ print(pi)
 ```
 
     3.141592653589793
-    
+
 
 Pakker kan have lange navne, så det er muligt at forkorte navnet, når de importeres:
 
@@ -61,7 +64,7 @@ print(m.pi)
 ```
 
     3.141592653589793
-    
+
 
 {{% notice warning %}} Vær varsom med blot at importere dele af pakker ind enkeltvis. En af grundene til, at man kalder dele af pakker ved at skrive pakken først er for at holde styr på, hvor funktionen, metoden eller værdien kommer fra. Man kan nemt miste overblikket eller, endnu værre, kalde den forkerte funktion, hvis man ikke har styr på, hvordan man har importeret.
 

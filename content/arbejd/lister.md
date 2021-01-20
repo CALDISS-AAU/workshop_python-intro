@@ -2,6 +2,9 @@
 title: Lister og tuples
 weight: 1
 ---
+
+{{< youtube mXQXpWdLFvI >}}
+
 ## Lister
 
 Den mest basale datastruktur er en liste. En liste defineres med `[]`:

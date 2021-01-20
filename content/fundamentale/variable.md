@@ -2,6 +2,9 @@
 title: Variable
 weight: 2
 ---
+
+{{< youtube tNmobEPK_uU>}}
+
 Python er et objekt-orienteret programmeringssprog. Dette indebærer, at man kontinuerligt arbejder med forskellige objekter, som indeholder en eller anden for for information.
 
 I Python kaldes objekter "variable". Dette er ikke at forveksle med en variabel, som forstået i statistik som en egenskab ved en observation, da en variabel i Python blot er en beholder for en eller anden form for information.

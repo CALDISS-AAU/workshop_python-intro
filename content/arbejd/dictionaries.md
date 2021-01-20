@@ -2,6 +2,9 @@
 title: Dictionaries
 weight: 2
 ---
+
+{{< youtube ZW_chK-cDlM >}}
+
 Man kan også lagre flere værdier i Python med *dictionaries*. Dictionaries består af en række sæt af nøgler og værdier. 
 
 Dictionaries defineres med `{}`:
@@ -23,7 +26,7 @@ print(my_dict["jedi"])
 ```
 
     Katarn
-    
+
 
 Nøgler *skal* være unikke. Det er ikke muligt at lave en dictionary med to identiske nøgler. Hvis man forsøger at gøre det, vil den senest skrevne værdi til nøglen blive lagret:
 
@@ -35,7 +38,7 @@ print(my_dict)
 ```
 
     {'jedi': 'Kenobi', 'sith': 'Desann'}
-    
+
 
 Ligeledes kan værdier til en bestemt nøgle overskrives:
 
@@ -47,7 +50,7 @@ print(my_dict)
 ```
 
     {'jedi': 'Katarn', 'sith': 'Desann'}
-    
+
 
 Elementer kan tilføjes til en dictionary ved blot at tilknytte det til en nøgle, som endnu ikke er brugt i dictionarien:
 
@@ -59,7 +62,7 @@ print(my_dict)
 ```
 
     {'jedi': 'Katarn', 'sith': 'Desann', 'dealer': 'Watto'}
-    
+
 
 ---
 ## VIDENSCHECK

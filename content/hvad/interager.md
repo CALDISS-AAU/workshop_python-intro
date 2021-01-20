@@ -2,6 +2,9 @@
 title: Interager med Python
 weight: 2
 ---
+
+{{< youtube IghykgHjDh0 >}}
+
 For at bruge Python skal vi "tale" Python. Man arbejde med Python ved at skrive kommandoer i Python-sproget. Hvis Python forstår din kommando udføres den. Hvis ikke, får du en eller anden form for fejl. Man kan se Python som et meget bogstaveligt og pernitten sprog: Kommandoer skal skrives på helt bestemte måder for at Python kan forstå, hvad du beder om.
 
 Barberes Python ned til sine grundsten består det ikke af mere end en "interpreter" (fortolker). Alle programmeringssprog er bygget op om en fortolker, der "evaluerer" kommandoer. Inden for programmering vil evaluering sige, at sproget forsøger at forstå, hvad der står i en kommando.
@@ -9,15 +12,15 @@ Barberes Python ned til sine grundsten består det ikke af mere end en "interpre
 ## Python uden dikkedarer
 
 Den "rene" installation af Python tilføjer fortolkeren til styresystemet, så man kan arbejde med Python gennem en terminal: 
-![python_terminal.png](../img/python_terminal.png)
+![python_terminal.png](/python_terminal.png)
 
 I terminalen kan vi skrive en kommando og trykke "Enter" for at få fortolkeren til at evaluere. I nedenstående skrives kommandoen `2+42` hvilket Python evaluerer og giver outputtet `42`:
-![python_interpret1.png](../img/python_interpret1.png)
+![python_interpret1.png](/python_interpret1.png)
 
 Python forstår matematiske operationer og vil returnere resultatet af en udregning, når man skriver den ind. 
 
 I nedenstående forsøges at bede om en opskrift på pandekager. Det går knap så godt: 
-![python_interpret1.png](../img/python_interpret2.png)
+![python_interpret1.png](/python_interpret2.png)
 
 Når Python ikke kan forstå kommandoen, returneres en fejl. Der findes et væld af fejltyper. I ovenstående gives en `SyntaxError`, fordi kommandoen er skrevet helt forkert (dette er dog ikke det eneste problem med denne kommando, men det er den første fejl, som fortolkeren støder på).
 

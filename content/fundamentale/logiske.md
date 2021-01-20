@@ -2,6 +2,9 @@
 title: Logiske værdier (booleans)
 weight: 7
 ---
+
+{{< youtube Vm8gu-hJV68 >}}
+
 En stor del af programmeringsarbejde involverer at arbejde med logiske værdier; også kaldt booleanske værdier. Disse lagres som typen `bool`.
 
 Variable af typen `bool` kan *kun* antage værdien sandt (`True`) eller falsk (`False`). Python har en række operatorer, som altid returnerer en booleansk værdi:
