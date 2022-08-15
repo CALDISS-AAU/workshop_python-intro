@@ -1,42 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Supplerende materiale on Introduction to Python for Social Science</title>
-    <link>/supplerende/</link>
-    <description>Recent content in Supplerende materiale on Introduction to Python for Social Science</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/supplerende/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Python IDE&#39;er</title>
-      <link>/supplerende/python/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/supplerende/python/</guid>
-      <description>Der findes mange måder at arbejde med Python. Her er blot tre forslag til IDE&amp;rsquo;er (&amp;ldquo;Integrated development environment&amp;rdquo;).
- Jupyter Notebook Med Jupyter Notebook arbejder man med Python i celler. Det egner sig især til kortere kodestykker, hvor der skal kommenteres undervejs. Det er muligt at kombinere Python kode med normale tekstceller.
-Jupyter Notebook tillader både en meget interaktiv måde at arbejde med Python samt nemme løsninger til at lave samlede rapporter og dokumenter, hvor kode, beskrivelse og output kombineres.</description>
-    </item>
-    
-    <item>
-      <title>Serverløsninger til Python</title>
-      <link>/supplerende/serverl%C3%A3sninger/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/supplerende/serverl%C3%A3sninger/</guid>
-      <description>Der findes adskillige online løsninger til at arbejde med Python. På den måde slipper man for selv at skulle sætte det op, og man vil ofte have mere computerkraft til rådighed, end man har på sin egen computer.
- CALDISS serverløsning
-CALDISS har en server til Jupyter Notebook. På den måde kan man komme i gang med Python uden at skulle installere det på egen computer. Serveren ligger på AAU&amp;rsquo;s netværk og kan tilgås på AAU&amp;rsquo;s netværk eller via VPN.</description>
-    </item>
-    
-    <item>
-      <title>Litteratur og yderligere materiale</title>
-      <link>/supplerende/litteratur/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/supplerende/litteratur/</guid>
-      <description>Her ses forslag til steder, hvor du kan lære mere om basalt brug af Python.
-Online kurser  &amp;ldquo;Data Analysis and Visualization with Python for Social Scientists alpha&amp;rdquo; af DataCarpentry: https://datacarpentry.org/python-socialsci/ &amp;ldquo;Python Tutorial&amp;rdquo; af Tutorialspoint: https://www.tutorialspoint.com/python/index.htm &amp;ldquo;Introduction to Python&amp;rdquo; af DataCamp: https://www.datacamp.com/courses/intro-to-python-for-data-science (betalingsside, men første del er gratis)  </description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Supplerende materiale on Introduction to Python for Social Science</title><link>/supplerende/</link><description>Recent content in Supplerende materiale on Introduction to Python for Social Science</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/supplerende/index.xml" rel="self" type="application/rss+xml"/><item><title>Python IDE'er</title><link>/supplerende/python/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/supplerende/python/</guid><description>Der findes mange måder at arbejde med Python. Her er blot tre forslag til IDE&amp;rsquo;er (&amp;ldquo;Integrated development environment&amp;rdquo;).
+Jupyter Notebook Med Jupyter Notebook arbejder man med Python i celler. Det egner sig især til kortere kodestykker, hvor der skal kommenteres undervejs. Det er muligt at kombinere Python kode med normale tekstceller.
+Jupyter Notebook tillader både en meget interaktiv måde at arbejde med Python samt nemme løsninger til at lave samlede rapporter og dokumenter, hvor kode, beskrivelse og output kombineres.</description></item><item><title>Serverløsninger til Python</title><link>/supplerende/serverl%C3%A3sninger/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/supplerende/serverl%C3%A3sninger/</guid><description>Der findes adskillige online løsninger til at arbejde med Python. På den måde slipper man for selv at skulle sætte det op, og man vil ofte have mere computerkraft til rådighed, end man har på sin egen computer.
+CALDISS serverløsning
+CALDISS har en server til Jupyter Notebook. På den måde kan man komme i gang med Python uden at skulle installere det på egen computer. Serveren ligger på AAU&amp;rsquo;s netværk og kan tilgås på AAU&amp;rsquo;s netværk eller via VPN.</description></item><item><title>Litteratur og yderligere materiale</title><link>/supplerende/litteratur/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/supplerende/litteratur/</guid><description>Her ses forslag til steder, hvor du kan lære mere om basalt brug af Python.
+Online kurser &amp;ldquo;Data Analysis and Visualization with Python for Social Scientists alpha&amp;rdquo; af DataCarpentry: https://datacarpentry.org/python-socialsci/ &amp;ldquo;Python Tutorial&amp;rdquo; af Tutorialspoint: https://www.tutorialspoint.com/python/index.htm &amp;ldquo;Introduction to Python&amp;rdquo; af DataCamp: https://www.datacamp.com/courses/intro-to-python-for-data-science (betalingsside, men første del er gratis)</description></item></channel></rss>
