@@ -2,8 +2,7 @@
 title: If-betingelser
 weight: 4
 ---
-
-{{< youtube zaJBdItYYPs >}}
+youtube zaJBdItYYPs >}}
 
 Når man arbejder med Python, kan det ofte være brugbart at sætte if-betingelser i sin kode. If-betingelser er kodestumper, hvor visse kommandoer kun udføres, hvis en betingelse er opfyldt:
 
@@ -19,11 +18,11 @@ else:
 ```
 
     Tallet er større end 10!
-
+    
 
 Ovenstående kode består af to blokke: en if-blok og en else-blok. 
 
-I koden evalueres først if-betingelse: `x > 10`. Hvis denne evalueres til `True`, udføres kommandoen efter `:`. I ovenstående er `x = 12`, hvorfor kommandoen udføres. Her er kommandoen blot at printe teksten `Tallet er større end 10!`.
+I koden evalueres først if-betingelsen: `x > 10`. Hvis denne evalueres til `True`, udføres kommandoen efter `:`. I ovenstående er `x = 12`, hvorfor kommandoen udføres. Her er kommandoen blot at printe teksten `Tallet er større end 10!`.
 
 Herunder ses hvad der sker med samme kode, hvis x er mindre end 10:
 
@@ -38,7 +37,7 @@ else:
 ```
 
     Tallet er ikke større end 10!
-
+    
 
 I ovenstående er `x = 8`. Derfor evaluerer betingelsen denne gang til `False`, og kommandoen lige efter if-betingelsen udføres ikke. I stedet springes videre til else-blokken, hvor kommandoen er at printe teksten `Tallet er ikke større end 10!`.
 
@@ -69,7 +68,7 @@ else:
 ```
 
     Tallet er større end 5!
-
+    
 
 ---
 ## ØVELSE
@@ -100,7 +99,7 @@ else:
 
 ## If-betingelser og for loops
 
-If-betingelser er yderst nyttige i kombination med andre kontrolstrukturer. Fx kan man i kombinationen med for loops og if-betingelser skrive kode, hvor en vis kommando kun udføres på visse værdier i en liste:
+If-betingelser er yderst nyttige i kombination med andre kontrolstrukturer. Fx kan man i kombinationen med for loops og if-betingelser skrive kode, hvor en kommando kun udføres på visse værdier i en liste:
 
 
 ```python
@@ -122,7 +121,7 @@ for value in values:
     7 kan ikke divideres med 3!
     8 kan ikke divideres med 3!
     9 kan divideres med 3!
-
+    
 
 I ovenstående ses et for loop, der kører over værdierne 1 til 9 (`range(1, 10)`). Hver værdi tjekkes om det kan divideres med 3 (`value % 3 == 0`). Hvis den kan det, printes at det kan divideres med 3. Hvis ikke, printes teksten, at det ikke kan divideres med 3.
 
@@ -151,7 +150,7 @@ print(jedi_checker("Revan"))
 
     jedi
     sith
-
+    
 
 {{% notice note %}}Bemærk at ovenstående funktion er meget begrænset, da den kun baserer sig på en begrænset mængde navne og kun accepterer, at navnet er stavet på en helt bestemt måde.{{% /notice%}}
 
@@ -177,7 +176,7 @@ for word in words:
     SCRUMPTIOUS
     MONITOR
     CARPENTER
-
+    
 
 {{%/expand%}}
 

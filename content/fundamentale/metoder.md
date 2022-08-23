@@ -2,12 +2,11 @@
 title: Metoder
 weight: 5
 ---
-
-{{< youtube xOz52Dmn-GY >}}
+youtube xOz52Dmn-GY >}}
 
 Udover funktioner i Python findes der også "metoder". Lig funktioner tager metoder også en form for input og returnerer et output. 
 
-I modsætning til funktioner er metoder bundet op på bestemte variabeltyper. Det vil sige at variablen skal være en bestemt type for, at metoden kan bruges. Metoder kaldes med `variabel.method(option1 = something)`. Tekstværdier (strings) har fx en række metoder tilknyttet til at ændre teksten:
+I modsætning til funktioner er metoder bundet op på bestemte variabeltyper (eller rettere en bestemt "class"). Det vil sige at variablen skal være en bestemt type for, at metoden kan bruges. Metoder kaldes med `variabel.method(option1 = something)`. Tekstværdier (strings) har fx en række metoder tilknyttet til at ændre teksten:
 
 
 ```python
@@ -19,9 +18,9 @@ print(word.lower())  # Konverterer til små bogstaver
 
     HELLO
     hello
+    
 
-
-Bemærk at metoder som hovedregel ikke ændrer på variablen. Variablen skal derfor defineres om eller på ny, hvis output af en metode skal lagres:
+Bemærk at metoder ikke altid ændrer på variablen. For ovenstående metoder skal variablen derfor defineres om eller på ny, hvis output af en metode skal lagres:
 
 
 ```python
@@ -33,9 +32,9 @@ print(word)         # Er nu overskrevet til at være med store bogstaver
 
     Hello
     HELLO
+    
 
-
-Forsøger man at bruge metoder på variabel af en forkert type, gives der fejl:
+Forsøger man at bruge metoder på en variabel af en forkert type, gives der fejl:
 
 
 ```python
@@ -46,19 +45,19 @@ number.upper()
 
 
     ---------------------------------------------------------------------------
-    
+
     AttributeError                            Traceback (most recent call last)
-    
+
     <ipython-input-51-d30eebf09ae0> in <module>
           1 number = 627
           2 
     ----> 3 number.upper()
-
+    
 
     AttributeError: 'int' object has no attribute 'upper'
 
 
-Metoder tager ofte yderligere argumenter og indstillinger. I nedenstående bruges metoden `.replace()` til at erstatte et hvis ord i tekstvariablen med et andet.
+Metoder tager ofte yderligere argumenter og indstillinger. I nedenstående bruges metoden `.replace()` til at erstatte et ord i tekstvariablen med et andet.
 
 
 ```python

@@ -2,8 +2,7 @@
 title: Lister og tuples
 weight: 1
 ---
-
-{{< youtube mXQXpWdLFvI >}}
+youtube mXQXpWdLFvI >}}
 
 ## Lister
 
@@ -22,7 +21,7 @@ print(my_list)
 ```
 
     [2, 7, 9, 10]
-
+    
 
 En liste er blot en beholder af forskellige variable. Lister kan derfor indeholde variable af forskellig typer:
 
@@ -34,7 +33,7 @@ print(my_list2)
 ```
 
     [2, 'hello', 10, True]
-
+    
 
 Lister kan også indeholde andre lister:
 
@@ -46,7 +45,7 @@ print(my_list3)
 ```
 
     [9, 17, [2, 91], 16]
-
+    
 
 **Variable i lister**
 
@@ -64,7 +63,7 @@ print(my_list4)
 ```
 
     [4, 9, 11]
-
+    
 
 Bemærk dog, at når en liste dannes med variable, så er det variablenes værdi(er), der lagres i listen og ikke selve variablen. 
 
@@ -81,7 +80,7 @@ print(my_list4)   # listens indhold er uændret (stadig 4, 9 og 11)
 
     [4, 9, 11]
     [4, 9, 11]
-
+    
 
 Når listen genereres, lagres den værdi, som `a` har på det tidspunkt, listen generes. Værdiens tilknytning til variabel `a` lagres altså ikke i listen.
 
@@ -96,7 +95,7 @@ print(my_list[0])
 ```
 
     2
-
+    
 
 Index i Python starter altid med 0. Derfor gives i ovenstående det første element af listen `my_list` ved at refere til index 0.
 
@@ -112,7 +111,7 @@ print(my_list)
 
     [2, 7, 9, 10]
     [2, 7, 28, 10]
-
+    
 
 **Slicing**
 
@@ -124,9 +123,9 @@ print(my_list[1:3])
 ```
 
     [7, 28]
+    
 
-
-Ovenstående tages fra index 1 og op til index 3 eklskusivt index 3; altså index 1 (listens andet element: 7) og index 2 (listens tredje element: 9).
+Ovenstående tages fra index 1 og op til index 3 eksklusivt index 3; altså index 1 (listens andet element: 7) og index 2 (listens tredje element: 9).
 
 Listens længde (antallet af elementer) returneres med funktionen `len()`:
 
@@ -162,7 +161,7 @@ print(a_list[3])
 ```
 
     36
-
+    
 
 {{%/expand%}}
 
@@ -182,7 +181,7 @@ print(my_tuple)
 ```
 
     ('Katarn', 'Kenobi', 'Windu')
-
+    
 
 Elementer i en tuple har indexes ligesom ved lister:
 
@@ -207,12 +206,12 @@ my_tuple[0] = "Palpatine"
 
 
     ---------------------------------------------------------------------------
-    
+
     TypeError                                 Traceback (most recent call last)
-    
+
     <ipython-input-76-b2ea6727d80b> in <module>
     ----> 1 my_tuple[0] = "Palpatine"
-
+    
 
     TypeError: 'tuple' object does not support item assignment
 

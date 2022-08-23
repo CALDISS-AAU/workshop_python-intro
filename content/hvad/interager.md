@@ -2,10 +2,9 @@
 title: Interager med Python
 weight: 2
 ---
+youtube IghykgHjDh0 >}}
 
-{{< youtube IghykgHjDh0 >}}
-
-For at bruge Python skal vi "tale" Python. Man arbejde med Python ved at skrive kommandoer i Python-sproget. Hvis Python forstår din kommando udføres den. Hvis ikke, får du en eller anden form for fejl. Man kan se Python som et meget bogstaveligt og pernitten sprog: Kommandoer skal skrives på helt bestemte måder for at Python kan forstå, hvad du beder om.
+For at bruge Python skal vi "tale" Python. Man arbejder med Python ved at skrive kommandoer i Python-sproget. Hvis Python forstår din kommando udføres den. Hvis ikke, får du en eller anden form for fejl. Man kan se Python som et meget bogstaveligt og pernitten sprog: Kommandoer skal skrives på helt bestemte måder for at Python kan forstå, hvad du gerne vil.
 
 Barberes Python ned til sine grundsten består det ikke af mere end en "interpreter" (fortolker). Alle programmeringssprog er bygget op om en fortolker, der "evaluerer" kommandoer. Inden for programmering vil evaluering sige, at sproget forsøger at forstå, hvad der står i en kommando.
 
@@ -14,7 +13,7 @@ Barberes Python ned til sine grundsten består det ikke af mere end en "interpre
 Den "rene" installation af Python tilføjer fortolkeren til styresystemet, så man kan arbejde med Python gennem en terminal: 
 ![python_terminal.png](/python_terminal.png)
 
-I terminalen kan vi skrive en kommando og trykke "Enter" for at få fortolkeren til at evaluere. I nedenstående skrives kommandoen `2+42` hvilket Python evaluerer og giver outputtet `42`:
+I terminalen kan vi skrive en kommando og trykke "Enter" for at få fortolkeren til at evaluere. I nedenstående skrives kommandoen `2+40` hvilket Python evaluerer og giver outputtet `42`:
 ![python_interpret1.png](/python_interpret1.png)
 
 Python forstår matematiske operationer og vil returnere resultatet af en udregning, når man skriver den ind. 
@@ -37,7 +36,7 @@ Script-editoren er indbygget med farvekoder, så man nemt kan adskille dele af k
 
 Derudover giver Spyder en objekt-/variabeloversigt, så man kan se, hvad man har defineret og arbejder med; fx datasæt, resultater, osv.
 
-Spyder er godt til de fleste ting og særligt, hvis man skal arbejde med længere scripts.
+Spyder er god til de fleste ting og særligt, hvis man skal arbejde med længere scripts.
 
 Spyder kan installeres sammen med Anaconda: https://www.anaconda.com/products/individual#Downloads
 
@@ -45,6 +44,6 @@ Spyder kan installeres sammen med Anaconda: https://www.anaconda.com/products/in
 
 Jupyter Notebook er opbygget omkring en såkaldt "notebook". En notebook i Jupyter Notebook kombinerer Python kode med almindelig tekst (skrevet i "Markdown"). Jupyter Notebook egner sig særdeles godt, hvis man skal dokumentere sit kodearbejde undervejs, da man har mulighed for at skrive almindelig tekst, sætte billeder ind, lave tabeller osv. omkring sin kode.
 
-Dette materiale er udarbejdet i Jupyter Notebook.
+Materialet på denne kursusside er fx udarbejdet i Jupyter Notebook.
 
 Jupyter Notebook kan installeres sammen med Anaconda: https://www.anaconda.com/products/individual#Downloads

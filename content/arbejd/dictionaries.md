@@ -2,8 +2,7 @@
 title: Dictionaries
 weight: 2
 ---
-
-{{< youtube ZW_chK-cDlM >}}
+youtube ZW_chK-cDlM >}}
 
 Man kan også lagre flere værdier i Python med *dictionaries*. Dictionaries består af en række sæt af nøgler og værdier. 
 
@@ -26,7 +25,7 @@ print(my_dict["jedi"])
 ```
 
     Katarn
-
+    
 
 Nøgler *skal* være unikke. Det er ikke muligt at lave en dictionary med to identiske nøgler. Hvis man forsøger at gøre det, vil den senest skrevne værdi til nøglen blive lagret:
 
@@ -38,7 +37,7 @@ print(my_dict)
 ```
 
     {'jedi': 'Kenobi', 'sith': 'Desann'}
-
+    
 
 Ligeledes kan værdier til en bestemt nøgle overskrives:
 
@@ -50,7 +49,7 @@ print(my_dict)
 ```
 
     {'jedi': 'Katarn', 'sith': 'Desann'}
-
+    
 
 Elementer kan tilføjes til en dictionary ved blot at tilknytte det til en nøgle, som endnu ikke er brugt i dictionarien:
 
@@ -62,7 +61,7 @@ print(my_dict)
 ```
 
     {'jedi': 'Katarn', 'sith': 'Desann', 'dealer': 'Watto'}
-
+    
 
 ---
 ## VIDENSCHECK
@@ -85,6 +84,6 @@ famous_animals = {"Pluto": "dog", "Oggy": "cat", "Pinky": "mouse", "Pumba": "war
 
 *Hvordan fremkaldes den 3. værdi ("mouse")?*
 
-{{%expand "Løsning" %}} Den 3. værdi fremkaldes ved at refere til den rigtige nøgle: `famous_animals["Pinky"]`. Python betragter ikke værdien som den 3. værdi, da værdien knyttes op på nøglen og ikke på rækkefølgen, som den står i dictionary. {{%/expand%}}
+{{%expand "Løsning" %}} Den 3. værdi fremkaldes ved at refere til den rigtige nøgle: `famous_animals["Pinky"]`. Python betragter ikke værdien som den 3. værdi, da værdien knyttes op på nøglen og ikke på rækkefølgen, som den er skrevet ind i en dictionary. {{%/expand%}}
 
 ---

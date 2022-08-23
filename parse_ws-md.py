@@ -44,13 +44,16 @@ def get_chapter_titles(doc):
 
 def get_chapter_text(chapter):
     chapter_title = get_chapter_titles(chapter)[0]
-    chapter_text = re.findall(chapter_text_regex, chapter)[0]
-    
-    chapter_text = chapter_text.replace(chapter_title, "", 1)
+    try:
+        chapter_text = re.findall(chapter_text_regex, chapter)[0]
+        chapter_text = chapter_text.replace(chapter_title, "", 1)
+        
+        while re.match("\W", chapter_text[0]):
+            chapter_text = re.sub("^\W", "", chapter_text)
+        
+    except IndexError:
+        chapter_text = ""
 
-    while re.match("\W", chapter_text[0]):
-        chapter_text = re.sub("^\W", "", chapter_text)
-    
     return(chapter_text)
 
 def create_chapter_front(title, weight):

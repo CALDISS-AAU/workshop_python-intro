@@ -1,10 +1,24 @@
 # Introduktion til Python for Samfundsvidenskab
 
-Denne lektion introducerer Python med særligt fokus på de dele af Python programmering, der er relevante for samfundsvidenskaberne. 
+Velkommen til kurset. Instruktion til brug af siden findes under videoen.
+
+{{< youtube qvC73ECZbDc >}}
+
+## Sådan bruges denne side
+
+Denne side introducerer til Python med et særligt fokus på anvendelse inden for samfundsvidenskabelig analyse.
+
+Siden er opbygget sekventielt. Det anbefales derfor, at man gennemgår sidens kursusmateriale i den rækkefølge, som det er sat i, da hver sektion bygger videre på den forrige.
+
+Du navigerer i siderne enten via menuen til venstre eller ved at bruge pilene i hhv. højre og venstre side.
+
+Kursusmaterialet består af videoer, tekstforklaringer og øvelser. Videoerne forklarer de forskellige koncepter i Python med tilhørende demonstration. Tekstforklaringerne gennemgår typisk det samme som videoerne, men i mere detalje. 
+
+Øvelser består både af simple spøgrsmål ("Videnschecks") og kodeøvelser. Løsningerne på øvelserne kan altid ses ved at klikke "Løsning" under øvelsen. Det anbefales dog, at man forsøger at løse øvelsen først, inden man ser løsningen.
 
 # {#Kapitel}Hvad er Python?
 
-Python er et programmeringssprog, der anvendes inden for mange områder: hjemmesideopbygning, appudvikling, databaseopbygning og -vedligehold, dataanalyse mm.
+Python er et programmeringssprog, der anvendes inden for mange områder: hjemmeside backend, appudvikling, databaseopbygning og -vedligehold, dataanalyse mm.
 
 I den seneste tid er Python blevet meget populært inden for dataanalyse og maskinlæring.
 
@@ -12,17 +26,19 @@ I denne første sektion introduceres til, hvordan man arbejder med Python som et
 
 # {#Afsnit}At arbejde med et programmeringssprog
 
+{{< youtube IAd4VwiFXl0 >}}
+
 Python er et programmeringssprog. At arbejde med Python kræver derfor, at man "taler" det rette sprog, når man gerne vil have Python til at gøre noget.
 
-I bruger uden tvivl forskellige programmer, apps og softwareløsninger i jeres hverdag til forskellige ting. Disse er alle opbygget af kode skrevet i et programmeringssprog, men de leveres altid med en eller anden form for "brugerflade"; altså en måde vi kan bruge programmet ved at trykke på knapper og lignende, uden at skulle kende til den måde, som programmet er programmeret på.
+I bruger uden tvivl forskellige programmer, apps og softwareløsninger i jeres hverdag til forskellige ting. Disse er alle opbygget af kode skrevet i et programmeringssprog, men de leveres altid med en eller anden form for "brugerflade"; altså en måde vi kan bruge programmet ved at trykke på knapper og lignende, uden at skulle kende til den måde, som programmet er opbygget.
 
 Python er et programmeringssprog og har derfor ikke en brugerflade, så for at få Python til at gøre noget, skal vi "fortælle" Python, hvad vi gerne vil ved at skrive kommandoer i Python sproget.
 
 ## Hvorfor arbejde med et programmeringssprog?
 
-At skulle arbejde på denne måde kan virke lidt gammeldags. Når nu programmer til dataanalyse laves med brugerflader og brugervenlige måder at bruge dem på, hvorfor så arbejde med dataanalyse i et program, hvor vi selv skal programmere og skrive kommandoer for at opnå det, vi gerne vil?
+At skulle arbejde på denne måde kan virke lidt gammeldags. Når nu programmer til dataanalyse laves med brugerflader og brugervenlige måder at bruge dem på, hvorfor så arbejde med dataanalyse i et program, hvor vi selv skal programmere og skrive kommandoer for at opnå det, som vi gerne vil?
 
-Programmer med brugerflader som Excel, Stata, SPSS osv. har selvfølgelig deres styrke i, at de er nemmere at gå til. Dog er sådanne programmer begrænset i deres funktionalitet, da de er udviklet til at arbejde med data på bestemte måder i bestemte formater. Med Python kan vi opnå meget af det samme og meget mere, da man i et programmeringssprog ikke er tvunget til at arbejde med bestemte dataformater, filtyper osv. Samtidig giver det at arbejde med et programmeringssprog os også den mulighed, at vi selv skriver vores egne "mini-programmer", der løser den specifikke udfordring, som vi lige står over for.
+Programmer med brugerflader som Excel, Stata, SPSS osv. har selvfølgelig deres styrke i, at de er nemmere at gå til. Dog er sådanne programmer begrænset i deres funktionalitet, da de er udviklet til at arbejde med data på bestemte måder i bestemte formater og strukturer. Med Python kan vi opnå det samme og meget mere, da man i et programmeringssprog ikke er tvunget til at arbejde med bestemte dataformater, filtyper osv. Samtidig giver det at arbejde med et programmeringssprog os også den mulighed, at vi selv skriver vores egne "mini-programmer", der løser den specifikke udfordring, som vi lige står over for.
 
 ## Python som programmeringssprog
 
@@ -34,7 +50,7 @@ Python er et "general purpose" programmeringssprog. Det vil sige, at det er udvi
 
 **Python er "objekt-orienteret"**
 
-Python er et "objekt-orienteret" programmeringssprog. Det vil sige, at sproget er baseret på at arbejde med "objekter". Et objekt inden for programmering kan være nærmest hvad som helst. Meget kort sagt er et objekt en beholder for en eller anden form for information. At Python er "objekt-orienteret" betyder derfor, at vi arbejder med sproget ved kontinuerligt at definere objekter (lagre information i beholdere) og interagere med disse.
+Python er et "objekt-orienteret" programmeringssprog. Det vil sige, at sproget er baseret på at arbejde med "objekter". Et objekt inden for programmering kan være nærmest hvad som helst. Meget kort sagt er et objekt en beholder for en eller anden form for information. At Python er "objekt-orienteret" betyder derfor, at vi arbejder med sproget ved kontinuerligt at definere og re-definere objekter (lagre information i beholdere) og interagere med disse.
 
 **Python er "cross-platform"**
 
@@ -48,22 +64,24 @@ Materialet er bygget op ved at give forståelse for relevante programmerings- so
 
 # {#Afsnit}Interager med Python
 
-For at bruge Python skal vi "tale" Python. Man arbejde med Python ved at skrive kommandoer i Python-sproget. Hvis Python forstår din kommando udføres den. Hvis ikke, får du en eller anden form for fejl. Man kan se Python som et meget bogstaveligt og pernitten sprog: Kommandoer skal skrives på helt bestemte måder for at Python kan forstå, hvad du beder om.
+{{< youtube IghykgHjDh0 >}}
+
+For at bruge Python skal vi "tale" Python. Man arbejder med Python ved at skrive kommandoer i Python-sproget. Hvis Python forstår din kommando udføres den. Hvis ikke, får du en eller anden form for fejl. Man kan se Python som et meget bogstaveligt og pernitten sprog: Kommandoer skal skrives på helt bestemte måder for at Python kan forstå, hvad du gerne vil.
 
 Barberes Python ned til sine grundsten består det ikke af mere end en "interpreter" (fortolker). Alle programmeringssprog er bygget op om en fortolker, der "evaluerer" kommandoer. Inden for programmering vil evaluering sige, at sproget forsøger at forstå, hvad der står i en kommando.
 
 ## Python uden dikkedarer
 
 Den "rene" installation af Python tilføjer fortolkeren til styresystemet, så man kan arbejde med Python gennem en terminal: 
-![python_terminal.png](../img/python_terminal.png)
+![python_terminal.png](/python_terminal.png)
 
-I terminalen kan vi skrive en kommando og trykke "Enter" for at få fortolkeren til at evaluere. I nedenstående skrives kommandoen `2+42` hvilket Python evaluerer og giver outputtet `42`:
-![python_interpret1.png](../img/python_interpret1.png)
+I terminalen kan vi skrive en kommando og trykke "Enter" for at få fortolkeren til at evaluere. I nedenstående skrives kommandoen `2+40` hvilket Python evaluerer og giver outputtet `42`:
+![python_interpret1.png](/python_interpret1.png)
 
 Python forstår matematiske operationer og vil returnere resultatet af en udregning, når man skriver den ind. 
 
 I nedenstående forsøges at bede om en opskrift på pandekager. Det går knap så godt: 
-![python_interpret1.png](../img/python_interpret2.png)
+![python_interpret1.png](/python_interpret2.png)
 
 Når Python ikke kan forstå kommandoen, returneres en fejl. Der findes et væld af fejltyper. I ovenstående gives en `SyntaxError`, fordi kommandoen er skrevet helt forkert (dette er dog ikke det eneste problem med denne kommando, men det er den første fejl, som fortolkeren støder på).
 
@@ -80,7 +98,7 @@ Script-editoren er indbygget med farvekoder, så man nemt kan adskille dele af k
 
 Derudover giver Spyder en objekt-/variabeloversigt, så man kan se, hvad man har defineret og arbejder med; fx datasæt, resultater, osv.
 
-Spyder er godt til de fleste ting og særligt, hvis man skal arbejde med længere scripts.
+Spyder er god til de fleste ting og særligt, hvis man skal arbejde med længere scripts.
 
 Spyder kan installeres sammen med Anaconda: https://www.anaconda.com/products/individual#Downloads
 
@@ -88,17 +106,19 @@ Spyder kan installeres sammen med Anaconda: https://www.anaconda.com/products/in
 
 Jupyter Notebook er opbygget omkring en såkaldt "notebook". En notebook i Jupyter Notebook kombinerer Python kode med almindelig tekst (skrevet i "Markdown"). Jupyter Notebook egner sig særdeles godt, hvis man skal dokumentere sit kodearbejde undervejs, da man har mulighed for at skrive almindelig tekst, sætte billeder ind, lave tabeller osv. omkring sin kode.
 
-Dette materiale er udarbejdet i Jupyter Notebook.
+Materialet på denne kursusside er fx udarbejdet i Jupyter Notebook.
 
 Jupyter Notebook kan installeres sammen med Anaconda: https://www.anaconda.com/products/individual#Downloads
 
 # {#Kapitel}Fundamentale koncepter i Python
 
-I denne sektion gennemgås de grundlæggende koncepter i Python programmering. Disse kan siges at være byggestenene for næsten alt, som man foretager sig med Python programmering.
+I denne sektion gennemgås de grundlæggende koncepter i Python programmering. Disse kan siges at være byggestenene for næsten alt, som man foretager sig med programmering i Python.
 
-Det følgende materiale består af en del kodeeksempler, som er udarbejdet i Jupyter Notebook, men de vil kunne køres i hvilken som helst Python IDE.
+Det følgende materiale består af en del kodeeksempler, som er udarbejdet i Jupyter Notebook, men de kan køres i hvilken som helst Python IDE.
 
 # {#Afsnit}Python sproget
+
+{{< youtube 1iD74PlcMUw >}}
 
 Som nævnt arbejder man med Python ved at skrive kommandoer i Python sproget. Kommandoer bliver "evalueret" af fortolkeren. Hvis koden forstås, bliver den kørt, og der gives et output, en ændring eller andet afhængigt af, hvad man beder om.
 
@@ -142,7 +162,7 @@ Hvis man fx skriver en kommando besteånde af matematiske operationer i Python, 
 
 Her køres Python kode i Jupyter Notebook. Som vist i sidste sektion, kan man køre Python kode direkte fra en terminal, hvor man sender en kommando afsted ved at trykke "Enter". Med Jupyter Notebook (eller anden IDE) har vi mulighed for at skrive flere kommandoer efter hinanden adskilt af linjeskift. Når koden køres, evalueres linjerne enkeltvis i rækkefølge.
 
-Bemærk, at når flere linjer køres, vises kun output fra den sidste linje kørt:
+Bemærk, at når flere linjer køres, vises kun output fra den sidste linje kørt (i Jupyter Notebook):
 
 
 ```python
@@ -185,14 +205,16 @@ print(921 - 20)
     
 
 {{% notice note %}}
-Bemærk at mellemrum ikke er nødvendige for at koden virker. Faktisk ignorerer Python mellemrum, når de er en del af en kommando. Dog kan brug af mellemrum være med til at gøre kode mere overskuelig og læsbart.
+Bemærk at mellemrum ikke er nødvendige for at koden virker. Faktisk ignorerer Python mellemrum, når de er en del af en kommando. Dog kan brug af mellemrum være med til at gøre kode mere overskuelig og læsbar.
 {{% /notice%}}
 
 # {#Afsnit}Variable
 
+{{< youtube tNmobEPK_uU>}}
+
 Python er et objekt-orienteret programmeringssprog. Dette indebærer, at man kontinuerligt arbejder med forskellige objekter, som indeholder en eller anden for for information.
 
-I Python kaldes objekter "variable". Dette er ikke at forveksle med en variabel, som forstået i statistik som en egenskab ved en observation, da en variabel i Python blot er en beholder for en eller anden form for information.
+En basal form for objekter i Python er "variable". Dette er ikke at forveksle med en variabel, som forstået i statistik som en egenskab ved en observation, da en variabel i Python blot er en beholder for en eller anden form for information.
 
 Alle disse kan være variable i Python:
 - Et tal
@@ -214,7 +236,7 @@ b = 7
 c = 6
 ```
 
-Når først en variabel er defineret (altså at koden hvor variablen defineres er kørt), kan variablen kaldes frem og bruges i andre kommandoer:
+Når først en variabel er defineret (altså at koden, hvor variablen defineres, er kørt), kan variablen kaldes frem og bruges i andre kommandoer:
 
 
 ```python
@@ -291,7 +313,7 @@ e = Hello there
 
 ## Ændring af variable
 
-Som hovedregel ændres en variabel ikke blot ved at bruge den. 
+Som hovedregel ændres en variabel ikke blot ved at inddrage den. 
 
 
 ```python
@@ -381,7 +403,7 @@ a % b      # modulus - returnerer rest efter "floor division"
 {{% /notice%}} 
 
 ---
-## ØVELSE: Definer variable
+## ØVELSE: Definér variable
 
 Lav variablene `my_number1`, `my_number2` og `my_word`. 
 
@@ -389,7 +411,7 @@ Lav variablene `my_number1`, `my_number2` og `my_word`.
 * `my_number2` skal indeholde tallet `9` 
 * `my_word` skal indeholde ordet `hello` (husk at brug `'` eller `"` til at fortælle Python, at det er tekst).
 
-Når de er defineret, prøv da nogen af de forskellige matematiske operationer på jeres variable, fx: 
+Når de er defineret, prøv da nogen af de forskellige matematiske operationer på variablene, fx: 
 
 * `my_number1 + 10`
 * `my_number2 / my_number1`
@@ -402,7 +424,9 @@ Læg mærke til hvilke operationer, der kan lade sig gøre og hvilke resultater,
 
 # {#Afsnit}Typer
 
-En variabel er ikke bare en variabel i Python. Fordi en variabel kan være så mange ting, så er Python nødt til at adskille variable fra hinanden. Dette gøres ved at variable lagres som en bestemt *type*. 
+{{< youtube ranfUBt6538 >}}
+
+En variabel er ikke bare en variabel i Python. Fordi en variabel kan være så mange ting, så er Python nødt til at kunne adskille variable fra hinanden. Dette gøres ved at variable lagres som en bestemt *type*. 
 
 Typen af variabel fortæller Python, hvad det er for en slags information, som variablen indeholder, og sætter betingelserne for, hvad der kan lade sig gøre med variablen.
 
@@ -413,7 +437,7 @@ Som man arbejder med Python, vil man støde på mange forskellige typer. I førs
 
 ## Numeriske typer
 
-Python gætter altid typen, når en variabel lagres. Når en variabel består af en talværdi, vil denne fx lagres som en numerisk type. Talværdien kan enten lagres som en *integer* (heltal) eller et *float point* (decimaltal). 
+Python gætter altid typen, når en variabel lagres. Når en variabel består af en talværdi, vil denne fx lagres som en numerisk type. Talværdier kan enten lagres som en *integer* (heltal) eller et *float point* (decimaltal). 
 
 Python kan fortælle typen med funktionen `type()`:
 
@@ -456,7 +480,7 @@ print(type(b))   # b er et float point
     <class 'float'>
     
 
-At Python gerne vil adskille mellem typer har noget at gøre med, hvordan én type information kræver mere computerhukommelse at lagre end en anden. Dette kan have betydning, når man arbejder med enorme datamængder, hvilket sjældent er tilfældet i samfundsvidenskabelige analysearbejder.
+At Python gerne vil adskille mellem typer har at gøre med, hvordan én type information kræver mere computerhukommelse at lagre end en anden. Dette kan have betydning, når man arbejder med enorme datamængder, hvilket sjældent er tilfældet i samfundsvidenskabelige analysearbejder.
 
 ---
 ## VIDENSCHECK
@@ -466,14 +490,14 @@ I ovenstående bliver variablen `a` brugt til at definere variabel `b`.
 *Hvilken type er variablen `a` efter at variabel `b` defineres?*
 
 {{%expand "Løsning" %}}
-`a` er stadig en *integer*. `a` ændres ikke i koden, men bliver blot brugt til at lave variabel `b`.
+`a` er stadig en *integer*. `a` ændres ikke i koden, men bliver blot brugt til at lave variablen `b`.
 {{% /expand%}}
 
 ---
 
 ## Tekst typer
 
-Python lagrer variable som en tekst type, hvis det indeholder tekst. Python fortælles, at noget skal behandles som tekst, ved at indkapsle det med `'` eller `"`:
+Python lagrer en variabel som en tekst type, hvis det indeholder tekst. Python fortælles, at noget skal behandles som tekst, ved at indkapsle det med `'` eller `"`:
 
 
 ```python
@@ -529,7 +553,7 @@ I visse tilfælde kan variable tvinges til at være en anden type (casting) med 
 
 Python vil altid gætte typen. Hvis Python gætter forkert, kan Python fortælles eksplicit, hvad typen skal være (hvis muligt).
 
-Fx kan det hænde, at tal ved en fejl indlæses som tekst. Disse kan tvinges om ved at *caste* til en anden type:
+Fx kan det hænde, at tal ved en fejl indlæses som tekst. Disse kan tvinges om ved at *caste* til en anden type. Herunder ses hvordan dette gøres for enkelte værdier:
 
 
 ```python
@@ -542,7 +566,7 @@ print(type(b))  # b er nu integer
     <class 'int'>
     
 
-Alle typer kan selvfølgelig ikke castes om. Fx kan man ikke meningsfuldt konvertere tekst i form af ord til tal:
+Alle typer kan selvfølgelig ikke castes om. Fx kan man ikke meningsfuldt konvertere tekst i form af ord om til tal:
 
 
 ```python
@@ -571,18 +595,18 @@ a = int(a)      # forsøger at konvertere a til integer - ikke muligt
 ---
 ## ØVELSE: Typer
 
-Lav variablene variablene `my_number3` og `my_number4`.
+Lav variablene `my_number3` og `my_number4`.
 
 * `my_number3` skal indeholde `21`
 * `my_number4` skal indeholde `"12"` (med anførselstegn!)
 
-Forsøg at divider de to tal med hinanden (`my_number3 / my_number4`). Det giver fejl, men hvorfor?
+Forsøg at dividere de to tal med hinanden (`my_number3 / my_number4`). Det giver fejl, men hvorfor?
 
 Undersøg hvilken type `my_number3` og `my_number4` er med `type()`. Begge skal gerne være numeriske typer, før de kan divideres.
 
 Ændr typen til numerisk for den variabel, som ikke er numerisk. 
 
-Forsøg at divider de to tal med hinanden igen. Hvis du har rettet typen korrekt, bør det kunne lade sig gøre og give tallet `1.75`.
+Forsøg at dividere de to tal med hinanden igen. Hvis du har rettet typen korrekt, bør det kunne lade sig gøre og give tallet `1.75`.
 
 {{%expand "Løsning" %}}
 `my_number4` er lagret som tekst. Denne skal derfor konverteres til et tal, fx ved at definere variablen om som `my_number4 = int(my_number4)`. Derefter bør det kunne lade sig gøre at dividere de to tal med hinanden (`my_number3 / my_number4`).
@@ -619,19 +643,21 @@ my_number3 / my_number4
 
 # {#Afsnit}Funktioner
 
+{{< youtube pKID5oLWy5k >}}
+
 En central del af det at arbejde med et programmeringssprog er at bruge funktioner. Funktioner tager et eller flere input (kaldet "argumenter"), foretager et eller andet med disse og returnerer (for det meste) et output.
 
 Funktioner i Python har følgende format:
 
 - `function(argument1, argument2, ...)`
 
-Funktioner bruges ved at skrive funktionens navn efterfulgt af argumenterne i parentes. En funktion kan have et utal af argumenter, men oftest skal de som minimum have en eller flere variable som input.
+Funktioner bruges ved at skrive funktionens navn efterfulgt af argumenterne i parentes. Hvert argument adskilles med et komma (`,`). En funktion kan have et utal af argumenter, men oftest skal de som minimum have en eller flere variable som input.
 
-Udover argumenter tager funktioner også ofte en del "keyword arguments" som input. Disse kan betragte som en form for indstillinger, som man slår til og fra i funktionen. "keyword arguments" indgår i funktionen med navnet på indstillingen, et `=` og hvad indstillingen skal sættes til, lig nedenstående:
+Udover argumenter tager funktioner også ofte en del "keyword arguments" som input. Disse kan betragte som indstillinger, som man slår til og fra i funktionen. "keyword arguments" indgår i funktionen med navnet på indstillingen, et `=` og hvad indstillingen skal sættes til; lig nedenstående:
 
 - `function(argument1, argument2, keywordargument1 = "something")`
 
-Ligesom med argumenter, kan en funktion have rigtig mange "keyword arguments"/indstillinger. Det er dog sjældent, at man behøver forholde sig til alle indstillingerne, da de fleste funktioner har en eller anden form for standardindstilling.
+Ligesom med argumenter kan en funktion have rigtig mange "keyword arguments"/indstillinger. Det er dog sjældent, at man behøver at forholde sig til alle indstillingerne, da de fleste funktioner har en eller anden form for standardindstilling.
 
 ## Sådan bruges funktioner
 
@@ -674,10 +700,10 @@ print(a, b, sep = ", ")  # sep ændres til komma
     Hello, there
     
 
-En funktion kan have rigtig mange indstillinger, og i praksis forholder man sig kun til få af disse, da man oftest kan lade standardinstillingerne være, som de er. 
+En funktion kan have rigtig mange indstillinger, og i praksis forholder man sig kun til få af disse, da man for det meste kan lade standardinstillingerne være, som de er. 
 
 {{% notice info %}}
-Man kan altid få hjælpefilen/dokumentationen frem til en funktion ved at skrive `?[function]` (fx `?print` for dokumentationen for `print()`). Mange IDE'er understøtter også, at man trykker `Shift + Tab` inde i parentesen af en funktion for at få vist en bid af hjælpefilen.
+Man kan altid få hjælpefilen/dokumentationen frem til en funktion ved at skrive `?[function]` (fx `?print` for dokumentationen for `print()`). Mange IDE'er understøtter også, at man trykker `Shift + Tab` inde i parentesen af en funktion for at få vist dele af hjælpefilen.
 {{% /notice%}}
 
 {{% notice note %}}
@@ -708,7 +734,7 @@ print(a, b, sep = '-')
 
 Python har en række funktioner indbygget, men faktisk kommer størstedelen af funktionerne i Python fra alle mulige andre, som har udviklet funktioner til forskellige formål, som andre derefter kan gøre brug af. Andre funktioner hentes ind i form af "pakker", som gennemgås senere i dette materiale.
 
-Man kan fristes til at lære Python ved at forsøge at lære så mange funktioner som muligt. Dette er en håbløs og nærmest umulig opgave givet omfanget af, hvad der findes af funktioner, der kan hentes til Python. I praksis opbygger man sig arbejdsgange eller workflows, hvori man har tendens til at bruge de samme funktioner igen og igen. Derfor er en god tilgang til Python at spørge: *"Kan jeg bruge Python til X?"* eller *"Hvordan løser jeg problem Y i Python?"*, og så forsøge at finde de rette funktioner til det, frem for at spørge: *"Hvad kan jeg bruge Python til?"*, da man med dette spørgsmål ikke får nogen retning på det, man gerne vil lære om Python.
+Man kan fristes til at lære Python ved at forsøge at lære så mange funktioner som muligt. Dette er en håbløs og nærmest umulig opgave givet omfanget af, hvad der findes af funktioner, der kan hentes til Python. I praksis opbygger man arbejdsgange eller workflows, hvori man har tendens til at bruge de samme funktioner igen og igen. Derfor er en god tilgang til Python at spørge: *"Kan jeg bruge Python til X?"* eller *"Hvordan løser jeg problem Y i Python?"*, og så forsøge at finde de rette funktioner til det, frem for at spørge: *"Hvad kan jeg bruge Python til?"*, da man med dette spørgsmål ikke får nogen retning på det, man gerne vil lære om Python.
 
 At Python kan så mange ting i dag skyldes netop, at folk rundt omkring i verden har stået over for forskellige udfordringer, som de har løst ved at udvikle funktioner til Python, som de derefter stiller til rådighed. 
 
@@ -745,7 +771,7 @@ print(add10(5))
     15
     
 
-Funktioner defineres med `def` efterfulgt af navnet på den funktion, man gerne vil lave. I parenteserne skrives de input, som funktionen skal have. I ovenstående dannes funktionen `add10`, der tager et enkelt input og lægger ti til. `x` i ovenstående er blot en "pladsholder", da `x` erstattes med hvadend, der sættes i funktionen, når den bruges.
+Funktioner defineres med `def` efterfulgt af navnet på den funktion, man gerne vil lave. I parenteserne skrives de input, som funktionen skal have. I ovenstående dannes funktionen `add10`, der tager et enkelt input og lægger 10 til. `x` i ovenstående er blot en "pladsholder", da `x` erstattes med hvadend, der sættes i funktionen, når den bruges.
 
 Efter `:` skrives det, som skal ske i funktionen. Alle variable, som defineres inde i funktionen, eksisterer *kun* i selve funktionen. Sagt på en anden måde, så kan variable, der defineres i funktionen, ikke kaldes frem. I funktionen `add10()` defineres `result` undervejs, men den eksisterer ikke uden for funktionen:
 
@@ -793,7 +819,7 @@ print(add10(10))
     None
     
 
-En funktion afslutter altid, når den når til en `return` linje. Det vil sige, at ting i funktionen, som skrives ind efter `return`, ignoreres:
+En funktion afsluttes altid, når den når til en `return` linje. Det vil sige, at ting i funktionen, som skrives ind efter `return`, ignoreres:
 
 
 ```python
@@ -859,9 +885,11 @@ print(triarea(5, 9))
 
 # {#Afsnit}Metoder
 
+{{< youtube xOz52Dmn-GY >}}
+
 Udover funktioner i Python findes der også "metoder". Lig funktioner tager metoder også en form for input og returnerer et output. 
 
-I modsætning til funktioner er metoder bundet op på bestemte variabeltyper. Det vil sige at variablen skal være en bestemt type for, at metoden kan bruges. Metoder kaldes med `variabel.method(option1 = something)`. Tekstværdier (strings) har fx en række metoder tilknyttet til at ændre teksten:
+I modsætning til funktioner er metoder bundet op på bestemte variabeltyper (eller rettere en bestemt "class"). Det vil sige at variablen skal være en bestemt type for, at metoden kan bruges. Metoder kaldes med `variabel.method(option1 = something)`. Tekstværdier (strings) har fx en række metoder tilknyttet til at ændre teksten:
 
 
 ```python
@@ -875,7 +903,7 @@ print(word.lower())  # Konverterer til små bogstaver
     hello
     
 
-Bemærk at metoder som hovedregel ikke ændrer på variablen. Variablen skal derfor defineres om eller på ny, hvis output af en metode skal lagres:
+Bemærk at metoder ikke altid ændrer på variablen. For ovenstående metoder skal variablen derfor defineres om eller på ny, hvis output af en metode skal lagres:
 
 
 ```python
@@ -889,7 +917,7 @@ print(word)         # Er nu overskrevet til at være med store bogstaver
     HELLO
     
 
-Forsøger man at bruge metoder på variabel af en forkert type, gives der fejl:
+Forsøger man at bruge metoder på en variabel af en forkert type, gives der fejl:
 
 
 ```python
@@ -912,7 +940,7 @@ number.upper()
     AttributeError: 'int' object has no attribute 'upper'
 
 
-Metoder tager ofte yderligere argumenter og indstillinger. I nedenstående bruges metoden `.replace()` til at erstatte et hvis ord i tekstvariablen med et andet.
+Metoder tager ofte yderligere argumenter og indstillinger. I nedenstående bruges metoden `.replace()` til at erstatte et ord i tekstvariablen med et andet.
 
 
 ```python
@@ -944,11 +972,77 @@ I ovenstående er metoden `.replace()` brugt til at erstatte ordet "there" med "
 
 ---
 
+# {#Afsnit}Classes
+
+Tidligere i dette materiale blev det forklaret, hvordan Python adskiller mellem variable gennem variablens *type*.
+
+Mere specifikt er et objekt i Python altid en eller anden *class*. En *class* tillader at både data (attributes) og funktioner (metoder) lagres i et objekt. Når et objekt defineres som fx en string, så er det objekt en "string-class", hvilket dikterer, hvad vi kan gøre med objektet (hvilket attributes og metoder, som der er til rådighed).
+
+Når man bruger Python til dataanalyse, har man sjældent brug for selv at definere classes. Man bør dog være opmærksom på, hvilken class man faktisk laver, når man danner et objekt/en variabel, da denne sætter rammerne for, hvad der er muligt.
+
+## Opbygning af en class
+
+Nedenstående ses et eksempel på opbygning af en class kaldt `greeter`. Denne class indeholder metoder til at lave hilsner. Den har ikke nogen praktisk anvendelighed, og skal blot ses som et eksempel:
+
+
+```python
+class greeter:
+    def __init__(self, name):
+        self.name = name
+    
+    def say_hello(self):
+        print("Goddag " + self.name + "!")
+    
+    def say_goodbye(self):
+        print("Farvel " + self.name + "!")
+```
+
+I ovenstående defineres classen `greeter`. Læg mærke til hvordan classens indhold er en række funktioner. Den første funkion `__init__` kaldes også for "constructor". I denne defineres, hvad der skal ske, når man laver en variabel med denne class. Her defineres også, hvilke argumenter classen kræver. I denne funktion kræves blot ét input (`name`). Derudover skal funktioner i en class (metoder) altid have sig selv med som argument (`self`).
+
+Ligesom en funktion returnerer en class ikke noget, før vi bruger den. I nedenstående laves en variabel med classen `greeter`: 
+
+
+```python
+my_greeter = greeter("Kristian")
+```
+
+Ovenstående kommando returnerer ikke noget, da vi blot har defineret en variabel (`my_greeter`) som class `greeter` med navnet `"Kristian"` som input. 
+
+Fordi `my_greeter` nu er af class `greeter`, kan vi tilgå data/information og funktionerne i classen. Data/information i en class kaldes "attributes" og tilgås blot med punktum efterfulgt af attribut-navn.
+
+`greeter`-class indeholder kun ét attribut (`name`):
+
+
+```python
+my_greeter.name
+```
+
+
+
+
+    'Kristian'
+
+
+
+Funktionerne i en class kaldes metoder ("methods"). Som tidligere forklaret tilgås disse med punktum efterfulgt af metodenavnet efterfulgt af parentes. De to metoder i `greeter`-classen tager kun sig selv som argument, så der skal ikke specificeres yderligere input:
+
+
+```python
+my_greeter.say_hello()
+my_greeter.say_goodbye()
+```
+
+    Goddag Kristian!
+    Farvel Kristian!
+    
+
 # {#Afsnit}Pakker
+
+{{< youtube Nvmy6HD8DJ0 >}}
 
 Pakker i Python er samlinger af funktioner, metoder, værdier osv. Selvom man kan meget i Python, så når man ikke særlig langt uden at importere pakker.
 
-Funktioner, metoder, værdier osv. fra pakker kan nemt indlæses ved at importere dem. Så snart pakken er importeret, er pakkens indhold tilgængeligt.
+Funktioner, classes, funktioner, værdier osv. fra pakker kan nemt indlæses ved at importere dem. Så snart pakken er importeret, er pakkens indhold tilgængeligt.
 
 Fx kender Python ikke værdien pi med det samme:
 
@@ -1009,7 +1103,7 @@ print(m.pi)
 
 {{% notice warning %}} Vær varsom med blot at importere dele af pakker ind enkeltvis. En af grundene til, at man kalder dele af pakker ved at skrive pakken først er for at holde styr på, hvor funktionen, metoden eller værdien kommer fra. Man kan nemt miste overblikket eller, endnu værre, kalde den forkerte funktion, hvis man ikke har styr på, hvordan man har importeret.
 
-Derudover bør man også altid overveje læsbarheden af ens kode, hvis andre skal kunne inspicere det, eller der skal samarbejdes om det. Derfor bør man også overveje, hvordan man forkorter pakkenavne ved import, da det også kan gøre koden svære at gennemskue. Mange pakker har dog gængse standardforkortelser, som man hurtigt lærer.
+Derudover bør man også altid overveje læsbarheden af ens kode, hvis andre skal kunne inspicere det, eller der skal samarbejdes om det. Derfor bør man også overveje, hvordan man forkorter pakkenavne ved import, da det også kan gøre koden sværere at gennemskue. Mange pakker har dog gængse standardforkortelser, som man hurtigt lærer.
 {{% /notice%}}
 
 Python kommer med et standardbibliotek af pakker. Selvom funktionerne altså er installeret sammen med Python i pakker, så skal de stadig importeres, før de kan bruges. Python er opbygget sådan både for at gøre det hurtigere at arbejde med (jo mindre der skal indlæses ved opstart, jo hurtigere kan man komme i gang), og for at gøre det nemmere at håndtere funktioner, metoder og værdier fra forskellige pakker. 
@@ -1017,6 +1111,8 @@ Python kommer med et standardbibliotek af pakker. Selvom funktionerne altså er 
 Der et utal af pakker, som Python kan udvides med. I materiale fra CALDISS anvendes primært pakker inden for dataanalyse, web scraping, tekstanalyse og maskinlæring. Hvis du har installeret Python med Anaconda, så er mange af disse pakker allerede installeret og klar til import.
 
 # {#Afsnit}Logiske værdier (booleans)
+
+{{< youtube Vm8gu-hJV68 >}}
 
 En stor del af programmeringsarbejde involverer at arbejde med logiske værdier; også kaldt booleanske værdier. Disse lagres som typen `bool`.
 
@@ -1080,7 +1176,7 @@ Booleanske værdier har mange formål:
 - Check af resultat: Værdier checkes op imod et sæt af gyldige værdier
 - Filtrering: Værdier udvælges efter bestemte betingelser
 - Betinget udførelse: Dele af kode udføres kun, hvis en bestemt betingelse er mødt (noget er "sandt" eller "falsk")
-- Fejlhåndtering: Visse fejl kan forventes ved at sætte betingelser op, for derefter at håndtere dem
+- Fejlhåndtering: Visse fejl kan forventes ved at sætte betingelser op for derefter at håndtere dem
 
 ---
 ## VIDENSCHECK
@@ -1109,6 +1205,7 @@ Derudover introduceres såkaldte kontrolstrukturer, der er måder at udføre fun
 
 # {#Afsnit}Lister og tuples
 
+{{< youtube mXQXpWdLFvI >}}
 
 ## Lister
 
@@ -1231,7 +1328,7 @@ print(my_list[1:3])
     [7, 28]
     
 
-Ovenstående tages fra index 1 og op til index 3 eklskusivt index 3; altså index 1 (listens andet element: 7) og index 2 (listens tredje element: 9).
+Ovenstående tages fra index 1 og op til index 3 eksklusivt index 3; altså index 1 (listens andet element: 7) og index 2 (listens tredje element: 9).
 
 Listens længde (antallet af elementer) returneres med funktionen `len()`:
 
@@ -1341,6 +1438,8 @@ b = (56, 78, 3, -9)
 
 # {#Afsnit}Dictionaries
 
+{{< youtube ZW_chK-cDlM >}}
+
 Man kan også lagre flere værdier i Python med *dictionaries*. Dictionaries består af en række sæt af nøgler og værdier. 
 
 Dictionaries defineres med `{}`:
@@ -1421,19 +1520,21 @@ famous_animals = {"Pluto": "dog", "Oggy": "cat", "Pinky": "mouse", "Pumba": "war
 
 *Hvordan fremkaldes den 3. værdi ("mouse")?*
 
-{{%expand "Løsning" %}} Den 3. værdi fremkaldes ved at refere til den rigtige nøgle: `famous_animals["Pinky"]`. Python betragter ikke værdien som den 3. værdi, da værdien knyttes op på nøglen og ikke på rækkefølgen, som den står i dictionary. {{%/expand%}}
+{{%expand "Løsning" %}} Den 3. værdi fremkaldes ved at refere til den rigtige nøgle: `famous_animals["Pinky"]`. Python betragter ikke værdien som den 3. værdi, da værdien knyttes op på nøglen og ikke på rækkefølgen, som den er skrevet ind i en dictionary. {{%/expand%}}
 
 ---
 
 # {#Afsnit}Loops
 
+{{< youtube mH_EWKqdo88 >}}
+
 I arbejdet med dataanalyse udfører man ofte de samme kommandoer, kontroller, kørsler osv. igen og igen:
 
 - En række oplysninger kan kontrolleres, om de er korrekte. Har de den rigtige type? Er værdierne gyldige? (fx at aldersværdier ikke har skøre værdier som 987 år).
 - Den samme beregning skal foretages for en række oplysninger - fx udregning af gennemsnit for indkomst, alder, år i arbejde osv.
-- De samme oplysninger skal hentes fra en række forskellige hjemmesider.
+- De samme oplysninger skal hentes fra en række forskellige kilder (filer, hjemmesider eller andet).
 
-I Python (og mange andre programmeringssprog) kan man anvende "loops" til at gentage kommandoer. De mest gængse loop typer er "for loops" og "while loops". "for loops" gentager en eller flere kommandoer over en række værdier. "while loops" gentager en kommando, så længe en hvis betingelse er opfyldt.
+I Python (og mange andre programmeringssprog) kan man anvende "loops" til at gentage kommandoer. De mest gængse loop typer er "for loops" og "while loops". "for loops" gentager en eller flere kommandoer over en afgrænset mængde værdier. "while loops" gentager en kommando, så længe en vis betingelse er opfyldt.
 
 Loops kaldes også for kontrolstrukturer i programmeringssprog, da de er med til at sætte rammer og betingelser for, hvad visse kommandoer skal køre på.
 
@@ -1501,7 +1602,7 @@ Et for loop består overordnet af to dele:
 
 I ovenstående kommando bruges listen `ages` som den række værdier, som loopet skal køre over. `age` er en pladsholder for de enkelte værdier, som er i `ages`. Hver gang loopet gentages, ændrer `age` sig til den næste værdi i `ages`. 
 
-Pladsholderen `age` bruges i kommandoerne, som skal gentages for hvert loop. Kommandoerne skrives på linjen efter `:`. Her er det vigtigt, at kommandoerne i loopet er rykket ind (enten med tab eller fire mellemrum, men de fleste IDE'er laver dette mellemrum automatisk).
+Pladsholderen `age` bruges i kommandoerne, som skal gentages for hvert loop. Kommandoerne skrives på linjen efter `:`. Her er det vigtigt, at kommandoerne i loopet er rykket ind (enten med tab eller fire mellemrum, men de fleste IDE'er laver dette indryk automatisk).
 
 Der kunne have været brugt hvilket som helst navn som pladsholder i stedet for `age`, så længe at pladsholder-navnet ændres i kommandoerne også.
 
@@ -1637,7 +1738,7 @@ for x in range(5, 10, 2):
 
 ## While loops
 
-While loops er en anden type loops i Python. Hvor for loops gentager en eller flere kommandoer for hver værdi i en række af værdier, så gentager while loops en eller flere kommandoer, så længe en hvis betingelse er opfyldt.
+While loops er en anden type loops i Python. Hvor for loops gentager en eller flere kommandoer for hver værdi i en række af værdier, så gentager while loops en eller flere kommandoer, så længe en given betingelse er opfyldt.
 
 Herunder ses et eksempel på et simpel while loop:
 
@@ -1660,11 +1761,11 @@ Et while loop består overordnet af to dele:
 - En betingelse som skal være opfyldt for, at loopet gentages
 - En eller flere kommandoer, som skal gentages for hvert loop
 
-I ovenstående defineres først `x` til at være `1`. Derefter igangsættes et while loop, som skal køre, så længe at `x < 5`. Kommandoerne, som skal køre i loopet, skrives på linjen efter `:`. Her er det igen vigtigt, at kommandoerne i loopet er rykket ind (enten med tab eller fire mellemrum, men de fleste IDE'er laver dette mellemrum automatisk).
+I ovenstående defineres først `x` til at være `1`. Derefter igangsættes et while loop, som skal køre, så længe at `x < 5`. Kommandoerne, som skal køre i loopet, skrives på linjen efter `:`. Her er det igen vigtigt, at kommandoerne i loopet er rykket ind (enten med tab eller fire mellemrum, men de fleste IDE'er laver dette indryk automatisk).
 
-Derefter overskrives `x` til at være `x + 1`; altså at værdien af `x` øges med `1`. Bemærk at hvis denne linje undlades, så bliver loopet ved med at gentage sig, da `x` ikke ændres og derfor bliver ved med at være `1`; altså mindre end `5`, som er betingelsen for, at loopet kører.
+Derefter overskrives `x` til at være `x + 1`; altså at værdien af `x` øges med `1`. *Bemærk at hvis denne linje undlades, så bliver loopet ved med at gentage sig, da `x` ikke ændres og derfor bliver ved med at være `1`; altså mindre end `5`, som er betingelsen for, at loopet kører*.
 
-{{% notice warning %}} Man skal være forsigtig, når man skriver while loops, da man meget nemt kan komme til at skabe uendeligt loops! 
+{{% notice warning %}} Man skal være forsigtig, når man skriver while loops, da man meget nemt kan komme til at skabe uendelige loops! 
 
 Uendelige loops sker, hvis ikke den betingelse, som while loopet baseres på, ændres. Uendelige loops skal afbrydes manuelt, men i tilfælde, hvor det, der sker i loopet, er krævende, kan Python ende med at gå helt i stå af at arbejde med loopet, da Python (og computeren) til sidst ikke kan følge med. {{% /notice%}}
 
@@ -1694,7 +1795,7 @@ while len(fruit) <= 22:
 
 Når Python læser linjen med while loopet, starter Python med at evaluere betingelsen: `len(fruit) <= 22`. Hvis denne er `True`, udføres kommandoerne. `fruit` indeholder til at starte med teksten `banana` og har en længde på 6 bogstaver; altså mindre end 22, så kommandoerne udføres. 
 
-Første kommando at printe teksten `"the word is " + fruit` (husk at tekststykker kan sættes sammen med `+`). Da `fruit` i den første kørsel indeholder `banana` bliver teksten `the word is banana`. 
+Første kommando er at printe teksten `"the word is " + fruit` (husk at tekststykker kan sættes sammen med `+`). Da `fruit` i den første kørsel indeholder `banana` bliver teksten `the word is banana`. 
 
 Dernæst ændres `fruit` til at få tilføjet teksten `na`, så `fruit` nu indeholder `bananana`. 
 
@@ -1726,6 +1827,8 @@ while y > 5:
 
 # {#Afsnit}If-betingelser
 
+{{< youtube zaJBdItYYPs >}}
+
 Når man arbejder med Python, kan det ofte være brugbart at sætte if-betingelser i sin kode. If-betingelser er kodestumper, hvor visse kommandoer kun udføres, hvis en betingelse er opfyldt:
 
 
@@ -1744,7 +1847,7 @@ else:
 
 Ovenstående kode består af to blokke: en if-blok og en else-blok. 
 
-I koden evalueres først if-betingelse: `x > 10`. Hvis denne evalueres til `True`, udføres kommandoen efter `:`. I ovenstående er `x = 12`, hvorfor kommandoen udføres. Her er kommandoen blot at printe teksten `Tallet er større end 10!`.
+I koden evalueres først if-betingelsen: `x > 10`. Hvis denne evalueres til `True`, udføres kommandoen efter `:`. I ovenstående er `x = 12`, hvorfor kommandoen udføres. Her er kommandoen blot at printe teksten `Tallet er større end 10!`.
 
 Herunder ses hvad der sker med samme kode, hvis x er mindre end 10:
 
@@ -1821,7 +1924,7 @@ else:
 
 ## If-betingelser og for loops
 
-If-betingelser er yderst nyttige i kombination med andre kontrolstrukturer. Fx kan man i kombinationen med for loops og if-betingelser skrive kode, hvor en vis kommando kun udføres på visse værdier i en liste:
+If-betingelser er yderst nyttige i kombination med andre kontrolstrukturer. Fx kan man i kombinationen med for loops og if-betingelser skrive kode, hvor en kommando kun udføres på visse værdier i en liste:
 
 
 ```python
@@ -1904,6 +2007,164 @@ for word in words:
 
 ---
 
+# {#Afsnit}Hyppige fejltyper
+
+Man vil uundgåeligt få fejl, når man arbejder med Python. Som nævnt er Python et meget bogstaveligt sprog, så der skal ikke meget til for, at Python giver en fejlbesked.
+
+Pythons fejlbeskeder er meget detaljerede, men kan være svære at gennemskue - særligt hvis man er ny til Python. Dog kan selve fejl*typen* hjælpe os til at finde ud af, hvad der er galt med vores kode.
+
+Herunder gennemgås de hyppigste fejltyper, og hvad de dækker over.
+
+## SyntaxError
+
+En `SyntaxError` gives, hvis ens kode ikke er et gyldigt Python udtryk. En `SyntaxError` kan også kaldes for en "sprogfejl". Disse opstår når vi skriver kommandoer, som er volapyk for Python:
+
+
+```python
+giv mig resultatet!
+```
+
+
+      File "C:\Users\kgk\AppData\Local\Temp\ipykernel_3800\4153195480.py", line 1
+        giv mig resultatet!
+              ^
+    SyntaxError: invalid syntax
+    
+
+
+I ovenstående er der brugt mellemrum mellem flere (ikke eksisterende) variable. Dette er ugyldigt for Python. En `SyntaxError` opstår derfor typisk pga. slåfejl eller manglende tegn (kommaer, parenteser o.l.).
+
+## NameError
+
+En `NameError` gives, hvis man refererer til et objekt, som ikke eksisterer i Python-miljøet. Denne fejl opstår typisk, hvis man har glemt at definere en variabel eller mangler at importere en pakke.
+
+Fordi Python er et meget bostaveligt sprog, får man også denne fejl, hvis man glemmer et tegn i sin variabel, når man refererer til den:
+
+
+```python
+addresser = ["Blomstervang 12", "Fuglevej 7", "Malergade 32"]
+
+print(adresser)
+```
+
+
+    ---------------------------------------------------------------------------
+
+    NameError                                 Traceback (most recent call last)
+
+    ~\AppData\Local\Temp\ipykernel_3800\2535432249.py in <module>
+          1 addresser = ["Blomstervang 12", "Fuglevej 7", "Malergade 32"]
+          2 
+    ----> 3 print(adresser)
+    
+
+    NameError: name 'adresser' is not defined
+
+
+Ovenstående giver `NameError`, da det er `adresser`, der bliver kaldt, men listen hedder `addresser`. 
+
+## TypeError
+
+En `TypeError` gives, hvis man forsøger at gøre noget med en variabel, som ikke kan lade sig gøre med den type/class, som variablen er:
+
+
+```python
+"hej" + 2
+```
+
+
+    ---------------------------------------------------------------------------
+
+    TypeError                                 Traceback (most recent call last)
+
+    ~\AppData\Local\Temp\ipykernel_3800\1089118982.py in <module>
+    ----> 1 "hej" + 2
+    
+
+    TypeError: can only concatenate str (not "int") to str
+
+
+Ovenstående giver en `TypeError`, da det er ikke er muligt at lægge teksttyper og taltyper sammen.
+
+## AttributeError
+
+En `AttributeError` gives, hvis man forsøger at referere til et attribut eller en metode, som ikke findes for den pågældende variabel:
+
+
+```python
+tekst = 42
+
+tekst.upper()
+```
+
+
+    ---------------------------------------------------------------------------
+
+    AttributeError                            Traceback (most recent call last)
+
+    ~\AppData\Local\Temp\ipykernel_3800\2065210826.py in <module>
+          1 tekst = 42
+          2 
+    ----> 3 tekst.upper()
+    
+
+    AttributeError: 'int' object has no attribute 'upper'
+
+
+Ovenstående giver en `AttributeError`, da metoden `.upper()` ikke findes for taltyper.
+
+Denne fejl kan opstå enten pga. stavefejl i metoden eller fordi variablen er en anden class, end man regner med den er.
+
+## IndexError/KeyError
+
+En `IndexError` eller `KeyError` gives, hvis man refererer til et element i en datastruktur (fx liste eller dictionary), som ikke findes. 
+
+For fx lister gives en `IndexError`, hvis man refererer til et indeks, som overstiger antallet af elementer i listen:
+
+
+```python
+adresser = ["Blomstervang 12", "Fuglevej 7", "Malergade 32"]
+
+print(adresser[3]) # Indeks 3 findes ikke - husk at Python starter ved 0
+```
+
+
+    ---------------------------------------------------------------------------
+
+    IndexError                                Traceback (most recent call last)
+
+    ~\AppData\Local\Temp\ipykernel_3800\2954300856.py in <module>
+          1 adresser = ["Blomstervang 12", "Fuglevej 7", "Malergade 32"]
+          2 
+    ----> 3 print(adresser[3])
+    
+
+    IndexError: list index out of range
+
+
+For dictionaries gives en `KeyError`, hvis man refererer til en nøgle, som ikke findes i den dictionary:
+
+
+```python
+adresse = {"vej": "Blomstervang", "nummer": 12}
+
+print(adresse["kommune"])
+```
+
+
+    ---------------------------------------------------------------------------
+
+    KeyError                                  Traceback (most recent call last)
+
+    ~\AppData\Local\Temp\ipykernel_3800\2520700864.py in <module>
+          1 adresse = {"vej": "Blomstervang", "nummer": 12}
+          2 
+    ----> 3 print(adresse["kommune"])
+    
+
+    KeyError: 'kommune'
+
+
 # {#Kapitel}Supplerende materiale
 
 De følgende sider indeholder diverse materiale til at hjælpe videre med Python.
@@ -1948,16 +2209,6 @@ Der findes adskillige online løsninger til at arbejde med Python. På den måde
 
 ---
 
-**CALDISS serverløsning**
-
-CALDISS har en server til Jupyter Notebook. På den måde kan man komme i gang med Python uden at skulle installere det på egen computer. Serveren ligger på AAU's netværk og kan tilgås på AAU's netværk eller via VPN.
-
-Serveren har adressen: https://samf-jupyter.aau.dk/hub/login
-
-Bliv bruger af serveren ved at udfylde [denne formular](https://forms.office.com/Pages/ResponsePage.aspx?id=Sbrb9QbOb0msPgzxQ2HZNGg7-JICeN1Kopl4dsYkgftUQTE3UDRMWUtFQzBKT0dLVTNROVdBUk05MCQlQCN0PWcu).
-
----
-
 **Google Colab**
 
 Google Colab fungerer ligesom en online version af Jupyter Notebook. Her kan man skrive notebooks, som man gør i Jupyter Notebook, men køre dem over Google's servere. Det kræver en Google konto for at bruge.
@@ -1969,11 +2220,12 @@ Læs mere her: https://colab.research.google.com/notebooks/intro.ipynb (i øvrig
 
 # {#Afsnit}Litteratur og yderligere materiale
 
-Her ses forslag til steder, hvor du kan lære mere om basalt brug af Python.
+Her ses forslag til steder, hvor du kan lære mere om basal brug af Python.
 
 
 ## Online kurser
 
+- "Python for Everybody" af Charles R. Severance: https://www.py4e.com/
 - "Data Analysis and Visualization with Python for Social Scientists *alpha*" af DataCarpentry: https://datacarpentry.org/python-socialsci/
 - "Python Tutorial" af Tutorialspoint: https://www.tutorialspoint.com/python/index.htm
 - "Introduction to Python" af DataCamp: https://www.datacamp.com/courses/intro-to-python-for-data-science (betalingsside, men første del er gratis)

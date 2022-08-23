@@ -2,16 +2,15 @@
 title: Loops
 weight: 3
 ---
-
-{{< youtube mH_EWKqdo88 >}}
+youtube mH_EWKqdo88 >}}
 
 I arbejdet med dataanalyse udfører man ofte de samme kommandoer, kontroller, kørsler osv. igen og igen:
 
 - En række oplysninger kan kontrolleres, om de er korrekte. Har de den rigtige type? Er værdierne gyldige? (fx at aldersværdier ikke har skøre værdier som 987 år).
 - Den samme beregning skal foretages for en række oplysninger - fx udregning af gennemsnit for indkomst, alder, år i arbejde osv.
-- De samme oplysninger skal hentes fra en række forskellige hjemmesider.
+- De samme oplysninger skal hentes fra en række forskellige kilder (filer, hjemmesider eller andet).
 
-I Python (og mange andre programmeringssprog) kan man anvende "loops" til at gentage kommandoer. De mest gængse loop typer er "for loops" og "while loops". "for loops" gentager en eller flere kommandoer over en række værdier. "while loops" gentager en kommando, så længe en hvis betingelse er opfyldt.
+I Python (og mange andre programmeringssprog) kan man anvende "loops" til at gentage kommandoer. De mest gængse loop typer er "for loops" og "while loops". "for loops" gentager en eller flere kommandoer over en afgrænset mængde værdier. "while loops" gentager en kommando, så længe en vis betingelse er opfyldt.
 
 Loops kaldes også for kontrolstrukturer i programmeringssprog, da de er med til at sætte rammer og betingelser for, hvad visse kommandoer skal køre på.
 
@@ -38,7 +37,7 @@ print(type(age1))
 ```
 
     <class 'int'>
-
+    
 
 Skal det gøres for alle variable, skal kommandoen gentages for hver variabel:
 
@@ -52,7 +51,7 @@ print(type(age3))
     <class 'int'>
     <class 'str'>
     <class 'int'>
-
+    
 
 Af ovenstående erfares, at `age2` er en string, og derfor skal konverteres, før der kan arbejdes videre med den.
 
@@ -69,7 +68,7 @@ for age in ages:
     <class 'int'>
     <class 'str'>
     <class 'int'>
-
+    
 
 **Opbygning af et for loop**
 
@@ -79,7 +78,7 @@ Et for loop består overordnet af to dele:
 
 I ovenstående kommando bruges listen `ages` som den række værdier, som loopet skal køre over. `age` er en pladsholder for de enkelte værdier, som er i `ages`. Hver gang loopet gentages, ændrer `age` sig til den næste værdi i `ages`. 
 
-Pladsholderen `age` bruges i kommandoerne, som skal gentages for hvert loop. Kommandoerne skrives på linjen efter `:`. Her er det vigtigt, at kommandoerne i loopet er rykket ind (enten med tab eller fire mellemrum, men de fleste IDE'er laver dette mellemrum automatisk).
+Pladsholderen `age` bruges i kommandoerne, som skal gentages for hvert loop. Kommandoerne skrives på linjen efter `:`. Her er det vigtigt, at kommandoerne i loopet er rykket ind (enten med tab eller fire mellemrum, men de fleste IDE'er laver dette indryk automatisk).
 
 Der kunne have været brugt hvilket som helst navn som pladsholder i stedet for `age`, så længe at pladsholder-navnet ændres i kommandoerne også.
 
@@ -98,7 +97,7 @@ for value in values:
     8
     182
     54
-
+    
 
 Når for loopet sættes i gang, ser Python på værdierne i `values` og tager den første værdi (`9`). `value` er altså lig med `9` i den første kørsel af loopet. Derefter udføres kommandoen, som i dette tilfælde er at printe værdien ganget med to: `print(value * 2)`. `value = 9` i den første kørsel af loopet, så derfor udføres: `print(9 * 2)`, som giver `18`.
 
@@ -117,7 +116,7 @@ for value in [9, 10, 4, 91, 27]:
     8
     182
     54
-
+    
 
 ---
 ## VIDENSCHECK
@@ -155,7 +154,7 @@ for word in words:
     SCRUMPTIOUS
     MONITOR
     CARPENTER
-
+    
 
 {{%/expand%}}
 
@@ -181,7 +180,7 @@ for x in range(10, 20):
     22
     23
     24
-
+    
 
 `range()` danner en talrække fra det første tal angivet til tallet *før* det sidste tal angivet ([10:20[).
 
@@ -198,7 +197,7 @@ for x in range(5):
     2
     3
     4
-
+    
 
 Som standard dannes intervallet med skridt på `1`; altså hver enkelt heltal mellem det første tal og tallet før det sidste tal. Dette kan ændres ved at tilføje et tredje argument for, hvor store "skridt", der skal være i intervallet:
 
@@ -211,11 +210,11 @@ for x in range(5, 10, 2):
     5
     7
     9
-
+    
 
 ## While loops
 
-While loops er en anden type loops i Python. Hvor for loops gentager en eller flere kommandoer for hver værdi i en række af værdier, så gentager while loops en eller flere kommandoer, så længe en hvis betingelse er opfyldt.
+While loops er en anden type loops i Python. Hvor for loops gentager en eller flere kommandoer for hver værdi i en række af værdier, så gentager while loops en eller flere kommandoer, så længe en given betingelse er opfyldt.
 
 Herunder ses et eksempel på et simpel while loop:
 
@@ -232,17 +231,17 @@ while x < 5:
     loopet kører videre
     loopet kører videre
     loopet kører videre
-
+    
 
 Et while loop består overordnet af to dele:
 - En betingelse som skal være opfyldt for, at loopet gentages
 - En eller flere kommandoer, som skal gentages for hvert loop
 
-I ovenstående defineres først `x` til at være `1`. Derefter igangsættes et while loop, som skal køre, så længe at `x < 5`. Kommandoerne, som skal køre i loopet, skrives på linjen efter `:`. Her er det igen vigtigt, at kommandoerne i loopet er rykket ind (enten med tab eller fire mellemrum, men de fleste IDE'er laver dette mellemrum automatisk).
+I ovenstående defineres først `x` til at være `1`. Derefter igangsættes et while loop, som skal køre, så længe at `x < 5`. Kommandoerne, som skal køre i loopet, skrives på linjen efter `:`. Her er det igen vigtigt, at kommandoerne i loopet er rykket ind (enten med tab eller fire mellemrum, men de fleste IDE'er laver dette indryk automatisk).
 
-Derefter overskrives `x` til at være `x + 1`; altså at værdien af `x` øges med `1`. Bemærk at hvis denne linje undlades, så bliver loopet ved med at gentage sig, da `x` ikke ændres og derfor bliver ved med at være `1`; altså mindre end `5`, som er betingelsen for, at loopet kører.
+Derefter overskrives `x` til at være `x + 1`; altså at værdien af `x` øges med `1`. *Bemærk at hvis denne linje undlades, så bliver loopet ved med at gentage sig, da `x` ikke ændres og derfor bliver ved med at være `1`; altså mindre end `5`, som er betingelsen for, at loopet kører*.
 
-{{% notice warning %}} Man skal være forsigtig, når man skriver while loops, da man meget nemt kan komme til at skabe uendeligt loops! 
+{{% notice warning %}} Man skal være forsigtig, når man skriver while loops, da man meget nemt kan komme til at skabe uendelige loops! 
 
 Uendelige loops sker, hvis ikke den betingelse, som while loopet baseres på, ændres. Uendelige loops skal afbrydes manuelt, men i tilfælde, hvor det, der sker i loopet, er krævende, kan Python ende med at gå helt i stå af at arbejde med loopet, da Python (og computeren) til sidst ikke kan følge med. {{% /notice%}}
 
@@ -266,13 +265,13 @@ while len(fruit) <= 22:
     the word is banananananananana
     the word is bananananananananana
     the word is banananananananananana
-
+    
 
 {{% notice info %}} Funktionen `len()` har tidligere været brugt til at give antallet af elementer i en liste. Bruges `len()` på en tekstværdi (en string), returneres antallet af karakterer i tekstværdien. {{% /notice%}}
 
 Når Python læser linjen med while loopet, starter Python med at evaluere betingelsen: `len(fruit) <= 22`. Hvis denne er `True`, udføres kommandoerne. `fruit` indeholder til at starte med teksten `banana` og har en længde på 6 bogstaver; altså mindre end 22, så kommandoerne udføres. 
 
-Første kommando at printe teksten `"the word is " + fruit` (husk at tekststykker kan sættes sammen med `+`). Da `fruit` i den første kørsel indeholder `banana` bliver teksten `the word is banana`. 
+Første kommando er at printe teksten `"the word is " + fruit` (husk at tekststykker kan sættes sammen med `+`). Da `fruit` i den første kørsel indeholder `banana` bliver teksten `the word is banana`. 
 
 Dernæst ændres `fruit` til at få tilføjet teksten `na`, så `fruit` nu indeholder `bananana`. 
 
