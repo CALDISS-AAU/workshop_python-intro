@@ -1,5 +1,5 @@
 ---
-title: Arbejd med flere værdier
+title: Data- og kontrolstrukturer
 type: chapter
 weight: 3
 pre: "<b>3. </b>"

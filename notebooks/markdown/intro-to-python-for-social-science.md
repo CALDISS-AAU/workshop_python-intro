@@ -1197,7 +1197,7 @@ c = a < b
 
 ---
 
-# {#Kapitel}Arbejd med flere værdier
+# {#Kapitel}Data- og kontrolstrukturer
 
 Indtil videre har materialet fokuseret på at arbejde med enkelte værdier i Python. I denne sektion gennemgås de forskellige indbyggede datastrukturer til at håndtere flere værdier.
 
