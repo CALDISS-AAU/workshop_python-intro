@@ -2,7 +2,7 @@
 title: Loops
 weight: 3
 ---
-youtube mH_EWKqdo88 >}}
+{{< youtube mH_EWKqdo88 >}}
 
 I arbejdet med dataanalyse udfører man ofte de samme kommandoer, kontroller, kørsler osv. igen og igen:
 
@@ -37,7 +37,7 @@ print(type(age1))
 ```
 
     <class 'int'>
-    
+
 
 Skal det gøres for alle variable, skal kommandoen gentages for hver variabel:
 
@@ -51,7 +51,7 @@ print(type(age3))
     <class 'int'>
     <class 'str'>
     <class 'int'>
-    
+
 
 Af ovenstående erfares, at `age2` er en string, og derfor skal konverteres, før der kan arbejdes videre med den.
 
@@ -68,7 +68,7 @@ for age in ages:
     <class 'int'>
     <class 'str'>
     <class 'int'>
-    
+
 
 **Opbygning af et for loop**
 
@@ -97,7 +97,7 @@ for value in values:
     8
     182
     54
-    
+
 
 Når for loopet sættes i gang, ser Python på værdierne i `values` og tager den første værdi (`9`). `value` er altså lig med `9` i den første kørsel af loopet. Derefter udføres kommandoen, som i dette tilfælde er at printe værdien ganget med to: `print(value * 2)`. `value = 9` i den første kørsel af loopet, så derfor udføres: `print(9 * 2)`, som giver `18`.
 
@@ -116,7 +116,7 @@ for value in [9, 10, 4, 91, 27]:
     8
     182
     54
-    
+
 
 ---
 ## VIDENSCHECK
@@ -154,7 +154,7 @@ for word in words:
     SCRUMPTIOUS
     MONITOR
     CARPENTER
-    
+
 
 {{%/expand%}}
 
@@ -180,7 +180,7 @@ for x in range(10, 20):
     22
     23
     24
-    
+
 
 `range()` danner en talrække fra det første tal angivet til tallet *før* det sidste tal angivet ([10:20[).
 
@@ -197,7 +197,7 @@ for x in range(5):
     2
     3
     4
-    
+
 
 Som standard dannes intervallet med skridt på `1`; altså hver enkelt heltal mellem det første tal og tallet før det sidste tal. Dette kan ændres ved at tilføje et tredje argument for, hvor store "skridt", der skal være i intervallet:
 
@@ -210,7 +210,7 @@ for x in range(5, 10, 2):
     5
     7
     9
-    
+
 
 ## While loops
 
@@ -231,7 +231,7 @@ while x < 5:
     loopet kører videre
     loopet kører videre
     loopet kører videre
-    
+
 
 Et while loop består overordnet af to dele:
 - En betingelse som skal være opfyldt for, at loopet gentages
@@ -265,7 +265,7 @@ while len(fruit) <= 22:
     the word is banananananananana
     the word is bananananananananana
     the word is banananananananananana
-    
+
 
 {{% notice info %}} Funktionen `len()` har tidligere været brugt til at give antallet af elementer i en liste. Bruges `len()` på en tekstværdi (en string), returneres antallet af karakterer i tekstværdien. {{% /notice%}}
 

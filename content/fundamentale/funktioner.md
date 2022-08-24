@@ -2,7 +2,7 @@
 title: Funktioner
 weight: 4
 ---
-youtube pKID5oLWy5k >}}
+{{< youtube pKID5oLWy5k >}}
 
 En central del af det at arbejde med et programmeringssprog er at bruge funktioner. Funktioner tager et eller flere input (kaldet "argumenter"), foretager et eller andet med disse og returnerer (for det meste) et output.
 
@@ -30,7 +30,7 @@ print(a, b)
 ```
 
     Hello there
-    
+
 
 Derudover har `print()` også en række "keyword arguments"/indstillinger, som det ses af dokumentationen herunder:
 
@@ -57,7 +57,7 @@ print(a, b, sep = ", ")  # sep ændres til komma
 
     Hello there
     Hello, there
-    
+
 
 En funktion kan have rigtig mange indstillinger, og i praksis forholder man sig kun til få af disse, da man for det meste kan lade standardinstillingerne være, som de er. 
 
@@ -83,7 +83,7 @@ print(a, b, sep = '-')
 ```
 
     Hello-there
-    
+
 
 {{%/expand%}}
 
@@ -106,12 +106,12 @@ add10(5)
 
 
     ---------------------------------------------------------------------------
-
+    
     NameError                                 Traceback (most recent call last)
-
+    
     <ipython-input-41-7452fc393844> in <module>
     ----> 1 add10(5)
-    
+
 
     NameError: name 'add10' is not defined
 
@@ -128,7 +128,7 @@ print(add10(5))
 ```
 
     15
-    
+
 
 Funktioner defineres med `def` efterfulgt af navnet på den funktion, man gerne vil lave. I parenteserne skrives de input, som funktionen skal have. I ovenstående dannes funktionen `add10`, der tager et enkelt input og lægger 10 til. `x` i ovenstående er blot en "pladsholder", da `x` erstattes med hvadend, der sættes i funktionen, når den bruges.
 
@@ -141,12 +141,12 @@ print(result)
 
 
     ---------------------------------------------------------------------------
-
+    
     NameError                                 Traceback (most recent call last)
-
+    
     <ipython-input-43-6459d04d738f> in <module>
     ----> 1 print(result)
-    
+
 
     NameError: name 'result' is not defined
 
@@ -163,7 +163,7 @@ print(a)
 ```
 
     15
-    
+
 
 En funktion skal gerne slutte med en `return` linje. Denne bestemmer, hvad funktionen skal sende tilbage. Udelades denne, returnerer funktionen `None`; altså intet:
 
@@ -176,7 +176,7 @@ print(add10(10))
 ```
 
     None
-    
+
 
 En funktion afsluttes altid, når den når til en `return` linje. Det vil sige, at ting i funktionen, som skrives ind efter `return`, ignoreres:
 
@@ -193,7 +193,7 @@ print(add10(10))
 
     Adding 10...
     20
-    
+
 
 Indrykningen er ikke kun for syns skyld, men er her med til at afgrænse, hvor meget funktionen indeholder. Funktionens indhold (linjer skrevet efter `def`-linjen) skal rykkes ind med et enkelt tab eller fire mellemrum.
 
@@ -236,7 +236,7 @@ print(triarea(5, 9))
 ```
 
     22.5
-    
+
 
 {{%/expand%}}
 

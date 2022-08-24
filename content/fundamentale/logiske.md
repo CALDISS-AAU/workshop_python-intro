@@ -2,7 +2,7 @@
 title: Logiske værdier (booleans)
 weight: 8
 ---
-youtube Vm8gu-hJV68 >}}
+{{< youtube Vm8gu-hJV68 >}}
 
 En stor del af programmeringsarbejde involverer at arbejde med logiske værdier; også kaldt booleanske værdier. Disse lagres som typen `bool`.
 
@@ -36,7 +36,7 @@ print(check,
 ```
 
     False <class 'bool'>
-    
+
 
 Her er en række operatorer, som altid returnerer en booleansk værdi:
 
@@ -59,7 +59,7 @@ print(words.startswith("Hello"))
 ```
 
     True
-    
+
 
 Booleanske værdier har mange formål:
 

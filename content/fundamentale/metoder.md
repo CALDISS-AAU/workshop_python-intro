@@ -2,7 +2,7 @@
 title: Metoder
 weight: 5
 ---
-youtube xOz52Dmn-GY >}}
+{{< youtube xOz52Dmn-GY >}}
 
 Udover funktioner i Python findes der også "metoder". Lig funktioner tager metoder også en form for input og returnerer et output. 
 
@@ -18,7 +18,7 @@ print(word.lower())  # Konverterer til små bogstaver
 
     HELLO
     hello
-    
+
 
 Bemærk at metoder ikke altid ændrer på variablen. For ovenstående metoder skal variablen derfor defineres om eller på ny, hvis output af en metode skal lagres:
 
@@ -32,7 +32,7 @@ print(word)         # Er nu overskrevet til at være med store bogstaver
 
     Hello
     HELLO
-    
+
 
 Forsøger man at bruge metoder på en variabel af en forkert type, gives der fejl:
 
@@ -45,14 +45,14 @@ number.upper()
 
 
     ---------------------------------------------------------------------------
-
+    
     AttributeError                            Traceback (most recent call last)
-
+    
     <ipython-input-51-d30eebf09ae0> in <module>
           1 number = 627
           2 
     ----> 3 number.upper()
-    
+
 
     AttributeError: 'int' object has no attribute 'upper'
 

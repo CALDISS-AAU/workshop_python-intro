@@ -2,7 +2,7 @@
 title: At arbejde med et programmeringssprog
 weight: 1
 ---
-youtube IAd4VwiFXl0 >}}
+{{< youtube IAd4VwiFXl0 >}}
 
 Python er et programmeringssprog. At arbejde med Python kræver derfor, at man "taler" det rette sprog, når man gerne vil have Python til at gøre noget.
 

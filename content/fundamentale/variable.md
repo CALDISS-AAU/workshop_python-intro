@@ -2,7 +2,7 @@
 title: Variable
 weight: 2
 ---
-youtube tNmobEPK_uU>}}
+{{< youtube tNmobEPK_uU>}}
 
 Python er et objekt-orienteret programmeringssprog. Dette indebærer, at man kontinuerligt arbejder med forskellige objekter, som indeholder en eller anden for for information.
 
@@ -38,7 +38,7 @@ print(a / b)
 
     42
     6.0
-    
+
 
 Defineres en variabel som et matematisk udtryk, er det resultatet af dette udtryk, som bliver lagret i variablen:
 
@@ -49,7 +49,7 @@ print(d)
 ```
 
     38
-    
+
 
 Bemærk at Python læser kode meget bogstaveligt, og skelner derfor mellem store og små bogstaver. Kaldes en variabel, som ikke findes, returnerer Python en fejl:
 
@@ -60,17 +60,17 @@ print(D)
 ```
 
     38
-    
+
 
 
     ---------------------------------------------------------------------------
-
+    
     NameError                                 Traceback (most recent call last)
-
+    
     <ipython-input-21-f03a0baf7732> in <module>
           1 print(d)
     ----> 2 print(D)
-    
+
 
     NameError: name 'D' is not defined
 
@@ -86,7 +86,7 @@ print(e)
 ```
 
     Hello there!
-    
+
 
 Hvis ikke Python fortælles, at noget er tekst, vil Python antage, at det er en eller anden form for variabel eller funktion, som der forsøges at blive kaldt frem:
 
@@ -100,7 +100,7 @@ e = Hello there
         e = Hello there
                       ^
     SyntaxError: invalid syntax
-    
+
 
 
 ## Ændring af variable
@@ -116,7 +116,7 @@ print(a)     # a er ikke ændret. Stadig 42
 
     49
     42
-    
+
 
 Variablen skal defineres om, hvis man gerne vil ændre indholdet af variablen:
 
@@ -127,7 +127,7 @@ print(a)     # a er nu ændret
 ```
 
     49
-    
+
 
 {{% notice tip %}}
 Brug `#` til at skrive kommentarer i din kode. Tekst der følger et `#` ignoreres af Python. Når man for alvor begynder at arbejde med kode, kan man nemt glemme, hvorfor man skrev bestemte kodestykker, eller hvad kodestykkerne gør. Kommentarer til ens kode hjælper både dig selv og evt. andre, som skal kigge på eller arbejde med din kode.

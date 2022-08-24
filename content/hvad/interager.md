@@ -2,7 +2,7 @@
 title: Interager med Python
 weight: 2
 ---
-youtube IghykgHjDh0 >}}
+{{< youtube IghykgHjDh0 >}}
 
 For at bruge Python skal vi "tale" Python. Man arbejder med Python ved at skrive kommandoer i Python-sproget. Hvis Python forstår din kommando udføres den. Hvis ikke, får du en eller anden form for fejl. Man kan se Python som et meget bogstaveligt og pernitten sprog: Kommandoer skal skrives på helt bestemte måder for at Python kan forstå, hvad du gerne vil.
 
