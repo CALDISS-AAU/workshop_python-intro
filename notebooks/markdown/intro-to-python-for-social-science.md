@@ -190,7 +190,7 @@ print(45 + 12)
     25
     16.099999999999998
     57
-    
+
 
 At arbejde med Python er at arbejde med funktioner. En funktion tager et eller flere input (kaldet "argumenter") og gør et eller andet ved dem. Funktionen `print()` tager enten et stykke tekst eller tal som input, og viser det som et stykke tekst:
 
@@ -202,7 +202,7 @@ print(921 - 20)
 
     Hello there!
     901
-    
+
 
 {{% notice note %}}
 Bemærk at mellemrum ikke er nødvendige for at koden virker. Faktisk ignorerer Python mellemrum, når de er en del af en kommando. Dog kan brug af mellemrum være med til at gøre kode mere overskuelig og læsbar.
@@ -246,7 +246,7 @@ print(a / b)
 
     42
     6.0
-    
+
 
 Defineres en variabel som et matematisk udtryk, er det resultatet af dette udtryk, som bliver lagret i variablen:
 
@@ -257,7 +257,7 @@ print(d)
 ```
 
     38
-    
+
 
 Bemærk at Python læser kode meget bogstaveligt, og skelner derfor mellem store og små bogstaver. Kaldes en variabel, som ikke findes, returnerer Python en fejl:
 
@@ -268,17 +268,17 @@ print(D)
 ```
 
     38
-    
+
 
 
     ---------------------------------------------------------------------------
-
+    
     NameError                                 Traceback (most recent call last)
-
+    
     <ipython-input-21-f03a0baf7732> in <module>
           1 print(d)
     ----> 2 print(D)
-    
+
 
     NameError: name 'D' is not defined
 
@@ -294,7 +294,7 @@ print(e)
 ```
 
     Hello there!
-    
+
 
 Hvis ikke Python fortælles, at noget er tekst, vil Python antage, at det er en eller anden form for variabel eller funktion, som der forsøges at blive kaldt frem:
 
@@ -308,7 +308,7 @@ e = Hello there
         e = Hello there
                       ^
     SyntaxError: invalid syntax
-    
+
 
 
 ## Ændring af variable
@@ -324,7 +324,7 @@ print(a)     # a er ikke ændret. Stadig 42
 
     49
     42
-    
+
 
 Variablen skal defineres om, hvis man gerne vil ændre indholdet af variablen:
 
@@ -335,7 +335,7 @@ print(a)     # a er nu ændret
 ```
 
     49
-    
+
 
 {{% notice tip %}}
 Brug `#` til at skrive kommentarer i din kode. Tekst der følger et `#` ignoreres af Python. Når man for alvor begynder at arbejde med kode, kan man nemt glemme, hvorfor man skrev bestemte kodestykker, eller hvad kodestykkerne gør. Kommentarer til ens kode hjælper både dig selv og evt. andre, som skal kigge på eller arbejde med din kode.
@@ -448,7 +448,7 @@ print(type(a))
 ```
 
     <class 'int'>
-    
+
 
 Variablen `a` er typen `int`, som står for *integer* - et heltal. Som set i sidste afsnit, kan der foretages forskellige matematiske operationer med heltal.
 
@@ -461,7 +461,7 @@ print(type(b))
 ```
 
     <class 'float'>
-    
+
 
 Bemærk, at når man dividerer, så vil typen altid blive et *float point* - også selvom resultatet er et heltal:
 
@@ -478,7 +478,7 @@ print(type(b))   # b er et float point
     <class 'int'>
     21.0
     <class 'float'>
-    
+
 
 At Python gerne vil adskille mellem typer har at gøre med, hvordan én type information kræver mere computerhukommelse at lagre end en anden. Dette kan have betydning, når man arbejder med enorme datamængder, hvilket sjældent er tilfældet i samfundsvidenskabelige analysearbejder.
 
@@ -506,7 +506,7 @@ print(type(a))
 ```
 
     <class 'str'>
-    
+
 
 En variabel med et stykke tekst kaldes en `string` (forkortet i Python som `str`). 
 
@@ -521,7 +521,7 @@ print(a + b)   # sætter de to strings sammen (kaldes også for "paste")
 
     HelloHello
     Hello there
-    
+
 
 {{% notice note %}}
 
@@ -538,7 +538,7 @@ print(b * 2) # b er ikke et tal. "Pastes" sammen, da det er en string.
 
     84
     4242
-    
+
 
 Python gætter altid typen. Derfor gættes typen også, når man indlæser data i Python. Her kan problemet opstå, at Python læser information ind forkert - fx at tal læses ind som tekst.
 
@@ -564,7 +564,7 @@ print(type(b))  # b er nu integer
 
     <class 'str'>
     <class 'int'>
-    
+
 
 Alle typer kan selvfølgelig ikke castes om. Fx kan man ikke meningsfuldt konvertere tekst i form af ord om til tal:
 
@@ -576,18 +576,18 @@ a = int(a)      # forsøger at konvertere a til integer - ikke muligt
 ```
 
     <class 'str'>
-    
+
 
 
     ---------------------------------------------------------------------------
-
+    
     ValueError                                Traceback (most recent call last)
-
+    
     <ipython-input-36-cc7b3220923a> in <module>
           1 a = "Hello"     # a dannes som string
           2 print(type(a))  # typen er string
     ----> 3 a = int(a)      # forsøger at konvertere a til integer - ikke muligt
-    
+
 
     ValueError: invalid literal for int() with base 10: 'Hello'
 
@@ -628,7 +628,7 @@ my_number3 / my_number4
     <class 'int'>
     <class 'str'>
     <class 'int'>
-    
+
 
 
 
@@ -671,7 +671,7 @@ print(a, b)
 ```
 
     Hello there
-    
+
 
 Derudover har `print()` også en række "keyword arguments"/indstillinger, som det ses af dokumentationen herunder:
 
@@ -698,7 +698,7 @@ print(a, b, sep = ", ")  # sep ændres til komma
 
     Hello there
     Hello, there
-    
+
 
 En funktion kan have rigtig mange indstillinger, og i praksis forholder man sig kun til få af disse, da man for det meste kan lade standardinstillingerne være, som de er. 
 
@@ -724,7 +724,7 @@ print(a, b, sep = '-')
 ```
 
     Hello-there
-    
+
 
 {{%/expand%}}
 
@@ -747,12 +747,12 @@ add10(5)
 
 
     ---------------------------------------------------------------------------
-
+    
     NameError                                 Traceback (most recent call last)
-
+    
     <ipython-input-41-7452fc393844> in <module>
     ----> 1 add10(5)
-    
+
 
     NameError: name 'add10' is not defined
 
@@ -769,7 +769,7 @@ print(add10(5))
 ```
 
     15
-    
+
 
 Funktioner defineres med `def` efterfulgt af navnet på den funktion, man gerne vil lave. I parenteserne skrives de input, som funktionen skal have. I ovenstående dannes funktionen `add10`, der tager et enkelt input og lægger 10 til. `x` i ovenstående er blot en "pladsholder", da `x` erstattes med hvadend, der sættes i funktionen, når den bruges.
 
@@ -782,12 +782,12 @@ print(result)
 
 
     ---------------------------------------------------------------------------
-
+    
     NameError                                 Traceback (most recent call last)
-
+    
     <ipython-input-43-6459d04d738f> in <module>
     ----> 1 print(result)
-    
+
 
     NameError: name 'result' is not defined
 
@@ -804,7 +804,7 @@ print(a)
 ```
 
     15
-    
+
 
 En funktion skal gerne slutte med en `return` linje. Denne bestemmer, hvad funktionen skal sende tilbage. Udelades denne, returnerer funktionen `None`; altså intet:
 
@@ -817,7 +817,7 @@ print(add10(10))
 ```
 
     None
-    
+
 
 En funktion afsluttes altid, når den når til en `return` linje. Det vil sige, at ting i funktionen, som skrives ind efter `return`, ignoreres:
 
@@ -834,7 +834,7 @@ print(add10(10))
 
     Adding 10...
     20
-    
+
 
 Indrykningen er ikke kun for syns skyld, men er her med til at afgrænse, hvor meget funktionen indeholder. Funktionens indhold (linjer skrevet efter `def`-linjen) skal rykkes ind med et enkelt tab eller fire mellemrum.
 
@@ -863,7 +863,7 @@ Funktionen returnerer `12.2`, hvis input er `122`, da input divideres med 10 og 
 
 *Lav en funktion, der udregner arealet af en trekant (A), ved at tage højde (h) og grundlinje (g) som input.*
 
-\[A = {{1 \over 2} * h * g}\]
+$A = {{1 \over 2} * h * g}$
 
 {{%expand "Løsning" %}} 
 
@@ -877,7 +877,7 @@ print(triarea(5, 9))
 ```
 
     22.5
-    
+
 
 {{%/expand%}}
 
@@ -901,7 +901,7 @@ print(word.lower())  # Konverterer til små bogstaver
 
     HELLO
     hello
-    
+
 
 Bemærk at metoder ikke altid ændrer på variablen. For ovenstående metoder skal variablen derfor defineres om eller på ny, hvis output af en metode skal lagres:
 
@@ -915,7 +915,7 @@ print(word)         # Er nu overskrevet til at være med store bogstaver
 
     Hello
     HELLO
-    
+
 
 Forsøger man at bruge metoder på en variabel af en forkert type, gives der fejl:
 
@@ -928,14 +928,14 @@ number.upper()
 
 
     ---------------------------------------------------------------------------
-
+    
     AttributeError                            Traceback (most recent call last)
-
+    
     <ipython-input-51-d30eebf09ae0> in <module>
           1 number = 627
           2 
     ----> 3 number.upper()
-    
+
 
     AttributeError: 'int' object has no attribute 'upper'
 
@@ -1034,7 +1034,7 @@ my_greeter.say_goodbye()
 
     Goddag Kristian!
     Farvel Kristian!
-    
+
 
 # {#Afsnit}Pakker
 
@@ -1053,12 +1053,12 @@ print(pi)
 
 
     ---------------------------------------------------------------------------
-
+    
     NameError                                 Traceback (most recent call last)
-
+    
     <ipython-input-53-9e2d2bd32686> in <module>
     ----> 1 print(pi)
-    
+
 
     NameError: name 'pi' is not defined
 
@@ -1073,7 +1073,7 @@ print(math.pi)
 ```
 
     3.141592653589793
-    
+
 
 Bemærk at man kalder noget frem, som er en del af en pakke, ved at skrive pakkens navn, punktum og det, som man skal bruge fra pakken.
 
@@ -1087,7 +1087,7 @@ print(pi)
 ```
 
     3.141592653589793
-    
+
 
 Pakker kan have lange navne, så det er muligt at forkorte navnet, når de importeres:
 
@@ -1099,7 +1099,7 @@ print(m.pi)
 ```
 
     3.141592653589793
-    
+
 
 {{% notice warning %}} Vær varsom med blot at importere dele af pakker ind enkeltvis. En af grundene til, at man kalder dele af pakker ved at skrive pakken først er for at holde styr på, hvor funktionen, metoden eller værdien kommer fra. Man kan nemt miste overblikket eller, endnu værre, kalde den forkerte funktion, hvis man ikke har styr på, hvordan man har importeret.
 
@@ -1146,7 +1146,7 @@ print(check,
 ```
 
     False <class 'bool'>
-    
+
 
 Her er en række operatorer, som altid returnerer en booleansk værdi:
 
@@ -1169,7 +1169,7 @@ print(words.startswith("Hello"))
 ```
 
     True
-    
+
 
 Booleanske værdier har mange formål:
 
@@ -1224,7 +1224,7 @@ print(my_list)
 ```
 
     [2, 7, 9, 10]
-    
+
 
 En liste er blot en beholder af forskellige variable. Lister kan derfor indeholde variable af forskellig typer:
 
@@ -1236,7 +1236,7 @@ print(my_list2)
 ```
 
     [2, 'hello', 10, True]
-    
+
 
 Lister kan også indeholde andre lister:
 
@@ -1248,7 +1248,7 @@ print(my_list3)
 ```
 
     [9, 17, [2, 91], 16]
-    
+
 
 **Variable i lister**
 
@@ -1266,7 +1266,7 @@ print(my_list4)
 ```
 
     [4, 9, 11]
-    
+
 
 Bemærk dog, at når en liste dannes med variable, så er det variablenes værdi(er), der lagres i listen og ikke selve variablen. 
 
@@ -1283,7 +1283,7 @@ print(my_list4)   # listens indhold er uændret (stadig 4, 9 og 11)
 
     [4, 9, 11]
     [4, 9, 11]
-    
+
 
 Når listen genereres, lagres den værdi, som `a` har på det tidspunkt, listen generes. Værdiens tilknytning til variabel `a` lagres altså ikke i listen.
 
@@ -1298,7 +1298,7 @@ print(my_list[0])
 ```
 
     2
-    
+
 
 Index i Python starter altid med 0. Derfor gives i ovenstående det første element af listen `my_list` ved at refere til index 0.
 
@@ -1314,7 +1314,7 @@ print(my_list)
 
     [2, 7, 9, 10]
     [2, 7, 28, 10]
-    
+
 
 **Slicing**
 
@@ -1326,7 +1326,7 @@ print(my_list[1:3])
 ```
 
     [7, 28]
-    
+
 
 Ovenstående tages fra index 1 og op til index 3 eksklusivt index 3; altså index 1 (listens andet element: 7) og index 2 (listens tredje element: 9).
 
@@ -1364,7 +1364,7 @@ print(a_list[3])
 ```
 
     36
-    
+
 
 {{%/expand%}}
 
@@ -1384,7 +1384,7 @@ print(my_tuple)
 ```
 
     ('Katarn', 'Kenobi', 'Windu')
-    
+
 
 Elementer i en tuple har indexes ligesom ved lister:
 
@@ -1409,12 +1409,12 @@ my_tuple[0] = "Palpatine"
 
 
     ---------------------------------------------------------------------------
-
+    
     TypeError                                 Traceback (most recent call last)
-
+    
     <ipython-input-76-b2ea6727d80b> in <module>
     ----> 1 my_tuple[0] = "Palpatine"
-    
+
 
     TypeError: 'tuple' object does not support item assignment
 
@@ -1461,7 +1461,7 @@ print(my_dict["jedi"])
 ```
 
     Katarn
-    
+
 
 Nøgler *skal* være unikke. Det er ikke muligt at lave en dictionary med to identiske nøgler. Hvis man forsøger at gøre det, vil den senest skrevne værdi til nøglen blive lagret:
 
@@ -1473,7 +1473,7 @@ print(my_dict)
 ```
 
     {'jedi': 'Kenobi', 'sith': 'Desann'}
-    
+
 
 Ligeledes kan værdier til en bestemt nøgle overskrives:
 
@@ -1485,7 +1485,7 @@ print(my_dict)
 ```
 
     {'jedi': 'Katarn', 'sith': 'Desann'}
-    
+
 
 Elementer kan tilføjes til en dictionary ved blot at tilknytte det til en nøgle, som endnu ikke er brugt i dictionarien:
 
@@ -1497,7 +1497,7 @@ print(my_dict)
 ```
 
     {'jedi': 'Katarn', 'sith': 'Desann', 'dealer': 'Watto'}
-    
+
 
 ---
 ## VIDENSCHECK
@@ -1561,7 +1561,7 @@ print(type(age1))
 ```
 
     <class 'int'>
-    
+
 
 Skal det gøres for alle variable, skal kommandoen gentages for hver variabel:
 
@@ -1575,7 +1575,7 @@ print(type(age3))
     <class 'int'>
     <class 'str'>
     <class 'int'>
-    
+
 
 Af ovenstående erfares, at `age2` er en string, og derfor skal konverteres, før der kan arbejdes videre med den.
 
@@ -1592,7 +1592,7 @@ for age in ages:
     <class 'int'>
     <class 'str'>
     <class 'int'>
-    
+
 
 **Opbygning af et for loop**
 
@@ -1621,7 +1621,7 @@ for value in values:
     8
     182
     54
-    
+
 
 Når for loopet sættes i gang, ser Python på værdierne i `values` og tager den første værdi (`9`). `value` er altså lig med `9` i den første kørsel af loopet. Derefter udføres kommandoen, som i dette tilfælde er at printe værdien ganget med to: `print(value * 2)`. `value = 9` i den første kørsel af loopet, så derfor udføres: `print(9 * 2)`, som giver `18`.
 
@@ -1640,7 +1640,7 @@ for value in [9, 10, 4, 91, 27]:
     8
     182
     54
-    
+
 
 ---
 ## VIDENSCHECK
@@ -1678,7 +1678,7 @@ for word in words:
     SCRUMPTIOUS
     MONITOR
     CARPENTER
-    
+
 
 {{%/expand%}}
 
@@ -1704,7 +1704,7 @@ for x in range(10, 20):
     22
     23
     24
-    
+
 
 `range()` danner en talrække fra det første tal angivet til tallet *før* det sidste tal angivet ([10:20[).
 
@@ -1721,7 +1721,7 @@ for x in range(5):
     2
     3
     4
-    
+
 
 Som standard dannes intervallet med skridt på `1`; altså hver enkelt heltal mellem det første tal og tallet før det sidste tal. Dette kan ændres ved at tilføje et tredje argument for, hvor store "skridt", der skal være i intervallet:
 
@@ -1734,7 +1734,7 @@ for x in range(5, 10, 2):
     5
     7
     9
-    
+
 
 ## While loops
 
@@ -1755,7 +1755,7 @@ while x < 5:
     loopet kører videre
     loopet kører videre
     loopet kører videre
-    
+
 
 Et while loop består overordnet af to dele:
 - En betingelse som skal være opfyldt for, at loopet gentages
@@ -1789,7 +1789,7 @@ while len(fruit) <= 22:
     the word is banananananananana
     the word is bananananananananana
     the word is banananananananananana
-    
+
 
 {{% notice info %}} Funktionen `len()` har tidligere været brugt til at give antallet af elementer i en liste. Bruges `len()` på en tekstværdi (en string), returneres antallet af karakterer i tekstværdien. {{% /notice%}}
 
@@ -1843,7 +1843,7 @@ else:
 ```
 
     Tallet er større end 10!
-    
+
 
 Ovenstående kode består af to blokke: en if-blok og en else-blok. 
 
@@ -1862,7 +1862,7 @@ else:
 ```
 
     Tallet er ikke større end 10!
-    
+
 
 I ovenstående er `x = 8`. Derfor evaluerer betingelsen denne gang til `False`, og kommandoen lige efter if-betingelsen udføres ikke. I stedet springes videre til else-blokken, hvor kommandoen er at printe teksten `Tallet er ikke større end 10!`.
 
@@ -1893,7 +1893,7 @@ else:
 ```
 
     Tallet er større end 5!
-    
+
 
 ---
 ## ØVELSE
@@ -1946,7 +1946,7 @@ for value in values:
     7 kan ikke divideres med 3!
     8 kan ikke divideres med 3!
     9 kan divideres med 3!
-    
+
 
 I ovenstående ses et for loop, der kører over værdierne 1 til 9 (`range(1, 10)`). Hver værdi tjekkes om det kan divideres med 3 (`value % 3 == 0`). Hvis den kan det, printes at det kan divideres med 3. Hvis ikke, printes teksten, at det ikke kan divideres med 3.
 
@@ -1975,7 +1975,7 @@ print(jedi_checker("Revan"))
 
     jedi
     sith
-    
+
 
 {{% notice note %}}Bemærk at ovenstående funktion er meget begrænset, da den kun baserer sig på en begrænset mængde navne og kun accepterer, at navnet er stavet på en helt bestemt måde.{{% /notice%}}
 
@@ -2001,7 +2001,7 @@ for word in words:
     SCRUMPTIOUS
     MONITOR
     CARPENTER
-    
+
 
 {{%/expand%}}
 
@@ -2029,7 +2029,7 @@ giv mig resultatet!
         giv mig resultatet!
               ^
     SyntaxError: invalid syntax
-    
+
 
 
 I ovenstående er der brugt mellemrum mellem flere (ikke eksisterende) variable. Dette er ugyldigt for Python. En `SyntaxError` opstår derfor typisk pga. slåfejl eller manglende tegn (kommaer, parenteser o.l.).
@@ -2049,14 +2049,14 @@ print(adresser)
 
 
     ---------------------------------------------------------------------------
-
+    
     NameError                                 Traceback (most recent call last)
-
+    
     ~\AppData\Local\Temp\ipykernel_3800\2535432249.py in <module>
           1 addresser = ["Blomstervang 12", "Fuglevej 7", "Malergade 32"]
           2 
     ----> 3 print(adresser)
-    
+
 
     NameError: name 'adresser' is not defined
 
@@ -2074,12 +2074,12 @@ En `TypeError` gives, hvis man forsøger at gøre noget med en variabel, som ikk
 
 
     ---------------------------------------------------------------------------
-
+    
     TypeError                                 Traceback (most recent call last)
-
+    
     ~\AppData\Local\Temp\ipykernel_3800\1089118982.py in <module>
     ----> 1 "hej" + 2
-    
+
 
     TypeError: can only concatenate str (not "int") to str
 
@@ -2099,14 +2099,14 @@ tekst.upper()
 
 
     ---------------------------------------------------------------------------
-
+    
     AttributeError                            Traceback (most recent call last)
-
+    
     ~\AppData\Local\Temp\ipykernel_3800\2065210826.py in <module>
           1 tekst = 42
           2 
     ----> 3 tekst.upper()
-    
+
 
     AttributeError: 'int' object has no attribute 'upper'
 
@@ -2130,14 +2130,14 @@ print(adresser[3]) # Indeks 3 findes ikke - husk at Python starter ved 0
 
 
     ---------------------------------------------------------------------------
-
+    
     IndexError                                Traceback (most recent call last)
-
+    
     ~\AppData\Local\Temp\ipykernel_3800\2954300856.py in <module>
           1 adresser = ["Blomstervang 12", "Fuglevej 7", "Malergade 32"]
           2 
     ----> 3 print(adresser[3])
-    
+
 
     IndexError: list index out of range
 
@@ -2153,14 +2153,14 @@ print(adresse["kommune"])
 
 
     ---------------------------------------------------------------------------
-
+    
     KeyError                                  Traceback (most recent call last)
-
+    
     ~\AppData\Local\Temp\ipykernel_3800\2520700864.py in <module>
           1 adresse = {"vej": "Blomstervang", "nummer": 12}
           2 
     ----> 3 print(adresse["kommune"])
-    
+
 
     KeyError: 'kommune'
 
